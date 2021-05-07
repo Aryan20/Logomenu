@@ -11,6 +11,10 @@ function _aboutThisDistro() {
 	Util.spawn(['gnome-control-center', 'info-overview'])
 }
 
+function _terminal() {
+	Util.spawn(['gnome-terminal'])
+}
+
 function _systemPreferences() {
 	Util.spawn(['gnome-control-center'])
 }
@@ -77,18 +81,20 @@ const MenuButton = new Lang.Class({
         this.actor.add_actor(this.icon)
 
         // Menu
-	this.item1 = new PopupMenu.PopupMenuItem('About Fedora')
+	this.item1 = new PopupMenu.PopupMenuItem('About My System')
 	this.item2 = new PopupMenu.PopupMenuItem('System Preferences')
-	this.item3 = new PopupMenu.PopupMenuItem('App Store')
+	this.item3 = new PopupMenu.PopupMenuItem('Software Center')
 	this.item4 = new PopupMenu.PopupMenuItem('Activities')
-	this.item5 = new PopupMenu.PopupMenuItem('Extensions')
+        this.item5 = new PopupMenu.PopupMenuItem('Terminal')
+	this.item6 = new PopupMenu.PopupMenuItem('Extensions')
 	
 					
 	this.item1.connect('activate', Lang.bind(this, _aboutThisDistro))
 	this.item2.connect('activate', Lang.bind(this, _systemPreferences))
 	this.item3.connect('activate', Lang.bind(this, _appStore))
 	this.item4.connect('activate', Lang.bind(this, _missionControl))
-	this.item5.connect('activate', Lang.bind(this, _extensions))
+	this.item5.connect('activate', Lang.bind(this, _terminal))
+        this.item6.connect('activate', Lang.bind(this, _extensions))
         this.menu.addMenuItem(this.item1)
 	this.menu.addMenuItem(this.item2)
 	this.menu.addMenuItem(this.item3)
