@@ -8,7 +8,7 @@ const Shell = imports.gi.Shell
 const Util = imports.misc.util
 
 function _aboutThisDistro() {
-	Util.spawn(['gnome-control-center', 'info'])
+	Util.spawn(['gnome-control-center', 'info-overview'])
 }
 
 function _systemPreferences() {
