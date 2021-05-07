@@ -1,0 +1,15 @@
+.menu-button {
+	margin: 1px;
+	background-size: 21px;
+	width: 25px;
+	height: 25px;
+	background-image: url("Resources/menu.png");
+}
+
+.menu-button-hover {
+	margin: 1px;
+	background-size: 21px;
+	width: 25px;
+	height: 25px;
+	background-image: url("Resources/menu-active.png");
+}
