@@ -7,6 +7,9 @@ join the Discord for the latest news and releases: https://discord.gg/kNa4CHJX
 Grab the latest release and unzip to /.local/share/gnome-shell/extensions
 
 Credits
+
 kaansenol5- Changes to About My System
+
 ShrirajHegde- makefile
+
 fausto- original code
