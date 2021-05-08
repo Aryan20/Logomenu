@@ -4,6 +4,7 @@ fork of Big Sur Menu by fausto
 Compatible with and tested on GNOME 40. Should work on older versions.
 join the Discord for the latest news and releases: https://discord.gg/kNa4CHJX
 
+xkill required for Force Quit App, gnome-extensions-app required for Extensions.
 Grab the latest release and unzip to /.local/share/gnome-shell/extensions
 
 **or**
