@@ -15,10 +15,6 @@ use GNU make:
 
 Credits
 
-kaansenol5
+kaansenol5, ShrirajHegde, AndrewZaech - help with development
 
-ShrirajHegde
-
-fausto
-
-Frippery Applications Menu
+fausto, Frippery Applications Menu - Original Code
