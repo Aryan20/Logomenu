@@ -12,4 +12,6 @@ kaansenol5- Changes to About My System
 
 ShrirajHegde- makefile
 
-fausto- original code
+fausto
+
+Frippery Applications Menu
