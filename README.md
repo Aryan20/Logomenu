@@ -18,3 +18,5 @@ Credits
 kaansenol5, ShrirajHegde, AndrewZaech - help with development
 
 fausto, Frippery Applications Menu - Original Code
+
+This project is not officially connected with Fedora, Red Hat, or any associated entity.
