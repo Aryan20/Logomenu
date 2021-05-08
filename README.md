@@ -15,9 +15,9 @@ use GNU make:
 
 Credits
 
-kaansenol5- Changes to About My System
+kaansenol5
 
-ShrirajHegde- makefile
+ShrirajHegde
 
 fausto
 
