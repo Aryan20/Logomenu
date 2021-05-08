@@ -82,7 +82,7 @@ var MenuButton = GObject.registerClass(class FedoraMenu_MenuButton
 
         // Menu
 		this.item1 = new PopupMenu.PopupMenuItem(_('About My System'))
-		this.item2 = new PopupMenu.PopupMenuItem(_('System Preferences'))
+		this.item2 = new PopupMenu.PopupMenuItem(_('System Settings'))
 		this.item3 = new PopupMenu.PopupMenuItem(_('Software Center'))
 		this.item4 = new PopupMenu.PopupMenuItem(_('Activities'))
 		this.item5 = new PopupMenu.PopupMenuItem(_('Terminal'))
@@ -99,6 +99,7 @@ var MenuButton = GObject.registerClass(class FedoraMenu_MenuButton
 		this.menu.addMenuItem(this.item3)
 		this.menu.addMenuItem(this.item4)
 		this.menu.addMenuItem(this.item5)
+		this.menu.addMenuItem(this.item6)
 	}
 })
 
