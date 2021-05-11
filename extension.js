@@ -57,6 +57,14 @@ function _extensions() {
 	Util.spawn(['gnome-extensions-app'])
 }
 
+function _middleClick(actor, event) {
+    // left click === 1, middle click === 2, right click === 3
+    if (event.get_button() === 2) {
+    	this.menu.close();
+        Main.overview.toggle();
+    }
+}
+
 
 // function _hover() {
 // 	button.actor.remove_actor(icon)
@@ -107,6 +115,10 @@ var MenuButton = GObject.registerClass(class FedoraMenu_MenuButton
 		this.menu.addMenuItem(this.item7)
 		this.menu.addMenuItem(this.item8)
 		this.menu.addMenuItem(this.item9)
+	    	
+	    	//bind middle click option to toggle overview
+	    	this.connect('button-press-event', _middleClick.bind(this));
+	    
 	}
 })
 
