@@ -31,7 +31,7 @@ use GNU make:
 
 ## Credits
 
-[@kaansenol5](https://github.com/kaansenol5) , [@ShrirajHegde](https://github.com/ShrirajHegde), [@AndrewZaech](https://github.com/AndrewZaech) - help with development
+[@kaansenol5](https://github.com/kaansenol5) , [@ShrirajHegde](https://github.com/ShrirajHegde), [@AndrewZaech](https://github.com/AndrewZaech), vikashraghavan  - help with development
 
 [@Fausto-Korpsvart](https://github.com/Fausto-Korpsvart), [Frippery Applications Menu](https://extensions.gnome.org/extension/13/applications-menu/) - Original Code
 
