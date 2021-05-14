@@ -63,7 +63,13 @@ var FedoraMenuPreferencesWidget = GObject.registerClass(class Fedora_Menu_Prefer
             margin_start: 5,
             margin_end: 5
         });
-        iconsFrame.set_child(iconsBox);
+
+        if (shellVersion < 40){
+            iconsFrame.add(iconsBox);
+        }
+        else{
+            iconsFrame.set_child(iconsBox);
+        }
 
         let iconsFlowBox = new IconGrid();
         iconsFlowBox.connect('child-activated', ()=> {
@@ -162,8 +168,8 @@ function buildPrefsWidget() {
     let widget = new FedoraMenuPreferencesWidget();
     if (shellVersion < 40){
         let iconTheme = Gtk.IconTheme.get_default();
-        if(!iconTheme.get_search_path().includes(Me.path + "/media/icons/prefs_icons"))
-            iconTheme.append_search_path(Me.path + "/media/icons/prefs_icons");
+        if(!iconTheme.get_search_path().includes(Me.path + "/Resources"))
+            iconTheme.append_search_path(Me.path + "/Resources");
         widget.show_all();
     }
     else{
