@@ -18,9 +18,7 @@ Join the Discord for the latest news and releases: https://discord.gg/kNa4CHJX
 
 *  Via **Gnome Extensions**
  
-[<img src="https://github.com/andyholmes/gnome-shell-extensions-badge/raw/master/get-it-on-ego.png" width=300>](https://extensions.gnome.org/extension/4251/fedora-menu/)
-
-***
+[<img src="https://github.com/andyholmes/gnome-shell-extensions-badge/raw/master/get-it-on-ego.png" width=300>](https://extensions.gnome.org/extension/4272/tofu-menu/)
 
 * Manual : Grab the latest release and unzip to `.local/share/gnome-shell/extensions`
 
