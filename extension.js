@@ -1,6 +1,9 @@
+// -*- mode: js; js-indent-level: 4; indent-tabs-mode: nil -*-
 const Me = imports.misc.extensionUtils.getCurrentExtension();
 
-const {GObject, Shell, St} = imports.gi;
+const {Gio, GLib, GObject, Shell, St} = imports.gi;
+const Constants = Me.imports.constants;
+const ExtensionUtils = imports.misc.extensionUtils;
 const Main = imports.ui.main
 const PanelMenu = imports.ui.panelMenu
 const PopupMenu = imports.ui.popupMenu
@@ -58,13 +61,12 @@ function _extensions() {
 }
 
 function _middleClick(actor, event) {
-    // left click === 1, middle click === 2, right click === 3
-    if (event.get_button() === 2) {
-    	this.menu.close();
-        Main.overview.toggle();
-    }
+	// left click === 1, middle click === 2, right click === 3
+	if (event.get_button() === 2) {
+		this.menu.close();
+		Main.overview.toggle();
+	}
 }
-
 
 // function _hover() {
 // 	button.actor.remove_actor(icon)
@@ -77,18 +79,22 @@ function _middleClick(actor, event) {
 // }
 
 
-var MenuButton = GObject.registerClass(class FedoraMenu_MenuButton 
-	extends PanelMenu.Button {
-    _init() {
+var MenuButton = GObject.registerClass(class FedoraMenu_MenuButton extends PanelMenu.Button {
+	_init() {
 		super._init(0.0, "MenuButton");
+		this._settings = ExtensionUtils.getSettings(Me.metadata['settings-schema']);
 
-        // Icon
-        this.icon = new St.Icon({
-            style_class: 'menu-button'
-        })
-        this.add_actor(this.icon)
+		// Icon
+		this.icon = new St.Icon({
+			style_class: 'menu-button'
+		})
+		this._settings.connect("changed::menu-button-icon-image", () => this.setIconImage())
+		this._settings.connect("changed::menu-button-icon-size", () => this.setIconSize())
+		this.setIconImage()
+		this.setIconSize()
+		this.add_actor(this.icon)
 
-        // Menu
+		// Menu
 		this.item1 = new PopupMenu.PopupMenuItem(_('About My System'))
 		this.item2 = new PopupMenu.PopupMenuItem(_('System Settings'))
 		this.item3 = new PopupMenu.PopupSeparatorMenuItem()
@@ -98,7 +104,7 @@ var MenuButton = GObject.registerClass(class FedoraMenu_MenuButton
 		this.item7 = new PopupMenu.PopupSeparatorMenuItem()
 		this.item8 = new PopupMenu.PopupMenuItem(_('Terminal'))
 		this.item9 = new PopupMenu.PopupMenuItem(_('Extensions'))
-			
+
 		this.item1.connect('activate', () => _aboutThisDistro())
 		this.item2.connect('activate', () => _systemPreferences())
 		this.item4.connect('activate', () => _appStore())
@@ -115,10 +121,24 @@ var MenuButton = GObject.registerClass(class FedoraMenu_MenuButton
 		this.menu.addMenuItem(this.item7)
 		this.menu.addMenuItem(this.item8)
 		this.menu.addMenuItem(this.item9)
-	    	
-	    	//bind middle click option to toggle overview
-	    	this.connect('button-press-event', _middleClick.bind(this));
-	    
+
+		//bind middle click option to toggle overview
+		this.connect('button-press-event', _middleClick.bind(this));
+	}
+
+	setIconImage(){
+		let iconIndex = this._settings.get_int('menu-button-icon-image');
+		let path = Me.path + Constants.DistroIcons[iconIndex].PATH;
+		if(Constants.DistroIcons[iconIndex].PATH === 'start-here-symbolic')
+			path = 'start-here-symbolic';
+		else if(!GLib.file_test(path, GLib.FileTest.IS_REGULAR))
+			path = 'start-here-symbolic';  
+		this.icon.gicon = Gio.icon_new_for_string(path);
+	}
+
+	setIconSize(){
+		let iconSize = this._settings.get_int('menu-button-icon-size');
+		this.icon.icon_size = iconSize;
 	}
 })
 
