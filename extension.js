@@ -1,3 +1,4 @@
+// -*- mode: js; js-indent-level: 4; indent-tabs-mode: nil -*-
 const Me = imports.misc.extensionUtils.getCurrentExtension();
 
 const {Gio, GLib, GObject, Shell, St} = imports.gi;
@@ -60,11 +61,11 @@ function _extensions() {
 }
 
 function _middleClick(actor, event) {
-    // left click === 1, middle click === 2, right click === 3
-    if (event.get_button() === 2) {
-    	this.menu.close();
-        Main.overview.toggle();
-    }
+	// left click === 1, middle click === 2, right click === 3
+	if (event.get_button() === 2) {
+		this.menu.close();
+		Main.overview.toggle();
+	}
 }
 
 // function _hover() {
@@ -79,7 +80,7 @@ function _middleClick(actor, event) {
 
 
 var MenuButton = GObject.registerClass(class FedoraMenu_MenuButton extends PanelMenu.Button {
-    _init() {
+	_init() {
 		super._init(0.0, "MenuButton");
 		this._settings = ExtensionUtils.getSettings(Me.metadata['settings-schema']);
 
@@ -103,7 +104,7 @@ var MenuButton = GObject.registerClass(class FedoraMenu_MenuButton extends Panel
 		this.item7 = new PopupMenu.PopupSeparatorMenuItem()
 		this.item8 = new PopupMenu.PopupMenuItem(_('Terminal'))
 		this.item9 = new PopupMenu.PopupMenuItem(_('Extensions'))
-			
+
 		this.item1.connect('activate', () => _aboutThisDistro())
 		this.item2.connect('activate', () => _systemPreferences())
 		this.item4.connect('activate', () => _appStore())
@@ -120,17 +121,17 @@ var MenuButton = GObject.registerClass(class FedoraMenu_MenuButton extends Panel
 		this.menu.addMenuItem(this.item7)
 		this.menu.addMenuItem(this.item8)
 		this.menu.addMenuItem(this.item9)
-			
+
 		//bind middle click option to toggle overview
 		this.connect('button-press-event', _middleClick.bind(this));
 	}
 
 	setIconImage(){
 		let iconIndex = this._settings.get_int('menu-button-icon-image');
-        let path = Me.path + Constants.DistroIcons[iconIndex].PATH;
-        if(Constants.DistroIcons[iconIndex].PATH === 'start-here-symbolic')
+		let path = Me.path + Constants.DistroIcons[iconIndex].PATH;
+		if(Constants.DistroIcons[iconIndex].PATH === 'start-here-symbolic')
 			path = 'start-here-symbolic';
-        else if(!GLib.file_test(path, GLib.FileTest.IS_REGULAR))
+		else if(!GLib.file_test(path, GLib.FileTest.IS_REGULAR))
 			path = 'start-here-symbolic';  
 		this.icon.gicon = Gio.icon_new_for_string(path);
 	}
