@@ -1,6 +1,8 @@
 const Me = imports.misc.extensionUtils.getCurrentExtension();
 
-const {GObject, Shell, St} = imports.gi;
+const {Gio, GLib, GObject, Shell, St} = imports.gi;
+const Constants = Me.imports.constants;
+const ExtensionUtils = imports.misc.extensionUtils;
 const Main = imports.ui.main
 const PanelMenu = imports.ui.panelMenu
 const PopupMenu = imports.ui.popupMenu
@@ -65,7 +67,6 @@ function _middleClick(actor, event) {
     }
 }
 
-
 // function _hover() {
 // 	button.actor.remove_actor(icon)
 
@@ -77,18 +78,22 @@ function _middleClick(actor, event) {
 // }
 
 
-var MenuButton = GObject.registerClass(class FedoraMenu_MenuButton 
-	extends PanelMenu.Button {
+var MenuButton = GObject.registerClass(class FedoraMenu_MenuButton extends PanelMenu.Button {
     _init() {
 		super._init(0.0, "MenuButton");
+		this._settings = ExtensionUtils.getSettings(Me.metadata['settings-schema']);
 
-        // Icon
-        this.icon = new St.Icon({
-            style_class: 'menu-button'
-        })
-        this.add_actor(this.icon)
+		// Icon
+		this.icon = new St.Icon({
+			style_class: 'menu-button'
+		})
+		this._settings.connect("changed::menu-button-icon-image", () => this.setIconImage())
+		this._settings.connect("changed::menu-button-icon-size", () => this.setIconSize())
+		this.setIconImage()
+		this.setIconSize()
+		this.add_actor(this.icon)
 
-        // Menu
+		// Menu
 		this.item1 = new PopupMenu.PopupMenuItem(_('About My System'))
 		this.item2 = new PopupMenu.PopupMenuItem(_('System Settings'))
 		this.item3 = new PopupMenu.PopupSeparatorMenuItem()
@@ -115,10 +120,24 @@ var MenuButton = GObject.registerClass(class FedoraMenu_MenuButton
 		this.menu.addMenuItem(this.item7)
 		this.menu.addMenuItem(this.item8)
 		this.menu.addMenuItem(this.item9)
-	    	
-	    	//bind middle click option to toggle overview
-	    	this.connect('button-press-event', _middleClick.bind(this));
-	    
+			
+		//bind middle click option to toggle overview
+		this.connect('button-press-event', _middleClick.bind(this));
+	}
+
+	setIconImage(){
+		let iconIndex = this._settings.get_int('menu-button-icon-image');
+        let path = Me.path + Constants.DistroIcons[iconIndex].PATH;
+        if(Constants.DistroIcons[iconIndex].PATH === 'start-here-symbolic')
+			path = 'start-here-symbolic';
+        else if(!GLib.file_test(path, GLib.FileTest.IS_REGULAR))
+			path = 'start-here-symbolic';  
+		this.icon.gicon = Gio.icon_new_for_string(path);
+	}
+
+	setIconSize(){
+		let iconSize = this._settings.get_int('menu-button-icon-size');
+		this.icon.icon_size = iconSize;
 	}
 })
 
