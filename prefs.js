@@ -6,6 +6,10 @@ const Constants = Me.imports.constants;
 const Gettext = imports.gettext.domain(Me.metadata['gettext-domain']);
 const _ = Gettext.gettext;
 
+const Config = imports.misc.config;
+const [major] = Config.PACKAGE_VERSION.split('.');
+const shellVersion = Number.parseInt(major);
+
 function init() {
     ExtensionUtils.initTranslations(Me.metadata['gettext-domain']);
 }
@@ -60,7 +64,7 @@ var FedoraMenuPreferencesWidget = GObject.registerClass(class Fedora_Menu_Prefer
             margin_end: 5
         });
         iconsFrame.set_child(iconsBox);
-        iconsBox.append(changeIconText)
+
         let iconsFlowBox = new IconGrid();
         iconsFlowBox.connect('child-activated', ()=> {
             let selectedChild = iconsFlowBox.get_selected_children();
@@ -76,9 +80,17 @@ var FedoraMenuPreferencesWidget = GObject.registerClass(class Fedora_Menu_Prefer
             });
             iconsFlowBox.add(iconImage);
         });
-        iconsBox.append(iconsFlowBox);
 
-        this.append(iconsFrame)
+        if (shellVersion < 40){
+            iconsBox.add(changeIconText)
+            iconsBox.add(iconsFlowBox);
+            this.add(iconsFrame)
+        }
+        else {
+            iconsBox.append(changeIconText)
+            iconsBox.append(iconsFlowBox);
+            this.append(iconsFrame)
+        }
 
         let children = iconsFlowBox.childrenCount;
         for(let i = 0; i < children; i++){
@@ -117,26 +129,48 @@ var FedoraMenuPreferencesWidget = GObject.registerClass(class Fedora_Menu_Prefer
             draw_value: true,
             value_pos: Gtk.PositionType.RIGHT
         });
-        menuButtonIconSizeScale.set_format_value_func( (scale, value) => {
-            return "\t" + value + "px";
-        });
+
+        if (shellVersion < 40){
+            menuButtonIconSizeScale.connect('format-value', (scale, value) => { return value.toString() + ' px'; });
+        }
+        else{
+            menuButtonIconSizeScale.set_format_value_func( (scale, value) => {
+                return "\t" + value + "px";
+            });
+        }
+                
         menuButtonIconSizeScale.set_value(iconSize);
         menuButtonIconSizeScale.connect('value-changed', () => {
             this._settings.set_int('menu-button-icon-size', menuButtonIconSizeScale.get_value());
         });
-
-        menuButtonIconSizeBox.append(menuButtonIconSizeLabel);
-        menuButtonIconSizeBox.append(menuButtonIconSizeScale);
-        menuButtonIconSizeFrame.set_child(menuButtonIconSizeBox);
-        this.append(menuButtonIconSizeFrame);
+        if (shellVersion < 40){
+            menuButtonIconSizeBox.add(menuButtonIconSizeLabel);
+            menuButtonIconSizeBox.add(menuButtonIconSizeScale);
+            menuButtonIconSizeFrame.add(menuButtonIconSizeBox);
+            this.add(menuButtonIconSizeFrame);
+        }
+        else{
+            menuButtonIconSizeBox.append(menuButtonIconSizeLabel);
+            menuButtonIconSizeBox.append(menuButtonIconSizeScale);
+            menuButtonIconSizeFrame.set_child(menuButtonIconSizeBox);
+            this.append(menuButtonIconSizeFrame);
+        }
     }
 })
 
 function buildPrefsWidget() {
-    let iconTheme = Gtk.IconTheme.get_for_display(Gdk.Display.get_default());
-    if(!iconTheme.get_search_path().includes(Me.path + "/Resources"))
-        iconTheme.add_search_path(Me.path + "/Resources");
     let widget = new FedoraMenuPreferencesWidget();
-    widget.show();
+    if (shellVersion < 40){
+        let iconTheme = Gtk.IconTheme.get_default();
+        if(!iconTheme.get_search_path().includes(Me.path + "/media/icons/prefs_icons"))
+            iconTheme.append_search_path(Me.path + "/media/icons/prefs_icons");
+        widget.show_all();
+    }
+    else{
+        let iconTheme = Gtk.IconTheme.get_for_display(Gdk.Display.get_default());
+        if(!iconTheme.get_search_path().includes(Me.path + "/Resources"))
+            iconTheme.add_search_path(Me.path + "/Resources");
+        widget.show();
+    }
     return widget;
 }
