@@ -1,6 +1,8 @@
 # Tofu Menu
 (formerly Fedora Menu)
 
+[<img src="https://github.com/tofutech/tofumenu/blob/main/preview.png" width=300>]
+
 Menu similar to Apple macOS menu for the GNOME Desktop
 fork of [Big Sur Menu by fausto](https://extensions.gnome.org/extension/3703/big-sur-menu/)
 Compatible with and tested on GNOME 40. Should work on older versions.
