@@ -63,6 +63,7 @@ var FedoraMenuPreferencesWidget = GObject.registerClass(class Fedora_Menu_Prefer
             margin_start: 5,
             margin_end: 5
         });
+
         if (shellVersion < 40){
             iconsFrame.add(iconsBox);
         }
