@@ -3,6 +3,8 @@
 
 <img src="https://github.com/tofutech/tofumenu/blob/main/preview.png" width=375>
 
+<img src="https://github.com/tofutech/tofumenu/blob/main/screenshot2.png" width=100><img src="https://github.com/tofutech/tofumenu/blob/main/screenshot1.png" width=275>
+
 Menu similar to Apple macOS menu for the GNOME Desktop
 
 fork of [Big Sur Menu by fausto](https://extensions.gnome.org/extension/3703/big-sur-menu/)
