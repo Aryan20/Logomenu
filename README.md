@@ -13,6 +13,8 @@ Join the Discord for the latest news and releases: https://discord.gg/hfARC5dF
 
 
 
+
+
 ## Options include:
 
 -About My System (opens a submenu in System Settings that shows info about your computer.)
@@ -33,6 +35,8 @@ Join the Discord for the latest news and releases: https://discord.gg/hfARC5dF
 fork of [Big Sur Menu by fausto](https://extensions.gnome.org/extension/3703/big-sur-menu/)
 
 Compatible with and tested on GNOME 40. Should work on older versions.
+
+
 
 
 ## Installation
