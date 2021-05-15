@@ -1,4 +1,4 @@
-# Tofu Menu
+## Tofu Menu
 (formerly Fedora Menu)
 
 <img src="https://github.com/tofutech/tofumenu/blob/main/preview.png" width=375>
