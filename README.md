@@ -7,31 +7,32 @@
 
 Quick access menu for the GNOME panel with options that help ease the workflow for newcomers and power users alike.
 
-Options include:
+Similar to the Apple Menu found on MacOS.
+
+Join the Discord for the latest news and releases: https://discord.gg/hfARC5dF
+
+
+
+# Options include:
 
 -About My System (opens a submenu in System Settings that shows info about your computer.)
 
 -System Settings
 
--Software Center
+-Software Center (defaults to `gnome-software`)
 
 -Activities (this menu does replace the Activities button, but this option does leave that functionality easily accessible.)
 
--Force Quit App (run this and select the app you want to kill.)
+-Force Quit App (run this and select the app you want to kill. Requires `xkill` )
 
--Terminal (defaults to gnome-terminal)
+-Terminal (defaults to `gnome-terminal`)
 
 -Extensions (Quick access to all of your GNOME Extensions. Requires `gnome-extensions-app`)
 
+
 fork of [Big Sur Menu by fausto](https://extensions.gnome.org/extension/3703/big-sur-menu/)
+
 Compatible with and tested on GNOME 40. Should work on older versions.
-
-Join the Discord for the latest news and releases: https://discord.gg/hfARC5dF
-
-### Dependencies:
-
-* `xkill` required for Force Quit App
-*  `gnome-extensions-app` required for Extensions.
 
 
 # Installation
