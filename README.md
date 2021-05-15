@@ -7,6 +7,7 @@ Menu similar to Apple macOS menu for the GNOME Desktop
 
 fork of [Big Sur Menu by fausto](https://extensions.gnome.org/extension/3703/big-sur-menu/)
 Compatible with and tested on GNOME 40. Should work on older versions.
+
 Join the Discord for the latest news and releases: https://discord.gg/kNa4CHJX
 
 ### Dependencies:
