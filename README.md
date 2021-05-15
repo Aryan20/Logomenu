@@ -60,4 +60,4 @@ use GNU make:
 
 ***
 
-This project is not officially connected with Fedora, Red Hat, or any associated entity.
+This project is not officially connected with Fedora, Red Hat, Ubutnu, Canonical, GNOME, Debian, OpenSUSE, System76, Solus, Raspberry Pi or any associated entity.
