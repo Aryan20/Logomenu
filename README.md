@@ -1,5 +1,4 @@
-# Tofu Menu
-(formerly Fedora Menu)
+# Logo Menu
 
 <img src="https://github.com/tofutech/tofumenu/blob/main/preview.png" width=375>
 
@@ -8,11 +7,6 @@
 Quick access menu for the GNOME panel with options that help ease the workflow for newcomers and power users alike.
 
 Similar to the Apple Menu found on MacOS.
-
-Join the Discord for the latest news and releases: https://discord.gg/hfARC5dF
-
-
-
 
 
 ## Options include:
@@ -31,19 +25,14 @@ Join the Discord for the latest news and releases: https://discord.gg/hfARC5dF
 
 -Extensions (Quick access to all of your GNOME Extensions. Requires `gnome-extensions-app`)
 
+fork of [Tofu Menu by tofutech](https://github.com/tofutech/tofumenu)
 
 fork of [Big Sur Menu by fausto](https://extensions.gnome.org/extension/3703/big-sur-menu/)
 
 Compatible with and tested on GNOME 40. Should work on older versions.
 
 
-
-
 ## Installation
-
-*  Via **Gnome Extensions**
- 
-[<img src="https://github.com/andyholmes/gnome-shell-extensions-badge/raw/master/get-it-on-ego.png" width=300>](https://extensions.gnome.org/extension/4272/tofu-menu/)
 
 * Manual : Grab the latest release and unzip to `.local/share/gnome-shell/extensions`
 
@@ -57,11 +46,10 @@ use GNU make:
 ***
 
 ## Credits
+Original extension creator and all the contributors.
 
-[@kaansenol5](https://github.com/kaansenol5) , [@ShrirajHegde](https://github.com/ShrirajHegde), [@AndrewZaech](https://github.com/AndrewZaech), [@vikashraghavan](https://github.com/vikashraghavan) - help with development
 
-[@Fausto-Korpsvart](https://github.com/Fausto-Korpsvart), [Frippery Applications Menu](https://extensions.gnome.org/extension/13/applications-menu/) - Original Code
+### Legal disclaimer for brand icons and trademarks..
 
-***
 
-This project is not officially connected with Fedora, Red Hat, Ubutnu, Canonical, GNOME, Debian, OpenSUSE, System76, Solus, Raspberry Pi or any associated entity.
+*" All brand icons are trademarks of their respective owners. The use of these trademarks does not indicate endorsement of the trademark holder by Logo Menu project, nor vice versa. Please do not use brand logos for any purpose except to represent the company, product, or service to which they refer. "*
