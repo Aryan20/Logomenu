@@ -17,7 +17,7 @@ function _aboutThisDistro() {
 }
 
 function _terminal() {
-	Util.spawn(['xdg-terminal'])
+	Util.spawn(['gnome-terminal'])
 }
 
 function _systemPreferences() {
