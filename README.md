@@ -1,8 +1,8 @@
 # Logo Menu
 
-<img src="https://github.com/tofutech/tofumenu/blob/main/preview.png" width=375>
+<img src="https://github.com/Aryan20/Logomenu/blob/main/preview.png" width=375>
 
-<img src="https://github.com/tofutech/tofumenu/blob/main/screenshot2.png" width=100><img src="https://github.com/tofutech/tofumenu/blob/main/screenshot1.png" width=275>
+<img src="https://github.com/Aryan20/Logomenu/blob/main/screenshot2.png" width=100><img src="https://github.com/Aryan20/Logomenu/blob/main/screenshot1.png" width=375>
 
 Quick access menu for the GNOME panel with options that help ease the workflow for newcomers and power users alike.
 
