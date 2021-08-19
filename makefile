@@ -1,3 +1,3 @@
 install:
-	mkdir -p /home/$(USER)/.local/share/gnome-shell/extensions/Logomenu@Aryan_K
-	cp -r ./* /home/$(USER)/.local/share/gnome-shell/extensions/Logomenu@Aryan_K
+	mkdir -p /home/$(USER)/.local/share/gnome-shell/extensions/logomenu@aryan_k
+	cp -r ./* /home/$(USER)/.local/share/gnome-shell/extensions/logomenu@aryan_k

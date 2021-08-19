@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <schemalist>
-  <schema path="/org/gnome/shell/extensions/Logo-menu/" id="org.Aryan_K.Logo-menu">
+  <schema path="/org/gnome/shell/extensions/Logo-menu/" id="org.aryan_k.logo-menu">
     <key type="i" name="menu-button-icon-image">
       <default>0</default>
       <summary>Menu Button Icon Image</summary>
