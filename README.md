@@ -34,6 +34,10 @@ Compatible with and tested on GNOME 40. Should work on older versions.
 
 ## Installation
 
+*  Via **Gnome Extensions**
+ 
+[<img src="https://github.com/andyholmes/gnome-shell-extensions-badge/raw/master/get-it-on-ego.png" width=250>](https://extensions.gnome.org/extension/4451/logo-menu/)
+
 * Manual : Grab the latest release and unzip to `.local/share/gnome-shell/extensions`
 
 **or**
