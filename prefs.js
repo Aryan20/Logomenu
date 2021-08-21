@@ -144,7 +144,7 @@ var FedoraMenuPreferencesWidget = GObject.registerClass(class Fedora_Menu_Prefer
                 return "\t" + value + "px";
             });
         }
-                
+              
         menuButtonIconSizeScale.set_value(iconSize);
         menuButtonIconSizeScale.connect('value-changed', () => {
             this._settings.set_int('menu-button-icon-size', menuButtonIconSizeScale.get_value());
@@ -161,6 +161,85 @@ var FedoraMenuPreferencesWidget = GObject.registerClass(class Fedora_Menu_Prefer
             menuButtonIconSizeFrame.set_child(menuButtonIconSizeBox);
             this.append(menuButtonIconSizeFrame);
         }
+
+        let menuButtonTerminalFrame = new Gtk.Frame();
+        let menuButtonTerminalBox = new Gtk.Box({
+            margin_top: 5,
+            margin_bottom: 5,
+            margin_start: 5,
+            margin_end: 5,
+        });
+
+        let CTerminal = this._settings.get_string('menu-button-terminal');
+        let changeTerminalText = new Gtk.Label({
+            label: _("Terminal"),
+            use_markup: true,
+            
+        })
+
+        let changeTerminalInput = new Gtk.Entry({
+            halign: Gtk.Align.END,
+            hexpand: true,
+        });
+
+        changeTerminalInput.set_text(CTerminal);
+        changeTerminalInput.connect('changed', () => {
+            this._settings.set_string('menu-button-terminal', changeTerminalInput.get_text());
+        });
+
+        if (shellVersion < 40){
+            menuButtonTerminalBox.add(changeTerminalText);
+            menuButtonTerminalBox.add(changeTerminalInput);
+            menuButtonTerminalFrame.add(menuButtonTerminalBox);
+            this.add(menuButtonTerminalFrame);
+        }
+        else{
+            menuButtonTerminalBox.append(changeTerminalText);
+            menuButtonTerminalBox.append(changeTerminalInput);
+            menuButtonTerminalFrame.set_child(menuButtonTerminalBox);
+            this.append(menuButtonTerminalFrame);
+        }
+
+
+
+        let menuButtonSCFrame = new Gtk.Frame();
+        let menuButtonSCBox = new Gtk.Box({
+            margin_top: 5,
+            margin_bottom: 5,
+            margin_start: 5,
+            margin_end: 5,
+        });
+
+        let CSCenter = this._settings.get_string('menu-button-software-center');
+        let changeSoftwareCenterText = new Gtk.Label({
+            label: _("Software Center"),
+            use_markup: true,
+            xalign: 0,
+        })
+
+        let changeSoftwareCenterInput = new Gtk.Entry({
+            halign: Gtk.Align.END,
+            hexpand: true,
+        });
+
+        changeSoftwareCenterInput.set_text(CSCenter);
+        changeSoftwareCenterInput.connect('changed', () => {
+            this._settings.set_string('menu-button-software-center', changeSoftwareCenterInput.get_text());
+        });
+
+        if (shellVersion < 40){
+            menuButtonSCBox.add(changeSoftwareCenterText);
+            menuButtonSCBox.add(changeSoftwareCenterInput);
+            menuButtonSCFrame.add(menuButtonSCBox);
+            this.add(menuButtonSCFrame);
+        }
+        else{
+            menuButtonSCBox.append(changeSoftwareCenterText);
+            menuButtonSCBox.append(changeSoftwareCenterInput);
+            menuButtonSCFrame.set_child(menuButtonSCBox);
+            this.append(menuButtonSCFrame);
+        }
+
     }
 })
 

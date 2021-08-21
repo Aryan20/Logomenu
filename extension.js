@@ -16,16 +16,8 @@ function _aboutThisDistro() {
 	Util.spawn(['gnome-control-center', 'info-overview'])
 }
 
-function _terminal() {
-	Util.spawn(['gnome-terminal'])
-}
-
 function _systemPreferences() {
 	Util.spawn(['gnome-control-center'])
-}
-
-function _appStore() {
-	Util.spawn(['gnome-software'])
 }
 
 function _missionControl() {
@@ -107,10 +99,10 @@ var MenuButton = GObject.registerClass(class FedoraMenu_MenuButton extends Panel
 
 		this.item1.connect('activate', () => _aboutThisDistro())
 		this.item2.connect('activate', () => _systemPreferences())
-		this.item4.connect('activate', () => _appStore())
+		this.item4.connect('activate', () => this.appStore())
 		this.item5.connect('activate', () => _missionControl())
 		this.item6.connect('activate', () => _forceQuit())
-		this.item8.connect('activate', () => _terminal())
+		this.item8.connect('activate', () => this.terminal())
 		this.item9.connect('activate', () => _extensions())
 		this.menu.addMenuItem(this.item1)
 		this.menu.addMenuItem(this.item2)
@@ -124,6 +116,14 @@ var MenuButton = GObject.registerClass(class FedoraMenu_MenuButton extends Panel
 
 		//bind middle click option to toggle overview
 		this.connect('button-press-event', _middleClick.bind(this));
+	}
+
+	terminal() {
+		Util.spawn([this._settings.get_string('menu-button-terminal')])
+	}
+
+	appStore() {
+		Util.spawn([this._settings.get_string('menu-button-software-center')])
 	}
 
 	setIconImage(){
