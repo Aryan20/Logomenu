@@ -8,6 +8,8 @@ Quick access menu for the GNOME panel with options that help ease the workflow f
 
 Similar to the Apple Menu found on MacOS.
 
+Join the matrix room for the latest news and releases: [click here](https://matrix.to/#/#logo-menu:matrix.org)
+
 
 ## Options include:
 
@@ -51,6 +53,7 @@ use GNU make:
 
 ## Credits
 Original extension creator and all the contributors.
+[@AndrewZaech](https://github.com/AndrewZaech) - Help in development and guidance
 
 
 ### Legal disclaimer for brand icons and trademarks..
