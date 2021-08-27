@@ -127,7 +127,12 @@ var MenuButton = GObject.registerClass(class FedoraMenu_MenuButton extends Panel
 	}
 
 	extensions() {
-		Util.spawn([this._settings.get_string('menu-button-extension')])
+		let extension_app = this._settings.get_enum('extension-app');
+		if (extension_app == 0) {
+			Util.spawn(['gnome-extensions-app']);
+		} else if (extension_app == 1) {
+			Util.spawn(['flatpak run org.gnome.Extensions']);
+		}
 	}
 
 	setIconImage(){
