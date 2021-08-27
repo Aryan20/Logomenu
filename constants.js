@@ -1,5 +1,5 @@
 var DistroIcons = [
-	{ PATH: '/Resources/fedora-logo-symbolic.svg'},
+    { PATH: '/Resources/fedora-logo-symbolic.svg'},
     { PATH: 'start-here-symbolic'},
     { PATH: '/Resources/debian-logo-symbolic.svg'},
     { PATH: '/Resources/manjaro-logo-symbolic.svg'},
@@ -16,8 +16,9 @@ var DistroIcons = [
     { PATH: '/Resources/mx-logo-symbolic.svg'},
     { PATH: '/Resources/redhat-logo-symbolic.svg'},
     { PATH: '/Resources/voyager-logo-symbolic.svg'},
-	{ PATH: '/Resources/garuda-logo-symbolic.svg'},
+    { PATH: '/Resources/garuda-logo-symbolic.svg'},
     { PATH: '/Resources/freebsd-logo-symbolic.svg'},
+    { PATH: '/Resources/tux-logo-symbolic.svg'},
     { PATH: '/Resources/fedora-logo.svg'},
     { PATH: '/Resources/debian-logo.svg'},
     { PATH: '/Resources/manjaro-logo.svg'},
@@ -32,4 +33,5 @@ var DistroIcons = [
     { PATH: '/Resources/freebsd-logo.svg'},
     { PATH: '/Resources/openbsd-logo.svg'},
     { PATH: '/Resources/netbsd-logo.svg'},
+    { PATH: '/Resources/tux-logo.svg'},
 ]

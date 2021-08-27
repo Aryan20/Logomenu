@@ -239,6 +239,44 @@ var FedoraMenuPreferencesWidget = GObject.registerClass(class Fedora_Menu_Prefer
             menuButtonSCFrame.set_child(menuButtonSCBox);
             this.append(menuButtonSCFrame);
         }
+        
+        let menuButtonExtensionFrame = new Gtk.Frame();
+        let menuButtonExtensionBox = new Gtk.Box({
+            margin_top: 5,
+            margin_bottom: 5,
+            margin_start: 5,
+            margin_end: 5,
+        });
+
+        let CExtension = this._settings.get_string('menu-button-extension');
+        let changeExtensionText = new Gtk.Label({
+            label: _("Extension App"),
+            use_markup: true,
+            xalign: 0,
+        })
+
+        let changeExtensionInput = new Gtk.Entry({
+            halign: Gtk.Align.END,
+            hexpand: true,
+        });
+
+        changeExtensionInput.set_text(CExtension);
+        changeExtensionInput.connect('changed', () => {
+            this._settings.set_string('menu-button-extension', changeExtensionInput.get_text());
+        });
+
+        if (shellVersion < 40){
+            menuButtonExtensionBox.add(changeExtensionText);
+            menuButtonExtensionBox.add(changeExtensionInput);
+            menuButtonExtensionFrame.add(menuButtonExtensionBox);
+            this.add(menuButtonExtensionFrame);
+        }
+        else{
+            menuButtonExtensionBox.append(changeExtensionText);
+            menuButtonExtensionBox.append(changeExtensionInput);
+            menuButtonExtensionFrame.set_child(menuButtonExtensionBox);
+            this.append(menuButtonExtensionFrame);
+        }
 
     }
 })

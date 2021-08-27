@@ -27,6 +27,12 @@
       <description>Change the Menu Button Terminal.</description>
     </key>
 
+    <key type="s" name="menu-button-extension">
+      <default>"gnome-extensions-app"</default>
+      <summary>Menu Button Extension App</summary>
+      <description>Change the Menu Button Extension App.</description>
+    </key>
+
   </schema>
 
 </schemalist>

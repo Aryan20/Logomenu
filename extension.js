@@ -99,11 +99,11 @@ var MenuButton = GObject.registerClass(class FedoraMenu_MenuButton extends Panel
 
 		this.item1.connect('activate', () => _aboutThisDistro())
 		this.item2.connect('activate', () => _systemPreferences())
-		this.item4.connect('activate', () => this.appStore())
+		this.item4.connect('activate', () => this.softwareStore())
 		this.item5.connect('activate', () => _missionControl())
 		this.item6.connect('activate', () => _forceQuit())
 		this.item8.connect('activate', () => this.terminal())
-		this.item9.connect('activate', () => _extensions())
+		this.item9.connect('activate', () => this.extensions())
 		this.menu.addMenuItem(this.item1)
 		this.menu.addMenuItem(this.item2)
 		this.menu.addMenuItem(this.item3)
@@ -122,8 +122,12 @@ var MenuButton = GObject.registerClass(class FedoraMenu_MenuButton extends Panel
 		Util.spawn([this._settings.get_string('menu-button-terminal')])
 	}
 
-	appStore() {
+	softwareStore() {
 		Util.spawn([this._settings.get_string('menu-button-software-center')])
+	}
+
+	extensions() {
+		Util.spawn([this._settings.get_string('menu-button-extension')])
 	}
 
 	setIconImage(){
