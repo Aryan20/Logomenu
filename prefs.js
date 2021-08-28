@@ -239,46 +239,6 @@ var FedoraMenuPreferencesWidget = GObject.registerClass(class Fedora_Menu_Prefer
             menuButtonSCFrame.set_child(menuButtonSCBox);
             this.append(menuButtonSCFrame);
         }
-
-        let menuButtonExtensionFrame = new Gtk.Frame();
-        let menuButtonExtensionBox = new Gtk.Box({
-            margin_top: 5,
-            margin_bottom: 5,
-            margin_start: 5,
-            margin_end: 5,
-        });
-
-        let changeExtensionText = new Gtk.Label({
-            label: _("Extension App"),
-            use_markup: true,
-            xalign: 0,
-        })
-
-        let changeExtensionInput = new Gtk.ComboBoxText({
-            halign: Gtk.Align.END,
-            hexpand: true,
-        });
-        changeExtensionInput.append_text(_("  Default   "));
-        changeExtensionInput.append_text(_("  Flatpak   "));
-        changeExtensionInput.set_active(this._settings.get_enum('extension-app'));
-        changeExtensionInput.connect('changed', (widget) => {
-            this._settings.set_enum('extension-app', widget.get_active());
-        });
-
-
-        if (shellVersion < 40){
-            menuButtonExtensionBox.add(changeExtensionText);
-            menuButtonExtensionBox.add(changeExtensionInput);
-            menuButtonExtensionFrame.add(menuButtonExtensionBox);
-            this.add(menuButtonExtensionFrame);
-        }
-        else{
-            menuButtonExtensionBox.append(changeExtensionText);
-            menuButtonExtensionBox.append(changeExtensionInput);
-            menuButtonExtensionFrame.set_child(menuButtonExtensionBox);
-            this.append(menuButtonExtensionFrame);
-        }
-
     }
 })
 

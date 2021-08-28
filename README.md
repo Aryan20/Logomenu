@@ -25,7 +25,7 @@ Join the matrix room for the latest news and releases: [click here](https://matr
 
 -Terminal (defaults to `gnome-terminal`)
 
--Extensions (Quick access to all of your GNOME Extensions. Requires `gnome-extensions-app`)
+-Extensions (Quick access to all of your GNOME Extensions.)
 
 fork of [Tofu Menu by tofutech](https://github.com/tofutech/tofumenu)
 
@@ -53,7 +53,8 @@ use GNU make:
 
 ## Credits
 Original extension creator and all the contributors.
-[@AndrewZaech](https://github.com/AndrewZaech) - Help in development and guidance
+
+[@AndrewZaech](https://github.com/AndrewZaech), [@Harshad.Gavali](https://gitlab.com/harshadgavali), [@JustPerfection](https://gitlab.com/justperfection.channel)
 
 
 ### Legal disclaimer for brand icons and trademarks..

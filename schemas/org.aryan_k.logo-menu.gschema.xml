@@ -1,9 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <schemalist>
-  <enum id='org.gnome.shell.extensions.Logo-menu.extensionapp'>
-      <value value='0' nick='gnome-extensions-app'/>
-      <value value='1' nick='flatpak'/>
-  </enum>
 
   <schema path="/org/gnome/shell/extensions/Logo-menu/" id="org.aryan_k.logo-menu">
 
@@ -30,13 +26,6 @@
       <summary>Menu Button Terminal</summary>
       <description>Change the Menu Button Terminal.</description>
     </key>
-
-    <key name="extension-app" enum="org.gnome.shell.extensions.Logo-menu.extensionapp">
-      <default>'gnome-extensions-app'</default>
-      <summary>Change extension app</summary>
-      <description>Change extension app</description>
-    </key>
-
 
   </schema>
 
