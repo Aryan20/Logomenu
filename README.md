@@ -4,11 +4,11 @@
 
 <img src="https://github.com/Aryan20/Logomenu/blob/main/screenshot2.png" width=100><img src="https://github.com/Aryan20/Logomenu/blob/main/screenshot1.png" width=375>
 
-Quick access menu for the GNOME panel with options that help ease the workflow for newcomers and power users alike.
+Quick access menu for the GNOME panel with options that help ease the workflow for newcomers and power users alike and gives a great logo that you can switch to your liking to match your distro or add something your own.
 
 Similar to the Apple Menu found on MacOS.
 
-Join the matrix room for the latest news and releases: [click here](https://matrix.to/#/#logo-menu:matrix.org)
+Join the matrix room for the latest news and releases and/or for suggestions: [click here](https://matrix.to/#/#logo-menu:matrix.org)
 
 
 ## Options include:
@@ -31,7 +31,12 @@ fork of [Tofu Menu by tofutech](https://github.com/tofutech/tofumenu)
 
 fork of [Big Sur Menu by fausto](https://extensions.gnome.org/extension/3703/big-sur-menu/)
 
-Compatible with and tested on GNOME 40. Should work on older versions.
+Compatible with and tested on GNOME 40 and 41. Should work on older versions.
+
+Note - 
+1) Some icons can get changed due to Icon Pack used, particularly due to Icon packs primarily developed for KDE in mind.
+
+2) If you want something changed or want a specific feature then open a issue or comment if a similar one already exists.
 
 
 ## Installation

@@ -1,6 +1,6 @@
 var DistroIcons = [
-    { PATH: '/Resources/fedora-logo-symbolic.svg'},
     { PATH: 'start-here-symbolic'},
+    { PATH: '/Resources/fedora-logo-symbolic.svg'},
     { PATH: '/Resources/debian-logo-symbolic.svg'},
     { PATH: '/Resources/manjaro-logo-symbolic.svg'},
     { PATH: '/Resources/pop-os-logo-symbolic.svg'},
