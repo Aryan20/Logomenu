@@ -1,8 +1,9 @@
 # Logo Menu
 
-<img src="https://github.com/Aryan20/Logomenu/blob/main/preview.png" width=375>
 
-<img src="https://github.com/Aryan20/Logomenu/blob/main/screenshot2.png" width=100><img src="https://github.com/Aryan20/Logomenu/blob/main/screenshot1.png" width=375>
+<img src="https://github.com/Aryan20/Logomenu/blob/main/screenshot2.png" width=259>
+
+<img src="https://github.com/Aryan20/Logomenu/blob/main/screenshot1.png" width=375>
 
 Quick access menu for the GNOME panel with options that help ease the workflow for newcomers and power users alike and gives a great logo that you can switch to your liking to match your distro or add something your own.
 
@@ -21,6 +22,8 @@ Join the matrix room for the latest news and releases and/or for suggestions: [c
 
 -Activities (this menu does replace the Activities button, but this option does leave that functionality easily accessible.)
 
+-App Grid (Opens GNOME app menu/grid)
+
 -Force Quit App (run this and select the app you want to kill. Requires `xkill` )
 
 -Terminal (defaults to `gnome-terminal`)
@@ -28,8 +31,6 @@ Join the matrix room for the latest news and releases and/or for suggestions: [c
 -Extensions (Quick access to all of your GNOME Extensions.)
 
 fork of [Tofu Menu by tofutech](https://github.com/tofutech/tofumenu)
-
-fork of [Big Sur Menu by fausto](https://extensions.gnome.org/extension/3703/big-sur-menu/)
 
 Compatible with and tested on GNOME 40 and 41. Should work on older versions.
 
@@ -45,7 +46,7 @@ Note -
  
 [<img src="https://github.com/andyholmes/gnome-shell-extensions-badge/raw/master/get-it-on-ego.png" width=250>](https://extensions.gnome.org/extension/4451/logo-menu/)
 
-* Manual : Grab the latest release and unzip to `.local/share/gnome-shell/extensions`
+* Manual : Grab the latest release and unzip to `.local/share/gnome-shell/extensions/logomenu@aryan_k/`
 
 **or**
 
