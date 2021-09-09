@@ -62,6 +62,9 @@ Original extension creator and all the contributors.
 
 [@AndrewZaech](https://github.com/AndrewZaech), [@Harshad.Gavali](https://gitlab.com/harshadgavali), [@JustPerfection](https://gitlab.com/justperfection.channel)
 
+## Donations
+Brave browser users can freely donate with BAT, all help will be appreciated :)
+
 
 ### Legal disclaimer for brand icons and trademarks..
 
