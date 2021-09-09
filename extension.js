@@ -20,32 +20,22 @@ function _systemPreferences() {
 	Util.spawn(['gnome-control-center'])
 }
 
-function _missionControl() {
+function _overviewToggle() {
 	Main.overview.toggle();
+}
+
+function _appGrid() {
+    // Code snippet from - https://github.com/G-dH/custom-hot-corners-extended/blob/gdh/actions.js
+    // Pressing the apps btn before overview activation avoids icons animation in GS 3.36/3.38
+    Main.overview.dash.showAppsButton.checked = true;
+    // in 3.36 pressing the button is usualy enough to activate overview, but not always
+    Main.overview.show();
+    // pressing apps btn before overview has no effect in GS 40, so once again
+    Main.overview.dash.showAppsButton.checked = true;
 }
 
 function _forceQuit() {
 	Util.spawn(['xkill'])
-}
-
-function _sleep() {
-	Util.spawn(['systemctl', 'suspend'])
-}
-
-function _restart() {
-	Util.spawn(['systemctl', 'reboot'])
-}
-
-function _shutdown() {
-	Util.spawn(['systemctl', 'poweroff', '-prompt'])
-}
-
-function _lockScreen() {
-	Util.spawn(['gnome-screensaver-command -l'])
-}
-
-function _logOut() {
-	Util.spawn(['gnome-session-quit'])
 }
 
 function _extensions() {
@@ -59,16 +49,6 @@ function _middleClick(actor, event) {
 		Main.overview.toggle();
 	}
 }
-
-// function _hover() {
-// 	button.actor.remove_actor(icon)
-
-// 	const icon_hover = new St.Icon({
-// 		style_class: 'menu-button-hover'
-// 	})
-	
-// 	button.actor.add_actor(icon_hover)
-// }
 
 
 var MenuButton = GObject.registerClass(class FedoraMenu_MenuButton extends PanelMenu.Button {
@@ -90,20 +70,22 @@ var MenuButton = GObject.registerClass(class FedoraMenu_MenuButton extends Panel
 		this.item1 = new PopupMenu.PopupMenuItem(_('About My System         '))
 		this.item2 = new PopupMenu.PopupMenuItem(_('System Settings...'))
 		this.item3 = new PopupMenu.PopupSeparatorMenuItem()
-		this.item4 = new PopupMenu.PopupMenuItem(_('Software Center...'))
-		this.item5 = new PopupMenu.PopupMenuItem(_('Activities'))
+		this.item4 = new PopupMenu.PopupMenuItem(_('Activities'))
+		this.item5 = new PopupMenu.PopupMenuItem(_('App Grid'))
 		this.item6 = new PopupMenu.PopupMenuItem(_('Force Quit App'))
 		this.item7 = new PopupMenu.PopupSeparatorMenuItem()
-		this.item8 = new PopupMenu.PopupMenuItem(_('Terminal'))
-		this.item9 = new PopupMenu.PopupMenuItem(_('Extensions'))
+		this.item8 = new PopupMenu.PopupMenuItem(_('Software Center...'))
+		this.item9 = new PopupMenu.PopupMenuItem(_('Terminal'))
+		this.item10 = new PopupMenu.PopupMenuItem(_('Extensions'))
 
 		this.item1.connect('activate', () => _aboutThisDistro())
 		this.item2.connect('activate', () => _systemPreferences())
-		this.item4.connect('activate', () => this.softwareStore())
-		this.item5.connect('activate', () => _missionControl())
+		this.item4.connect('activate', () => _overviewToggle())
+		this.item5.connect('activate', () => _appGrid())
 		this.item6.connect('activate', () => _forceQuit())
-		this.item8.connect('activate', () => this.terminal())
-		this.item9.connect('activate', () => this.extensions())
+		this.item8.connect('activate', () => this.softwareStore())
+		this.item9.connect('activate', () => this.terminal())
+		this.item10.connect('activate', () => this.extensions())
 		this.menu.addMenuItem(this.item1)
 		this.menu.addMenuItem(this.item2)
 		this.menu.addMenuItem(this.item3)
@@ -113,6 +95,7 @@ var MenuButton = GObject.registerClass(class FedoraMenu_MenuButton extends Panel
 		this.menu.addMenuItem(this.item7)
 		this.menu.addMenuItem(this.item8)
 		this.menu.addMenuItem(this.item9)
+		this.menu.addMenuItem(this.item10)
 
 		//bind middle click option to toggle overview
 		this.connect('button-press-event', _middleClick.bind(this));
