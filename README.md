@@ -1,7 +1,7 @@
 # Logo Menu
 
 
-<img src="https://github.com/Aryan20/Logomenu/blob/main/screenshot2.png" width=259>
+<img src="https://github.com/Aryan20/Logomenu/blob/main/screenshot2.png" width=410>
 
 <img src="https://github.com/Aryan20/Logomenu/blob/main/screenshot1.png" width=375>
 
@@ -18,17 +18,19 @@ Join the matrix room for the latest news and releases and/or for suggestions: [c
 
 -System Settings
 
--Software Center (defaults to `gnome-software`)
-
 -Activities (this menu does replace the Activities button, but this option does leave that functionality easily accessible.)
 
 -App Grid (Opens GNOME app menu/grid)
 
--Force Quit App (run this and select the app you want to kill. Requires `xkill` )
+-Software Center (defaults to `gnome-software`)
 
 -Terminal (defaults to `gnome-terminal`)
 
 -Extensions (Quick access to all of your GNOME Extensions.)
+
+-Force Quit App (run this and select the app you want to kill. Requires `xkill` )
+
+-Power Options
 
 fork of [Tofu Menu by tofutech](https://github.com/tofutech/tofumenu)
 

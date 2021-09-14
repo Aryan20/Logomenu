@@ -27,6 +27,12 @@
       <description>Change the Menu Button Terminal.</description>
     </key>
 
+    <key type="b" name="show-power-options">
+      <default>false</default>
+      <summary>Toggle power options vsibility</summary>
+      <description>Toggle power options vsibility.</description>
+    </key>
+
   </schema>
 
 </schemalist>

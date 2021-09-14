@@ -200,8 +200,6 @@ var FedoraMenuPreferencesWidget = GObject.registerClass(class Fedora_Menu_Prefer
             this.append(menuButtonTerminalFrame);
         }
 
-
-
         let menuButtonSCFrame = new Gtk.Frame();
         let menuButtonSCBox = new Gtk.Box({
             margin_top: 5,
@@ -239,6 +237,44 @@ var FedoraMenuPreferencesWidget = GObject.registerClass(class Fedora_Menu_Prefer
             menuButtonSCFrame.set_child(menuButtonSCBox);
             this.append(menuButtonSCFrame);
         }
+
+        let PowerOptionFrame = new Gtk.Frame();
+        let PowerOptionBox = new Gtk.Box({
+            margin_top: 5,
+            margin_bottom: 5,
+            margin_start: 5,
+            margin_end: 5,
+        });
+
+        let enablePowerOptionText = new Gtk.Label({
+            label: _("Enable Power Options"),
+            use_markup: true,
+            xalign: 0,
+            hexpand: true
+        })
+
+        let showPowerOptionsSwitch= new Gtk.Switch({ 
+            halign: Gtk.Align.END,
+        });
+
+        showPowerOptionsSwitch.set_active(this._settings.get_boolean('show-power-options'));
+        showPowerOptionsSwitch.connect('notify::active', (widget) => {
+            this._settings.set_boolean('show-power-options', widget.get_active());
+        });
+
+        if (shellVersion < 40){
+            PowerOptionBox.add(enablePowerOptionText);
+            PowerOptionBox.add(showPowerOptionsSwitch);
+            PowerOptionFrame.add(PowerOptionBox);
+            this.add(PowerOptionFrame);
+        }
+        else{
+            PowerOptionBox.append(enablePowerOptionText);
+            PowerOptionBox.append(showPowerOptionsSwitch);
+            PowerOptionFrame.set_child(PowerOptionBox);
+            this.append(PowerOptionFrame);
+        }
+
     }
 })
 
