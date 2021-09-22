@@ -170,7 +170,8 @@ var FedoraMenuPreferencesWidget = GObject.registerClass(class Fedora_Menu_Prefer
             margin_end: 5,
         });
 
-        let CTerminal = this._settings.get_string('menu-button-terminal');
+        // Change Terminal and build it's option in prefs
+        let currentTerminal = this._settings.get_string('menu-button-terminal');
         let changeTerminalText = new Gtk.Label({
             label: _("Terminal"),
             use_markup: true,
@@ -182,7 +183,7 @@ var FedoraMenuPreferencesWidget = GObject.registerClass(class Fedora_Menu_Prefer
             hexpand: true,
         });
 
-        changeTerminalInput.set_text(CTerminal);
+        changeTerminalInput.set_text(currentTerminal);
         changeTerminalInput.connect('changed', () => {
             this._settings.set_string('menu-button-terminal', changeTerminalInput.get_text());
         });
@@ -208,7 +209,8 @@ var FedoraMenuPreferencesWidget = GObject.registerClass(class Fedora_Menu_Prefer
             margin_end: 5,
         });
 
-        let CSCenter = this._settings.get_string('menu-button-software-center');
+        // Change Software Center and build it's option in prefs
+        let currentSoftwareCenter = this._settings.get_string('menu-button-software-center');
         let changeSoftwareCenterText = new Gtk.Label({
             label: _("Software Center"),
             use_markup: true,
@@ -220,7 +222,7 @@ var FedoraMenuPreferencesWidget = GObject.registerClass(class Fedora_Menu_Prefer
             hexpand: true,
         });
 
-        changeSoftwareCenterInput.set_text(CSCenter);
+        changeSoftwareCenterInput.set_text(currentSoftwareCenter);
         changeSoftwareCenterInput.connect('changed', () => {
             this._settings.set_string('menu-button-software-center', changeSoftwareCenterInput.get_text());
         });
@@ -238,6 +240,7 @@ var FedoraMenuPreferencesWidget = GObject.registerClass(class Fedora_Menu_Prefer
             this.append(menuButtonSCFrame);
         }
 
+        // Toggle Power Options visibility and build it's option in prefs
         let PowerOptionFrame = new Gtk.Frame();
         let PowerOptionBox = new Gtk.Box({
             margin_top: 5,
@@ -275,6 +278,81 @@ var FedoraMenuPreferencesWidget = GObject.registerClass(class Fedora_Menu_Prefer
             this.append(PowerOptionFrame);
         }
 
+        // Toggle Force Quit option and build it's option in prefs
+        let forceQuitOptionFrame = new Gtk.Frame();
+        let forceQuitOptionBox = new Gtk.Box({
+            margin_top: 5,
+            margin_bottom: 5,
+            margin_start: 5,
+            margin_end: 5,
+        });
+
+        let enableFQOptionText = new Gtk.Label({
+            label: _("Hide Force Quit option"),
+            use_markup: true,
+            xalign: 0,
+            hexpand: true
+        })
+
+        let showFQOptionsSwitch= new Gtk.Switch({ 
+            halign: Gtk.Align.END,
+        });
+
+        showFQOptionsSwitch.set_active(this._settings.get_boolean('hide-forcequit'));
+        showFQOptionsSwitch.connect('notify::active', (widget) => {
+            this._settings.set_boolean('hide-forcequit', widget.get_active());
+        });
+
+        if (shellVersion < 40){
+            forceQuitOptionBox.add(enableFQOptionText);
+            forceQuitOptionBox.add(showFQOptionsSwitch);
+            forceQuitOptionFrame.add(forceQuitOptionBox);
+            this.add(forceQuitOptionFrame);
+        }
+        else{
+            forceQuitOptionBox.append(enableFQOptionText);
+            forceQuitOptionBox.append(showFQOptionsSwitch);
+            forceQuitOptionFrame.set_child(forceQuitOptionBox);
+            this.append(forceQuitOptionFrame);
+        }
+
+        // Toggle Lock Screen option and build it's option in prefs
+        let lockScreenOptionFrame = new Gtk.Frame();
+        let lockScreenOptionBox = new Gtk.Box({
+            margin_top: 5,
+            margin_bottom: 5,
+            margin_start: 5,
+            margin_end: 5,
+        });
+
+        let enableLSOptionText = new Gtk.Label({
+            label: _("Show Lock Screen option"),
+            use_markup: true,
+            xalign: 0,
+            hexpand: true
+        })
+
+        let showLCOptionsSwitch= new Gtk.Switch({ 
+            halign: Gtk.Align.END,
+        });
+
+        showLCOptionsSwitch.set_active(this._settings.get_boolean('show-lockscreen'));
+        showLCOptionsSwitch.connect('notify::active', (widget) => {
+            this._settings.set_boolean('show-lockscreen', widget.get_active());
+        });
+
+        if (shellVersion < 40){
+            lockScreenOptionBox.add(enableLSOptionText);
+            lockScreenOptionBox.add(showLCOptionsSwitch);
+            lockScreenOptionFrame.add(lockScreenOptionBox);
+            this.add(lockScreenOptionFrame);
+        }
+        else{
+            lockScreenOptionBox.append(enableLSOptionText);
+            lockScreenOptionBox.append(showLCOptionsSwitch);
+            lockScreenOptionFrame.set_child(lockScreenOptionBox);
+            this.append(lockScreenOptionFrame);
+        }    
     }
 })
 

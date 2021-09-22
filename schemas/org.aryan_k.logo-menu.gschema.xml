@@ -33,6 +33,18 @@
       <description>Toggle power options vsibility.</description>
     </key>
 
+    <key type="b" name="hide-forcequit">
+      <default>false</default>
+      <summary>Toggle Force Quit option vsibility</summary>
+      <description>Toggle Force Quit option vsibility.</description>
+    </key>
+
+    <key type="b" name="show-lockscreen">
+      <default>false</default>
+      <summary>Toggle Lock screen option vsibility</summary>
+      <description>Toggle Force Quit option vsibility.</description>
+    </key>
+
   </schema>
 
 </schemalist>
