@@ -18,57 +18,61 @@ msgstr ""
 "X-Generator: Poedit 2.0.6\n"
 "X-Poedit-SourceCharset: UTF-8\n"
 
-#: extension.js:104
+#: extension.js:107
 msgid "About My System                 "
 msgstr "À propos de mon système                 "
 
-#: extension.js:105
+#: extension.js:108
 msgid "System Settings..."
 msgstr "Paramètres du système..."
 
-#: extension.js:107
+#: extension.js:110
 msgid "Activities"
 msgstr "Activités"
 
-#: extension.js:108
+#: extension.js:111
 msgid "App Grid"
 msgstr "Grille d'applications"
 
-#: extension.js:110
+#: extension.js:113
 msgid "Software Center..."
 msgstr "Centre de logiciel..."
 
-#: extension.js:111 prefs.js:176
+#: extension.js:114 prefs.js:176
 msgid "Terminal"
 msgstr "Terminal"
 
-#: extension.js:112
+#: extension.js:115
 msgid "Extensions"
 msgstr "Extensions"
 
-#: extension.js:135
+#: extension.js:138
 msgid "Force Quit App"
 msgstr "Forcer la fermeture de l'application"
 
-#: extension.js:142
+#: extension.js:145
 msgid "Sleep"
 msgstr "En veille"
 
-#: extension.js:143
+#: extension.js:146
 msgid "Restart"
 msgstr "Redémarrer"
 
-#: extension.js:144
+#: extension.js:147
 msgid "Shut Down"
 msgstr "Éteindre"
 
-#: extension.js:147 extension.js:169
+#: extension.js:150 extension.js:172
 msgid "Lock Screen"
 msgstr "Verrouiller l'écran"
 
-#: extension.js:148
+#: extension.js:151
 msgid "Log Out..."
 msgstr "Se déconnecter..."
+
+#: extension.js:182
+msgid "Lock Orientation"
+msgstr "Verrouiller l'orientation"
 
 #: prefs.js:52
 msgid "Icon"
@@ -93,3 +97,7 @@ msgstr "Masquer l'option Forcer à quitter"
 #: prefs.js:329
 msgid "Show Lock Screen option"
 msgstr "Afficher l'option Verrouiller l'écran"
+
+#: prefs.js:367
+msgid "Show Lock Orientation option"
+msgstr "Afficher l'option Verrouiller l'orientation"
