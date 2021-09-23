@@ -37,7 +37,7 @@ function _shutdown() {
 }
 
 function _lockScreen() {
-	Util.spawn(['gnome-screensaver-command -l'])
+	Util.spawn(['loginctl', 'lock-session'])
 }
 
 function _logOut() {
