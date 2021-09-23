@@ -91,6 +91,7 @@ var MenuButton = GObject.registerClass(class FedoraMenu_MenuButton extends Panel
 		this._settings.connect('changed::show-power-options', () => this.toggleOptions())
 		this._settings.connect('changed::hide-forcequit', () => this.toggleOptions())
 		this._settings.connect('changed::show-lockscreen', () => this.toggleOptions())
+		this._settings.connect('changed::show-lockorientation', () => this.toggleOptions())
 		this.toggleOptions();
 
 		//bind middle click option to toggle overview
@@ -101,6 +102,7 @@ var MenuButton = GObject.registerClass(class FedoraMenu_MenuButton extends Panel
 		let poweroption_state = this._settings.get_boolean('show-power-options')
 		let forcequit_state = this._settings.get_boolean('hide-forcequit')
 		let lockscreen_state = this._settings.get_boolean('show-lockscreen')
+		let lockorientation_state = this._settings.get_boolean('show-lockorientation')
 		this.menu.removeAll()
 		this.item1 = new PopupMenu.PopupMenuItem(_('About My System                 '))
 		this.item2 = new PopupMenu.PopupMenuItem(_('System Settings...'))
@@ -173,6 +175,16 @@ var MenuButton = GObject.registerClass(class FedoraMenu_MenuButton extends Panel
 			this.menu.addMenuItem(this.item17)
 
 			this.item17.connect('activate', () => _lockScreen())
+		}
+
+		if (lockorientation_state) {
+			this.item19 = new PopupMenu.PopupSeparatorMenuItem()
+			this.item20 = new PopupMenu.PopupMenuItem(_('Lock Orientation'))
+
+			this.menu.addMenuItem(this.item19)
+			this.menu.addMenuItem(this.item20)
+
+			this.item20.connect("activate", () => this._system._systemActions.activateLockOrientation())
 		}
 	}
 

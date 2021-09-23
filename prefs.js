@@ -353,6 +353,44 @@ var FedoraMenuPreferencesWidget = GObject.registerClass(class Fedora_Menu_Prefer
             lockScreenOptionFrame.set_child(lockScreenOptionBox);
             this.append(lockScreenOptionFrame);
         }    
+
+        // Toggle Lock Orientation option and build it's option in prefs
+        let lockOrientationOptionFrame = new Gtk.Frame();
+        let lockOrientationOptionBox = new Gtk.Box({
+            margin_top: 5,
+            margin_bottom: 5,
+            margin_start: 5,
+            margin_end: 5,
+        });
+
+        let enableLOOptionText = new Gtk.Label({
+            label: _("Show Lock Orientation option"),
+            use_markup: true,
+            xalign: 0,
+            hexpand: true
+        })
+
+        let showLOOptionsSwitch= new Gtk.Switch({ 
+            halign: Gtk.Align.END,
+        });
+
+        showLOOptionsSwitch.set_active(this._settings.get_boolean('show-lockorientation'));
+        showLOOptionsSwitch.connect('notify::active', (widget) => {
+            this._settings.set_boolean('show-lockorientation', widget.get_active());
+        });
+
+        if (shellVersion < 40){
+            lockOrientationOptionBox.add(enableLOOptionText);
+            lockOrientationOptionBox.add(showLOOptionsSwitch);
+            lockOrientationOptionFrame.add(lockOrientationOptionBox);
+            this.add(lockOrientationOptionFrame);
+        }
+        else{
+            lockOrientationOptionBox.append(enableLOOptionText);
+            lockOrientationOptionBox.append(showLOOptionsSwitch);
+            lockOrientationOptionFrame.set_child(lockOrientationOptionBox);
+            this.append(lockOrientationOptionFrame);
+        }    
     }
 })
 
