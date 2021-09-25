@@ -229,7 +229,7 @@ var MenuButton = GObject.registerClass(class FedoraMenu_MenuButton extends Panel
 })
 
 function init() {
-	ExtensionUtils.initTranslations(Me.metadata.uuid);
+	ExtensionUtils.initTranslations(Me.metadata['gettext-domain']);
 }
  
 function enable() {

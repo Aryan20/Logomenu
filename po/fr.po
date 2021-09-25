@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: Logo Menu 1\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-09-23 00:15+0530\n"
-"PO-Revision-Date: 2021-09-23 12:32+0200\n"
+"PO-Revision-Date: 2021-09-24 13:51+0200\n"
 "Last-Translator: Alan Paris <Alan90000@yahoo.com>\n"
 "Language: fr\n"
 "MIME-Version: 1.0\n"
@@ -24,7 +24,7 @@ msgstr "À propos de mon système                 "
 
 #: extension.js:108
 msgid "System Settings..."
-msgstr "Paramètres du système..."
+msgstr "Paramètres système..."
 
 #: extension.js:110
 msgid "Activities"
@@ -52,7 +52,7 @@ msgstr "Forcer la fermeture de l'application"
 
 #: extension.js:145
 msgid "Sleep"
-msgstr "En veille"
+msgstr "Mise en veille"
 
 #: extension.js:146
 msgid "Restart"
