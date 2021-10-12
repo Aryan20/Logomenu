@@ -15,6 +15,12 @@
       <description>Change the Menu Button Icon Size.</description>
     </key>
 
+    <key type="i" name="menu-button-icon-click-type">
+      <default>2</default>
+      <summary>Menu Button click type to open Activity</summary>
+      <description>Change the Menu Button click type to open Activity.</description>
+    </key>
+
     <key type="s" name="menu-button-software-center">
       <default>"gnome-software"</default>
       <summary>Menu Button Software Center</summary>
