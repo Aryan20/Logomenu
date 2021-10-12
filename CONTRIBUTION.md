@@ -10,6 +10,7 @@ Please note we have a code of conduct, please follow it in all your interactions
 1. Ensure any install or build dependencies are removed before the end of the layer when doing a 
    build.
 2. Update the README.md with details of changes
+3. Any new PR should be opened for "features" branch
 
 ## Code of Conduct
 
