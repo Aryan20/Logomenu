@@ -161,6 +161,45 @@ var FedoraMenuPreferencesWidget = GObject.registerClass(class Fedora_Menu_Prefer
             menuButtonIconSizeFrame.set_child(menuButtonIconSizeBox);
             this.append(menuButtonIconSizeFrame);
         }
+        
+        let clickType = this._settings.get_int('menu-button-icon-click-type');
+        let menuButtonIconClickTypeFrame = new Gtk.Frame();
+        let menuButtonIconClickTypeBox = new Gtk.Box({
+            margin_top: 10,
+            margin_bottom: 10,
+            margin_start: 10,
+            margin_end: 10,
+        });
+
+        let menuButtonIconClickTypeLabel = new Gtk.Label({
+            label: _('Icon Click Type to open Activities'),
+            use_markup: true,
+            xalign: 0,
+            hexpand: true
+        });
+
+        let menuButtonIconClickTypeCombo= new Gtk.ComboBoxText();
+        menuButtonIconClickTypeCombo.append("2","Middle Click");
+        menuButtonIconClickTypeCombo.append("3","Right Click");
+        menuButtonIconClickTypeCombo.set_active_id(clickType.toString());
+
+        menuButtonIconClickTypeCombo.connect('changed', () => {
+            this._settings.set_int('menu-button-icon-click-type', parseInt(menuButtonIconClickTypeCombo.get_active_id()));
+        });
+
+        if (shellVersion < 40){
+            menuButtonIconClickTypeBox.add(menuButtonIconClickTypeLabel);
+            menuButtonIconClickTypeBox.add(menuButtonIconClickTypeCombo);
+            menuButtonIconClickTypeFrame.add(menuButtonIconClickTypeBox);
+            this.add(menuButtonIconClickTypeFrame);
+        }
+        else{
+            menuButtonIconClickTypeBox.append(menuButtonIconClickTypeLabel);
+            menuButtonIconClickTypeBox.append(menuButtonIconClickTypeCombo);
+            menuButtonIconClickTypeFrame.set_child(menuButtonIconClickTypeBox);
+            this.append(menuButtonIconClickTypeFrame);
+        }
+
 
         let menuButtonTerminalFrame = new Gtk.Frame();
         let menuButtonTerminalBox = new Gtk.Box({
