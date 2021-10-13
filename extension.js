@@ -64,7 +64,7 @@ function _extensions() {
 
 function _middleClick(actor, event) {
 	// left click === 1, middle click === 2, right click === 3
-	if (event.get_button() === 2) {
+	if (event.get_button() === ExtensionUtils.getSettings(Me.metadata['settings-schema']).get_int('menu-button-icon-click-type')) {
 		this.menu.close();
 		Main.overview.toggle();
 	}
