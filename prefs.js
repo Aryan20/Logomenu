@@ -179,8 +179,8 @@ var FedoraMenuPreferencesWidget = GObject.registerClass(class Fedora_Menu_Prefer
         });
 
         let menuButtonIconClickTypeCombo= new Gtk.ComboBoxText();
-        menuButtonIconClickTypeCombo.append("2","Middle Click");
-        menuButtonIconClickTypeCombo.append("3","Right Click");
+        menuButtonIconClickTypeCombo.append("2", _("Middle Click "));
+        menuButtonIconClickTypeCombo.append("3", _("Right Click "));
         menuButtonIconClickTypeCombo.set_active_id(clickType.toString());
 
         menuButtonIconClickTypeCombo.connect('changed', () => {

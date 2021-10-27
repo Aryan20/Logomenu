@@ -75,6 +75,7 @@ var MenuButton = GObject.registerClass(class FedoraMenu_MenuButton extends Panel
 	_init() {
 		super._init(0.0, "MenuButton");
 		this._settings = ExtensionUtils.getSettings(Me.metadata['settings-schema']);
+		this._system = Main.panel.statusArea.aggregateMenu._system;
 
 		// Icon
 		this.icon = new St.Icon({

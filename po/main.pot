@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Logo Menu 2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-09-23 18:03+0530\n"
+"POT-Creation-Date: 2021-10-27 13:13+0530\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,59 +17,59 @@ msgstr ""
 "Content-Type: text/plain; charset=CHARSET\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: extension.js:107
+#: extension.js:108
 msgid "About My System                 "
 msgstr ""
 
-#: extension.js:108
+#: extension.js:109
 msgid "System Settings..."
 msgstr ""
 
-#: extension.js:110
+#: extension.js:111
 msgid "Activities"
 msgstr ""
 
-#: extension.js:111
+#: extension.js:112
 msgid "App Grid"
 msgstr ""
 
-#: extension.js:113
+#: extension.js:114
 msgid "Software Center..."
 msgstr ""
 
-#: extension.js:114 prefs.js:176
+#: extension.js:115 prefs.js:215
 msgid "Terminal"
 msgstr ""
 
-#: extension.js:115
+#: extension.js:116
 msgid "Extensions"
 msgstr ""
 
-#: extension.js:138
+#: extension.js:139
 msgid "Force Quit App"
 msgstr ""
 
-#: extension.js:145
+#: extension.js:146
 msgid "Sleep"
 msgstr ""
 
-#: extension.js:146
+#: extension.js:147
 msgid "Restart"
 msgstr ""
 
-#: extension.js:147
+#: extension.js:148
 msgid "Shut Down"
 msgstr ""
 
-#: extension.js:150 extension.js:172
+#: extension.js:151 extension.js:173
 msgid "Lock Screen"
 msgstr ""
 
-#: extension.js:151
+#: extension.js:152
 msgid "Log Out..."
 msgstr ""
 
-#: extension.js:182
+#: extension.js:183
 msgid "Lock Orientation"
 msgstr ""
 
@@ -81,22 +81,34 @@ msgstr ""
 msgid "Icon Size"
 msgstr ""
 
-#: prefs.js:215
+#: prefs.js:175
+msgid "Icon Click Type to open Activities"
+msgstr ""
+
+#: prefs.js:182
+msgid "Middle Click "
+msgstr ""
+
+#: prefs.js:183
+msgid "Right Click "
+msgstr ""
+
+#: prefs.js:254
 msgid "Software Center"
 msgstr ""
 
-#: prefs.js:253
+#: prefs.js:292
 msgid "Enable Power Options"
 msgstr ""
 
-#: prefs.js:291
+#: prefs.js:330
 msgid "Hide Force Quit option"
 msgstr ""
 
-#: prefs.js:329
+#: prefs.js:368
 msgid "Show Lock Screen option"
 msgstr ""
 
-#: prefs.js:367
+#: prefs.js:406
 msgid "Show Lock Orientation option"
 msgstr ""
