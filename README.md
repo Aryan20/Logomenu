@@ -62,11 +62,12 @@ use GNU make:
 ## Credits
 Original extension creator and all the contributors.
 
-[@AndrewZaech](https://github.com/AndrewZaech), [@Harshad.Gavali](https://gitlab.com/harshadgavali), [@JustPerfection](https://gitlab.com/justperfection.channel)
+[@AndrewZaech](https://github.com/AndrewZaech), [@Harshad.Gavali](https://gitlab.com/harshadgavali), [@JustPerfection](https://gitlab.com/justperfection.channel), [@vikashraghavan](https://github.com/vikashraghavan)
 
 ## Donations
 Brave browser users can freely donate with BAT, all help will be appreciated :)
 
+Other crypto - [DONATIONS.md](https://github.com/Aryan20/Logomenu/blob/main/DONATIONS.md)
 
 ### Legal disclaimer for brand icons and trademarks..
 
