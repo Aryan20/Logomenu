@@ -18,11 +18,11 @@ msgstr ""
 
 #: extension.js:108
 msgid "About My System                 "
-msgstr "À propos de mon système.                 "
+msgstr "À propos de mon système                 "
 
 #: extension.js:109
 msgid "System Settings..."
-msgstr "Paramètres systèmes..."
+msgstr "Paramètres système..."
 
 #: extension.js:111
 msgid "Activities"
@@ -30,7 +30,7 @@ msgstr "Activités"
 
 #: extension.js:112
 msgid "App Grid"
-msgstr "Grille d'application"
+msgstr "Grille d'applications"
 
 #: extension.js:114
 msgid "Software Center..."
@@ -58,11 +58,11 @@ msgstr "Redémarrer"
 
 #: extension.js:148
 msgid "Shut Down"
-msgstr ""
+msgstr "Éteindre"
 
 #: extension.js:151 extension.js:173
 msgid "Lock Screen"
-msgstr "Éteindre"
+msgstr "Verrouiller l'écran"
 
 #: extension.js:152
 msgid "Log Out..."
