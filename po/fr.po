@@ -1,0 +1,113 @@
+# French translations for Logo Menu package.
+# Copyright (C) 2022 Aryan Kaushik (Aryan20)
+# This file is distributed under the same license as the Logo Menu package.
+# Thomas LEFLOCH <leflochtho@eisti.eu>, 2022.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Logo Menu 8\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-10-27 13:13+0530\n"
+"PO-Revision-Date: 2022-01-29 19:43-0500\n"
+"Last-Translator: Thomas LEFLOCH <leflochtho@eisti.eu>\n"
+"Language-Team: French <traduc@traduc.org>\n"
+"Language: fr\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: extension.js:108
+msgid "About My System                 "
+msgstr "À propos de mon système                 "
+
+#: extension.js:109
+msgid "System Settings..."
+msgstr "Paramètres système..."
+
+#: extension.js:111
+msgid "Activities"
+msgstr "Activités"
+
+#: extension.js:112
+msgid "App Grid"
+msgstr "Grille d'applications"
+
+#: extension.js:114
+msgid "Software Center..."
+msgstr "Centre de logiciels..."
+
+#: extension.js:115 prefs.js:215
+msgid "Terminal"
+msgstr "Terminal"
+
+#: extension.js:116
+msgid "Extensions"
+msgstr "Extensions"
+
+#: extension.js:139
+msgid "Force Quit App"
+msgstr "Forcer à quitter l'App."
+
+#: extension.js:146
+msgid "Sleep"
+msgstr "Veille"
+
+#: extension.js:147
+msgid "Restart"
+msgstr "Redémarrer"
+
+#: extension.js:148
+msgid "Shut Down"
+msgstr "Éteindre"
+
+#: extension.js:151 extension.js:173
+msgid "Lock Screen"
+msgstr "Verrouiller l'écran"
+
+#: extension.js:152
+msgid "Log Out..."
+msgstr "Se déconnecter..."
+
+#: extension.js:183
+msgid "Lock Orientation"
+msgstr "Verrouiller l'orientation"
+
+#: prefs.js:52
+msgid "Icon"
+msgstr "Icône"
+
+#: prefs.js:118
+msgid "Icon Size"
+msgstr "Taille de l'icône"
+
+#: prefs.js:175
+msgid "Icon Click Type to open Activities"
+msgstr "Type de clic pour ouvrir les Activités"
+
+#: prefs.js:182
+msgid "Middle Click "
+msgstr "Clic du milieu"
+
+#: prefs.js:183
+msgid "Right Click "
+msgstr "Clic droit"
+
+#: prefs.js:254
+msgid "Software Center"
+msgstr "Centre de logiciels"
+
+#: prefs.js:292
+msgid "Enable Power Options"
+msgstr "Activer les options d'alimentation"
+
+#: prefs.js:330
+msgid "Hide Force Quit option"
+msgstr "Cacher l'option 'Forcer à quitter'"
+
+#: prefs.js:368
+msgid "Show Lock Screen option"
+msgstr "Cacher l'option 'Verrouiller l'écran'"
+
+#: prefs.js:406
+msgid "Show Lock Orientation option"
+msgstr "Afficher l'option 'Verrouiller l'orientation'"
