@@ -434,18 +434,21 @@ var FedoraMenuPreferencesWidget = GObject.registerClass(class Fedora_Menu_Prefer
 })
 
 function buildPrefsWidget() {
+    var scrollBox = new Gtk.ScrolledWindow();
+    scrollBox.set_policy(Gtk.PolicyType.NEVER, Gtk.PolicyType.AUTOMATIC);
     let widget = new FedoraMenuPreferencesWidget();
     if (shellVersion < 40){
         let iconTheme = Gtk.IconTheme.get_default();
         if(!iconTheme.get_search_path().includes(Me.path + "/Resources"))
             iconTheme.append_search_path(Me.path + "/Resources");
         widget.show_all();
-    }
-    else{
+        scrollBox.add(widget)
+    } else{
         let iconTheme = Gtk.IconTheme.get_for_display(Gdk.Display.get_default());
         if(!iconTheme.get_search_path().includes(Me.path + "/Resources"))
             iconTheme.add_search_path(Me.path + "/Resources");
         widget.show();
+        scrollBox.set_child(widget);
     }
-    return widget;
+    return scrollBox;
 }
