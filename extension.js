@@ -71,7 +71,7 @@ function _middleClick(actor, event) {
 }
 
 
-var MenuButton = GObject.registerClass(class FedoraMenu_MenuButton extends PanelMenu.Button {
+var MenuButton = GObject.registerClass(class LogoMenu_MenuButton extends PanelMenu.Button {
 	_init() {
 		super._init(0.0, "MenuButton");
 		this._settings = ExtensionUtils.getSettings(Me.metadata['settings-schema']);

@@ -14,7 +14,7 @@ function init() {
     ExtensionUtils.initTranslations(Me.metadata['gettext-domain']);
 }
 
-var IconGrid = GObject.registerClass(class Fedora_Menu_IconGrid extends Gtk.FlowBox{
+var IconGrid = GObject.registerClass(class Logo_Menu_IconGrid extends Gtk.FlowBox{
     _init() {
         super._init({
             row_spacing: 10,
@@ -36,7 +36,7 @@ var IconGrid = GObject.registerClass(class Fedora_Menu_IconGrid extends Gtk.Flow
     }
 });
 
-var FedoraMenuPreferencesWidget = GObject.registerClass(class Fedora_Menu_PreferencesWidget extends Gtk.Box{
+var LogoMenuPreferencesWidget = GObject.registerClass(class Logo_Menu_PreferencesWidget extends Gtk.Box{
     _init() {
         super._init({
             orientation: Gtk.Orientation.VERTICAL,
@@ -473,7 +473,7 @@ var FedoraMenuPreferencesWidget = GObject.registerClass(class Fedora_Menu_Prefer
 })
 
 function buildPrefsWidget() {
-    let widget = new FedoraMenuPreferencesWidget();
+    let widget = new LogoMenuPreferencesWidget();
     if (shellVersion < 40){
         let iconTheme = Gtk.IconTheme.get_default();
         if(!iconTheme.get_search_path().includes(Me.path + "/Resources"))
