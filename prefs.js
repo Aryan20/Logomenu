@@ -430,6 +430,45 @@ var FedoraMenuPreferencesWidget = GObject.registerClass(class Fedora_Menu_Prefer
             lockOrientationOptionFrame.set_child(lockOrientationOptionBox);
             this.append(lockOrientationOptionFrame);
         }    
+
+        // Toggle Software centre option and build it's option in prefs
+        let SoftwareCentreOptionFrame = new Gtk.Frame();
+        let SoftwareCentreOptionBox = new Gtk.Box({
+            margin_top: 5,
+            margin_bottom: 5,
+            margin_start: 5,
+            margin_end: 5,
+        });
+
+        let hideSCOptionText = new Gtk.Label({
+            label: _("Hide Software Centre option"),
+            use_markup: true,
+            xalign: 0,
+            hexpand: true
+        })
+
+        let hideSCOptionSwitch= new Gtk.Switch({ 
+            halign: Gtk.Align.END,
+        });
+
+        hideSCOptionSwitch.set_active(this._settings.get_boolean('hide-softwarecentre'));
+        hideSCOptionSwitch.connect('notify::active', (widget) => {
+            this._settings.set_boolean('hide-softwarecentre', widget.get_active());
+        });
+
+        if (shellVersion < 40){
+            SoftwareCentreOptionBox.add(hideSCOptionText);
+            SoftwareCentreOptionBox.add(hideSCOptionSwitch);
+            SoftwareCentreOptionFrame.add(SoftwareCentreOptionBox);
+            this.add(SoftwareCentreOptionFrame);
+        }
+        else{
+            SoftwareCentreOptionBox.append(hideSCOptionText);
+            SoftwareCentreOptionBox.append(hideSCOptionSwitch);
+            SoftwareCentreOptionFrame.set_child(SoftwareCentreOptionBox);
+            this.append(SoftwareCentreOptionFrame);
+        }    
+
     }
 })
 

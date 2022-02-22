@@ -89,6 +89,7 @@ var MenuButton = GObject.registerClass(class FedoraMenu_MenuButton extends Panel
 		this.add_actor(this.icon)
 
 		// Menu
+		this._settings.connect('changed::hide-softwarecentre', () => this.toggleOptions())
 		this._settings.connect('changed::show-power-options', () => this.toggleOptions())
 		this._settings.connect('changed::hide-forcequit', () => this.toggleOptions())
 		this._settings.connect('changed::show-lockscreen', () => this.toggleOptions())
@@ -104,6 +105,7 @@ var MenuButton = GObject.registerClass(class FedoraMenu_MenuButton extends Panel
 		let forcequit_state = this._settings.get_boolean('hide-forcequit')
 		let lockscreen_state = this._settings.get_boolean('show-lockscreen')
 		let lockorientation_state = this._settings.get_boolean('show-lockorientation')
+		let softwarecenter_state = this._settings.get_boolean('hide-softwarecentre')
 		this.menu.removeAll()
 		this.item1 = new PopupMenu.PopupMenuItem(_('About My System                 '))
 		this.item2 = new PopupMenu.PopupMenuItem(_('System Settings...'))
@@ -111,7 +113,6 @@ var MenuButton = GObject.registerClass(class FedoraMenu_MenuButton extends Panel
 		this.item4 = new PopupMenu.PopupMenuItem(_('Activities'))
 		this.item5 = new PopupMenu.PopupMenuItem(_('App Grid'))	
 		this.item6 = new PopupMenu.PopupSeparatorMenuItem()
-		this.item7 = new PopupMenu.PopupMenuItem(_('Software Center...'))
 		this.item8 = new PopupMenu.PopupMenuItem(_('Terminal'))
 		this.item9 = new PopupMenu.PopupMenuItem(_('Extensions'))
 		
@@ -119,7 +120,6 @@ var MenuButton = GObject.registerClass(class FedoraMenu_MenuButton extends Panel
 		this.item2.connect('activate', () => _systemPreferences())
 		this.item4.connect('activate', () => _overviewToggle())
 		this.item5.connect('activate', () => _appGrid())
-		this.item7.connect('activate', () => this.softwareStore())
 		this.item8.connect('activate', () => this.terminal())
 		this.item9.connect('activate', () => this.extensions())
 		
@@ -129,7 +129,13 @@ var MenuButton = GObject.registerClass(class FedoraMenu_MenuButton extends Panel
 		this.menu.addMenuItem(this.item4)
 		this.menu.addMenuItem(this.item5)
 		this.menu.addMenuItem(this.item6)
-		this.menu.addMenuItem(this.item7)
+
+		if (!softwarecenter_state) {
+			this.item7 = new PopupMenu.PopupMenuItem(_('Software Center...'))
+            this.item7.connect('activate', () => this.softwareStore())
+			this.menu.addMenuItem(this.item7)
+        }
+
 		this.menu.addMenuItem(this.item8)
 		this.menu.addMenuItem(this.item9)
 
@@ -187,6 +193,7 @@ var MenuButton = GObject.registerClass(class FedoraMenu_MenuButton extends Panel
 
 			this.item20.connect("activate", () => this._system._systemActions.activateLockOrientation())
 		}
+
 	}
 
 	terminal() {

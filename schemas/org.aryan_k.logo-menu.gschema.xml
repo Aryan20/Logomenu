@@ -57,6 +57,12 @@
       <description>Toggle Force Orientation option vsibility.</description>
     </key>
 
+    <key type="b" name="hide-softwarecentre">
+      <default>false</default>
+      <summary>Toggle Software Centre option visibility</summary>
+      <description>Toggle Software Centre option visibility.</description>
+    </key>
+
   </schema>
 
 </schemalist>
