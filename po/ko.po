@@ -1,0 +1,115 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR Aryan Kaushik
+# This file is distributed under the same license as the Logo Menu package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Logo Menu 2\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-10-27 13:13+0530\n"
+"PO-Revision-Date: 2022-02-22 11:00+0900\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: ko\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Poedit 3.0.1\n"
+
+#: extension.js:108
+msgid "About My System                 "
+msgstr "내 시스템에 대하여                 "
+
+#: extension.js:109
+msgid "System Settings..."
+msgstr "시스템 설정..."
+
+#: extension.js:111
+msgid "Activities"
+msgstr "현재 활동"
+
+#: extension.js:112
+msgid "App Grid"
+msgstr "프로그램 표시"
+
+#: extension.js:114
+msgid "Software Center..."
+msgstr "소프트웨어..."
+
+#: extension.js:115 prefs.js:215
+msgid "Terminal"
+msgstr "터미널"
+
+#: extension.js:116
+msgid "Extensions"
+msgstr "확장"
+
+#: extension.js:139
+msgid "Force Quit App"
+msgstr "프로그램 강제 종료"
+
+#: extension.js:146
+msgid "Sleep"
+msgstr "절전"
+
+#: extension.js:147
+msgid "Restart"
+msgstr "다시 시작"
+
+#: extension.js:148
+msgid "Shut Down"
+msgstr "컴퓨터 끄기"
+
+#: extension.js:151 extension.js:173
+msgid "Lock Screen"
+msgstr "잠그기"
+
+#: extension.js:152
+msgid "Log Out..."
+msgstr "로그아웃..."
+
+#: extension.js:183
+msgid "Lock Orientation"
+msgstr "회전 잠금"
+
+#: prefs.js:52
+msgid "Icon"
+msgstr "아이콘"
+
+#: prefs.js:118
+msgid "Icon Size"
+msgstr "아이콘 크기"
+
+#: prefs.js:175
+msgid "Icon Click Type to open Activities"
+msgstr "현재 활동을 열 때 아이콘 클릭 유형"
+
+#: prefs.js:182
+msgid "Middle Click "
+msgstr "가운데 클릭 "
+
+#: prefs.js:183
+msgid "Right Click "
+msgstr "오른쪽 클릭 "
+
+#: prefs.js:254
+msgid "Software Center"
+msgstr "소프트웨어 센터"
+
+#: prefs.js:292
+msgid "Enable Power Options"
+msgstr "전원 옵션 사용"
+
+#: prefs.js:330
+msgid "Hide Force Quit option"
+msgstr "강제 종료 옵션 숨기기"
+
+#: prefs.js:368
+msgid "Show Lock Screen option"
+msgstr "잠그기 옵션 표시"
+
+#: prefs.js:406
+msgid "Show Lock Orientation option"
+msgstr "회전 잠금 옵션 표시"
