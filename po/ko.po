@@ -5,7 +5,7 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: Logo Menu 2\n"
+"Project-Id-Version: Logo Menu 9\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-10-27 13:13+0530\n"
 "PO-Revision-Date: 2022-02-22 11:00+0900\n"
