@@ -165,10 +165,10 @@ var LogoMenuPreferencesWidget = GObject.registerClass(class Logo_Menu_Preference
         let clickType = this._settings.get_int('menu-button-icon-click-type');
         let menuButtonIconClickTypeFrame = new Gtk.Frame();
         let menuButtonIconClickTypeBox = new Gtk.Box({
-            margin_top: 10,
-            margin_bottom: 10,
-            margin_start: 10,
-            margin_end: 10,
+            margin_top: 5,
+            margin_bottom: 5,
+            margin_start: 5,
+            margin_end: 5,
         });
 
         let menuButtonIconClickTypeLabel = new Gtk.Label({
@@ -480,7 +480,7 @@ function buildPrefsWidget() {
             iconTheme.append_search_path(Me.path + "/Resources");
         widget.show_all();
         return widget;
-    } else {
+    } else if (shellVersion < 42) {
         var scrollBox = new Gtk.ScrolledWindow();
         scrollBox.set_policy(Gtk.PolicyType.NEVER, Gtk.PolicyType.AUTOMATIC);
         let iconTheme = Gtk.IconTheme.get_for_display(Gdk.Display.get_default());
@@ -489,5 +489,11 @@ function buildPrefsWidget() {
         widget.show();
         scrollBox.set_child(widget);
         return scrollBox;
+    } else {
+        let iconTheme = Gtk.IconTheme.get_for_display(Gdk.Display.get_default());
+        if(!iconTheme.get_search_path().includes(Me.path + "/Resources"))
+            iconTheme.add_search_path(Me.path + "/Resources");
+        widget.show();
+        return widget;
     }
 }
