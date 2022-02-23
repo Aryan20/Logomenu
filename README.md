@@ -16,7 +16,6 @@ Join the matrix room for the latest news and releases and/or for suggestions: [c
 
 -About My System (opens a submenu in System Settings that shows info about your computer.)
 
--System Settings
 
 -Activities (this menu does replace the Activities button, but this option does leave that functionality easily accessible.)
 
@@ -34,7 +33,7 @@ Join the matrix room for the latest news and releases and/or for suggestions: [c
 
 fork of [Tofu Menu by tofutech](https://github.com/tofutech/tofumenu)
 
-Compatible with and tested on GNOME 40 and 41. Should work on older versions.
+Compatible with and tested on GNOME 42, 41, 40, 3.xx
 
 Note - 
 1) Some icons can get changed due to Icon Pack used, particularly due to Icon packs primarily developed for KDE in mind.
@@ -63,6 +62,9 @@ use GNU make:
 Original extension creator and all the contributors.
 
 [@AndrewZaech](https://github.com/AndrewZaech), [@Harshad.Gavali](https://gitlab.com/harshadgavali), [@JustPerfection](https://gitlab.com/justperfection.channel), [@vikashraghavan](https://github.com/vikashraghavan)
+
+### Translators
+[@Bretzoule](https://github.com/Bretzoule), [@kuroehanako](https://github.com/kuroehanako)
 
 ## Donations
 Brave browser users can freely donate with BAT, all help will be appreciated :)
