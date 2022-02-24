@@ -413,7 +413,10 @@ if (shellVersion >= 42) {
         let iconsettings = new LogoMenuIconsWidget(this._settings);
         let aboutpage = new AboutPage(this._settings);
     
-    
+        let iconTheme = Gtk.IconTheme.get_for_display(Gdk.Display.get_default());
+        if(!iconTheme.get_search_path().includes(Me.path + "/Resources"))
+        iconTheme.add_search_path(Me.path + "/Resources");
+        
         window.add(iconsettings);
         window.add(options);
         window.add(aboutpage);
@@ -901,12 +904,6 @@ if (shellVersion >= 42) {
             widget.show();
             scrollBox.set_child(widget);
             return scrollBox;
-        } else {
-            let iconTheme = Gtk.IconTheme.get_for_display(Gdk.Display.get_default());
-            if(!iconTheme.get_search_path().includes(Me.path + "/Resources"))
-                iconTheme.add_search_path(Me.path + "/Resources");
-            widget.show();
-            return widget;
         }
     }
 
