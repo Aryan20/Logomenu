@@ -1,7 +1,7 @@
 const ExtensionUtils = imports.misc.extensionUtils;
 const Me = ExtensionUtils.getCurrentExtension();
 
-const {adw, gtk} = Me.imports.PrefsLib;
+const PrefsLib = Me.imports.PrefsLib;
 const {Gtk, Gdk, Gio, GLib, GObject} = imports.gi;
 
 const Config = imports.misc.config;
@@ -39,11 +39,11 @@ var IconGrid = GObject.registerClass(class Logo_Menu_IconGrid extends Gtk.FlowBo
 
 function fillPreferencesWindow(window)
 {
-    adw.fillPrefsWindow(window, IconGrid, Settings);
+    PrefsLib.adw.fillPrefsWindow(window, IconGrid, Settings);
 }
 
 function buildPrefsWidget()
 {
-    return gtk.getMainPrefs(IconGrid, shellversion, Settings);
+    return PrefsLib.gtk.getMainPrefs(IconGrid, shellVersion, Settings);
 }
      
