@@ -1,11 +1,8 @@
 const ExtensionUtils = imports.misc.extensionUtils;
 const Me = ExtensionUtils.getCurrentExtension();
 
-const Constants = Me.imports.constants;
-const {adw, gtk} = Me.imports.prefs;
+const {adw, gtk} = Me.imports.PrefsLib;
 const {Gtk, Gdk, Gio, GLib, GObject} = imports.gi;
-const Gettext = imports.gettext.domain(Me.metadata['gettext-domain']);
-const _ = Gettext.gettext;
 
 const Config = imports.misc.config;
 const [major] = Config.PACKAGE_VERSION.split('.');
