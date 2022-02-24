@@ -2,7 +2,7 @@ const ExtensionUtils = imports.misc.extensionUtils;
 const Me = ExtensionUtils.getCurrentExtension();
 
 const PrefsLib = Me.imports.PrefsLib;
-const {Gtk, Gdk, Gio, GLib, GObject} = imports.gi;
+const {Gtk, GObject} = imports.gi;
 
 const Config = imports.misc.config;
 const [major] = Config.PACKAGE_VERSION.split('.');

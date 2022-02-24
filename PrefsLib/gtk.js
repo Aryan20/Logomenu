@@ -451,14 +451,14 @@ function getMainPrefs(IconGrid, shellVersion, Settings) {
             iconTheme.append_search_path(Me.path + "/Resources");
         widget.show_all();
         return widget;
-    } else if (shellVersion < 42) {
-        var scrollBox = new Gtk.ScrolledWindow();
-        scrollBox.set_policy(Gtk.PolicyType.NEVER, Gtk.PolicyType.AUTOMATIC);
-        let iconTheme = Gtk.IconTheme.get_for_display(Gdk.Display.get_default());
-        if(!iconTheme.get_search_path().includes(Me.path + "/Resources"))
-            iconTheme.add_search_path(Me.path + "/Resources");
-        widget.show();
-        scrollBox.set_child(widget);
-        return scrollBox;
     }
+    
+    var scrollBox = new Gtk.ScrolledWindow();
+    scrollBox.set_policy(Gtk.PolicyType.NEVER, Gtk.PolicyType.AUTOMATIC);
+    let iconTheme = Gtk.IconTheme.get_for_display(Gdk.Display.get_default());
+    if(!iconTheme.get_search_path().includes(Me.path + "/Resources"))
+        iconTheme.add_search_path(Me.path + "/Resources");
+    widget.show();
+    scrollBox.set_child(widget);
+    return scrollBox;
 }

@@ -375,10 +375,9 @@ var AboutPage = GObject.registerClass(class Logo_Menu_AboutPage extends Adw.Pref
 
 
 function fillPrefsWindow(window, IconGrid, Settings) {
-    settings = Settings;
-    let options = new LogoMenuOptionsWidget(settings);
-    let iconsettings = new LogoMenuIconsWidget(settings, IconGrid);
-    let aboutpage = new AboutPage(settings);
+    let options = new LogoMenuOptionsWidget(Settings);
+    let iconsettings = new LogoMenuIconsWidget(Settings, IconGrid);
+    let aboutpage = new AboutPage(Settings);
 
     let iconTheme = Gtk.IconTheme.get_for_display(Gdk.Display.get_default());
     if(!iconTheme.get_search_path().includes(Me.path + "/Resources"))
