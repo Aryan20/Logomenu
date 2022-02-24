@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: Logo Menu 10\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-02-24 18:30+0530\n"
-"PO-Revision-Date: 2022-02-24 18:41+0530\n"
+"PO-Revision-Date: 2022-02-24 19:10+0530\n"
 "Last-Translator: Thomas LEFLOCH <leflochtho@eisti.eu>\n"
 "Language-Team: French <traduc@traduc.org>\n"
 "Language: fr\n"
@@ -43,7 +43,7 @@ msgstr "Centre de logiciels..."
 
 #: extension.js:145
 msgid "Force Quit App"
-msgstr "Forcer à quitter l'App"
+msgstr "Forcer à quitter l'App."
 
 #: extension.js:152
 msgid "Sleep"
@@ -71,7 +71,7 @@ msgstr "Verrouiller l'orientation"
 
 #: PrefsLib/adw.js:24
 msgid "Icon Settings"
-msgstr "Paramètres des icônes"
+msgstr ""
 
 #: PrefsLib/adw.js:30 PrefsLib/gtk.js:23
 msgid "Icon"
@@ -95,11 +95,11 @@ msgstr "Type de clic pour ouvrir les Activités"
 
 #: PrefsLib/adw.js:135 PrefsLib/gtk.js:153
 msgid "Middle Click "
-msgstr "Clic du milieu "
+msgstr "Clic du milieu"
 
 #: PrefsLib/adw.js:136 PrefsLib/gtk.js:154
 msgid "Right Click "
-msgstr "Clic droit "
+msgstr "Clic droit"
 
 #: PrefsLib/adw.js:168 PrefsLib/gtk.js:225
 msgid "Software Center"
@@ -123,19 +123,19 @@ msgstr "Afficher l'option 'Verrouiller l'orientation'"
 
 #: PrefsLib/adw.js:250 PrefsLib/gtk.js:415
 msgid "Hide Software Centre option"
-msgstr "Cacher l'option Centre de logiciels"
+msgstr "Cacher l'option 'Centre de logiciels'"
 
 #: PrefsLib/adw.js:283
 msgid "About"
-msgstr "Ser"
+msgstr ""
 
 #: PrefsLib/adw.js:299
 msgid "Logo Menu"
-msgstr "Logo Menu"
+msgstr ""
 
 #: PrefsLib/adw.js:306
 msgid "Quick access menu for GNOME"
-msgstr "Menu d'accès rapide pour GNOME"
+msgstr ""
 
 #: PrefsLib/adw.js:321
 msgid "Logo Menu Version"
@@ -155,6 +155,3 @@ msgid ""
 "See the <a href=\"https://gnu.org/licenses/old-licenses/gpl-2.0.html\">GNU "
 "General Public License, version 2 or later</a> for details.</span>"
 msgstr ""
-
-#~ msgid "System Settings..."
-#~ msgstr "Paramètres système..."
