@@ -5,109 +5,156 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: Logo Menu 8\n"
+"Project-Id-Version: Logo Menu 10\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-10-27 13:13+0530\n"
-"PO-Revision-Date: 2022-01-29 19:43-0500\n"
+"POT-Creation-Date: 2022-02-24 18:30+0530\n"
+"PO-Revision-Date: 2022-02-24 18:41+0530\n"
 "Last-Translator: Thomas LEFLOCH <leflochtho@eisti.eu>\n"
 "Language-Team: French <traduc@traduc.org>\n"
 "Language: fr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 3.0\n"
 
-#: extension.js:108
+#: extension.js:110
 msgid "About My System                 "
 msgstr "À propos de mon système                 "
 
-#: extension.js:109
-msgid "System Settings..."
-msgstr "Paramètres système..."
-
-#: extension.js:111
+#: extension.js:113
 msgid "Activities"
 msgstr "Activités"
 
-#: extension.js:112
+#: extension.js:114
 msgid "App Grid"
 msgstr "Grille d'applications"
 
-#: extension.js:114
-msgid "Software Center..."
-msgstr "Centre de logiciels..."
-
-#: extension.js:115 prefs.js:215
+#: extension.js:116 PrefsLib/adw.js:148 PrefsLib/gtk.js:186
 msgid "Terminal"
 msgstr "Terminal"
 
-#: extension.js:116
+#: extension.js:117
 msgid "Extensions"
 msgstr "Extensions"
 
-#: extension.js:139
-msgid "Force Quit App"
-msgstr "Forcer à quitter l'App."
+#: extension.js:134
+msgid "Software Center..."
+msgstr "Centre de logiciels..."
 
-#: extension.js:146
+#: extension.js:145
+msgid "Force Quit App"
+msgstr "Forcer à quitter l'App"
+
+#: extension.js:152
 msgid "Sleep"
 msgstr "Veille"
 
-#: extension.js:147
+#: extension.js:153
 msgid "Restart"
 msgstr "Redémarrer"
 
-#: extension.js:148
+#: extension.js:154
 msgid "Shut Down"
 msgstr "Éteindre"
 
-#: extension.js:151 extension.js:173
+#: extension.js:157 extension.js:179
 msgid "Lock Screen"
 msgstr "Verrouiller l'écran"
 
-#: extension.js:152
+#: extension.js:158
 msgid "Log Out..."
 msgstr "Se déconnecter..."
 
-#: extension.js:183
+#: extension.js:189
 msgid "Lock Orientation"
 msgstr "Verrouiller l'orientation"
 
-#: prefs.js:52
+#: PrefsLib/adw.js:24
+msgid "Icon Settings"
+msgstr "Paramètres des icônes"
+
+#: PrefsLib/adw.js:30 PrefsLib/gtk.js:23
 msgid "Icon"
 msgstr "Icône"
 
-#: prefs.js:118
+#: PrefsLib/adw.js:62 PrefsLib/gtk.js:89
 msgid "Icon Size"
 msgstr "Taille de l'icône"
 
-#: prefs.js:175
+#: PrefsLib/adw.js:117
+msgid "Change Defaults"
+msgstr ""
+
+#: PrefsLib/adw.js:121
+msgid "Show/Hide Options"
+msgstr ""
+
+#: PrefsLib/adw.js:129 PrefsLib/gtk.js:146
 msgid "Icon Click Type to open Activities"
 msgstr "Type de clic pour ouvrir les Activités"
 
-#: prefs.js:182
+#: PrefsLib/adw.js:135 PrefsLib/gtk.js:153
 msgid "Middle Click "
-msgstr "Clic du milieu"
+msgstr "Clic du milieu "
 
-#: prefs.js:183
+#: PrefsLib/adw.js:136 PrefsLib/gtk.js:154
 msgid "Right Click "
-msgstr "Clic droit"
+msgstr "Clic droit "
 
-#: prefs.js:254
+#: PrefsLib/adw.js:168 PrefsLib/gtk.js:225
 msgid "Software Center"
 msgstr "Centre de logiciels"
 
-#: prefs.js:292
+#: PrefsLib/adw.js:186 PrefsLib/gtk.js:263
 msgid "Enable Power Options"
 msgstr "Activer les options d'alimentation"
 
-#: prefs.js:330
+#: PrefsLib/adw.js:201 PrefsLib/gtk.js:301
 msgid "Hide Force Quit option"
 msgstr "Cacher l'option 'Forcer à quitter'"
 
-#: prefs.js:368
+#: PrefsLib/adw.js:218 PrefsLib/gtk.js:339
 msgid "Show Lock Screen option"
 msgstr "Cacher l'option 'Verrouiller l'écran'"
 
-#: prefs.js:406
+#: PrefsLib/adw.js:234 PrefsLib/gtk.js:377
 msgid "Show Lock Orientation option"
 msgstr "Afficher l'option 'Verrouiller l'orientation'"
+
+#: PrefsLib/adw.js:250 PrefsLib/gtk.js:415
+msgid "Hide Software Centre option"
+msgstr "Cacher l'option Centre de logiciels"
+
+#: PrefsLib/adw.js:283
+msgid "About"
+msgstr "Ser"
+
+#: PrefsLib/adw.js:299
+msgid "Logo Menu"
+msgstr "Logo Menu"
+
+#: PrefsLib/adw.js:306
+msgid "Quick access menu for GNOME"
+msgstr "Menu d'accès rapide pour GNOME"
+
+#: PrefsLib/adw.js:321
+msgid "Logo Menu Version"
+msgstr ""
+
+#: PrefsLib/adw.js:334
+msgid "GNOME Version"
+msgstr ""
+
+#: PrefsLib/adw.js:343
+msgid "Github"
+msgstr ""
+
+#: PrefsLib/adw.js:355
+msgid ""
+"<span size=\"small\">This program comes with absolutely no warranty.\n"
+"See the <a href=\"https://gnu.org/licenses/old-licenses/gpl-2.0.html\">GNU "
+"General Public License, version 2 or later</a> for details.</span>"
+msgstr ""
+
+#~ msgid "System Settings..."
+#~ msgstr "Paramètres système..."
