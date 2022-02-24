@@ -15,9 +15,9 @@ var LogoMenuIconsWidget = GObject.registerClass(class Logo_Menu_IconsWidget exte
             margin_end: 24,
         });
         this._settings = settings;
-        this.set_title('Logo Settings');
-        this.set_name('Logo Settings');
-        this.set_icon_name('emblem-system-symbolic');
+        this.set_title('Icon');
+        this.set_name('Icon');
+        this.set_icon_name('emblem-photos-symbolic');
         
         
         let iconGroup = new Adw.PreferencesGroup({
