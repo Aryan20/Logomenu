@@ -28,7 +28,7 @@ msgstr "Activités"
 msgid "App Grid"
 msgstr "Grille d'applications"
 
-#: extension.js:116 prefs.js:215
+#: extension.js:116 PrefsLib/adw.js:148 PrefsLib/gtk.js:186
 msgid "Terminal"
 msgstr "Terminal"
 
@@ -68,46 +68,91 @@ msgstr "Se déconnecter..."
 msgid "Lock Orientation"
 msgstr "Verrouiller l'orientation"
 
-#: prefs.js:52
+#: PrefsLib/adw.js:24
+msgid "Icon Settings"
+msgstr "Paramètres Icône"
+
+#: PrefsLib/adw.js:30 PrefsLib/gtk.js:23
 msgid "Icon"
 msgstr "Icône"
 
-#: prefs.js:118
+#: PrefsLib/adw.js:62 PrefsLib/gtk.js:89
 msgid "Icon Size"
 msgstr "Taille de l'icône"
 
-#: prefs.js:175
+#: PrefsLib/adw.js:117
+msgid "Change Defaults"
+msgstr "Changer les paramètres par défaut"
+
+#: PrefsLib/adw.js:121
+msgid "Show/Hide Options"
+msgstr "Afficher/Cacher des Options"
+
+#: PrefsLib/adw.js:129 PrefsLib/gtk.js:146
 msgid "Icon Click Type to open Activities"
 msgstr "Type de clic pour ouvrir les Activités"
 
-#: prefs.js:182
+#: PrefsLib/adw.js:135 PrefsLib/gtk.js:153
 msgid "Middle Click "
 msgstr "Clic du milieu"
 
-#: prefs.js:183
+#: PrefsLib/adw.js:136 PrefsLib/gtk.js:154
 msgid "Right Click "
 msgstr "Clic droit"
 
-#: prefs.js:254
+#: PrefsLib/adw.js:168 PrefsLib/gtk.js:225
 msgid "Software Center"
 msgstr "Centre de logiciels"
 
-#: prefs.js:292
+#: PrefsLib/adw.js:186 PrefsLib/gtk.js:263
 msgid "Enable Power Options"
 msgstr "Activer les options d'alimentation"
 
-#: prefs.js:330
+#: PrefsLib/adw.js:201 PrefsLib/gtk.js:301
 msgid "Hide Force Quit option"
 msgstr "Cacher l'option 'Forcer à quitter'"
 
-#: prefs.js:368
+#: PrefsLib/adw.js:218 PrefsLib/gtk.js:339
 msgid "Show Lock Screen option"
 msgstr "Cacher l'option 'Verrouiller l'écran'"
 
-#: prefs.js:406
+#: PrefsLib/adw.js:234 PrefsLib/gtk.js:377
 msgid "Show Lock Orientation option"
 msgstr "Afficher l'option 'Verrouiller l'orientation'"
 
-#: prefs.js:444
+#: PrefsLib/adw.js:250 PrefsLib/gtk.js:415
 msgid "Hide Software Centre option"
 msgstr "Cacher l'option 'Centre de logiciels'"
+
+#: PrefsLib/adw.js:283
+msgid "About"
+msgstr "À propos"
+
+#: PrefsLib/adw.js:299
+msgid "Logo Menu"
+msgstr "Logo Menu"
+
+#: PrefsLib/adw.js:306
+msgid "Quick access menu for GNOME"
+msgstr "Menu d'accès rapide pour GNOME"
+
+#: PrefsLib/adw.js:321
+msgid "Logo Menu Version"
+msgstr "Version de Logo Menu"
+
+#: PrefsLib/adw.js:334
+msgid "GNOME Version"
+msgstr "Version de GNOME"
+
+#: PrefsLib/adw.js:343
+msgid "Github"
+msgstr ""
+
+#: PrefsLib/adw.js:355
+msgid ""
+"<span size=\"small\">This program comes with absolutely no warranty.\n"
+"See the <a href=\"https://gnu.org/licenses/old-licenses/gpl-2.0.html\">GNU "
+"General Public License, version 2 or later</a> for details.</span>"
+msgstr "<span size=\"small\">Ce programme est fourni sans garantie.\n"
+"Voir <a href=\"https://gnu.org/licenses/old-licenses/gpl-2.0.html\">GNU "
+"General Public License, version 2 ou plus</a> pour les détails.</span>"
