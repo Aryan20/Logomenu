@@ -71,7 +71,7 @@ msgstr "Verrouiller l'orientation"
 
 #: PrefsLib/adw.js:24
 msgid "Icon Settings"
-msgstr ""
+msgstr "Paramètres Icône"
 
 #: PrefsLib/adw.js:30 PrefsLib/gtk.js:23
 msgid "Icon"
@@ -83,11 +83,11 @@ msgstr "Taille de l'icône"
 
 #: PrefsLib/adw.js:117
 msgid "Change Defaults"
-msgstr ""
+msgstr "Changer les paramètres par défaut"
 
 #: PrefsLib/adw.js:121
 msgid "Show/Hide Options"
-msgstr ""
+msgstr "Afficher/Cacher des Options"
 
 #: PrefsLib/adw.js:129 PrefsLib/gtk.js:146
 msgid "Icon Click Type to open Activities"
@@ -127,23 +127,23 @@ msgstr "Cacher l'option 'Centre de logiciels'"
 
 #: PrefsLib/adw.js:283
 msgid "About"
-msgstr ""
+msgstr "À propos"
 
 #: PrefsLib/adw.js:299
 msgid "Logo Menu"
-msgstr ""
+msgstr "Logo Menu"
 
 #: PrefsLib/adw.js:306
 msgid "Quick access menu for GNOME"
-msgstr ""
+msgstr "Menu d'accès rapide pour GNOME"
 
 #: PrefsLib/adw.js:321
 msgid "Logo Menu Version"
-msgstr ""
+msgstr "Version de Logo Menu"
 
 #: PrefsLib/adw.js:334
 msgid "GNOME Version"
-msgstr ""
+msgstr "Version de GNOME"
 
 #: PrefsLib/adw.js:343
 msgid "Github"
@@ -154,4 +154,6 @@ msgid ""
 "<span size=\"small\">This program comes with absolutely no warranty.\n"
 "See the <a href=\"https://gnu.org/licenses/old-licenses/gpl-2.0.html\">GNU "
 "General Public License, version 2 or later</a> for details.</span>"
-msgstr ""
+msgstr "<span size=\"small\">Ce programme est fourni sans garantie.\n"
+"Voir <a href=\"https://gnu.org/licenses/old-licenses/gpl-2.0.html\">'GNU "
+"General Public License', version 2 ou plus</a> pour les détails.</span>"
