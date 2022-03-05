@@ -53,7 +53,8 @@ Note -
 
 *  Via **Gnome Extensions**
  
-[<img src="https://github.com/andyholmes/gnome-shell-extensions-badge/raw/master/get-it-on-ego.png" width=250>](https://extensions.gnome.org/extension/4451/logo-menu/)
+[<img src="https://user-images.githubusercontent.com/34372791/156869424-2d2e7519-726c-45e6-88e0-91266e92b7f2.png" width=250>](https://extensions.gnome.org/extension/4451/logo-menu/)
+
 
 * Manual : Grab the latest release and unzip to `.local/share/gnome-shell/extensions/logomenu@aryan_k/`
 
