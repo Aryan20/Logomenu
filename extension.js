@@ -16,8 +16,8 @@ function _aboutThisDistro() {
 	Util.spawn(['gnome-control-center', 'info-overview'])
 }
 
-function _systemPreferences() {
-	Util.spawn(['gnome-control-center'])
+function _openPreferences() {
+	Util.spawn(["gnome-shell-extension-prefs", Me.uuid])
 }
 
 function _overviewToggle() {
@@ -107,31 +107,32 @@ var MenuButton = GObject.registerClass(class LogoMenu_MenuButton extends PanelMe
 		let lockorientation_state = this._settings.get_boolean('show-lockorientation')
 		let softwarecenter_state = this._settings.get_boolean('hide-softwarecentre')
 		this.menu.removeAll()
-		this.item1 = new PopupMenu.PopupMenuItem(_('About My System                 '))
-		// this.item2 = new PopupMenu.PopupMenuItem(_('System Settings...'))
+		this.item1 = new PopupMenu.PopupImageMenuItem('About My System',
+		'dialog-information-symbolic',)
+		this.item2 = new PopupMenu.PopupImageMenuItem('Preferences', 'preferences-system-symbolic',)
 		this.item3 = new PopupMenu.PopupSeparatorMenuItem()
-		this.item4 = new PopupMenu.PopupMenuItem(_('Activities'))
-		this.item5 = new PopupMenu.PopupMenuItem(_('App Grid'))	
+		this.item4 = new PopupMenu.PopupImageMenuItem('Activities', 'view-fullscreen-symbolic',)
+		this.item5 = new PopupMenu.PopupImageMenuItem('App Grid', 'view-grid-symbolic',)
 		this.item6 = new PopupMenu.PopupSeparatorMenuItem()
-		this.item8 = new PopupMenu.PopupMenuItem(_('Terminal'))
-		this.item9 = new PopupMenu.PopupMenuItem(_('Extensions'))
+		this.item8 = new PopupMenu.PopupImageMenuItem('Terminal', 'org.gnome.Terminal-symbolic',)
+		this.item9 = new PopupMenu.PopupImageMenuItem('Extensions', 'org.gnome.Extensions-symbolic',)
 		
 		this.item1.connect('activate', () => _aboutThisDistro())
-		// this.item2.connect('activate', () => _systemPreferences())
+		this.item2.connect('activate', () => _openPreferences())
 		this.item4.connect('activate', () => _overviewToggle())
 		this.item5.connect('activate', () => _appGrid())
 		this.item8.connect('activate', () => this.terminal())
 		this.item9.connect('activate', () => this.extensions())
 		
 		this.menu.addMenuItem(this.item1)
-		// this.menu.addMenuItem(this.item2)
+		this.menu.addMenuItem(this.item2)
 		this.menu.addMenuItem(this.item3)
 		this.menu.addMenuItem(this.item4)
 		this.menu.addMenuItem(this.item5)
 		this.menu.addMenuItem(this.item6)
 
 		if (!softwarecenter_state) {
-			this.item7 = new PopupMenu.PopupMenuItem(_('Software Center...'))
+			this.item7 = new PopupMenu.PopupImageMenuItem('Software Center...', 'system-software-update-symbolic',)
             this.item7.connect('activate', () => this.softwareStore())
 			this.menu.addMenuItem(this.item7)
         }
@@ -142,20 +143,20 @@ var MenuButton = GObject.registerClass(class LogoMenu_MenuButton extends PanelMe
 		if(!forcequit_state) {
 			this.item10 = new PopupMenu.PopupSeparatorMenuItem()
 			this.menu.addMenuItem(this.item10)
-			this.item11 = new PopupMenu.PopupMenuItem(_('Force Quit App'))
+			this.item11 = new PopupMenu.PopupImageMenuItem('Force Quit App', 'application-exit-symbolic',)
 			this.item11.connect('activate', () => _forceQuit())
 			this.menu.addMenuItem(this.item11)
 		}
 
 		if (poweroption_state) {
 			this.item12 = new PopupMenu.PopupSeparatorMenuItem()
-			this.item13 = new PopupMenu.PopupMenuItem(_('Sleep'))
-			this.item14 = new PopupMenu.PopupMenuItem(_('Restart'))
-			this.item15 = new PopupMenu.PopupMenuItem(_('Shut Down'))
+			this.item13 = new PopupMenu.PopupImageMenuItem('Sleep', 'weather-clear-night-symbolic',)
+			this.item14 = new PopupMenu.PopupImageMenuItem('Restart', 'system-reboot-symbolic',)
+			this.item15 = new PopupMenu.PopupImageMenuItem('Shut Down', 'system-shutdown-symbolic',)
 			this.item16 = new PopupMenu.PopupSeparatorMenuItem()
 			if (lockscreen_state) 
-				this.item17 = new PopupMenu.PopupMenuItem(_('Lock Screen'))
-			this.item18 = new PopupMenu.PopupMenuItem(_('Log Out...'))
+				this.item17 = new PopupMenu.PopupImageMenuItem('Lock Screen', 'system-lock-screen-symbolic',)
+			this.item18 = new PopupMenu.PopupImageMenuItem('Log Out...', 'system-log-out-symbolic')
 
 			this.menu.addMenuItem(this.item12)
 			this.menu.addMenuItem(this.item13)
@@ -176,7 +177,7 @@ var MenuButton = GObject.registerClass(class LogoMenu_MenuButton extends PanelMe
 
 		else if (!poweroption_state && lockscreen_state) {
 			this.item16 = new PopupMenu.PopupSeparatorMenuItem()
-			this.item17 = new PopupMenu.PopupMenuItem(_('Lock Screen'))
+			this.item17 = new PopupMenu.PopupImageMenuItem('Lock Screen', 'system-lock-screen-symbolic',)
 
 			this.menu.addMenuItem(this.item16)
 			this.menu.addMenuItem(this.item17)
@@ -186,13 +187,13 @@ var MenuButton = GObject.registerClass(class LogoMenu_MenuButton extends PanelMe
 
 		if (lockorientation_state) {
 			this.item19 = new PopupMenu.PopupSeparatorMenuItem()
-			this.item20 = new PopupMenu.PopupMenuItem(_('Lock Orientation'))
+			this.item20 = new PopupMenu.PopupImageMenuItem('Lock Orientation', 'rotation-locked-symbolic',)
 
 			this.menu.addMenuItem(this.item19)
 			this.menu.addMenuItem(this.item20)
 
 			this.item20.connect("activate", () => this._system._systemActions.activateLockOrientation())
-		}
+		}                       
 
 	}
 
