@@ -73,7 +73,7 @@ Original extension creator and all the contributors.
 [@AndrewZaech](https://github.com/AndrewZaech), [@Harshad.Gavali](https://gitlab.com/harshadgavali), [@JustPerfection](https://gitlab.com/justperfection.channel), [@vikashraghavan](https://github.com/vikashraghavan)
 
 ### Translators
-[@Bretzoule](https://github.com/Bretzoule), [@kuroehanako](https://github.com/kuroehanako)
+[@Bretzoule](https://github.com/Bretzoule), [@kuroehanako](https://github.com/kuroehanako), [@satisataka](https://github.com/satisataka), [@igor-cali](https://github.com/igor-cali)
 
 ## Donations
 Brave browser users can freely donate with BAT, all help will be appreciated :)
