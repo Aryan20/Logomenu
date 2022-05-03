@@ -7,37 +7,11 @@
    viewBox="0 0 131.23333 131.23334"
    version="1.1"
    id="svg4110"
-   inkscape:version="1.1.1 (3bf5ae0d25, 2021-09-20)"
-   sodipodi:docname="almalinux-logo.svg"
-   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns="http://www.w3.org/2000/svg"
    xmlns:svg="http://www.w3.org/2000/svg">
-  <sodipodi:namedview
-     id="namedview4112"
-     pagecolor="#ffffff"
-     bordercolor="#666666"
-     borderopacity="1.0"
-     inkscape:pageshadow="2"
-     inkscape:pageopacity="0.0"
-     inkscape:pagecheckerboard="0"
-     inkscape:document-units="mm"
-     showgrid="false"
-     units="px"
-     inkscape:zoom="0.44535922"
-     inkscape:cx="-166.15801"
-     inkscape:cy="478.26561"
-     inkscape:window-width="1920"
-     inkscape:window-height="1020"
-     inkscape:window-x="0"
-     inkscape:window-y="28"
-     inkscape:window-maximized="1"
-     inkscape:current-layer="g4141" />
   <defs
      id="defs4107" />
   <g
-     inkscape:label="Layer 1"
-     inkscape:groupmode="layer"
      id="layer1">
     <g
        id="g4141"
@@ -63,7 +37,7 @@
         <path
            id="path28-3"
            d="m 34.11382,27.331278 c -0.2,-0.3 -0.1,-0.6 0.2,-0.8 5.7,-5.2 14.2,-6.2 20.8,-1.1 1.7,1.4 2.8,4.3 1.9,6 -0.4,0.7 -0.9,1 -1.5,1.2 -1.4,0.6 -2.7,1.2 -3.6,2.5 -0.9,1.3 -1.1,2.8 -0.7,4.4 0.3,1.3 0.8,2.7 -0.5,3.9 -0.7,0.7 -4.1,1.3 -5,0.7 -0.4,-0.3 -0.3,-0.6 -0.2,-1 0.3,-2.5 -0.3,-4.8 -1.2,-7 -0.3,-0.8 -0.2,-1.2 0.6,-1.4 1.4,-0.4 2.7,-1.1 3.7,-2.1 2.2,-2.1 1.7,-4.8 -1.2,-6 -2.3,-1 -4.7,-0.8 -7,-0.6 -2.2,0.1 -4.3,0.7 -6.3,1.3 z"
-           class="st1" 
+           class="st1"
            style="fill:#86da2f;fill-opacity:1" />
         <path
            id="path30-5"
@@ -94,7 +68,7 @@
            id="path40-2"
            d="m 20.91382,3.9312776 c 0.3,2.6 -1.5,4.8 -4.2,5.2 -2.3,0.3 -4.7,-1.6 -5,-3.8 -0.3,-2.9 1.3,-4.99999996 4,-5.29999996 2.5,-0.3 4.9,1.59999996 5.2,3.89999996 z"
            class="st5"
-           style="fill:#ff4649;fill-opacity:1"  />
+           style="fill:#ff4649;fill-opacity:1" />
       </g>
     </g>
   </g>
