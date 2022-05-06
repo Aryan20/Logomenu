@@ -23,6 +23,7 @@ var DistroIcons = [
     { PATH: '/Resources/endeavouros_logo-symbolic.svg'},
     { PATH: '/Resources/almalinux-logo-symbolic.svg'},
     { PATH: '/Resources/nixos-logo-symbolic.svg'},
+    { PATH: '/Resources/shastraos-logo-symbolic.svg'},
     { PATH: '/Resources/fedora-logo.svg'},
     { PATH: '/Resources/debian-logo.svg'},
     { PATH: '/Resources/manjaro-logo.svg'},
@@ -42,4 +43,5 @@ var DistroIcons = [
     { PATH: '/Resources/endeavouros_logo.svg'},
     { PATH: '/Resources/almalinux-logo.svg'},
     { PATH: '/Resources/nixos-logo.svg'},
+    { PATH: '/Resources/shastraos-logo.svg'},
 ]
