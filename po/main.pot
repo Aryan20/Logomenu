@@ -1,12 +1,12 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2022 Aryan Kaushik
+# Copyright (C) 2022 Aryan Kaushik (Aryan20)
 # This file is distributed under the same license as the Logo Menu package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Logo Menu 11\n"
+"Project-Id-Version: Logo Menu 12\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-02-24 18:30+0530\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
@@ -18,7 +18,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: extension.js:110
-msgid "About My System                 "
+msgid "About My System"
 msgstr ""
 
 #: extension.js:113

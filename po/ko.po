@@ -1,11 +1,11 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) YEAR Aryan Kaushik
+# Copyright (C) 2022 Aryan Kaushik (Aryan20)
 # This file is distributed under the same license as the Logo Menu package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: Logo Menu 11\n"
+"Project-Id-Version: Logo Menu 12\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-02-24 18:30+0530\n"
 "PO-Revision-Date: 2022-02-24 18:53+0530\n"
@@ -19,8 +19,8 @@ msgstr ""
 "X-Generator: Poedit 3.0\n"
 
 #: extension.js:110
-msgid "About My System                 "
-msgstr "내 시스템에 대하여                 "
+msgid "About My System"
+msgstr "내 시스템에 대하여"
 
 #: extension.js:113
 msgid "Activities"

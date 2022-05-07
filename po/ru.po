@@ -1,11 +1,11 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2022 Aryan Kaushik
+# Copyright (C) 2022 Aryan Kaushik (Aryan20)
 # This file is distributed under the same license as the Logo Menu package.
 # FIRST AUTHOR Artem Kozlov <satisataka@gmail.com>, 2022.
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: Logo Menu 11\n"
+"Project-Id-Version: Logo Menu 12\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-02-24 18:30+0530\n"
 "PO-Revision-Date: 2022-05-01 15:00+0300\n"
@@ -18,8 +18,8 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #: extension.js:110
-msgid "About My System                 "
-msgstr "О cистеме        "
+msgid "About My System"
+msgstr "О cистеме"
 
 #: extension.js:113
 msgid "Activities"

@@ -107,7 +107,7 @@ var MenuButton = GObject.registerClass(class LogoMenu_MenuButton extends PanelMe
 		let lockorientation_state = this._settings.get_boolean('show-lockorientation')
 		let softwarecenter_state = this._settings.get_boolean('hide-softwarecentre')
 		this.menu.removeAll()
-		this.item1 = new PopupMenu.PopupMenuItem(_('About My System                 '))
+		this.item1 = new PopupMenu.PopupMenuItem(_('About My System'))
 		// this.item2 = new PopupMenu.PopupMenuItem(_('System Settings...'))
 		this.item3 = new PopupMenu.PopupSeparatorMenuItem()
 		this.item4 = new PopupMenu.PopupMenuItem(_('Activities'))
