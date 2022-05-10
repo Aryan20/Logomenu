@@ -29,25 +29,18 @@ function _sleep() {
 }
 
 function _restart() {
-	// Util.spawn(['systemctl', 'reboot'])
-	// Util.spawn(['gnome-session-quit', '--reboot'])
 	Util.spawn(['dbus-send', '--session', '--type=method_call', '--dest=org.gnome.SessionManager', '/org/gnome/SessionManager', 'org.gnome.SessionManager.Reboot'])
 }
 
 function _shutdown() {
-	// Util.spawn(['systemctl', 'poweroff', '-prompt'])
-	// Util.spawn(['gnome-session-quit', '--power-off'])
 	Util.spawn(['dbus-send', '--session', '--type=method_call', '--dest=org.gnome.SessionManager', '/org/gnome/SessionManager', 'org.gnome.SessionManager.Shutdown'])
 }
 
 function _lockScreen() {
-	// Util.spawn(['loginctl', 'lock-session'])
 	Util.spawn(['dbus-send', '--type=method_call', '--dest=org.gnome.ScreenSaver', '/org/gnome/ScreenSaver', 'org.gnome.ScreenSaver.Lock'])
 }
 
 function _logOut() {
-	// Util.spawn(['gnome-session-quit'])
-	// Util.spawn(['gnome-session-quit', '--logout'])
 	Util.spawn(['dbus-send', '--session', '--type=method_call', '--dest=org.gnome.SessionManager', '/org/gnome/SessionManager', 'org.gnome.SessionManager.Logout', 'uint32:0'])
 }
 
