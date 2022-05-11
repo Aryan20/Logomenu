@@ -29,19 +29,19 @@ function _sleep() {
 }
 
 function _restart() {
-	Util.spawn(['systemctl', 'reboot'])
+	Util.spawn(['dbus-send', '--session', '--type=method_call', '--dest=org.gnome.SessionManager', '/org/gnome/SessionManager', 'org.gnome.SessionManager.Reboot'])
 }
 
 function _shutdown() {
-	Util.spawn(['systemctl', 'poweroff', '-prompt'])
+	Util.spawn(['dbus-send', '--session', '--type=method_call', '--dest=org.gnome.SessionManager', '/org/gnome/SessionManager', 'org.gnome.SessionManager.Shutdown'])
 }
 
 function _lockScreen() {
-	Util.spawn(['loginctl', 'lock-session'])
+	Util.spawn(['dbus-send', '--type=method_call', '--dest=org.gnome.ScreenSaver', '/org/gnome/ScreenSaver', 'org.gnome.ScreenSaver.Lock'])
 }
 
 function _logOut() {
-	Util.spawn(['gnome-session-quit'])
+	Util.spawn(['dbus-send', '--session', '--type=method_call', '--dest=org.gnome.SessionManager', '/org/gnome/SessionManager', 'org.gnome.SessionManager.Logout', 'uint32:0'])
 }
 
 function _appGrid() {
@@ -150,8 +150,8 @@ var MenuButton = GObject.registerClass(class LogoMenu_MenuButton extends PanelMe
 		if (poweroption_state) {
 			this.item12 = new PopupMenu.PopupSeparatorMenuItem()
 			this.item13 = new PopupMenu.PopupMenuItem(_('Sleep'))
-			this.item14 = new PopupMenu.PopupMenuItem(_('Restart'))
-			this.item15 = new PopupMenu.PopupMenuItem(_('Shut Down'))
+			this.item14 = new PopupMenu.PopupMenuItem(_('Restart...'))
+			this.item15 = new PopupMenu.PopupMenuItem(_('Shut Down...'))
 			this.item16 = new PopupMenu.PopupSeparatorMenuItem()
 			if (lockscreen_state) 
 				this.item17 = new PopupMenu.PopupMenuItem(_('Lock Screen'))
