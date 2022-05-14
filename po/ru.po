@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: Logo Menu 12\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-02-24 18:30+0530\n"
-"PO-Revision-Date: 2022-05-01 15:00+0300\n"
+"PO-Revision-Date: 2022-05-14 15:58+0530\n"
 "Last-Translator: Kozlov Artem <satisataka@gmail.com>\n"
 "Language-Team: <>\n"
 "Language: ru\n"
@@ -16,6 +16,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Poedit 3.0.1\n"
 
 #: extension.js:110
 msgid "About My System"
@@ -50,12 +51,12 @@ msgid "Sleep"
 msgstr "Сон"
 
 #: extension.js:153
-msgid "Restart"
-msgstr "Перезагрузка"
+msgid "Restart..."
+msgstr "Перезагрузка..."
 
 #: extension.js:154
-msgid "Shut Down"
-msgstr "Завершение работы"
+msgid "Shut Down..."
+msgstr "Завершение работы..."
 
 #: extension.js:157 extension.js:179
 msgid "Lock Screen"
@@ -63,7 +64,7 @@ msgstr "Заблокировать экран"
 
 #: extension.js:158
 msgid "Log Out..."
-msgstr "Завершить сеанс"
+msgstr "Завершить сеанс..."
 
 #: extension.js:189
 msgid "Lock Orientation"
@@ -95,11 +96,11 @@ msgstr "Выберете кнопку мыши для запуска Обзор�
 
 #: PrefsLib/adw.js:135 PrefsLib/gtk.js:153
 msgid "Middle Click "
-msgstr "Средняя кнопка"
+msgstr "Средняя кнопка "
 
 #: PrefsLib/adw.js:136 PrefsLib/gtk.js:154
 msgid "Right Click "
-msgstr "Правая кнопка"
+msgstr "Правая кнопка "
 
 #: PrefsLib/adw.js:168 PrefsLib/gtk.js:225
 msgid "Software Center"
