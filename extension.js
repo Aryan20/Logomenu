@@ -29,19 +29,19 @@ function _sleep() {
 }
 
 function _restart() {
-	Util.spawn(['dbus-send', '--session', '--type=method_call', '--dest=org.gnome.SessionManager', '/org/gnome/SessionManager', 'org.gnome.SessionManager.Reboot'])
+	Util.spawn(['gnome-session-quit', '--reboot'])
 }
 
 function _shutdown() {
-	Util.spawn(['dbus-send', '--session', '--type=method_call', '--dest=org.gnome.SessionManager', '/org/gnome/SessionManager', 'org.gnome.SessionManager.Shutdown'])
+	Util.spawn(['gnome-session-quit', '--power-off'])
 }
 
 function _lockScreen() {
-	Util.spawn(['dbus-send', '--type=method_call', '--dest=org.gnome.ScreenSaver', '/org/gnome/ScreenSaver', 'org.gnome.ScreenSaver.Lock'])
+	Util.spawn(['loginctl', 'lock-session'])
 }
 
 function _logOut() {
-	Util.spawn(['dbus-send', '--session', '--type=method_call', '--dest=org.gnome.SessionManager', '/org/gnome/SessionManager', 'org.gnome.SessionManager.Logout', 'uint32:0'])
+	Util.spawn(['gnome-session-quit', '--logout'])
 }
 
 function _appGrid() {
