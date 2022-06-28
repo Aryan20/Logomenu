@@ -1,0 +1,168 @@
+# Deutsche Übersetzung von Logo Menu.
+# Copyright (C) 2022 Aryan Kaushik (Aryan20)
+# This file is distributed under the same license as the Logo Menu package.
+# Felipe Martínez <felipecmm11@gmail.com>, 2022.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Logo Menu 12\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-02-24 18:30+0530\n"
+"PO-Revision-Date: 2022-05-14 15:54+0530\n"
+"Last-Translator: \n"
+"Language-Team: Spanish\n"
+"Language: de\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Poedit 3.0.1\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+
+#: extension.js:110
+msgid "About My System"
+msgstr "Acerca del sistema"
+
+#: extension.js:113
+msgid "Activities"
+msgstr "Actividades"
+
+#: extension.js:114
+msgid "App Grid"
+msgstr "Aplicaciones"
+
+#: extension.js:116 PrefsLib/adw.js:148 PrefsLib/gtk.js:186
+msgid "Terminal"
+msgstr "Terminal"
+
+#: extension.js:117
+msgid "Extensions"
+msgstr "Extensiones"
+
+#: extension.js:134
+msgid "Software Center..."
+msgstr "Centro de Software"
+
+#: extension.js:145
+msgid "Force Quit App"
+msgstr "Forzar cierre"
+
+#: extension.js:152
+msgid "Sleep"
+msgstr "Suspender"
+
+#: extension.js:153
+msgid "Restart..."
+msgstr "Reiniciar..."
+
+#: extension.js:154
+msgid "Shut Down..."
+msgstr "Apagar..."
+
+#: extension.js:157 extension.js:179
+msgid "Lock Screen"
+msgstr "Bloquear"
+
+#: extension.js:158
+msgid "Log Out..."
+msgstr "Cerrar la sesión"
+
+#: extension.js:189
+msgid "Lock Orientation"
+msgstr "Bloquear orientación"
+
+#: PrefsLib/adw.js:24
+msgid "Icon Settings"
+msgstr "Configuración del icono"
+
+#: PrefsLib/adw.js:30 PrefsLib/gtk.js:23
+msgid "Icon"
+msgstr "Icono"
+
+#: PrefsLib/adw.js:62 PrefsLib/gtk.js:89
+msgid "Icon Size"
+msgstr "Tamaño del icono"
+
+#: PrefsLib/adw.js:117
+msgid "Change Defaults"
+msgstr "Cambiar la configuración predeterminada"
+
+#: PrefsLib/adw.js:121
+msgid "Show/Hide Options"
+msgstr "Mostrar/Ocultar opciones"
+
+#: PrefsLib/adw.js:129 PrefsLib/gtk.js:146
+msgid "Icon Click Type to open Activities"
+msgstr "Tipo de clic para abrir Actividades"
+
+#: PrefsLib/adw.js:135 PrefsLib/gtk.js:153
+msgid "Middle Click "
+msgstr "Clic central "
+
+#: PrefsLib/adw.js:136 PrefsLib/gtk.js:154
+msgid "Right Click "
+msgstr "Clic derecho "
+
+#: PrefsLib/adw.js:168 PrefsLib/gtk.js:225
+msgid "Software Center"
+msgstr "Centro de Software"
+
+#: PrefsLib/adw.js:186 PrefsLib/gtk.js:263
+msgid "Enable Power Options"
+msgstr "Activar opciones de energía"
+
+#: PrefsLib/adw.js:201 PrefsLib/gtk.js:301
+msgid "Hide Force Quit option"
+msgstr "Ocultar opción de forzar cierre"
+
+#: PrefsLib/adw.js:218 PrefsLib/gtk.js:339
+msgid "Show Lock Screen option"
+msgstr "Mostrar opción de bloquear la pantalla"
+
+#: PrefsLib/adw.js:234 PrefsLib/gtk.js:377
+msgid "Show Lock Orientation option"
+msgstr "Mostrar opción de bloquear orientación"
+
+#: PrefsLib/adw.js:250 PrefsLib/gtk.js:415
+msgid "Hide Software Centre option"
+msgstr "Ocultar opción de Centro de Software"
+
+#: PrefsLib/adw.js:283
+msgid "About"
+msgstr "Acerca de"
+
+#: PrefsLib/adw.js:299
+msgid "Logo Menu"
+msgstr "Logo Menu"
+
+#: PrefsLib/adw.js:306
+msgid "Quick access menu for GNOME"
+msgstr "Menú de acceso rápido para GNOME"
+
+#: PrefsLib/adw.js:321
+msgid "Logo Menu Version"
+msgstr "Versión de Logo Menu"
+
+#: PrefsLib/adw.js:334
+msgid "GNOME Version"
+msgstr "Versión de GNOME"
+
+#: PrefsLib/adw.js:343
+msgid "Github"
+msgstr "Github"
+
+#: PrefsLib/adw.js:355
+msgid ""
+"<span size=\"small\">This program comes with absolutely no warranty.\n"
+"See the <a href=\"https://gnu.org/licenses/old-licenses/gpl-2.0.html\">GNU "
+"General Public License, version 2 or later</a> for details.</span>"
+msgstr ""
+"<span size=\"small\">Este programa viene sin alguna garantía.\n"
+"Ver <a href=\"https://gnu.org/licenses/old-licenses/gpl-2.0.html\">GNU "
+"General Public License, version 2 o superior</a> para detalles.</span>"
+
+#~ msgid "System Settings ..."
+#~ msgstr "Configuración del sistema..."
+
+#~ msgid "Other Options"
+#~ msgstr "Otras opciones"
