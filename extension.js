@@ -207,6 +207,8 @@ var MenuButton = GObject.registerClass(class LogoMenu_MenuButton extends PanelMe
 	extensions() {
         const appSys = imports.gi.Shell.AppSystem.get_default();
 		const extensionApp = appSys.lookup_app('org.gnome.Extensions.desktop');
+		if (!extensionApp)
+			extensionApp = appSys.lookup_app('com.mattjakeman.ExtensionManager.desktop')
 		if (extensionApp) {
 			try {
 				extensionApp.launch(
