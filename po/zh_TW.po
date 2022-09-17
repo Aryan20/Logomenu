@@ -77,7 +77,6 @@ msgstr "圖示設定"
 #: PrefsLib/adw.js:30 PrefsLib/gtk.js:23
 msgid "Icon"
 msgstr "圖示"
-msgstr "圖示"
 
 #: PrefsLib/adw.js:62 PrefsLib/gtk.js:89
 msgid "Icon Size"
