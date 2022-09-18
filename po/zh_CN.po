@@ -5,10 +5,10 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: Logo Menu 12\n"
+"Project-Id-Version: Logo Menu 15\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-05-14 16:05+0530\n"
-"PO-Revision-Date: 2022-08-08 14:50+0800\n"
+"POT-Creation-Date: 2022-09-18 12:03+0530\n"
+"PO-Revision-Date: 2022-09-18 12:07+0530\n"
 "Last-Translator: 天上飞机最快 地上表姐最坏 <trampover@gmail.com>\n"
 "Language-Team: \n"
 "Language: zh_CN\n"
@@ -16,59 +16,55 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Poedit 3.1\n"
+"X-Generator: Poedit 3.0.1\n"
 
-#: extension.js:110
+#: extension.js:107
 msgid "About My System"
 msgstr "关于本机系统"
 
-#: extension.js:113
+#: extension.js:110
 msgid "Activities"
 msgstr "活动"
 
-#: extension.js:114
+#: extension.js:111
 msgid "App Grid"
 msgstr "所有软件"
 
-#: extension.js:116 PrefsLib/adw.js:148 PrefsLib/gtk.js:186
+#: extension.js:113 PrefsLib/adw.js:148 PrefsLib/gtk.js:186
 msgid "Terminal"
 msgstr "终端"
 
-#: extension.js:117
+#: extension.js:114
 msgid "Extensions"
 msgstr "插件"
 
-#: extension.js:134
+#: extension.js:131
 msgid "Software Center..."
 msgstr "软件中心"
 
-#: extension.js:145
+#: extension.js:142
 msgid "Force Quit App"
 msgstr "强制退出"
 
-#: extension.js:152
+#: extension.js:149
 msgid "Sleep"
 msgstr "休眠"
 
-#: extension.js:153
+#: extension.js:150
 msgid "Restart..."
 msgstr "重启"
 
-#: extension.js:154
+#: extension.js:151
 msgid "Shut Down..."
 msgstr "关机"
 
-#: extension.js:157 extension.js:179
+#: extension.js:154 extension.js:176
 msgid "Lock Screen"
 msgstr "锁屏"
 
-#: extension.js:158
+#: extension.js:155
 msgid "Log Out..."
 msgstr "注销"
-
-#: extension.js:189
-msgid "Lock Orientation"
-msgstr "锁定屏幕旋转"
 
 #: PrefsLib/adw.js:24
 msgid "Icon Settings"
@@ -119,38 +115,34 @@ msgid "Show Lock Screen option"
 msgstr "显示锁屏"
 
 #: PrefsLib/adw.js:234 PrefsLib/gtk.js:377
-msgid "Show Lock Orientation option"
-msgstr "显示旋转屏幕"
-
-#: PrefsLib/adw.js:250 PrefsLib/gtk.js:415
 msgid "Hide Software Centre option"
 msgstr "隐藏软件中心"
 
-#: PrefsLib/adw.js:283
+#: PrefsLib/adw.js:266
 msgid "About"
 msgstr "关于"
 
-#: PrefsLib/adw.js:299
+#: PrefsLib/adw.js:282
 msgid "Logo Menu"
 msgstr "系统图标菜单"
 
-#: PrefsLib/adw.js:306
+#: PrefsLib/adw.js:289
 msgid "Quick access menu for GNOME"
 msgstr "本地数据目录"
 
-#: PrefsLib/adw.js:321
+#: PrefsLib/adw.js:304
 msgid "Logo Menu Version"
 msgstr "系统图标菜单版本"
 
-#: PrefsLib/adw.js:334
+#: PrefsLib/adw.js:317
 msgid "GNOME Version"
 msgstr "GNOME(桌面)版本"
 
-#: PrefsLib/adw.js:343
+#: PrefsLib/adw.js:326
 msgid "Github"
 msgstr ""
 
-#: PrefsLib/adw.js:355
+#: PrefsLib/adw.js:338
 msgid ""
 "<span size=\"small\">This program comes with absolutely no warranty.\n"
 "See the <a href=\"https://gnu.org/licenses/old-licenses/gpl-2.0.html\">GNU "
@@ -159,3 +151,9 @@ msgstr ""
 "<span size=\"small\">本软件不做任何担保\n"
 "详情见<a href=\"https://gnu.org/licenses/old-licenses/gpl-2.0.html\">GNU通"
 "用公共许可证</a>页面</span>"
+
+#~ msgid "Lock Orientation"
+#~ msgstr "锁定屏幕旋转"
+
+#~ msgid "Show Lock Orientation option"
+#~ msgstr "显示旋转屏幕"

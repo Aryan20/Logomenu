@@ -51,12 +51,6 @@
       <description>Toggle Force Quit option vsibility.</description>
     </key>
 
-    <key type="b" name="show-lockorientation">
-      <default>false</default>
-      <summary>Toggle Lock Orientation option vsibility</summary>
-      <description>Toggle Force Orientation option vsibility.</description>
-    </key>
-
     <key type="b" name="hide-softwarecentre">
       <default>false</default>
       <summary>Toggle Software Centre option visibility</summary>

@@ -229,22 +229,6 @@ var LogoMenuOptionsWidget = GObject.registerClass(class Logo_Menu_OptionsWidget 
         
         lockScreenOptionRow.add_suffix(showLCOptionsSwitch);
         
-        // Toggle Lock Orientation option and build it's option in prefs
-        let lockOrientationOptionRow = new Adw.ActionRow({
-            title:_("Show Lock Orientation option")        
-        });
-
-        let showLOOptionsSwitch= new Gtk.Switch({ 
-            valign: Gtk.Align.CENTER,
-        });
-
-        showLOOptionsSwitch.set_active(this._settings.get_boolean('show-lockorientation'));
-        showLOOptionsSwitch.connect('notify::active', (widget) => {
-            this._settings.set_boolean('show-lockorientation', widget.get_active());
-        });
-        
-        lockOrientationOptionRow.add_suffix(showLOOptionsSwitch);
-        
         // Toggle Software centre option and build it's option in prefs
         let SoftwareCentreOptionRow = new Adw.ActionRow({
             title:_("Hide Software Centre option")        
@@ -268,7 +252,6 @@ var LogoMenuOptionsWidget = GObject.registerClass(class Logo_Menu_OptionsWidget 
         prefGroup2.add(showPowerOptionsRow);
         prefGroup2.add(forceQuitOptionrow);
         prefGroup2.add(lockScreenOptionRow);
-        prefGroup2.add(lockOrientationOptionRow);
         prefGroup2.add(SoftwareCentreOptionRow);
         
         this.add(prefGroup1);

@@ -75,7 +75,6 @@ var MenuButton = GObject.registerClass(class LogoMenu_MenuButton extends PanelMe
 	_init() {
 		super._init(0.0, "MenuButton");
 		this._settings = ExtensionUtils.getSettings(Me.metadata['settings-schema']);
-		this._system = Main.panel.statusArea.aggregateMenu._system;
 
 		// Icon
 		this.icon = new St.Icon({
@@ -93,7 +92,6 @@ var MenuButton = GObject.registerClass(class LogoMenu_MenuButton extends PanelMe
 		this._settings.connect('changed::show-power-options', () => this.toggleOptions())
 		this._settings.connect('changed::hide-forcequit', () => this.toggleOptions())
 		this._settings.connect('changed::show-lockscreen', () => this.toggleOptions())
-		this._settings.connect('changed::show-lockorientation', () => this.toggleOptions())
 		this.toggleOptions();
 
 		//bind middle click option to toggle overview
@@ -104,7 +102,6 @@ var MenuButton = GObject.registerClass(class LogoMenu_MenuButton extends PanelMe
 		let poweroption_state = this._settings.get_boolean('show-power-options')
 		let forcequit_state = this._settings.get_boolean('hide-forcequit')
 		let lockscreen_state = this._settings.get_boolean('show-lockscreen')
-		let lockorientation_state = this._settings.get_boolean('show-lockorientation')
 		let softwarecenter_state = this._settings.get_boolean('hide-softwarecentre')
 		this.menu.removeAll()
 		this.item1 = new PopupMenu.PopupMenuItem(_('About My System'))
@@ -183,17 +180,6 @@ var MenuButton = GObject.registerClass(class LogoMenu_MenuButton extends PanelMe
 
 			this.item17.connect('activate', () => _lockScreen())
 		}
-
-		if (lockorientation_state) {
-			this.item19 = new PopupMenu.PopupSeparatorMenuItem()
-			this.item20 = new PopupMenu.PopupMenuItem(_('Lock Orientation'))
-
-			this.menu.addMenuItem(this.item19)
-			this.menu.addMenuItem(this.item20)
-
-			this.item20.connect("activate", () => this._system._systemActions.activateLockOrientation())
-		}
-
 	}
 
 	terminal() {

@@ -5,10 +5,10 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: Logo Menu 12\n"
+"Project-Id-Version: Logo Menu 15\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-02-24 18:30+0530\n"
-"PO-Revision-Date: 2022-05-14 15:59+0530\n"
+"POT-Creation-Date: 2022-09-18 12:03+0530\n"
+"PO-Revision-Date: 2022-09-18 12:06+0530\n"
 "Last-Translator: Thomas LEFLOCH <leflochtho@eisti.eu>\n"
 "Language-Team: French <traduc@traduc.org>\n"
 "Language: fr\n"
@@ -17,57 +17,53 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: Poedit 3.0.1\n"
 
-#: extension.js:110
+#: extension.js:107
 msgid "About My System"
 msgstr "À propos de mon système"
 
-#: extension.js:113
+#: extension.js:110
 msgid "Activities"
 msgstr "Activités"
 
-#: extension.js:114
+#: extension.js:111
 msgid "App Grid"
 msgstr "Grille d'applications"
 
-#: extension.js:116 PrefsLib/adw.js:148 PrefsLib/gtk.js:186
+#: extension.js:113 PrefsLib/adw.js:148 PrefsLib/gtk.js:186
 msgid "Terminal"
 msgstr "Terminal"
 
-#: extension.js:117
+#: extension.js:114
 msgid "Extensions"
 msgstr "Extensions"
 
-#: extension.js:134
+#: extension.js:131
 msgid "Software Center..."
 msgstr "Centre de logiciels..."
 
-#: extension.js:145
+#: extension.js:142
 msgid "Force Quit App"
 msgstr "Forcer à quitter l'App."
 
-#: extension.js:152
+#: extension.js:149
 msgid "Sleep"
 msgstr "Veille"
 
-#: extension.js:153
+#: extension.js:150
 msgid "Restart..."
 msgstr "Redémarrer..."
 
-#: extension.js:154
+#: extension.js:151
 msgid "Shut Down..."
 msgstr "Éteindre..."
 
-#: extension.js:157 extension.js:179
+#: extension.js:154 extension.js:176
 msgid "Lock Screen"
 msgstr "Verrouiller l'écran"
 
-#: extension.js:158
+#: extension.js:155
 msgid "Log Out..."
 msgstr "Se déconnecter..."
-
-#: extension.js:189
-msgid "Lock Orientation"
-msgstr "Verrouiller l'orientation"
 
 #: PrefsLib/adw.js:24
 msgid "Icon Settings"
@@ -118,38 +114,34 @@ msgid "Show Lock Screen option"
 msgstr "Cacher l'option 'Verrouiller l'écran'"
 
 #: PrefsLib/adw.js:234 PrefsLib/gtk.js:377
-msgid "Show Lock Orientation option"
-msgstr "Afficher l'option 'Verrouiller l'orientation'"
-
-#: PrefsLib/adw.js:250 PrefsLib/gtk.js:415
 msgid "Hide Software Centre option"
 msgstr "Cacher l'option 'Centre de logiciels'"
 
-#: PrefsLib/adw.js:283
+#: PrefsLib/adw.js:266
 msgid "About"
 msgstr "À propos"
 
-#: PrefsLib/adw.js:299
+#: PrefsLib/adw.js:282
 msgid "Logo Menu"
 msgstr "Logo Menu"
 
-#: PrefsLib/adw.js:306
+#: PrefsLib/adw.js:289
 msgid "Quick access menu for GNOME"
 msgstr "Menu d'accès rapide pour GNOME"
 
-#: PrefsLib/adw.js:321
+#: PrefsLib/adw.js:304
 msgid "Logo Menu Version"
 msgstr "Version de Logo Menu"
 
-#: PrefsLib/adw.js:334
+#: PrefsLib/adw.js:317
 msgid "GNOME Version"
 msgstr "Version de GNOME"
 
-#: PrefsLib/adw.js:343
+#: PrefsLib/adw.js:326
 msgid "Github"
 msgstr ""
 
-#: PrefsLib/adw.js:355
+#: PrefsLib/adw.js:338
 msgid ""
 "<span size=\"small\">This program comes with absolutely no warranty.\n"
 "See the <a href=\"https://gnu.org/licenses/old-licenses/gpl-2.0.html\">GNU "
@@ -158,3 +150,9 @@ msgstr ""
 "<span size=\"small\">Ce programme est fourni sans garantie.\n"
 "Voir <a href=\"https://gnu.org/licenses/old-licenses/gpl-2.0.html\">'GNU "
 "General Public License', version 2 ou plus</a> pour les détails.</span>"
+
+#~ msgid "Lock Orientation"
+#~ msgstr "Verrouiller l'orientation"
+
+#~ msgid "Show Lock Orientation option"
+#~ msgstr "Afficher l'option 'Verrouiller l'orientation'"
