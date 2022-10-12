@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: Logo Menu 15\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-09-18 12:03+0530\n"
-"PO-Revision-Date: 2022-09-18 12:08+0530\n"
+"PO-Revision-Date: 2022-10-12 20:34+0530\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: zh_TW\n"
@@ -30,7 +30,7 @@ msgstr "活動"
 msgid "App Grid"
 msgstr "應用程式"
 
-#: extension.js:113 PrefsLib/adw.js:148 PrefsLib/gtk.js:186
+#: extension.js:113 PrefsLib/adw.js:151 PrefsLib/gtk.js:188
 msgid "Terminal"
 msgstr "終端機"
 
@@ -66,83 +66,91 @@ msgstr "鎖定螢幕"
 msgid "Log Out..."
 msgstr "登出"
 
-#: PrefsLib/adw.js:24
+#: PrefsLib/adw.js:26
 msgid "Icon Settings"
 msgstr "圖示設定"
 
-#: PrefsLib/adw.js:30 PrefsLib/gtk.js:23
+#: PrefsLib/adw.js:32 PrefsLib/gtk.js:25
 msgid "Icon"
 msgstr "圖示"
 
-#: PrefsLib/adw.js:62 PrefsLib/gtk.js:89
+#: PrefsLib/adw.js:64 PrefsLib/gtk.js:91
 msgid "Icon Size"
 msgstr "圖示大小"
 
-#: PrefsLib/adw.js:117
+#: PrefsLib/adw.js:120
 msgid "Change Defaults"
 msgstr "自訂"
 
-#: PrefsLib/adw.js:121
+#: PrefsLib/adw.js:124
 msgid "Show/Hide Options"
 msgstr "顯示/隱藏選項"
 
-#: PrefsLib/adw.js:129 PrefsLib/gtk.js:146
+#: PrefsLib/adw.js:132 PrefsLib/gtk.js:148
 msgid "Icon Click Type to open Activities"
 msgstr "點擊按鍵以開啟活動"
 
-#: PrefsLib/adw.js:135 PrefsLib/gtk.js:153
+#: PrefsLib/adw.js:138 PrefsLib/gtk.js:155
 msgid "Middle Click "
 msgstr "中鍵"
 
-#: PrefsLib/adw.js:136 PrefsLib/gtk.js:154
+#: PrefsLib/adw.js:139 PrefsLib/gtk.js:156
 msgid "Right Click "
 msgstr "右鍵"
 
-#: PrefsLib/adw.js:168 PrefsLib/gtk.js:225
+#: PrefsLib/adw.js:171 PrefsLib/gtk.js:227
 msgid "Software Center"
 msgstr "App Store"
 
-#: PrefsLib/adw.js:186 PrefsLib/gtk.js:263
+#: PrefsLib/adw.js:189 PrefsLib/gtk.js:265
 msgid "Enable Power Options"
 msgstr "顯示電源選項"
 
-#: PrefsLib/adw.js:201 PrefsLib/gtk.js:301
+#: PrefsLib/adw.js:204 PrefsLib/gtk.js:303
 msgid "Hide Force Quit option"
 msgstr "隱藏強制退出選項"
 
-#: PrefsLib/adw.js:218 PrefsLib/gtk.js:339
+#: PrefsLib/adw.js:221 PrefsLib/gtk.js:341
 msgid "Show Lock Screen option"
 msgstr "顯示鎖定銀幕選項"
 
-#: PrefsLib/adw.js:234 PrefsLib/gtk.js:377
+#: PrefsLib/adw.js:237 PrefsLib/gtk.js:379
 msgid "Hide Software Centre option"
 msgstr "隱藏App Store選項"
 
-#: PrefsLib/adw.js:266
+#: PrefsLib/adw.js:270
 msgid "About"
 msgstr "關於"
 
-#: PrefsLib/adw.js:282
+#: PrefsLib/adw.js:286
 msgid "Logo Menu"
 msgstr "Logo Menu"
 
-#: PrefsLib/adw.js:289
+#: PrefsLib/adw.js:293
 msgid "Quick access menu for GNOME"
 msgstr "快速存取的目錄"
 
-#: PrefsLib/adw.js:304
+#: PrefsLib/adw.js:308
 msgid "Logo Menu Version"
 msgstr "Logo Menu 版本"
 
-#: PrefsLib/adw.js:317
+#: PrefsLib/adw.js:320
 msgid "GNOME Version"
 msgstr "Gnome 版本"
 
-#: PrefsLib/adw.js:326
+#: PrefsLib/adw.js:327
 msgid "Github"
 msgstr "Github"
 
-#: PrefsLib/adw.js:338
+#: PrefsLib/adw.js:335
+msgid "Created with love by"
+msgstr ""
+
+#: PrefsLib/adw.js:342
+msgid "Matrix/Element room"
+msgstr ""
+
+#: PrefsLib/adw.js:359
 msgid ""
 "<span size=\"small\">This program comes with absolutely no warranty.\n"
 "See the <a href=\"https://gnu.org/licenses/old-licenses/gpl-2.0.html\">GNU "

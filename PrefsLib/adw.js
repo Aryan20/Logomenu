@@ -1,3 +1,5 @@
+// LibAdwaita + GTK based preference or newer versions of GNOME
+
 const ExtensionUtils = imports.misc.extensionUtils;
 const Me = ExtensionUtils.getCurrentExtension();
 
@@ -100,6 +102,7 @@ var LogoMenuIconsWidget = GObject.registerClass(class Logo_Menu_IconsWidget exte
     }
 })
 
+// Create all the customization options
 var LogoMenuOptionsWidget = GObject.registerClass(class Logo_Menu_OptionsWidget extends Adw.PreferencesPage{
     _init(settings) {
         super._init({
@@ -230,7 +233,7 @@ var LogoMenuOptionsWidget = GObject.registerClass(class Logo_Menu_OptionsWidget 
         lockScreenOptionRow.add_suffix(showLCOptionsSwitch);
         
         // Toggle Software centre option and build it's option in prefs
-        let SoftwareCentreOptionRow = new Adw.ActionRow({
+        let softwareCentreOptionRow = new Adw.ActionRow({
             title:_("Hide Software Centre option")        
         });
 
@@ -243,7 +246,7 @@ var LogoMenuOptionsWidget = GObject.registerClass(class Logo_Menu_OptionsWidget 
             this._settings.set_boolean('hide-softwarecentre', widget.get_active());
         });
         
-        SoftwareCentreOptionRow.add_suffix(hideSCOptionSwitch);
+        softwareCentreOptionRow.add_suffix(hideSCOptionSwitch);
         
         // Pref Group
         prefGroup1.add(menuButtonIconClickTypeRow);
@@ -252,7 +255,7 @@ var LogoMenuOptionsWidget = GObject.registerClass(class Logo_Menu_OptionsWidget 
         prefGroup2.add(showPowerOptionsRow);
         prefGroup2.add(forceQuitOptionrow);
         prefGroup2.add(lockScreenOptionRow);
-        prefGroup2.add(SoftwareCentreOptionRow);
+        prefGroup2.add(softwareCentreOptionRow);
         
         this.add(prefGroup1);
         this.add(prefGroup2);
@@ -260,100 +263,118 @@ var LogoMenuOptionsWidget = GObject.registerClass(class Logo_Menu_OptionsWidget 
 })
 
 // Parts taken from Arc Menu - https://gitlab.com/logoMenu/logoMenu/-/blob/wip-GNOME42-AwdPrefs/prefs.js
+// Create the About page
 var AboutPage = GObject.registerClass(class Logo_Menu_AboutPage extends Adw.PreferencesPage {
-        _init(settings) {
-            super._init({
-                title: _("About"),
-                icon_name: 'info-symbolic',
-            });
-            
-            this._settings = settings;
+    _init(settings) {
+        super._init({
+            title: _("About"),
+            icon_name: 'info-symbolic',
+        });
+        
+        this._settings = settings;
 
-            let logoMenuLogoGroup = new Adw.PreferencesGroup();
-            let logoMenuBox = new Gtk.Box( {
-                orientation: Gtk.Orientation.VERTICAL,
-                margin_top: 10,
-                margin_bottom: 10,
-                hexpand: false,
-                vexpand: false
-            });
+        let logoMenuLogoGroup = new Adw.PreferencesGroup();
+        let logoMenuBox = new Gtk.Box( {
+            orientation: Gtk.Orientation.VERTICAL,
+            margin_top: 10,
+            margin_bottom: 10,
+            hexpand: false,
+            vexpand: false
+        });
 
-            let logoMenuLabel = new Gtk.Label({
-                label: '<span size="large"><b>' + _('Logo Menu') + '</b></span>',
-                use_markup: true,
-                vexpand: true,
-                valign: Gtk.Align.FILL
-            });
+        let logoMenuLabel = new Gtk.Label({
+            label: '<span size="large"><b>' + _('Logo Menu') + '</b></span>',
+            use_markup: true,
+            vexpand: true,
+            valign: Gtk.Align.FILL
+        });
 
-            let projectDescriptionLabel = new Gtk.Label({
-                label: _('Quick access menu for GNOME'),
-                hexpand: false,
-                vexpand: false,
-                margin_bottom: 5
-            });
-            logoMenuBox.append(logoMenuLabel);
-            logoMenuBox.append(projectDescriptionLabel);
-            logoMenuLogoGroup.add(logoMenuBox);
+        let projectDescriptionLabel = new Gtk.Label({
+            label: _('Quick access menu for GNOME'),
+            hexpand: false,
+            vexpand: false,
+            margin_bottom: 5
+        });
+        logoMenuBox.append(logoMenuLabel);
+        logoMenuBox.append(projectDescriptionLabel);
+        logoMenuLogoGroup.add(logoMenuBox);
 
-            this.add(logoMenuLogoGroup);
-            //-----------------------------------------------------------------------
+        this.add(logoMenuLogoGroup);
+        //-----------------------------------------------------------------------
 
-            //Extension/OS Info Group------------------------------------------------
-            let extensionInfoGroup = new Adw.PreferencesGroup();
-            let logoMenuVersionRow = new Adw.ActionRow({
-                title: _("Logo Menu Version"),
-            });
-            let releaseVersion;
-            if(Me.metadata.version)
-                releaseVersion = Me.metadata.version;
-            else
-                releaseVersion = 'unknown';
-            logoMenuVersionRow.add_suffix(new Gtk.Label({ 
-                label: releaseVersion + ''
-            }));
-            extensionInfoGroup.add(logoMenuVersionRow);
+        //Extension/OS Info Group------------------------------------------------
+        let extensionInfoGroup = new Adw.PreferencesGroup();
+        let logoMenuVersionRow = new Adw.ActionRow({
+            title: _("Logo Menu Version"),
+        });
+        let releaseVersion;
+        if(Me.metadata.version)
+            releaseVersion = Me.metadata.version;
+        else
+            releaseVersion = 'unknown';
+        logoMenuVersionRow.add_suffix(new Gtk.Label({ 
+            label: releaseVersion + ''
+        }));
 
-            let gnomeVersionRow = new Adw.ActionRow({
-                title: _('GNOME Version'),
-            });
-            gnomeVersionRow.add_suffix(new Gtk.Label({ 
-                label: imports.misc.config.PACKAGE_VERSION + '',
-            }));
-            extensionInfoGroup.add(gnomeVersionRow);
+        let gnomeVersionRow = new Adw.ActionRow({
+            title: _('GNOME Version'),
+        });
+        gnomeVersionRow.add_suffix(new Gtk.Label({ 
+            label: imports.misc.config.PACKAGE_VERSION + '',
+        }));
+        
+        let githubLinkRow = new Adw.ActionRow({
+            title: _('Github'),
+        });
+        githubLinkRow.add_suffix(new Gtk.Label({ 
+            label: 'Github.com/Aryan20/LogoMenu',
+        }));
+        
 
-            
-            let githubLinkRow = new Adw.ActionRow({
-                title: _('Github'),
-            });
-            githubLinkRow.add_suffix(new Gtk.Label({ 
-                label: 'Github.com/Aryan20/LogoMenu',
-            }));
-            extensionInfoGroup.add(githubLinkRow);
+        let createdByRow = new Adw.ActionRow({
+            title: _('Created with love by'),
+        });
+        createdByRow.add_suffix(new Gtk.Label({ 
+            label: 'Aryan Kaushik',
+        }));
+        
+        let matrixRoomRow = new Adw.ActionRow({
+            title: _('Matrix/Element room'),
+        });
+        matrixRoomRow.add_suffix(new Gtk.Label({ 
+            label: '#logo-menu:matrix.org',
+        }));
 
-            this.add(extensionInfoGroup);
-            //-----------------------------------------------------------------------
+        extensionInfoGroup.add(logoMenuVersionRow);
+        extensionInfoGroup.add(gnomeVersionRow);
+        extensionInfoGroup.add(githubLinkRow);
+        extensionInfoGroup.add(createdByRow);
+        extensionInfoGroup.add(matrixRoomRow);
 
-            let gnuSoftwareGroup = new Adw.PreferencesGroup();
-            let gnuSofwareLabel = new Gtk.Label({
-                label: _('<span size="small">' +'This program comes with absolutely no warranty.\n' +
-                    'See the <a href="https://gnu.org/licenses/old-licenses/gpl-2.0.html">' +
-                        'GNU General Public License, version 2 or later</a> for details.' +
-                        '</span>'
-                ),
-                use_markup: true,
-                justify: Gtk.Justification.CENTER
-            });
-            let gnuSofwareLabelBox = new Gtk.Box({
-                orientation: Gtk.Orientation.VERTICAL,
-                valign: Gtk.Align.END,
-                vexpand: true,
-                margin_top: 5,
-                margin_bottom: 10
-            });
-            gnuSofwareLabelBox.append(gnuSofwareLabel);
-            gnuSoftwareGroup.add(gnuSofwareLabelBox);
-            this.add(gnuSoftwareGroup);
-        }
+        this.add(extensionInfoGroup);
+        //-----------------------------------------------------------------------
+
+        let gnuSoftwareGroup = new Adw.PreferencesGroup();
+        let gnuSofwareLabel = new Gtk.Label({
+            label: _('<span size="small">' +'This program comes with absolutely no warranty.\n' +
+                'See the <a href="https://gnu.org/licenses/old-licenses/gpl-2.0.html">' +
+                    'GNU General Public License, version 2 or later</a> for details.' +
+                    '</span>'
+            ),
+            use_markup: true,
+            justify: Gtk.Justification.CENTER
+        });
+        let gnuSofwareLabelBox = new Gtk.Box({
+            orientation: Gtk.Orientation.VERTICAL,
+            valign: Gtk.Align.END,
+            vexpand: true,
+            margin_top: 5,
+            margin_bottom: 10
+        });
+        gnuSofwareLabelBox.append(gnuSofwareLabel);
+        gnuSoftwareGroup.add(gnuSofwareLabelBox);
+        this.add(gnuSoftwareGroup);
+    }
 });
 
 

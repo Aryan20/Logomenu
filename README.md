@@ -41,7 +41,7 @@ Join the matrix room for the latest news and releases and/or for suggestions: [c
 
 fork of [Tofu Menu by tofutech](https://github.com/tofutech/tofumenu)
 
-Compatible with and tested on GNOME 42, 41, 40, 3.xx
+Compatible with and tested on GNOME 43, 42, 41, 40, 3.xx
 
 Note - 
 1) Some icons can get changed due to Icon Pack used, particularly due to Icon packs primarily developed for KDE in mind.
@@ -76,9 +76,7 @@ Original extension creator and all the contributors.
 [@Bretzoule](https://github.com/Bretzoule), [@kuroehanako](https://github.com/kuroehanako), [@satisataka](https://github.com/satisataka), [@igor-cali](https://github.com/igor-cali), [@h1mal](https://github.com/h1mal)
 
 ## Donations
-Brave browser users can freely donate with BAT, all help will be appreciated :)
-
-Other crypto - [DONATIONS.md](https://github.com/Aryan20/Logomenu/blob/main/DONATIONS.md)
+You can donate by using the GitHub sponsor button or through crypto - [DONATIONS.md](https://github.com/Aryan20/Logomenu/blob/main/DONATIONS.md)
 
 ### Legal disclaimer for brand icons and trademarks..
 

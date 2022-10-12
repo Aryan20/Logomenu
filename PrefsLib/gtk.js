@@ -1,3 +1,5 @@
+// Legacy gtk preferences window for compatibility with older versions of GNOME
+
 const ExtensionUtils = imports.misc.extensionUtils;
 const Me = ExtensionUtils.getCurrentExtension();
 
@@ -366,7 +368,7 @@ var LogoMenuPreferencesWidget = GObject.registerClass(class Logo_Menu_Preference
 
         // Toggle Software centre option and build it's option in prefs
         let SoftwareCentreOptionFrame = new Gtk.Frame();
-        let SoftwareCentreOptionBox = new Gtk.Box({
+        let softwareCentreOptionBox = new Gtk.Box({
             margin_top: 5,
             margin_bottom: 5,
             margin_start: 5,
@@ -390,15 +392,15 @@ var LogoMenuPreferencesWidget = GObject.registerClass(class Logo_Menu_Preference
         });
 
         if (shellVersion < 40){
-            SoftwareCentreOptionBox.add(hideSCOptionText);
-            SoftwareCentreOptionBox.add(hideSCOptionSwitch);
-            SoftwareCentreOptionFrame.add(SoftwareCentreOptionBox);
+            softwareCentreOptionBox.add(hideSCOptionText);
+            softwareCentreOptionBox.add(hideSCOptionSwitch);
+            SoftwareCentreOptionFrame.add(softwareCentreOptionBox);
             this.add(SoftwareCentreOptionFrame);
         }
         else{
-            SoftwareCentreOptionBox.append(hideSCOptionText);
-            SoftwareCentreOptionBox.append(hideSCOptionSwitch);
-            SoftwareCentreOptionFrame.set_child(SoftwareCentreOptionBox);
+            softwareCentreOptionBox.append(hideSCOptionText);
+            softwareCentreOptionBox.append(hideSCOptionSwitch);
+            SoftwareCentreOptionFrame.set_child(softwareCentreOptionBox);
             this.append(SoftwareCentreOptionFrame);
         }    
 

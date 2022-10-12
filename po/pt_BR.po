@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: Logo Menu 15\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-09-18 12:03+0530\n"
-"PO-Revision-Date: 2022-09-18 12:07+0530\n"
+"PO-Revision-Date: 2022-10-12 20:33+0530\n"
 "Last-Translator: Jorge Braz <jlbmesquita@gmail.com>\n"
 "Language-Team: Brazilian Portuguese <jlbmesquita@gmail.com>\n"
 "Language: pt_BR\n"
@@ -31,7 +31,7 @@ msgstr "Atividades"
 msgid "App Grid"
 msgstr "Grade de Aplicativos"
 
-#: extension.js:113 PrefsLib/adw.js:148 PrefsLib/gtk.js:186
+#: extension.js:113 PrefsLib/adw.js:151 PrefsLib/gtk.js:188
 msgid "Terminal"
 msgstr "Terminal"
 
@@ -67,83 +67,91 @@ msgstr "Tela de Bloqueio"
 msgid "Log Out..."
 msgstr "Sair..."
 
-#: PrefsLib/adw.js:24
+#: PrefsLib/adw.js:26
 msgid "Icon Settings"
 msgstr "Configurações do Ícone"
 
-#: PrefsLib/adw.js:30 PrefsLib/gtk.js:23
+#: PrefsLib/adw.js:32 PrefsLib/gtk.js:25
 msgid "Icon"
 msgstr "Ícone"
 
-#: PrefsLib/adw.js:62 PrefsLib/gtk.js:89
+#: PrefsLib/adw.js:64 PrefsLib/gtk.js:91
 msgid "Icon Size"
 msgstr "Tamanho do Ícone"
 
-#: PrefsLib/adw.js:117
+#: PrefsLib/adw.js:120
 msgid "Change Defaults"
 msgstr "Alterar Padrões"
 
-#: PrefsLib/adw.js:121
+#: PrefsLib/adw.js:124
 msgid "Show/Hide Options"
 msgstr "Mostrar/Esconder Opções"
 
-#: PrefsLib/adw.js:129 PrefsLib/gtk.js:146
+#: PrefsLib/adw.js:132 PrefsLib/gtk.js:148
 msgid "Icon Click Type to open Activities"
 msgstr "Tipo do Clique do Ícone para Abrir Atividades"
 
-#: PrefsLib/adw.js:135 PrefsLib/gtk.js:153
+#: PrefsLib/adw.js:138 PrefsLib/gtk.js:155
 msgid "Middle Click "
-msgstr "Clique do Meio"
+msgstr "Clique do Meio "
 
-#: PrefsLib/adw.js:136 PrefsLib/gtk.js:154
+#: PrefsLib/adw.js:139 PrefsLib/gtk.js:156
 msgid "Right Click "
-msgstr "Clique da Direita"
+msgstr "Clique da Direita "
 
-#: PrefsLib/adw.js:168 PrefsLib/gtk.js:225
+#: PrefsLib/adw.js:171 PrefsLib/gtk.js:227
 msgid "Software Center"
 msgstr "Centro de Software"
 
-#: PrefsLib/adw.js:186 PrefsLib/gtk.js:263
+#: PrefsLib/adw.js:189 PrefsLib/gtk.js:265
 msgid "Enable Power Options"
 msgstr "Ativar Opções de Energia"
 
-#: PrefsLib/adw.js:201 PrefsLib/gtk.js:301
+#: PrefsLib/adw.js:204 PrefsLib/gtk.js:303
 msgid "Hide Force Quit option"
 msgstr "Ocultar Opção de Forçar Saída"
 
-#: PrefsLib/adw.js:218 PrefsLib/gtk.js:339
+#: PrefsLib/adw.js:221 PrefsLib/gtk.js:341
 msgid "Show Lock Screen option"
 msgstr "Mostrar Opção da Tela de Bloqueio"
 
-#: PrefsLib/adw.js:234 PrefsLib/gtk.js:377
+#: PrefsLib/adw.js:237 PrefsLib/gtk.js:379
 msgid "Hide Software Centre option"
 msgstr "Esconder Opção do Centro de Software"
 
-#: PrefsLib/adw.js:266
+#: PrefsLib/adw.js:270
 msgid "About"
 msgstr "Sobre"
 
-#: PrefsLib/adw.js:282
+#: PrefsLib/adw.js:286
 msgid "Logo Menu"
 msgstr "Menu do Logotipo"
 
-#: PrefsLib/adw.js:289
+#: PrefsLib/adw.js:293
 msgid "Quick access menu for GNOME"
 msgstr "Menu de Acesso Rápido para GNOME"
 
-#: PrefsLib/adw.js:304
+#: PrefsLib/adw.js:308
 msgid "Logo Menu Version"
 msgstr "Versão do Menu do Logotipo"
 
-#: PrefsLib/adw.js:317
+#: PrefsLib/adw.js:320
 msgid "GNOME Version"
 msgstr "Versão do GNOME"
 
-#: PrefsLib/adw.js:326
+#: PrefsLib/adw.js:327
 msgid "Github"
 msgstr "Github"
 
-#: PrefsLib/adw.js:338
+#: PrefsLib/adw.js:335
+msgid "Created with love by"
+msgstr ""
+
+#: PrefsLib/adw.js:342
+msgid "Matrix/Element room"
+msgstr ""
+
+#: PrefsLib/adw.js:359
 msgid ""
 "<span size=\"small\">This program comes with absolutely no warranty.\n"
 "See the <a href=\"https://gnu.org/licenses/old-licenses/gpl-2.0.html\">GNU "
