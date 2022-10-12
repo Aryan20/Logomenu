@@ -3,15 +3,17 @@
 
 <img src="https://github.com/Aryan20/Logomenu/blob/main/screenshot2.png" width=410>
 
-<img src="https://github.com/Aryan20/Logomenu/blob/main/screenshot1.png" width=370>
-
 <br>
 
-## Gnome 42 Adwaita Screenshots: 
+## Preference window
 
 <img src="https://github.com/Aryan20/Logomenu/blob/main/screenshot_42_1.png" width=370>
 <img src="https://github.com/Aryan20/Logomenu/blob/main/screenshot_42_2.png" width=370>
 <img src="https://github.com/Aryan20/Logomenu/blob/main/screenshot_42_3.png" width=370>
+
+## Legacy preference GNOME 3.xx
+
+<img src="https://github.com/Aryan20/Logomenu/blob/main/screenshot1.png" width=370>
 
 Quick access menu for the GNOME panel with options that help ease the workflow for newcomers and power users alike and gives a great logo that you can switch to your liking to match your distro or add something your own.
 
