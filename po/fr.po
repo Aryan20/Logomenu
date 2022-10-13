@@ -8,14 +8,14 @@ msgstr ""
 "Project-Id-Version: Logo Menu 15\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-09-18 12:03+0530\n"
-"PO-Revision-Date: 2022-10-12 20:33+0530\n"
-"Last-Translator: Thomas LEFLOCH <leflochtho@eisti.eu>\n"
+"PO-Revision-Date: 2022-10-13 09:45+0200\n"
+"Last-Translator: Irénée Thirion <irenee.thirion@e.email>\n"
 "Language-Team: French <traduc@traduc.org>\n"
 "Language: fr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 3.0.1\n"
+"X-Generator: Poedit 3.1.1\n"
 
 #: extension.js:107
 msgid "About My System"
@@ -27,7 +27,7 @@ msgstr "Activités"
 
 #: extension.js:111
 msgid "App Grid"
-msgstr "Grille d'applications"
+msgstr "Grille d’applications"
 
 #: extension.js:113 PrefsLib/adw.js:151 PrefsLib/gtk.js:188
 msgid "Terminal"
@@ -43,7 +43,7 @@ msgstr "Centre de logiciels..."
 
 #: extension.js:142
 msgid "Force Quit App"
-msgstr "Forcer à quitter l'App"
+msgstr "Forcer à quitter l’App"
 
 #: extension.js:149
 msgid "Sleep"
@@ -59,7 +59,7 @@ msgstr "Éteindre..."
 
 #: extension.js:154 extension.js:176
 msgid "Lock Screen"
-msgstr "Verrouiller l'écran"
+msgstr "Verrouiller l’écran"
 
 #: extension.js:155
 msgid "Log Out..."
@@ -75,7 +75,7 @@ msgstr "Icône"
 
 #: PrefsLib/adw.js:64 PrefsLib/gtk.js:91
 msgid "Icon Size"
-msgstr "Taille de l'icône"
+msgstr "Taille de l’icône"
 
 #: PrefsLib/adw.js:120
 msgid "Change Defaults"
@@ -83,7 +83,7 @@ msgstr "Changer les paramètres par défaut"
 
 #: PrefsLib/adw.js:124
 msgid "Show/Hide Options"
-msgstr "Afficher/Cacher des Options"
+msgstr "Afficher / Cacher des Options"
 
 #: PrefsLib/adw.js:132 PrefsLib/gtk.js:148
 msgid "Icon Click Type to open Activities"
@@ -103,19 +103,19 @@ msgstr "Centre de logiciels"
 
 #: PrefsLib/adw.js:189 PrefsLib/gtk.js:265
 msgid "Enable Power Options"
-msgstr "Activer les options d'alimentation"
+msgstr "Activer les options d’alimentation"
 
 #: PrefsLib/adw.js:204 PrefsLib/gtk.js:303
 msgid "Hide Force Quit option"
-msgstr "Cacher l'option 'Forcer à quitter'"
+msgstr "Cacher l’option « Forcer à quitter »"
 
 #: PrefsLib/adw.js:221 PrefsLib/gtk.js:341
 msgid "Show Lock Screen option"
-msgstr "Cacher l'option 'Verrouiller l'écran'"
+msgstr "Cacher l’option « Verrouiller l’écran »"
 
 #: PrefsLib/adw.js:237 PrefsLib/gtk.js:379
 msgid "Hide Software Centre option"
-msgstr "Cacher l'option 'Centre de logiciels'"
+msgstr "Cacher l’option « Centre de logiciels »"
 
 #: PrefsLib/adw.js:270
 msgid "About"
@@ -127,7 +127,7 @@ msgstr "Logo Menu"
 
 #: PrefsLib/adw.js:293
 msgid "Quick access menu for GNOME"
-msgstr "Menu d'accès rapide pour GNOME"
+msgstr "Menu d’accès rapide pour GNOME"
 
 #: PrefsLib/adw.js:308
 msgid "Logo Menu Version"
@@ -139,15 +139,15 @@ msgstr "Version de GNOME"
 
 #: PrefsLib/adw.js:327
 msgid "Github"
-msgstr ""
+msgstr "Github"
 
 #: PrefsLib/adw.js:335
 msgid "Created with love by"
-msgstr ""
+msgstr "Créé avec amour par"
 
 #: PrefsLib/adw.js:342
 msgid "Matrix/Element room"
-msgstr ""
+msgstr "Salon de discussion Matrix / Element"
 
 #: PrefsLib/adw.js:359
 msgid ""
@@ -156,8 +156,9 @@ msgid ""
 "General Public License, version 2 or later</a> for details.</span>"
 msgstr ""
 "<span size=\"small\">Ce programme est fourni sans garantie.\n"
-"Voir <a href=\"https://gnu.org/licenses/old-licenses/gpl-2.0.html\">'GNU "
-"General Public License', version 2 ou plus</a> pour les détails.</span>"
+"Voir <a href=\"https://gnu.org/licenses/old-licenses/gpl-2.0."
+"html\">Licence Publique Générale GNU, version 2 ou plus récente</a> pour "
+"les détails.</span>"
 
 #~ msgid "Lock Orientation"
 #~ msgstr "Verrouiller l'orientation"
