@@ -69,6 +69,11 @@ use GNU make:
 
 ***
 
+## How to contribute?
+Firstly check out the contribution guidelines by [clicking here](https://github.com/Aryan20/Logomenu/blob/main/CONTRIBUTION.md)
+
+If you are new to GNOME Extensions, then check out the resources provided in - [LEARNING_RESOURCES.md](https://github.com/Aryan20/Logomenu/blob/main/LEARNING_RESOURCES.md)
+
 ## Credits
 Original extension creator and all the contributors.
 
