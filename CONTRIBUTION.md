@@ -11,6 +11,8 @@ Please note we have a code of conduct, please follow it in all your interactions
    build.
 2. Update the README.md with details of changes
 3. Any new PR should be opened for "features" branch
+4. If adding translations, then make sure the commit and PR is in format - "translations: Add translation for \<language\>" and add your name to the "Translators" section in the readme file.
+5. Always include the category of change in the PR/Commit name, like - "general:", "docs:", "menu:", etc...
 
 ## Code of Conduct
 
