@@ -22,4 +22,4 @@ Dogecoin - DM4324HZG6oE9QVEkv8vezCgw78sCNh1Wr
 
 Note - some qr are different than above addresses
 
-<img src="https://github.com/Aryan20/Logomenu/blob/main/crypto.png">
+<img src="https://github.com/Aryan20/Logomenu/blob/main/screenshots/crypto.png">
