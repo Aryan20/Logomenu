@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: Logo Menu 15\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-09-18 12:03+0530\n"
-"PO-Revision-Date: 2022-10-12 20:33+0530\n"
+"PO-Revision-Date: 2022-11-05 23:16+0530\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: ko\n"
@@ -30,7 +30,7 @@ msgstr "현재 활동"
 msgid "App Grid"
 msgstr "프로그램 표시"
 
-#: extension.js:113 PrefsLib/adw.js:151 PrefsLib/gtk.js:188
+#: extension.js:113 PrefsLib/adw.js:171 PrefsLib/gtk.js:226
 msgid "Terminal"
 msgstr "터미널"
 
@@ -98,59 +98,71 @@ msgstr "가운데 클릭 "
 msgid "Right Click "
 msgstr "오른쪽 클릭 "
 
-#: PrefsLib/adw.js:171 PrefsLib/gtk.js:227
+#: PrefsLib/adw.js:152 PrefsLib/gtk.js:186
+msgid "Preferred Extensions Application"
+msgstr ""
+
+#: PrefsLib/adw.js:158 PrefsLib/gtk.js:193
+msgid "GNOME Extensions"
+msgstr ""
+
+#: PrefsLib/adw.js:159 PrefsLib/gtk.js:194
+msgid "Extensions Manager"
+msgstr ""
+
+#: PrefsLib/adw.js:191 PrefsLib/gtk.js:265
 msgid "Software Center"
 msgstr "소프트웨어 센터"
 
-#: PrefsLib/adw.js:189 PrefsLib/gtk.js:265
+#: PrefsLib/adw.js:209 PrefsLib/gtk.js:303
 msgid "Enable Power Options"
 msgstr "전원 옵션 사용"
 
-#: PrefsLib/adw.js:204 PrefsLib/gtk.js:303
+#: PrefsLib/adw.js:224 PrefsLib/gtk.js:341
 msgid "Hide Force Quit option"
 msgstr "강제 종료 옵션 숨기기"
 
-#: PrefsLib/adw.js:221 PrefsLib/gtk.js:341
+#: PrefsLib/adw.js:241 PrefsLib/gtk.js:379
 msgid "Show Lock Screen option"
 msgstr "잠그기 옵션 표시"
 
-#: PrefsLib/adw.js:237 PrefsLib/gtk.js:379
+#: PrefsLib/adw.js:257 PrefsLib/gtk.js:417
 msgid "Hide Software Centre option"
 msgstr "소프트웨어 옵션 숨기기"
 
-#: PrefsLib/adw.js:270
+#: PrefsLib/adw.js:292
 msgid "About"
 msgstr "대한"
 
-#: PrefsLib/adw.js:286
+#: PrefsLib/adw.js:308
 msgid "Logo Menu"
 msgstr ""
 
-#: PrefsLib/adw.js:293
+#: PrefsLib/adw.js:315
 msgid "Quick access menu for GNOME"
 msgstr ""
 
-#: PrefsLib/adw.js:308
+#: PrefsLib/adw.js:330
 msgid "Logo Menu Version"
 msgstr ""
 
-#: PrefsLib/adw.js:320
+#: PrefsLib/adw.js:342
 msgid "GNOME Version"
 msgstr ""
 
-#: PrefsLib/adw.js:327
+#: PrefsLib/adw.js:349
 msgid "Github"
 msgstr ""
 
-#: PrefsLib/adw.js:335
+#: PrefsLib/adw.js:357
 msgid "Created with love by"
 msgstr ""
 
-#: PrefsLib/adw.js:342
+#: PrefsLib/adw.js:364
 msgid "Matrix/Element room"
 msgstr ""
 
-#: PrefsLib/adw.js:359
+#: PrefsLib/adw.js:381
 msgid ""
 "<span size=\"small\">This program comes with absolutely no warranty.\n"
 "See the <a href=\"https://gnu.org/licenses/old-licenses/gpl-2.0.html\">GNU "

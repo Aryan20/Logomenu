@@ -21,6 +21,12 @@
       <description>Change the Menu Button click type to open Activity.</description>
     </key>
 
+    <key type="s" name="menu-button-extensions-app">
+      <default>"org.gnome.Extensions.desktop"</default>
+      <summary>Preffered Extensions app</summary>
+      <description>Change to preffered Extensions app.</description>
+    </key>
+
     <key type="s" name="menu-button-software-center">
       <default>"gnome-software"</default>
       <summary>Menu Button Software Center</summary>

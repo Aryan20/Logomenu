@@ -82,7 +82,7 @@ var MenuButton = GObject.registerClass(class LogoMenu_MenuButton extends PanelMe
 		})
 		this._settings.connect("changed::menu-button-icon-image", () => this.setIconImage())
 		this._settings.connect("changed::menu-button-icon-size", () => this.setIconSize())
-		
+
 		this.setIconImage()
 		this.setIconSize()
 		this.add_actor(this.icon)
@@ -97,7 +97,7 @@ var MenuButton = GObject.registerClass(class LogoMenu_MenuButton extends PanelMe
 		//bind middle click option to toggle overview
 		this.connect('button-press-event', _middleClick.bind(this));
 	}
-	
+
 	toggleOptions(){
 		let poweroption_state = this._settings.get_boolean('show-power-options')
 		let forcequit_state = this._settings.get_boolean('hide-forcequit')
@@ -108,18 +108,18 @@ var MenuButton = GObject.registerClass(class LogoMenu_MenuButton extends PanelMe
 		// this.item2 = new PopupMenu.PopupMenuItem(_('System Settings...'))
 		this.item3 = new PopupMenu.PopupSeparatorMenuItem()
 		this.item4 = new PopupMenu.PopupMenuItem(_('Activities'))
-		this.item5 = new PopupMenu.PopupMenuItem(_('App Grid'))	
+		this.item5 = new PopupMenu.PopupMenuItem(_('App Grid'))
 		this.item6 = new PopupMenu.PopupSeparatorMenuItem()
 		this.item8 = new PopupMenu.PopupMenuItem(_('Terminal'))
 		this.item9 = new PopupMenu.PopupMenuItem(_('Extensions'))
-		
+
 		this.item1.connect('activate', () => _aboutThisDistro())
 		// this.item2.connect('activate', () => _systemPreferences())
 		this.item4.connect('activate', () => _overviewToggle())
 		this.item5.connect('activate', () => _appGrid())
 		this.item8.connect('activate', () => this.terminal())
 		this.item9.connect('activate', () => this.extensions())
-		
+
 		this.menu.addMenuItem(this.item1)
 		// this.menu.addMenuItem(this.item2)
 		this.menu.addMenuItem(this.item3)
@@ -150,7 +150,7 @@ var MenuButton = GObject.registerClass(class LogoMenu_MenuButton extends PanelMe
 			this.item14 = new PopupMenu.PopupMenuItem(_('Restart...'))
 			this.item15 = new PopupMenu.PopupMenuItem(_('Shut Down...'))
 			this.item16 = new PopupMenu.PopupSeparatorMenuItem()
-			if (lockscreen_state) 
+			if (lockscreen_state)
 				this.item17 = new PopupMenu.PopupMenuItem(_('Lock Screen'))
 			this.item18 = new PopupMenu.PopupMenuItem(_('Log Out...'))
 
@@ -191,10 +191,9 @@ var MenuButton = GObject.registerClass(class LogoMenu_MenuButton extends PanelMe
 	}
 
 	extensions() {
-        const appSys = imports.gi.Shell.AppSystem.get_default();
-		const extensionApp = appSys.lookup_app('org.gnome.Extensions.desktop');
-		if (!extensionApp)
-			extensionApp = appSys.lookup_app('com.mattjakeman.ExtensionManager.desktop')
+    const appSys = imports.gi.Shell.AppSystem.get_default();
+		let extensionmanager_choice = this._settings.get_string('menu-button-extensions-app');
+		let extensionApp = appSys.lookup_app(extensionmanager_choice)
 		if (extensionApp) {
 			try {
 				extensionApp.launch(
@@ -214,7 +213,7 @@ var MenuButton = GObject.registerClass(class LogoMenu_MenuButton extends PanelMe
 		if(Constants.DistroIcons[iconIndex].PATH === 'start-here-symbolic')
 			path = 'start-here-symbolic';
 		else if(!GLib.file_test(path, GLib.FileTest.IS_REGULAR))
-			path = 'start-here-symbolic';  
+			path = 'start-here-symbolic';
 		this.icon.gicon = Gio.icon_new_for_string(path);
 	}
 
@@ -227,7 +226,7 @@ var MenuButton = GObject.registerClass(class LogoMenu_MenuButton extends PanelMe
 function init() {
 	ExtensionUtils.initTranslations(Me.metadata['gettext-domain']);
 }
- 
+
 function enable() {
 	const activitiesButton = Main.panel.statusArea['activities']
 	if (activitiesButton) {
@@ -246,7 +245,7 @@ function enable() {
 	// show
 	Main.panel.statusArea['menuButton'].visible = true
 }
- 
+
 function disable() {
 	const activitiesButton = Main.panel.statusArea['activities']
 	if (activitiesButton) {

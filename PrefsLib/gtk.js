@@ -26,7 +26,7 @@ var LogoMenuPreferencesWidget = GObject.registerClass(class Logo_Menu_Preference
             use_markup: true,
             xalign: 0,
         })
-        
+
         let iconsFrame = new Gtk.Frame({
             valign: Gtk.Align.START,
         });
@@ -117,7 +117,7 @@ var LogoMenuPreferencesWidget = GObject.registerClass(class Logo_Menu_Preference
                 return "\t" + value + "px";
             });
         }
-            
+
         menuButtonIconSizeScale.set_value(iconSize);
         menuButtonIconSizeScale.connect('value-changed', () => {
             this._settings.set_int('menu-button-icon-size', menuButtonIconSizeScale.get_value());
@@ -134,7 +134,7 @@ var LogoMenuPreferencesWidget = GObject.registerClass(class Logo_Menu_Preference
             menuButtonIconSizeFrame.set_child(menuButtonIconSizeBox);
             this.append(menuButtonIconSizeFrame);
         }
-        
+
         let clickType = this._settings.get_int('menu-button-icon-click-type');
         let menuButtonIconClickTypeFrame = new Gtk.Frame();
         let menuButtonIconClickTypeBox = new Gtk.Box({
@@ -173,6 +173,44 @@ var LogoMenuPreferencesWidget = GObject.registerClass(class Logo_Menu_Preference
             this.append(menuButtonIconClickTypeFrame);
         }
 
+        let extensionApp = this._settings.get_string('menu-button-extensions-app');
+        let menuButtonExtensionsAppFrame = new Gtk.Frame();
+        let menuButtonExtensionsAppBox = new Gtk.Box({
+            margin_top: 5,
+            margin_bottom: 5,
+            margin_start: 5,
+            margin_end: 5,
+        });
+
+        let menuButtonExtensionsAppLabel = new Gtk.Label({
+            label: _('Preferred Extensions Application'),
+            use_markup: true,
+            xalign: 0,
+            hexpand: true
+        });
+
+        let menuButtonExtensionsAppCombo = new Gtk.ComboBoxText();
+        menuButtonExtensionsAppCombo.append("org.gnome.Extensions.desktop", _("GNOME Extensions"));
+        menuButtonExtensionsAppCombo.append("com.mattjakeman.ExtensionManager.desktop", _("Extensions Manager"));
+        menuButtonExtensionsAppCombo.set_active_id(extensionApp.toString());
+
+        menuButtonExtensionsAppCombo.connect('changed', () => {
+            this._settings.set_string('menu-button-extensions-app', menuButtonExtensionsAppCombo.get_active_id());
+        });
+
+        if (shellVersion < 40){
+            menuButtonExtensionsAppBox.add(menuButtonExtensionsAppLabel);
+            menuButtonExtensionsAppBox.add(menuButtonExtensionsAppCombo);
+            menuButtonExtensionsAppFrame.add(menuButtonExtensionsAppBox);
+            this.add(menuButtonExtensionsAppFrame);
+        }
+        else{
+            menuButtonExtensionsAppBox.append(menuButtonExtensionsAppLabel);
+            menuButtonExtensionsAppBox.append(menuButtonExtensionsAppCombo);
+            menuButtonExtensionsAppFrame.set_child(menuButtonExtensionsAppBox);
+            this.append(menuButtonExtensionsAppFrame);
+        }
+
 
         let menuButtonTerminalFrame = new Gtk.Frame();
         let menuButtonTerminalBox = new Gtk.Box({
@@ -187,7 +225,7 @@ var LogoMenuPreferencesWidget = GObject.registerClass(class Logo_Menu_Preference
         let changeTerminalText = new Gtk.Label({
             label: _("Terminal"),
             use_markup: true,
-            
+
         })
 
         let changeTerminalInput = new Gtk.Entry({
@@ -268,7 +306,7 @@ var LogoMenuPreferencesWidget = GObject.registerClass(class Logo_Menu_Preference
             hexpand: true
         })
 
-        let showPowerOptionsSwitch= new Gtk.Switch({ 
+        let showPowerOptionsSwitch= new Gtk.Switch({
             halign: Gtk.Align.END,
         });
 
@@ -306,7 +344,7 @@ var LogoMenuPreferencesWidget = GObject.registerClass(class Logo_Menu_Preference
             hexpand: true
         })
 
-        let showFQOptionsSwitch= new Gtk.Switch({ 
+        let showFQOptionsSwitch= new Gtk.Switch({
             halign: Gtk.Align.END,
         });
 
@@ -344,7 +382,7 @@ var LogoMenuPreferencesWidget = GObject.registerClass(class Logo_Menu_Preference
             hexpand: true
         })
 
-        let showLCOptionsSwitch= new Gtk.Switch({ 
+        let showLCOptionsSwitch= new Gtk.Switch({
             halign: Gtk.Align.END,
         });
 
@@ -364,7 +402,7 @@ var LogoMenuPreferencesWidget = GObject.registerClass(class Logo_Menu_Preference
             lockScreenOptionBox.append(showLCOptionsSwitch);
             lockScreenOptionFrame.set_child(lockScreenOptionBox);
             this.append(lockScreenOptionFrame);
-        }    
+        }
 
         // Toggle Software centre option and build it's option in prefs
         let SoftwareCentreOptionFrame = new Gtk.Frame();
@@ -382,7 +420,7 @@ var LogoMenuPreferencesWidget = GObject.registerClass(class Logo_Menu_Preference
             hexpand: true
         })
 
-        let hideSCOptionSwitch= new Gtk.Switch({ 
+        let hideSCOptionSwitch= new Gtk.Switch({
             halign: Gtk.Align.END,
         });
 
@@ -402,7 +440,7 @@ var LogoMenuPreferencesWidget = GObject.registerClass(class Logo_Menu_Preference
             softwareCentreOptionBox.append(hideSCOptionSwitch);
             SoftwareCentreOptionFrame.set_child(softwareCentreOptionBox);
             this.append(SoftwareCentreOptionFrame);
-        }    
+        }
 
     }
 })
@@ -416,7 +454,7 @@ function getMainPrefs(IconGrid, shellVersion, Settings) {
         widget.show_all();
         return widget;
     }
-    
+
     var scrollBox = new Gtk.ScrolledWindow();
     scrollBox.set_policy(Gtk.PolicyType.NEVER, Gtk.PolicyType.AUTOMATIC);
     let iconTheme = Gtk.IconTheme.get_for_display(Gdk.Display.get_default());
