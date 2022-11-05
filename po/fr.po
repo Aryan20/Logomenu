@@ -111,7 +111,7 @@ msgstr "Cacher l’option « Forcer à quitter »"
 
 #: PrefsLib/adw.js:221 PrefsLib/gtk.js:341
 msgid "Show Lock Screen option"
-msgstr "Cacher l’option « Verrouiller l’écran »"
+msgstr "Afficher l’option « Verrouiller l’écran »"
 
 #: PrefsLib/adw.js:237 PrefsLib/gtk.js:379
 msgid "Hide Software Centre option"
