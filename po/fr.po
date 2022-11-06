@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: Logo Menu 15\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-09-18 12:03+0530\n"
-"PO-Revision-Date: 2022-11-05 23:16+0530\n"
+"PO-Revision-Date: 2022-11-06 20:15+0530\n"
 "Last-Translator: Irénée Thirion <irenee.thirion@e.email>\n"
 "Language-Team: French <traduc@traduc.org>\n"
 "Language: fr\n"
@@ -99,15 +99,15 @@ msgstr "Clic droit "
 
 #: PrefsLib/adw.js:152 PrefsLib/gtk.js:186
 msgid "Preferred Extensions Application"
-msgstr ""
+msgstr "Application d'extension préférée"
 
 #: PrefsLib/adw.js:158 PrefsLib/gtk.js:193
 msgid "GNOME Extensions"
-msgstr ""
+msgstr "Extensions de GNOME"
 
 #: PrefsLib/adw.js:159 PrefsLib/gtk.js:194
 msgid "Extensions Manager"
-msgstr ""
+msgstr "Gestionnaire d'extensions"
 
 #: PrefsLib/adw.js:191 PrefsLib/gtk.js:265
 msgid "Software Center"
