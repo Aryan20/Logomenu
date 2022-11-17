@@ -135,6 +135,7 @@ var LogoMenuOptionsWidget = GObject.registerClass(class Logo_Menu_OptionsWidget 
         let menuButtonIconClickTypeCombo= new Gtk.ComboBoxText({
             valign: Gtk.Align.CENTER
         });
+        menuButtonIconClickTypeCombo.append("1", _("Left Click "));
         menuButtonIconClickTypeCombo.append("2", _("Middle Click "));
         menuButtonIconClickTypeCombo.append("3", _("Right Click "));
         menuButtonIconClickTypeCombo.set_active_id(clickType.toString());
