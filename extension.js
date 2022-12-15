@@ -16,6 +16,10 @@ function _aboutThisDistro() {
 	Util.spawn(['gnome-control-center', 'info-overview'])
 }
 
+function _systemMonitor() {
+	Util.spawn(['gnome-system-monitor'])
+}
+
 function _systemPreferences() {
 	Util.spawn(['gnome-control-center'])
 }
@@ -114,7 +118,7 @@ var MenuButton = GObject.registerClass(class LogoMenu_MenuButton extends PanelMe
 		this.item9 = new PopupMenu.PopupMenuItem(_('Extensions'))
 
 		this.item1.connect('activate', () => _aboutThisDistro())
-		// this.item2.connect('activate', () => _systemPreferences())
+		this.item2.connect('activate', () => _systemMonitor())
 		this.item4.connect('activate', () => _overviewToggle())
 		this.item5.connect('activate', () => _appGrid())
 		this.item8.connect('activate', () => this.terminal())
