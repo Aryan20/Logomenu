@@ -28,7 +28,7 @@ msgstr "현재 활동"
 
 #: extension.js:111
 msgid "App Grid"
-msgstr "프로그램 표시"
+msgstr "앱 표시"
 
 #: extension.js:113 PrefsLib/adw.js:172 PrefsLib/gtk.js:227
 msgid "Terminal"
@@ -44,7 +44,7 @@ msgstr "소프트웨어..."
 
 #: extension.js:142
 msgid "Force Quit App"
-msgstr "프로그램 강제 종료"
+msgstr "앱 강제 종료"
 
 #: extension.js:149
 msgid "Sleep"
@@ -80,11 +80,11 @@ msgstr "아이콘 크기"
 
 #: PrefsLib/adw.js:120
 msgid "Change Defaults"
-msgstr ""
+msgstr "기본값으로 변경"
 
 #: PrefsLib/adw.js:124
 msgid "Show/Hide Options"
-msgstr ""
+msgstr "옵션 보이기/숨기기"
 
 #: PrefsLib/adw.js:132 PrefsLib/gtk.js:148
 msgid "Icon Click Type to open Activities"
@@ -92,7 +92,7 @@ msgstr "현재 활동을 열 때 아이콘 클릭 유형"
 
 #: PrefsLib/adw.js:138 PrefsLib/gtk.js:155
 msgid "Left Click "
-msgstr ""
+msgstr "왼쪽 클릭"
 
 #: PrefsLib/adw.js:139 PrefsLib/gtk.js:156
 msgid "Middle Click "
@@ -108,11 +108,11 @@ msgstr ""
 
 #: PrefsLib/adw.js:159 PrefsLib/gtk.js:194
 msgid "GNOME Extensions"
-msgstr ""
+msgstr "그놈 확장"
 
 #: PrefsLib/adw.js:160 PrefsLib/gtk.js:195
 msgid "Extensions Manager"
-msgstr ""
+msgstr "확장 관리자"
 
 #: PrefsLib/adw.js:192 PrefsLib/gtk.js:266
 msgid "Software Center"
@@ -144,15 +144,15 @@ msgstr ""
 
 #: PrefsLib/adw.js:316
 msgid "Quick access menu for GNOME"
-msgstr ""
+msgstr "그놈을 위한 빠른 설정 메뉴"
 
 #: PrefsLib/adw.js:331
 msgid "Logo Menu Version"
-msgstr ""
+msgstr "Logo Menu 버전"
 
 #: PrefsLib/adw.js:343
 msgid "GNOME Version"
-msgstr ""
+msgstr "그놈 버전"
 
 #: PrefsLib/adw.js:350
 msgid "Github"
