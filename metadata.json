@@ -5,7 +5,7 @@
   "name": "Logo Menu",
   "settings-schema": "org.aryan_k.logo-menu",
   "shell-version": [
-    "3.30",  
+    "3.30",
     "3.32",
     "3.34",
     "3.36",
@@ -13,9 +13,10 @@
     "40",
     "41",
     "42",
-    "43"
+    "43",
+    "44"
   ],
   "url": "https://github.com/Aryan20/Logomenu",
   "uuid": "logomenu@aryan_k",
-  "version": 16
+  "version": 17
 }
