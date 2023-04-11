@@ -3,7 +3,7 @@
   "description": "Logo Menu - Menu similar to Apple's macOS menu for the GNOME Desktop\nThis extension gives a simple menu along with the ability to get the icon of your distro on top left part of the panel for a great look.\nThe Icon can be customized through settings, it has both Linux and BSD logos.\nfor more screenshots, visit GitHub.\n\nThe default Terminal and Software center can also be changed.\n\nThis extension is a fork of - https://github.com/tofutech/tofumenu\n\nThe original project is no more supported thus I made this.",
   "gettext-domain": "logo-menu",
   "name": "Logo Menu",
-  "settings-schema": "org.aryan_k.logo-menu",
+  "settings-schema": "org.gnome.shell.extensions.logo-menu",
   "shell-version": [
     "3.30",
     "3.32",
@@ -18,5 +18,5 @@
   ],
   "url": "https://github.com/Aryan20/Logomenu",
   "uuid": "logomenu@aryan_k",
-  "version": 17
+  "version": 18
 }
