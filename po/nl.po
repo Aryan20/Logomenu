@@ -1,0 +1,179 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2022 Aryan Kaushik (Aryan20)
+# This file is distributed under the same license as the Logo Menu package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Logo Menu 16\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-09-18 12:03+0530\n"
+"PO-Revision-Date: 2023-04-30 21:16+0200\n"
+"Last-Translator: Heimen Stoffels <vistausss@fastmail.com>\n"
+"Language-Team: \n"
+"Language: nl\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Poedit 3.2.2\n"
+
+#: extension.js:107
+msgid "About My System"
+msgstr "Over deze computer"
+
+#: extension.js:110
+msgid "Activities"
+msgstr "Activiteiten"
+
+#: extension.js:111
+msgid "App Grid"
+msgstr "Toepassingsrooster"
+
+#: extension.js:113 PrefsLib/adw.js:172 PrefsLib/gtk.js:227
+msgid "Terminal"
+msgstr "Terminalvenster"
+
+#: extension.js:114
+msgid "Extensions"
+msgstr "Uitbreidingen"
+
+#: extension.js:131
+msgid "Software Center..."
+msgstr "Softwarecentrum…"
+
+#: extension.js:142
+msgid "Force Quit App"
+msgstr "Toepassing afsluiten…"
+
+#: extension.js:149
+msgid "Sleep"
+msgstr "Slaapstand"
+
+#: extension.js:150
+msgid "Restart..."
+msgstr "Herstarten…"
+
+#: extension.js:151
+msgid "Shut Down..."
+msgstr "Afsluiten…"
+
+#: extension.js:154 extension.js:176
+msgid "Lock Screen"
+msgstr "Scherm vergrendelen"
+
+#: extension.js:155
+msgid "Log Out..."
+msgstr "Afmelden…"
+
+#: PrefsLib/adw.js:26
+msgid "Icon Settings"
+msgstr "Pictogramvoorkeuren"
+
+#: PrefsLib/adw.js:32 PrefsLib/gtk.js:25
+msgid "Icon"
+msgstr "Pictogram"
+
+#: PrefsLib/adw.js:64 PrefsLib/gtk.js:91
+msgid "Icon Size"
+msgstr "Pictogramgrootte"
+
+#: PrefsLib/adw.js:120
+msgid "Change Defaults"
+msgstr "Standaardwaarden wijzigen"
+
+#: PrefsLib/adw.js:124
+msgid "Show/Hide Options"
+msgstr "Opties tonen/verbergen"
+
+#: PrefsLib/adw.js:132 PrefsLib/gtk.js:148
+msgid "Icon Click Type to open Activities"
+msgstr "Activiteiten openen na aanklikken"
+
+#: PrefsLib/adw.js:138 PrefsLib/gtk.js:155
+msgid "Left Click "
+msgstr "Linksklikken "
+
+#: PrefsLib/adw.js:139 PrefsLib/gtk.js:156
+msgid "Middle Click "
+msgstr "Middelklikken "
+
+#: PrefsLib/adw.js:140 PrefsLib/gtk.js:157
+msgid "Right Click "
+msgstr "Rechtsklikken "
+
+#: PrefsLib/adw.js:153 PrefsLib/gtk.js:187
+msgid "Preferred Extensions Application"
+msgstr "Voorkeurstoepassing voor uitbreidingenbeheer"
+
+#: PrefsLib/adw.js:159 PrefsLib/gtk.js:194
+msgid "GNOME Extensions"
+msgstr "GNOME-uitbreidingen"
+
+#: PrefsLib/adw.js:160 PrefsLib/gtk.js:195
+msgid "Extensions Manager"
+msgstr "Uitbreidingenbeheer"
+
+#: PrefsLib/adw.js:192 PrefsLib/gtk.js:266
+msgid "Software Center"
+msgstr "Softwarecentrum"
+
+#: PrefsLib/adw.js:210 PrefsLib/gtk.js:304
+msgid "Enable Power Options"
+msgstr "Afsluitopties tonen"
+
+#: PrefsLib/adw.js:225 PrefsLib/gtk.js:342
+msgid "Hide Force Quit option"
+msgstr "Toepassing gedwongen afsluiten verbergen"
+
+#: PrefsLib/adw.js:242 PrefsLib/gtk.js:380
+msgid "Show Lock Screen option"
+msgstr "Vergrendelschermoptie tonen"
+
+#: PrefsLib/adw.js:258 PrefsLib/gtk.js:418
+msgid "Hide Software Centre option"
+msgstr "Softwarecentrumoptie verbergen"
+
+#: PrefsLib/adw.js:293
+msgid "About"
+msgstr "Over"
+
+#: PrefsLib/adw.js:309
+msgid "Logo Menu"
+msgstr "Logomenu"
+
+#: PrefsLib/adw.js:316
+msgid "Quick access menu for GNOME"
+msgstr "Snelletoegangmenu voor GNOME"
+
+#: PrefsLib/adw.js:331
+msgid "Logo Menu Version"
+msgstr "Logomenu-versie"
+
+#: PrefsLib/adw.js:343
+msgid "GNOME Version"
+msgstr "GNOME-versie"
+
+#: PrefsLib/adw.js:350
+msgid "Github"
+msgstr "GitHub"
+
+#: PrefsLib/adw.js:358
+msgid "Created with love by"
+msgstr "Met liefde gemaakt door"
+
+#: PrefsLib/adw.js:365
+msgid "Matrix/Element room"
+msgstr "Matrix-/Elementkamer"
+
+#: PrefsLib/adw.js:382
+msgid ""
+"<span size=\"small\">This program comes with absolutely no warranty.\n"
+"See the <a href=\"https://gnu.org/licenses/old-licenses/gpl-2.0.html\">GNU "
+"General Public License, version 2 or later</a> for details.</span>"
+msgstr ""
+"<span size=\"small\">Deze toepassing wordt zonder enige vorm van garantie "
+"geleverd.\n"
+"Bekijk voor meer informatie de <a href=\"https://gnu.org/licenses/old-"
+"licenses/gpl-2.0.html\">GNU General Public License, versie 2 of nieuwer</"
+"a>.</span>"
