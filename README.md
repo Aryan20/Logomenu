@@ -66,6 +66,10 @@ use GNU make:
 
     make install
 
+To just pack/build the extension without installation
+
+    make build
+
 
 ***
 
