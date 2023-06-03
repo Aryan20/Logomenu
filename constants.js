@@ -40,6 +40,7 @@ var DistroIcons = [
     { PATH: '/Resources/freebsd-logo.svg'},
     { PATH: '/Resources/openbsd-logo.svg'},
     { PATH: '/Resources/netbsd-logo.svg'},
+    { PATH: '/Resources/dragonflybsd-logo.svg'},
     { PATH: '/Resources/tux-logo.svg'},
     { PATH: '/Resources/rockylinux-logo.svg'},
     { PATH: '/Resources/endeavouros_logo.svg'},
