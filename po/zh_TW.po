@@ -1,7 +1,7 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2022 Aryan Kaushik (Aryan20)
+# Copyright (C) 2023 Aryan Kaushik (Aryan20)
 # This file is distributed under the same license as the Logo Menu package.
-# FIRST AUTHOR <olivertzengolivertzeng@gmail.com>, 2022.
+# Oliver Tzeng <olivertzeng@proton.me>, 2023.
 #
 msgid ""
 msgstr ""
@@ -9,14 +9,13 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-09-18 12:03+0530\n"
 "PO-Revision-Date: 2022-11-17 23:24+0530\n"
-"Last-Translator: \n"
+"Last-Translator: Oliver Tzeng（曾嘉禾）\n"
 "Language-Team: \n"
 "Language: zh_TW\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Poedit 3.0.1\n"
 
 #: extension.js:107
 msgid "About My System"
@@ -24,11 +23,11 @@ msgstr "關於"
 
 #: extension.js:110
 msgid "Activities"
-msgstr "活動"
+msgstr "概覽"
 
 #: extension.js:111
 msgid "App Grid"
-msgstr "應用程式"
+msgstr "顯示程式"
 
 #: extension.js:113 PrefsLib/adw.js:172 PrefsLib/gtk.js:227
 msgid "Terminal"
@@ -40,7 +39,7 @@ msgstr "擴充功能"
 
 #: extension.js:131
 msgid "Software Center..."
-msgstr "App Store"
+msgstr "加入或移除軟體"
 
 #: extension.js:142
 msgid "Force Quit App"
@@ -88,11 +87,11 @@ msgstr "顯示/隱藏選項"
 
 #: PrefsLib/adw.js:132 PrefsLib/gtk.js:148
 msgid "Icon Click Type to open Activities"
-msgstr "點擊按鍵以開啟活動"
+msgstr "點擊按鍵以開啟概覽"
 
 #: PrefsLib/adw.js:138 PrefsLib/gtk.js:155
 msgid "Left Click "
-msgstr ""
+msgstr "左鍵"
 
 #: PrefsLib/adw.js:139 PrefsLib/gtk.js:156
 msgid "Middle Click "
@@ -104,19 +103,19 @@ msgstr "右鍵"
 
 #: PrefsLib/adw.js:153 PrefsLib/gtk.js:187
 msgid "Preferred Extensions Application"
-msgstr ""
+msgstr "擴充功能應用程式"
 
 #: PrefsLib/adw.js:159 PrefsLib/gtk.js:194
 msgid "GNOME Extensions"
-msgstr ""
+msgstr "Gnome 擴充功能"
 
 #: PrefsLib/adw.js:160 PrefsLib/gtk.js:195
 msgid "Extensions Manager"
-msgstr ""
+msgstr "擴充功能管理器 Extension Manager"
 
 #: PrefsLib/adw.js:192 PrefsLib/gtk.js:266
 msgid "Software Center"
-msgstr "App Store"
+msgstr "加入或移除軟體"
 
 #: PrefsLib/adw.js:210 PrefsLib/gtk.js:304
 msgid "Enable Power Options"
@@ -128,7 +127,7 @@ msgstr "隱藏強制退出選項"
 
 #: PrefsLib/adw.js:242 PrefsLib/gtk.js:380
 msgid "Show Lock Screen option"
-msgstr "顯示鎖定銀幕選項"
+msgstr "顯示鎖定螢幕選項"
 
 #: PrefsLib/adw.js:258 PrefsLib/gtk.js:418
 msgid "Hide Software Centre option"
@@ -160,11 +159,11 @@ msgstr "Github"
 
 #: PrefsLib/adw.js:358
 msgid "Created with love by"
-msgstr ""
+msgstr "開發者："
 
 #: PrefsLib/adw.js:365
 msgid "Matrix/Element room"
-msgstr ""
+msgstr "Matrix 群組"
 
 #: PrefsLib/adw.js:382
 msgid ""
@@ -172,10 +171,9 @@ msgid ""
 "See the <a href=\"https://gnu.org/licenses/old-licenses/gpl-2.0.html\">GNU "
 "General Public License, version 2 or later</a> for details.</span>"
 msgstr ""
-"這個程式以開發者認為它可能有用的情況下被分發，但是＊不包含任何擔保＊\n"
-"甚至不包含暗示其對於＊商業價值＊或是＊特定需求的適用性＊的保證。\n"
-"更多相關細節請參考<a href=\"https://gnu.org/licenses/old-licenses/gpl-2.0."
-"html\">GNU General Public License授權條款"
+"這個程式以開發者認為它可能有用的情況下被分發，但是*不包含任何擔保*\n"
+"甚至不包含暗示其對於*商業價值*或是*特定需求的適用性*的保證。\n"
+"更多相關細節請參考  GNU General Public License授權條款"
 
 #~ msgid "Lock Orientation"
 #~ msgstr "鎖定旋轉"
