@@ -173,7 +173,7 @@ msgid ""
 msgstr ""
 "這個程式以開發者認為它可能有用的情況下被分發，但是*不包含任何擔保*\n"
 "甚至不包含暗示其對於*商業價值*或是*特定需求的適用性*的保證。\n"
-"更多相關細節請參考  GNU General Public License授權條款"
+"更多相關細節請參考 <a href=\"https://gnu.org/licenses/old-licenses/gpl-2.0.html\">  GNU General Public License授權條款"
 
 #~ msgid "Lock Orientation"
 #~ msgstr "鎖定旋轉"
