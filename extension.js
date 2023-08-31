@@ -1,256 +1,230 @@
-// -*- mode: js; js-indent-level: 4; indent-tabs-mode: nil -*-
-const Me = imports.misc.extensionUtils.getCurrentExtension();
+import Gio from 'gi://Gio';
+import GLib from 'gi://GLib';
+import GObject from 'gi://GObject';
+import Shell from 'gi://Shell';
+import St from 'gi://St';
 
-const {Gio, GLib, GObject, Shell, St} = imports.gi;
-const Constants = Me.imports.constants;
-const ExtensionUtils = imports.misc.extensionUtils;
-const Main = imports.ui.main
-const PanelMenu = imports.ui.panelMenu
-const PopupMenu = imports.ui.popupMenu
-const Util = imports.misc.util
+import * as Main from 'resource:///org/gnome/shell/ui/main.js';
+import * as PopupMenu from 'resource:///org/gnome/shell/ui/popupMenu.js';
+import * as PanelMenu from 'resource:///org/gnome/shell/ui/panelMenu.js';
+import * as Util from 'resource:///org/gnome/shell/misc/util.js';
 
-const Gettext = imports.gettext.domain(Me.metadata['gettext-domain']);
-const _ = Gettext.gettext;
+import * as Constants from './constants.js';
 
-function _aboutThisDistro() {
-	Util.spawn(['gnome-control-center', 'info-overview'])
-}
+import {Extension, gettext as _} from 'resource:///org/gnome/shell/extensions/extension.js';
 
-function _systemPreferences() {
-	Util.spawn(['gnome-control-center'])
-}
+const MenuItem = GObject.registerClass(
+class LogoMenuMenuItem extends PopupMenu.PopupMenuItem {
+    _init(name, activateFunction) {
+        super._init(name);
+        this.connect('activate', () => activateFunction());
+    }
+});
 
-function _overviewToggle() {
-	Main.overview.toggle();
-}
+const MenuButton = GObject.registerClass(
+class LogoMenuMenuButton extends PanelMenu.Button {
+    _init(extension) {
+        super._init(0.5, 'LogoMenu');
+        this._extension = extension;
+        this._settings = extension.getSettings();
 
-function _sleep() {
-	Util.spawn(['systemctl', 'suspend'])
-}
+        // Icon
+        this.icon = new St.Icon({
+            style_class: 'menu-button',
+        });
+        this._settings.connectObject('changed::menu-button-icon-image', () => this.setIconImage(), this);
+        this._settings.connectObject('changed::menu-button-icon-size', () => this.setIconSize(), this);
 
-function _restart() {
-	Util.spawn(['gnome-session-quit', '--reboot'])
-}
+        this.setIconImage();
+        this.setIconSize();
+        this.add_child(this.icon);
 
-function _shutdown() {
-	Util.spawn(['gnome-session-quit', '--power-off'])
-}
+        // Menu
+        this._settings.connectObject('changed::hide-softwarecentre', () => this._displayMenuItems(), this);
+        this._settings.connectObject('changed::show-power-options', () => this._displayMenuItems(), this);
+        this._settings.connectObject('changed::hide-forcequit', () => this._displayMenuItems(), this);
+        this._settings.connectObject('changed::show-lockscreen', () => this._displayMenuItems(), this);
+        this._displayMenuItems();
 
-function _lockScreen() {
-	Util.spawn(['loginctl', 'lock-session'])
-}
+        // bind middle click option to toggle overview
+        this.connect('button-press-event', this._buttonPressEvent.bind(this));
+    }
 
-function _logOut() {
-	Util.spawn(['gnome-session-quit', '--logout'])
-}
+    _addItem(item) {
+        this.menu.addMenuItem(item);
+    }
 
-function _appGrid() {
-    // Code snippet from - https://github.com/G-dH/custom-hot-corners-extended/blob/gdh/actions.js
-    // Pressing the apps btn before overview activation avoids icons animation in GS 3.36/3.38
-    Main.overview.dash.showAppsButton.checked = true;
-    // in 3.36 pressing the button is usualy enough to activate overview, but not always
-    Main.overview.show();
-    // pressing apps btn before overview has no effect in GS 40, so once again
-    Main.overview.dash.showAppsButton.checked = true;
-}
+    _displayMenuItems() {
+        const showPowerOptions = this._settings.get_boolean('show-power-options');
+        const showForceQuit = !this._settings.get_boolean('hide-forcequit');
+        const showLockScreen = this._settings.get_boolean('show-lockscreen');
+        const showSoftwareCenter = !this._settings.get_boolean('hide-softwarecentre');
 
-function _forceQuit() {
-	Util.spawn(['xkill'])
-}
+        this.menu.removeAll();
 
-function _extensions() {
-	Util.spawn(['gnome-extensions-app'])
-}
+        this._addItem(new MenuItem(_('About My System'), () => this._aboutThisDistro()));
+        // this._addItem(new MenuItem(_('System Settings...'), () => this._systemPreferences()));
+        this._addItem(new PopupMenu.PopupSeparatorMenuItem());
+        this._addItem(new MenuItem(_('Activities'), () => this._overviewToggle()));
+        this._addItem(new MenuItem(_('App Grid'), () => this._showAppGrid()));
+        this._addItem(new PopupMenu.PopupSeparatorMenuItem());
 
-function _middleClick(actor, event) {
-	// left click === 1, middle click === 2, right click === 3
-	if (event.get_button() === ExtensionUtils.getSettings(Me.metadata['settings-schema']).get_int('menu-button-icon-click-type')) {
-		this.menu.close();
-		Main.overview.toggle();
-	}
-}
+        if (showSoftwareCenter)
+            this._addItem(new MenuItem(_('Software Center...'), () => this._openSoftwareCenter()));
 
+        this._addItem(new MenuItem(_('Terminal'), () => this._openTerminal()));
+        this._addItem(new MenuItem(_('Extensions'), () => this._openExtensionsApp()));
 
-var MenuButton = GObject.registerClass(class LogoMenu_MenuButton extends PanelMenu.Button {
-	_init() {
-		super._init(0.0, "MenuButton");
-		this._settings = ExtensionUtils.getSettings(Me.metadata['settings-schema']);
-
-		// Icon
-		this.icon = new St.Icon({
-			style_class: 'menu-button'
-		})
-		this._settings.connect("changed::menu-button-icon-image", () => this.setIconImage())
-		this._settings.connect("changed::menu-button-icon-size", () => this.setIconSize())
-
-		this.setIconImage()
-		this.setIconSize()
-		this.add_actor(this.icon)
-
-		// Menu
-		this._settings.connect('changed::hide-softwarecentre', () => this.toggleOptions())
-		this._settings.connect('changed::show-power-options', () => this.toggleOptions())
-		this._settings.connect('changed::hide-forcequit', () => this.toggleOptions())
-		this._settings.connect('changed::show-lockscreen', () => this.toggleOptions())
-		this.toggleOptions();
-
-		//bind middle click option to toggle overview
-		this.connect('button-press-event', _middleClick.bind(this));
-	}
-
-	toggleOptions(){
-		let poweroption_state = this._settings.get_boolean('show-power-options')
-		let forcequit_state = this._settings.get_boolean('hide-forcequit')
-		let lockscreen_state = this._settings.get_boolean('show-lockscreen')
-		let softwarecenter_state = this._settings.get_boolean('hide-softwarecentre')
-		this.menu.removeAll()
-		this.item1 = new PopupMenu.PopupMenuItem(_('About My System'))
-		// this.item2 = new PopupMenu.PopupMenuItem(_('System Settings...'))
-		this.item3 = new PopupMenu.PopupSeparatorMenuItem()
-		this.item4 = new PopupMenu.PopupMenuItem(_('Activities'))
-		this.item5 = new PopupMenu.PopupMenuItem(_('App Grid'))
-		this.item6 = new PopupMenu.PopupSeparatorMenuItem()
-		this.item8 = new PopupMenu.PopupMenuItem(_('Terminal'))
-		this.item9 = new PopupMenu.PopupMenuItem(_('Extensions'))
-
-		this.item1.connect('activate', () => _aboutThisDistro())
-		// this.item2.connect('activate', () => _systemPreferences())
-		this.item4.connect('activate', () => _overviewToggle())
-		this.item5.connect('activate', () => _appGrid())
-		this.item8.connect('activate', () => this.terminal())
-		this.item9.connect('activate', () => this.extensions())
-
-		this.menu.addMenuItem(this.item1)
-		// this.menu.addMenuItem(this.item2)
-		this.menu.addMenuItem(this.item3)
-		this.menu.addMenuItem(this.item4)
-		this.menu.addMenuItem(this.item5)
-		this.menu.addMenuItem(this.item6)
-
-		if (!softwarecenter_state) {
-			this.item7 = new PopupMenu.PopupMenuItem(_('Software Center...'))
-            this.item7.connect('activate', () => this.softwareStore())
-			this.menu.addMenuItem(this.item7)
+        if (showForceQuit) {
+            this._addItem(new PopupMenu.PopupSeparatorMenuItem());
+            this._addItem(new MenuItem(_('Force Quit App'), () => this._forceQuit()));
         }
 
-		this.menu.addMenuItem(this.item8)
-		this.menu.addMenuItem(this.item9)
+        if (showPowerOptions) {
+            this._addItem(new PopupMenu.PopupSeparatorMenuItem());
+            this._addItem(new MenuItem(_('Sleep'), () => this._sleep()));
+            this._addItem(new MenuItem(_('Restart...'), () => this._restart()));
+            this._addItem(new MenuItem(_('Shut Down...'), () => this._shutdown()));
+            this._addItem(new PopupMenu.PopupSeparatorMenuItem());
 
-		if(!forcequit_state) {
-			this.item10 = new PopupMenu.PopupSeparatorMenuItem()
-			this.menu.addMenuItem(this.item10)
-			this.item11 = new PopupMenu.PopupMenuItem(_('Force Quit App'))
-			this.item11.connect('activate', () => _forceQuit())
-			this.menu.addMenuItem(this.item11)
-		}
+            if (showLockScreen)
+                this._addItem(new MenuItem(_('Lock Screen'), () => this._lockScreen()));
 
-		if (poweroption_state) {
-			this.item12 = new PopupMenu.PopupSeparatorMenuItem()
-			this.item13 = new PopupMenu.PopupMenuItem(_('Sleep'))
-			this.item14 = new PopupMenu.PopupMenuItem(_('Restart...'))
-			this.item15 = new PopupMenu.PopupMenuItem(_('Shut Down...'))
-			this.item16 = new PopupMenu.PopupSeparatorMenuItem()
-			if (lockscreen_state)
-				this.item17 = new PopupMenu.PopupMenuItem(_('Lock Screen'))
-			this.item18 = new PopupMenu.PopupMenuItem(_('Log Out...'))
+            this._addItem(new MenuItem(_('Log Out...'), () => this._logOut()));
+        } else if (!showPowerOptions && showLockScreen) {
+            this._addItem(new PopupMenu.PopupSeparatorMenuItem());
+            this._addItem(new MenuItem(_('Lock Screen'), () => this._lockScreen()));
+        }
+    }
 
-			this.menu.addMenuItem(this.item12)
-			this.menu.addMenuItem(this.item13)
-			this.menu.addMenuItem(this.item14)
-			this.menu.addMenuItem(this.item15)
-			this.menu.addMenuItem(this.item16)
-			if (lockscreen_state) {
-				this.menu.addMenuItem(this.item17)
-				this.item17.connect('activate', () => _lockScreen())
-			}
-			this.menu.addMenuItem(this.item18)
+    _buttonPressEvent(actor, event) {
+        // left click === 1, middle click === 2, right click === 3
+        const clickType = this._settings.get_int('menu-button-icon-click-type');
+        if (event.get_button() === clickType) {
+            this.menu.close();
+            Main.overview.toggle();
+        }
+    }
 
-			this.item13.connect('activate', () => _sleep())
-			this.item14.connect('activate', () => _restart())
-			this.item15.connect('activate', () => _shutdown())
-			this.item18.connect('activate', () => _logOut())
-		}
+    _aboutThisDistro() {
+        Util.spawn(['gnome-control-center', 'info-overview']);
+    }
 
-		else if (!poweroption_state && lockscreen_state) {
-			this.item16 = new PopupMenu.PopupSeparatorMenuItem()
-			this.item17 = new PopupMenu.PopupMenuItem(_('Lock Screen'))
+    _systemPreferences() {
+        Util.spawn(['gnome-control-center']);
+    }
 
-			this.menu.addMenuItem(this.item16)
-			this.menu.addMenuItem(this.item17)
+    _overviewToggle() {
+        Main.overview.toggle();
+    }
 
-			this.item17.connect('activate', () => _lockScreen())
-		}
-	}
+    _sleep() {
+        Util.spawn(['systemctl', 'suspend']);
+    }
 
-	terminal() {
-		Util.spawn([this._settings.get_string('menu-button-terminal')])
-	}
+    _restart() {
+        Util.spawn(['gnome-session-quit', '--reboot']);
+    }
 
-	softwareStore() {
-		Util.spawn([this._settings.get_string('menu-button-software-center')])
-	}
+    _shutdown() {
+        Util.spawn(['gnome-session-quit', '--power-off']);
+    }
 
-	extensions() {
-    const appSys = imports.gi.Shell.AppSystem.get_default();
-		let extensionmanager_choice = this._settings.get_string('menu-button-extensions-app');
-		let extensionApp = appSys.lookup_app(extensionmanager_choice)
-		if (extensionApp) {
-			try {
-				extensionApp.launch(
-					0,
-					-1,
-					Shell.AppLaunchGpu.APP_PREF,
-				);
-			} catch (e) {
-				log(e);
-			}
-		}
-	}
+    _lockScreen() {
+        Util.spawn(['loginctl', 'lock-session']);
+    }
 
-	setIconImage(){
-		let iconIndex = this._settings.get_int('menu-button-icon-image');
-		let path = Me.path + Constants.DistroIcons[iconIndex].PATH;
-		if(Constants.DistroIcons[iconIndex].PATH === 'start-here-symbolic')
-			path = 'start-here-symbolic';
-		else if(!GLib.file_test(path, GLib.FileTest.IS_REGULAR))
-			path = 'start-here-symbolic';
-		this.icon.gicon = Gio.icon_new_for_string(path);
-	}
+    _logOut() {
+        Util.spawn(['gnome-session-quit', '--logout']);
+    }
 
-	setIconSize(){
-		let iconSize = this._settings.get_int('menu-button-icon-size');
-		this.icon.icon_size = iconSize;
-	}
-})
+    _showAppGrid() {
+        // Code snippet from - https://github.com/G-dH/custom-hot-corners-extended/blob/gdh/actions.js
+        // Pressing the apps btn before overview activation avoids icons animation in GS 3.36/3.38
+        Main.overview.dash.showAppsButton.checked = true;
+        // in 3.36 pressing the button is usualy enough to activate overview, but not always
+        Main.overview.show();
+        // pressing apps btn before overview has no effect in GS 40, so once again
+        Main.overview.dash.showAppsButton.checked = true;
+    }
 
-function init() {
-	ExtensionUtils.initTranslations(Me.metadata['gettext-domain']);
-}
+    _forceQuit() {
+        Util.spawn(['xkill']);
+    }
 
-function enable() {
-	const activitiesButton = Main.panel.statusArea['activities']
-	if (activitiesButton) {
-		activitiesButton.container.hide()
-	}
+    _openTerminal() {
+        Util.trySpawnCommandLine(this._settings.get_string('menu-button-terminal'));
+    }
 
-	let indicator = new MenuButton()
-	Main.panel.addToStatusArea('menuButton', indicator, 0, 'left')
+    _openSoftwareCenter() {
+        Util.trySpawnCommandLine(this._settings.get_string('menu-button-software-center'));
+    }
 
-	// hide
-	Main.panel.statusArea['menuButton'].visible = false
+    _openExtensionsApp() {
+        const appSys = Shell.AppSystem.get_default();
+        const extensionManagerChoice = this._settings.get_string('menu-button-extensions-app');
+        const extensionApp = appSys.lookup_app(extensionManagerChoice);
+        if (extensionApp) {
+            try {
+                extensionApp.launch(
+                    0,
+                    -1,
+                    Shell.AppLaunchGpu.APP_PREF
+                );
+            } catch (e) {
+                log(e);
+            }
+        }
+    }
 
-	// change icon
-	//Main.panel.statusArea['menuButton'].icon.icon_name = "appointment-soon-symbolic"
+    setIconImage() {
+        const iconIndex = this._settings.get_int('menu-button-icon-image');
+        const isStartHereSymbolic = Constants.DistroIcons[iconIndex].PATH === 'start-here-symbolic';
 
-	// show
-	Main.panel.statusArea['menuButton'].visible = true
-}
+        const iconPath = this._extension.path + Constants.DistroIcons[iconIndex].PATH;
+        const fileExists = GLib.file_test(iconPath, GLib.FileTest.IS_REGULAR);
 
-function disable() {
-	const activitiesButton = Main.panel.statusArea['activities']
-	if (activitiesButton) {
-		activitiesButton.container.show()
-	}
+        const icon = isStartHereSymbolic || !fileExists ? 'start-here-symbolic' : iconPath;
 
-	Main.panel.statusArea['menuButton'].destroy()
+        this.icon.gicon = Gio.icon_new_for_string(icon);
+    }
+
+    setIconSize() {
+        const iconSize = this._settings.get_int('menu-button-icon-size');
+        this.icon.icon_size = iconSize;
+    }
+});
+
+export default class LogoMenu extends Extension {
+    enable() {
+        this.settings = this.getSettings();
+
+        this.settings.connectObject('changed::show-activities-button',
+            () => this._setActivitiesVisibility(), this);
+
+        this._setActivitiesVisibility();
+
+        const indicator = new MenuButton(this);
+        Main.panel.addToStatusArea('LogoMenu', indicator, 0, 'left');
+    }
+
+    disable() {
+        if (!Main.sessionMode.isLocked)
+            Main.panel.statusArea.activities?.container.show();
+
+        Main.panel.statusArea['LogoMenu'].destroy();
+    }
+
+    _setActivitiesVisibility() {
+        const showActivitiesButton = this.settings.get_boolean('show-activities-button');
+        const activitiesButton = Main.panel.statusArea['activities'];
+
+        if (!activitiesButton)
+            return;
+
+        if (showActivitiesButton)
+            activitiesButton.container.show();
+        else
+            activitiesButton.container.hide();
+    }
 }
