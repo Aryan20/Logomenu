@@ -1,58 +1,71 @@
-// LibAdwaita + GTK based preference or newer versions of GNOME
+import Adw from 'gi://Adw';
+import GObject from 'gi://GObject';
+import Gtk from 'gi://Gtk';
 
-const ExtensionUtils = imports.misc.extensionUtils;
-const Me = ExtensionUtils.getCurrentExtension();
+import * as Config from 'resource:///org/gnome/Shell/Extensions/js/misc/config.js';
+import {gettext as _} from 'resource:///org/gnome/Shell/Extensions/js/extensions/prefs.js';
 
-const Constants = Me.imports.constants;
-const {Adw, Gtk, Gdk, Gio, GLib, GObject} = imports.gi;
-const Gettext = imports.gettext.domain(Me.metadata['gettext-domain']);
-const _ = Gettext.gettext;
+import * as Constants from '../constants.js';
 
-var LogoMenuIconsWidget = GObject.registerClass(class Logo_Menu_IconsWidget extends Adw.PreferencesPage{
-    _init(settings, IconGrid) {
+const IconGrid = GObject.registerClass(class LogoMenuIconGrid extends Gtk.FlowBox {
+    _init() {
         super._init({
-            margin_top: 24,
-            margin_start: 24,
-            margin_bottom: 24,
-            margin_end: 24,
+            row_spacing: 10,
+            column_spacing: 10,
+            vexpand: false,
+            hexpand: true,
+            valign: Gtk.Align.START,
+            halign: Gtk.Align.CENTER,
+            homogeneous: true,
+            selection_mode: Gtk.SelectionMode.SINGLE,
+            margin_top: 5,
         });
+        this.childrenCount = 0;
+    }
+
+    add(widget) {
+        this.insert(widget, -1);
+        this.childrenCount++;
+    }
+});
+
+export const LogoMenuIconsPage = GObject.registerClass(class LogoMenuIconsWidget extends Adw.PreferencesPage {
+    _init(settings) {
+        super._init();
         this._settings = settings;
         this.set_title('Icon');
         this.set_name('Icon');
         this.set_icon_name('emblem-photos-symbolic');
 
-
-        let iconGroup = new Adw.PreferencesGroup({
-            title: _("Icon Settings")
+        const iconGroup = new Adw.PreferencesGroup({
+            title: _('Icon Settings'),
         });
 
         // Icons
 
-        let iconsRow = new Adw.ActionRow({
-            title:_("Icon")
-        });
+        const iconsRow = new Adw.ActionRow();
 
-        let iconsFlowBox = new IconGrid();
-        iconsFlowBox.connect('child-activated', ()=> {
-            let selectedChild = iconsFlowBox.get_selected_children();
-            let selectedChildIndex = selectedChild[0].get_index();
+        const iconsFlowBox = new IconGrid();
+        iconsFlowBox.connect('child-activated', () => {
+            const selectedChild = iconsFlowBox.get_selected_children();
+            const selectedChildIndex = selectedChild[0].get_index();
             this._settings.set_int('menu-button-icon-image', selectedChildIndex);
         });
-        Constants.DistroIcons.forEach((icon)=>{
-            let iconName = icon.PATH.replace("/Resources/", '');
-            iconName = iconName.replace(".svg", '');
-            let iconImage = new Gtk.Image({
+        Constants.DistroIcons.forEach(icon => {
+            let iconName = icon.PATH.replace('/Resources/', '');
+            iconName = iconName.replace('.svg', '');
+            const iconImage = new Gtk.Image({
                 icon_name: iconName,
-                pixel_size: 36
+                pixel_size: 36,
             });
             iconsFlowBox.add(iconImage);
         });
 
-        iconsRow.add_suffix(iconsFlowBox);
+        iconsRow.set_child(iconsFlowBox);
 
-        let children = iconsFlowBox.childrenCount;
-        for(let i = 0; i < children; i++){
-            if(i === this._settings.get_int('menu-button-icon-image')){
+        const children = iconsFlowBox.childrenCount;
+        for (let i = 0; i < children; i++) {
+            if (i === this._settings.get_int('menu-button-icon-image')) {
                 iconsFlowBox.select_child(iconsFlowBox.get_child_at_index(i));
                 break;
             }
@@ -60,30 +73,30 @@ var LogoMenuIconsWidget = GObject.registerClass(class Logo_Menu_IconsWidget exte
 
         // Icon Size Scale
 
-        let menuButtonIconSizeRow = new Adw.ActionRow({
-            title: _("Icon Size")
+        const menuButtonIconSizeRow = new Adw.ActionRow({
+            title: _('Icon Size'),
         });
 
-        let iconSize = this._settings.get_int('menu-button-icon-size');
+        const iconSize = this._settings.get_int('menu-button-icon-size');
 
-        let menuButtonIconSizeScale = new Gtk.Scale({
+        const menuButtonIconSizeScale = new Gtk.Scale({
             orientation: Gtk.Orientation.HORIZONTAL,
             adjustment: new Gtk.Adjustment({
                 lower: 14,
                 upper: 64,
                 step_increment: 1,
                 page_increment: 1,
-                page_size: 0
+                page_size: 0,
             }),
             digits: 0,
             round_digits: 0,
             hexpand: true,
             draw_value: true,
-            value_pos: Gtk.PositionType.RIGHT
+            value_pos: Gtk.PositionType.RIGHT,
         });
 
-        menuButtonIconSizeScale.set_format_value_func( (scale, value) => {
-            return "\t" + value + "px";
+        menuButtonIconSizeScale.set_format_value_func((scale, value) => {
+            return `\t${value}px`;
         });
 
         menuButtonIconSizeScale.set_value(iconSize);
@@ -93,51 +106,49 @@ var LogoMenuIconsWidget = GObject.registerClass(class Logo_Menu_IconsWidget exte
 
         menuButtonIconSizeRow.add_suffix(menuButtonIconSizeScale);
 
-        //iconGroup
+        // iconGroup
         iconGroup.add(iconsRow);
-        iconGroup.add( menuButtonIconSizeRow)
+        iconGroup.add(menuButtonIconSizeRow);
 
         this.add(iconGroup);
-
     }
-})
+});
 
 // Create all the customization options
-var LogoMenuOptionsWidget = GObject.registerClass(class Logo_Menu_OptionsWidget extends Adw.PreferencesPage{
+export const LogoMenuOptionsPage = GObject.registerClass(class LogoMenuOptionsWidget extends Adw.PreferencesPage {
     _init(settings) {
-        super._init({
-            margin_top: 24,
-            margin_start: 24,
-            margin_bottom: 24,
-            margin_end: 24,
-        });
+        super._init();
         this._settings = settings;
         this.set_title('Other Options');
         this.set_name('Other Options');
         this.set_icon_name('emblem-system-symbolic');
 
-        let prefGroup1 = new Adw.PreferencesGroup({
-            title: _("Change Defaults")
+        const prefGroup1 = new Adw.PreferencesGroup({
+            title: _('Change Defaults'),
         });
 
-        let prefGroup2 = new Adw.PreferencesGroup({
-            title: _("Show/Hide Options")
+        const prefGroup2 = new Adw.PreferencesGroup({
+            title: _('Show/Hide Options'),
+        });
+
+        const prefGroup3 = new Adw.PreferencesGroup({
+            title: _('Top Panel Options'),
         });
         // Rows
 
         // Activities click type
 
-        let clickType = this._settings.get_int('menu-button-icon-click-type');
-        let menuButtonIconClickTypeRow = new Adw.ActionRow({
-            title:_("Icon Click Type to open Activities")
+        const clickType = this._settings.get_int('menu-button-icon-click-type');
+        const menuButtonIconClickTypeRow = new Adw.ActionRow({
+            title: _('Icon Click Type to open Activities'),
         });
 
-        let menuButtonIconClickTypeCombo= new Gtk.ComboBoxText({
-            valign: Gtk.Align.CENTER
+        const menuButtonIconClickTypeCombo = new Gtk.ComboBoxText({
+            valign: Gtk.Align.CENTER,
         });
-        menuButtonIconClickTypeCombo.append("1", _("Left Click "));
-        menuButtonIconClickTypeCombo.append("2", _("Middle Click "));
-        menuButtonIconClickTypeCombo.append("3", _("Right Click "));
+        menuButtonIconClickTypeCombo.append('1', _('Left Click '));
+        menuButtonIconClickTypeCombo.append('2', _('Middle Click '));
+        menuButtonIconClickTypeCombo.append('3', _('Right Click '));
         menuButtonIconClickTypeCombo.set_active_id(clickType.toString());
 
         menuButtonIconClickTypeCombo.connect('changed', () => {
@@ -148,16 +159,16 @@ var LogoMenuOptionsWidget = GObject.registerClass(class Logo_Menu_OptionsWidget 
 
         // Extensions application choice
 
-        let extensionApp = this._settings.get_string('menu-button-extensions-app');
-        let menuButtonExtensionsAppRow = new Adw.ActionRow({
-            title:_("Preferred Extensions Application")
+        const extensionApp = this._settings.get_string('menu-button-extensions-app');
+        const menuButtonExtensionsAppRow = new Adw.ActionRow({
+            title: _('Preferred Extensions Application'),
         });
 
-        let menuButtonExtensionsAppCombo = new Gtk.ComboBoxText({
-            valign: Gtk.Align.CENTER
+        const menuButtonExtensionsAppCombo = new Gtk.ComboBoxText({
+            valign: Gtk.Align.CENTER,
         });
-        menuButtonExtensionsAppCombo.append("org.gnome.Extensions.desktop", _("GNOME Extensions"));
-        menuButtonExtensionsAppCombo.append("com.mattjakeman.ExtensionManager.desktop", _("Extensions Manager"));
+        menuButtonExtensionsAppCombo.append('org.gnome.Extensions.desktop', _('GNOME Extensions'));
+        menuButtonExtensionsAppCombo.append('com.mattjakeman.ExtensionManager.desktop', _('Extensions Manager'));
         menuButtonExtensionsAppCombo.set_active_id(extensionApp.toString());
 
         menuButtonExtensionsAppCombo.connect('changed', () => {
@@ -168,14 +179,14 @@ var LogoMenuOptionsWidget = GObject.registerClass(class Logo_Menu_OptionsWidget 
 
         // Choose Terminal
 
-        let menuButtonTerminalRow = new Adw.ActionRow({
-            title:_("Terminal")
+        const menuButtonTerminalRow = new Adw.ActionRow({
+            title: _('Terminal'),
         });
 
         // Change Terminal and build it's option in prefs
-        let currentTerminal = this._settings.get_string('menu-button-terminal');
+        const currentTerminal = this._settings.get_string('menu-button-terminal');
 
-        let changeTerminalInput = new Gtk.Entry({
+        const changeTerminalInput = new Gtk.Entry({
             valign: Gtk.Align.CENTER,
         });
 
@@ -188,12 +199,12 @@ var LogoMenuOptionsWidget = GObject.registerClass(class Logo_Menu_OptionsWidget 
 
         // Change Software Center and build it's option in prefs
 
-        let menuButtonSCRow = new Adw.ActionRow({
-            title:_("Software Center")
+        const menuButtonSCRow = new Adw.ActionRow({
+            title: _('Software Center'),
         });
-        let currentSoftwareCenter = this._settings.get_string('menu-button-software-center');
+        const currentSoftwareCenter = this._settings.get_string('menu-button-software-center');
 
-        let changeSoftwareCenterInput = new Gtk.Entry({
+        const changeSoftwareCenterInput = new Gtk.Entry({
             valign: Gtk.Align.CENTER,
         });
 
@@ -206,31 +217,31 @@ var LogoMenuOptionsWidget = GObject.registerClass(class Logo_Menu_OptionsWidget 
 
 
         // Power Options
-        let showPowerOptionsRow = new Adw.ActionRow({
-            title: _("Enable Power Options")
+        const showPowerOptionsRow = new Adw.ActionRow({
+            title: _('Enable Power Options'),
         });
-        let showPowerOptionsSwitch = new Gtk.Switch({
-            valign: Gtk.Align.CENTER
+        const showPowerOptionsSwitch = new Gtk.Switch({
+            valign: Gtk.Align.CENTER,
         });
 
         showPowerOptionsSwitch.set_active(this._settings.get_boolean('show-power-options'));
-        showPowerOptionsSwitch.connect('notify::active', (widget) => {
+        showPowerOptionsSwitch.connect('notify::active', widget => {
             this._settings.set_boolean('show-power-options', widget.get_active());
         });
 
         showPowerOptionsRow.add_suffix(showPowerOptionsSwitch);
 
         // Toggle Force Quit option and build it's option in prefs
-        let forceQuitOptionrow = new Adw.ActionRow({
-            title: _("Hide Force Quit option")
+        const forceQuitOptionrow = new Adw.ActionRow({
+            title: _('Hide Force Quit option'),
         });
 
-        let showFQOptionsSwitch= new Gtk.Switch({
+        const showFQOptionsSwitch = new Gtk.Switch({
             valign: Gtk.Align.CENTER,
         });
 
         showFQOptionsSwitch.set_active(this._settings.get_boolean('hide-forcequit'));
-        showFQOptionsSwitch.connect('notify::active', (widget) => {
+        showFQOptionsSwitch.connect('notify::active', widget => {
             this._settings.set_boolean('hide-forcequit', widget.get_active());
         });
 
@@ -238,36 +249,52 @@ var LogoMenuOptionsWidget = GObject.registerClass(class Logo_Menu_OptionsWidget 
 
 
         // Toggle Lock Screen option and build it's option in prefs
-        let lockScreenOptionRow = new Adw.ActionRow({
-            title: _("Show Lock Screen option")
+        const lockScreenOptionRow = new Adw.ActionRow({
+            title: _('Show Lock Screen option'),
         });
 
-        let showLCOptionsSwitch= new Gtk.Switch({
+        const showLCOptionsSwitch = new Gtk.Switch({
             valign: Gtk.Align.CENTER,
         });
 
         showLCOptionsSwitch.set_active(this._settings.get_boolean('show-lockscreen'));
-        showLCOptionsSwitch.connect('notify::active', (widget) => {
+        showLCOptionsSwitch.connect('notify::active', widget => {
             this._settings.set_boolean('show-lockscreen', widget.get_active());
         });
 
         lockScreenOptionRow.add_suffix(showLCOptionsSwitch);
 
         // Toggle Software centre option and build it's option in prefs
-        let softwareCentreOptionRow = new Adw.ActionRow({
-            title:_("Hide Software Centre option")
+        const softwareCentreOptionRow = new Adw.ActionRow({
+            title: _('Hide Software Centre option'),
         });
 
-        let hideSCOptionSwitch= new Gtk.Switch({
+        const hideSCOptionSwitch = new Gtk.Switch({
             valign: Gtk.Align.CENTER,
         });
 
         hideSCOptionSwitch.set_active(this._settings.get_boolean('hide-softwarecentre'));
-        hideSCOptionSwitch.connect('notify::active', (widget) => {
+        hideSCOptionSwitch.connect('notify::active', widget => {
             this._settings.set_boolean('hide-softwarecentre', widget.get_active());
         });
 
         softwareCentreOptionRow.add_suffix(hideSCOptionSwitch);
+
+        // Activities Button visibility
+        const activitiesButtonVisiblityRow = new Adw.ActionRow({
+            title: _('Show Activities Button'),
+        });
+
+        const activitiesButtonVisiblitySwitch = new Gtk.Switch({
+            valign: Gtk.Align.CENTER,
+            active: this._settings.get_boolean('show-activities-button'),
+        });
+
+        activitiesButtonVisiblitySwitch.connect('notify::active', widget => {
+            this._settings.set_boolean('show-activities-button', widget.get_active());
+        });
+
+        activitiesButtonVisiblityRow.add_suffix(activitiesButtonVisiblitySwitch);
 
         // Pref Group
         prefGroup1.add(menuButtonIconClickTypeRow);
@@ -280,88 +307,88 @@ var LogoMenuOptionsWidget = GObject.registerClass(class Logo_Menu_OptionsWidget 
         prefGroup2.add(lockScreenOptionRow);
         prefGroup2.add(softwareCentreOptionRow);
 
+        prefGroup3.add(activitiesButtonVisiblityRow);
+
         this.add(prefGroup1);
         this.add(prefGroup2);
+        this.add(prefGroup3);
     }
-})
+});
 
 // Parts taken from Arc Menu - https://gitlab.com/logoMenu/logoMenu/-/blob/wip-GNOME42-AwdPrefs/prefs.js
 // Create the About page
-var AboutPage = GObject.registerClass(class Logo_Menu_AboutPage extends Adw.PreferencesPage {
-    _init(settings) {
+export const AboutPage = GObject.registerClass(class LogoMenuAboutPage extends Adw.PreferencesPage {
+    _init(metadata) {
         super._init({
-            title: _("About"),
+            title: _('About'),
             icon_name: 'info-symbolic',
         });
 
-        this._settings = settings;
-
-        let logoMenuLogoGroup = new Adw.PreferencesGroup();
-        let logoMenuBox = new Gtk.Box( {
+        const logoMenuLogoGroup = new Adw.PreferencesGroup();
+        const logoMenuBox = new Gtk.Box({
             orientation: Gtk.Orientation.VERTICAL,
             margin_top: 10,
             margin_bottom: 10,
             hexpand: false,
-            vexpand: false
+            vexpand: false,
         });
 
-        let logoMenuLabel = new Gtk.Label({
-            label: '<span size="large"><b>' + _('Logo Menu') + '</b></span>',
+        const logoMenuLabel = new Gtk.Label({
+            label: `<span size="large"><b>${_('Logo Menu')}</b></span>`,
             use_markup: true,
             vexpand: true,
-            valign: Gtk.Align.FILL
+            valign: Gtk.Align.FILL,
         });
 
-        let projectDescriptionLabel = new Gtk.Label({
+        const projectDescriptionLabel = new Gtk.Label({
             label: _('Quick access menu for GNOME'),
             hexpand: false,
             vexpand: false,
-            margin_bottom: 5
+            margin_bottom: 5,
         });
         logoMenuBox.append(logoMenuLabel);
         logoMenuBox.append(projectDescriptionLabel);
         logoMenuLogoGroup.add(logoMenuBox);
 
         this.add(logoMenuLogoGroup);
-        //-----------------------------------------------------------------------
+        // -----------------------------------------------------------------------
 
-        //Extension/OS Info Group------------------------------------------------
-        let extensionInfoGroup = new Adw.PreferencesGroup();
-        let logoMenuVersionRow = new Adw.ActionRow({
-            title: _("Logo Menu Version"),
+        // Extension/OS Info Group------------------------------------------------
+        const extensionInfoGroup = new Adw.PreferencesGroup();
+        const logoMenuVersionRow = new Adw.ActionRow({
+            title: _('Logo Menu Version'),
         });
         let releaseVersion;
-        if(Me.metadata.version)
-            releaseVersion = Me.metadata.version;
+        if (metadata.version)
+            releaseVersion = metadata.version;
         else
             releaseVersion = 'unknown';
         logoMenuVersionRow.add_suffix(new Gtk.Label({
-            label: releaseVersion + ''
+            label: `${releaseVersion}`,
         }));
 
-        let gnomeVersionRow = new Adw.ActionRow({
+        const gnomeVersionRow = new Adw.ActionRow({
             title: _('GNOME Version'),
         });
         gnomeVersionRow.add_suffix(new Gtk.Label({
-            label: imports.misc.config.PACKAGE_VERSION + '',
+            label: `${Config.PACKAGE_VERSION.toString()}`,
         }));
 
-        let githubLinkRow = new Adw.ActionRow({
+        const githubLinkRow = new Adw.ActionRow({
             title: _('Github'),
         });
         githubLinkRow.add_suffix(new Gtk.Label({
             label: 'Github.com/Aryan20/LogoMenu',
         }));
 
-
-        let createdByRow = new Adw.ActionRow({
+        const createdByRow = new Adw.ActionRow({
             title: _('Created with love by'),
         });
         createdByRow.add_suffix(new Gtk.Label({
             label: 'Aryan Kaushik',
         }));
 
-        let matrixRoomRow = new Adw.ActionRow({
+        const matrixRoomRow = new Adw.ActionRow({
             title: _('Matrix/Element room'),
         });
         matrixRoomRow.add_suffix(new Gtk.Label({
@@ -375,43 +402,27 @@ var AboutPage = GObject.registerClass(class Logo_Menu_AboutPage extends Adw.Pref
         extensionInfoGroup.add(matrixRoomRow);
 
         this.add(extensionInfoGroup);
-        //-----------------------------------------------------------------------
+        // -----------------------------------------------------------------------
 
-        let gnuSoftwareGroup = new Adw.PreferencesGroup();
-        let gnuSofwareLabel = new Gtk.Label({
-            label: _('<span size="small">' +'This program comes with absolutely no warranty.\n' +
-                'See the <a href="https://gnu.org/licenses/old-licenses/gpl-2.0.html">' +
-                    'GNU General Public License, version 2 or later</a> for details.' +
-                    '</span>'
-            ),
+        const warrantyLabel = _('This program comes with absolutely no warranty.');
+        const urlLabel = _('See the %sGNU General Public License, version 2 or later%s for details.').format('<a href="https://gnu.org/licenses/old-licenses/gpl-2.0.html">', '</a>');
+
+        const gnuSoftwareGroup = new Adw.PreferencesGroup();
+        const gnuSofwareLabel = new Gtk.Label({
+            label: `<span size="small">${warrantyLabel}\n${urlLabel}</span>`,
             use_markup: true,
-            justify: Gtk.Justification.CENTER
+            justify: Gtk.Justification.CENTER,
         });
-        let gnuSofwareLabelBox = new Gtk.Box({
+
+        const gnuSofwareLabelBox = new Gtk.Box({
             orientation: Gtk.Orientation.VERTICAL,
             valign: Gtk.Align.END,
             vexpand: true,
             margin_top: 5,
-            margin_bottom: 10
+            margin_bottom: 10,
         });
         gnuSofwareLabelBox.append(gnuSofwareLabel);
         gnuSoftwareGroup.add(gnuSofwareLabelBox);
         this.add(gnuSoftwareGroup);
     }
 });
-
-
-function fillPrefsWindow(window, IconGrid, Settings) {
-    let options = new LogoMenuOptionsWidget(Settings);
-    let iconsettings = new LogoMenuIconsWidget(Settings, IconGrid);
-    let aboutpage = new AboutPage(Settings);
-
-    let iconTheme = Gtk.IconTheme.get_for_display(Gdk.Display.get_default());
-    if(!iconTheme.get_search_path().includes(Me.path + "/Resources"))
-    iconTheme.add_search_path(Me.path + "/Resources");
-
-    window.add(iconsettings);
-    window.add(options);
-    window.add(aboutpage);
-    window.search_enabled = true;
-}

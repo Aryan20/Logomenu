@@ -63,6 +63,12 @@
       <description>Toggle Software Centre option visibility.</description>
     </key>
 
+    <key type="b" name="show-activities-button">
+      <default>false</default>
+      <summary>Toggle visibility of the top panel activities button</summary>
+      <description>Toggle visibility of the top panel activities button.</description>
+    </key>
+
   </schema>
 
 </schemalist>
