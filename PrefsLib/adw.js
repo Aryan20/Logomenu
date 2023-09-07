@@ -207,22 +207,22 @@ export const LogoMenuOptionsPage = GObject.registerClass(class LogoMenuOptionsWi
         // Extensions application choice
 
         const extensionApp = this._settings.get_string('menu-button-extensions-app');
-        const menuButtonExtensionsAppRow = new Adw.ActionRow({
+        const extensionsAppRow = new Adw.ActionRow({
             title: _('Preferred Extensions Application'),
         });
 
-        const menuButtonExtensionsAppCombo = new Gtk.ComboBoxText({
+        const extensionsAppCombo = new Gtk.ComboBoxText({
             valign: Gtk.Align.CENTER,
         });
-        menuButtonExtensionsAppCombo.append('org.gnome.Extensions.desktop', _('GNOME Extensions'));
-        menuButtonExtensionsAppCombo.append('com.mattjakeman.ExtensionManager.desktop', _('Extensions Manager'));
-        menuButtonExtensionsAppCombo.set_active_id(extensionApp.toString());
+        extensionsAppCombo.append('org.gnome.Extensions.desktop', _('GNOME Extensions'));
+        extensionsAppCombo.append('com.mattjakeman.ExtensionManager.desktop', _('Extensions Manager'));
+        extensionsAppCombo.set_active_id(extensionApp.toString());
 
-        menuButtonExtensionsAppCombo.connect('changed', () => {
-            this._settings.set_string('menu-button-extensions-app', menuButtonExtensionsAppCombo.get_active_id());
+        extensionsAppCombo.connect('changed', () => {
+            this._settings.set_string('menu-button-extensions-app', extensionsAppCombo.get_active_id());
         });
 
-        menuButtonExtensionsAppRow.add_suffix(menuButtonExtensionsAppCombo);
+        extensionsAppRow.add_suffix(extensionsAppCombo);
 
         // Choose Terminal
 
@@ -246,7 +246,7 @@ export const LogoMenuOptionsPage = GObject.registerClass(class LogoMenuOptionsWi
 
         // Change Software Center and build it's option in prefs
 
-        const menuButtonSCRow = new Adw.ActionRow({
+        const softwareCentreRow = new Adw.ActionRow({
             title: _('Software Center'),
         });
         const currentSoftwareCenter = this._settings.get_string('menu-button-software-center');
@@ -260,7 +260,7 @@ export const LogoMenuOptionsPage = GObject.registerClass(class LogoMenuOptionsWi
             this._settings.set_string('menu-button-software-center', changeSoftwareCenterInput.get_text());
         });
 
-        menuButtonSCRow.add_suffix(changeSoftwareCenterInput);
+        softwareCentreRow.add_suffix(changeSoftwareCenterInput);
 
 
         // Power Options
@@ -283,16 +283,16 @@ export const LogoMenuOptionsPage = GObject.registerClass(class LogoMenuOptionsWi
             title: _('Hide Force Quit option'),
         });
 
-        const showFQOptionsSwitch = new Gtk.Switch({
+        const forceQuitOptionsSwitch = new Gtk.Switch({
             valign: Gtk.Align.CENTER,
         });
 
-        showFQOptionsSwitch.set_active(this._settings.get_boolean('hide-forcequit'));
-        showFQOptionsSwitch.connect('notify::active', widget => {
+        forceQuitOptionsSwitch.set_active(this._settings.get_boolean('hide-forcequit'));
+        forceQuitOptionsSwitch.connect('notify::active', widget => {
             this._settings.set_boolean('hide-forcequit', widget.get_active());
         });
 
-        forceQuitOptionrow.add_suffix(showFQOptionsSwitch);
+        forceQuitOptionrow.add_suffix(forceQuitOptionsSwitch);
 
 
         // Toggle Lock Screen option and build it's option in prefs
@@ -300,32 +300,32 @@ export const LogoMenuOptionsPage = GObject.registerClass(class LogoMenuOptionsWi
             title: _('Show Lock Screen option'),
         });
 
-        const showLCOptionsSwitch = new Gtk.Switch({
+        const showLockScreenSwitch = new Gtk.Switch({
             valign: Gtk.Align.CENTER,
         });
 
-        showLCOptionsSwitch.set_active(this._settings.get_boolean('show-lockscreen'));
-        showLCOptionsSwitch.connect('notify::active', widget => {
+        showLockScreenSwitch.set_active(this._settings.get_boolean('show-lockscreen'));
+        showLockScreenSwitch.connect('notify::active', widget => {
             this._settings.set_boolean('show-lockscreen', widget.get_active());
         });
 
-        lockScreenOptionRow.add_suffix(showLCOptionsSwitch);
+        lockScreenOptionRow.add_suffix(showLockScreenSwitch);
 
         // Toggle Software centre option and build it's option in prefs
         const softwareCentreOptionRow = new Adw.ActionRow({
             title: _('Hide Software Centre option'),
         });
 
-        const hideSCOptionSwitch = new Gtk.Switch({
+        const hideSoftwareCentreSwitch = new Gtk.Switch({
             valign: Gtk.Align.CENTER,
         });
 
-        hideSCOptionSwitch.set_active(this._settings.get_boolean('hide-softwarecentre'));
-        hideSCOptionSwitch.connect('notify::active', widget => {
+        hideSoftwareCentreSwitch.set_active(this._settings.get_boolean('hide-softwarecentre'));
+        hideSoftwareCentreSwitch.connect('notify::active', widget => {
             this._settings.set_boolean('hide-softwarecentre', widget.get_active());
         });
 
-        softwareCentreOptionRow.add_suffix(hideSCOptionSwitch);
+        softwareCentreOptionRow.add_suffix(hideSoftwareCentreSwitch);
 
         // Activities Button visibility
         const activitiesButtonVisiblityRow = new Adw.ActionRow({
@@ -345,9 +345,9 @@ export const LogoMenuOptionsPage = GObject.registerClass(class LogoMenuOptionsWi
 
         // Pref Group
         prefGroup1.add(menuButtonIconClickTypeRow);
-        prefGroup1.add(menuButtonExtensionsAppRow);
+        prefGroup1.add(extensionsAppRow);
         prefGroup1.add(menuButtonTerminalRow);
-        prefGroup1.add(menuButtonSCRow);
+        prefGroup1.add(softwareCentreRow);
 
         prefGroup2.add(showPowerOptionsRow);
         prefGroup2.add(forceQuitOptionrow);
