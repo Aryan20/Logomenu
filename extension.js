@@ -33,6 +33,7 @@ class LogoMenuMenuButton extends PanelMenu.Button {
             style_class: 'menu-button',
         });
         this._settings.connectObject('changed::menu-button-icon-image', () => this.setIconImage(), this);
+        this._settings.connectObject('changed::symbolic-icon', () => this.setIconImage(), this);
         this._settings.connectObject('changed::menu-button-icon-size', () => this.setIconSize(), this);
 
         this.setIconImage();
@@ -179,9 +180,17 @@ class LogoMenuMenuButton extends PanelMenu.Button {
 
     setIconImage() {
         const iconIndex = this._settings.get_int('menu-button-icon-image');
-        const isStartHereSymbolic = Constants.DistroIcons[iconIndex].PATH === 'start-here-symbolic';
+        const isSymbolic = this._settings.get_boolean('symbolic-icon');
+        let isStartHereSymbolic = false;
+        let iconPath;
+        
+        if(isSymbolic) {
+            isStartHereSymbolic = Constants.SymbolicDistroIcons[iconIndex].PATH === 'start-here-symbolic';
+            iconPath = this._extension.path + Constants.SymbolicDistroIcons[iconIndex].PATH;
+        } else {
+            iconPath = this._extension.path + Constants.ColouredDistroIcons[iconIndex].PATH;
+        }
 
-        const iconPath = this._extension.path + Constants.DistroIcons[iconIndex].PATH;
         const fileExists = GLib.file_test(iconPath, GLib.FileTest.IS_REGULAR);
 
         const icon = isStartHereSymbolic || !fileExists ? 'start-here-symbolic' : iconPath;

@@ -1,4 +1,4 @@
-export const DistroIcons = [
+export const SymbolicDistroIcons = [
     {PATH: 'start-here-symbolic'},
     {PATH: '/Resources/fedora-logo-symbolic.svg'},
     {PATH: '/Resources/debian-logo-symbolic.svg'},
@@ -26,6 +26,9 @@ export const DistroIcons = [
     {PATH: '/Resources/shastraos-logo-symbolic.svg'},
     {PATH: '/Resources/asahilinux-logo-symbolic.svg'},
     {PATH: '/Resources/zorin-logo-symbolic.svg'},
+];
+
+export const ColouredDistroIcons = [
     {PATH: '/Resources/fedora-logo.svg'},
     {PATH: '/Resources/debian-logo.svg'},
     {PATH: '/Resources/manjaro-logo.svg'},

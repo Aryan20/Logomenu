@@ -37,37 +37,81 @@ export const LogoMenuIconsPage = GObject.registerClass(class LogoMenuIconsWidget
         this.set_name('Icon');
         this.set_icon_name('emblem-photos-symbolic');
 
-        const iconGroup = new Adw.PreferencesGroup({
+        const symbolicIconGroup = new Adw.PreferencesGroup({
+            title: _('Symbolic Icons'),
+        });
+
+        const colouredIconGroup = new Adw.PreferencesGroup({
+            title: _('Coloured Icons'),
+        });
+
+        const iconSettingsGroup = new Adw.PreferencesGroup({
             title: _('Icon Settings'),
         });
 
-        // Icons
+        // Symbolic Icons
 
-        const iconsRow = new Adw.ActionRow();
+        const symbolicIconsRow = new Adw.ActionRow();
 
-        const iconsFlowBox = new IconGrid();
-        iconsFlowBox.connect('child-activated', () => {
-            const selectedChild = iconsFlowBox.get_selected_children();
+        const symbolicIconsFlowBox = new IconGrid();
+        symbolicIconsFlowBox.connect('child-activated', () => {
+            const selectedChild = symbolicIconsFlowBox.get_selected_children();
             const selectedChildIndex = selectedChild[0].get_index();
             this._settings.set_int('menu-button-icon-image', selectedChildIndex);
+            this._settings.set_boolean('symbolic-icon', true);
         });
-        Constants.DistroIcons.forEach(icon => {
+        Constants.SymbolicDistroIcons.forEach(icon => {
             let iconName = icon.PATH.replace('/Resources/', '');
             iconName = iconName.replace('.svg', '');
             const iconImage = new Gtk.Image({
                 icon_name: iconName,
                 pixel_size: 36,
             });
-            iconsFlowBox.add(iconImage);
+            symbolicIconsFlowBox.add(iconImage);
         });
 
-        iconsRow.set_child(iconsFlowBox);
+        symbolicIconsRow.set_child(symbolicIconsFlowBox);
 
-        const children = iconsFlowBox.childrenCount;
-        for (let i = 0; i < children; i++) {
-            if (i === this._settings.get_int('menu-button-icon-image')) {
-                iconsFlowBox.select_child(iconsFlowBox.get_child_at_index(i));
-                break;
+        if (this._settings.get_boolean('symbolic-icon')) {
+            const symbolicChildren = symbolicIconsFlowBox.childrenCount;
+            for (let i = 0; i < symbolicChildren; i++) {
+                if (i === this._settings.get_int('menu-button-icon-image')) {
+                    symbolicIconsFlowBox.select_child(symbolicIconsFlowBox.get_child_at_index(i));
+                    break;
+                }
+            }
+        }
+
+        // Coloured Icons
+
+        const colouredIconsRow = new Adw.ActionRow();
+
+        const colouredIconsFlowBox = new IconGrid();
+        colouredIconsFlowBox.connect('child-activated', () => {
+            const selectedChild = colouredIconsFlowBox.get_selected_children();
+            const selectedChildIndex = selectedChild[0].get_index();
+            this._settings.set_int('menu-button-icon-image', selectedChildIndex);
+            this._settings.set_boolean('symbolic-icon', false);
+        });
+        Constants.ColouredDistroIcons.forEach(icon => {
+            let iconName = icon.PATH.replace('/Resources/', '');
+            iconName = iconName.replace('.svg', '');
+            const iconImage = new Gtk.Image({
+                icon_name: iconName,
+                pixel_size: 36,
+            });
+            colouredIconsFlowBox.add(iconImage);
+        });
+
+        colouredIconsRow.set_child(colouredIconsFlowBox);
+
+        if (!this._settings.get_boolean('symbolic-icon')) {
+            const children = colouredIconsFlowBox.childrenCount;
+            for (let i = 0; i < children; i++) {
+                if (i === this._settings.get_int('menu-button-icon-image')) {
+                    colouredIconsFlowBox.select_child(colouredIconsFlowBox.get_child_at_index(i));
+                    break;
+                }
             }
         }
 
@@ -107,10 +151,13 @@ export const LogoMenuIconsPage = GObject.registerClass(class LogoMenuIconsWidget
         menuButtonIconSizeRow.add_suffix(menuButtonIconSizeScale);
 
         // iconGroup
-        iconGroup.add(iconsRow);
-        iconGroup.add(menuButtonIconSizeRow);
+        symbolicIconGroup.add(symbolicIconsRow);
+        colouredIconGroup.add(colouredIconsRow);
+        iconSettingsGroup.add(menuButtonIconSizeRow);
 
-        this.add(iconGroup);
+        this.add(symbolicIconGroup);
+        this.add(colouredIconGroup);
+        this.add(iconSettingsGroup);
     }
 });
 
