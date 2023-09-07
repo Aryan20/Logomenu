@@ -43,7 +43,9 @@ Join the matrix room for the latest news and releases and/or for suggestions: [c
 
 fork of [Tofu Menu by tofutech](https://github.com/tofutech/tofumenu)
 
-Compatible with and tested on GNOME 43, 42, 41, 40, 3.xx
+Version 19 is compatible with and tested on GNOME 45
+
+Version 18 is compatible with and tested on GNOME 44, 43, 42, 41, 40, 3.xx
 
 Note - 
 1) Some icons can get changed due to Icon Pack used, particularly due to Icon packs primarily developed for KDE in mind.
@@ -55,7 +57,7 @@ Note -
 
 *  Via **Gnome Extensions**
  
-[<img src="https://user-images.githubusercontent.com/34372791/156869424-2d2e7519-726c-45e6-88e0-91266e92b7f2.png" width=250>](https://extensions.gnome.org/extension/4451/logo-menu/)
+[<img src="https://github.com/Aryan20/Logomenu/assets/34372791/b6a10e3e-02ec-4573-b5d1-9a14f98e827c" width=250>](https://extensions.gnome.org/extension/4451/logo-menu/)
 
 
 * Manual : Grab the latest release and unzip to `.local/share/gnome-shell/extensions/logomenu@aryan_k/`
