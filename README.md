@@ -5,13 +5,13 @@
 
 <br>
 
-## Preference window
+## Preference window (Version 19)
 
-<img src="https://github.com/Aryan20/Logomenu/blob/main/screenshots/screenshot_42_1.png" width=370>
-<img src="https://github.com/Aryan20/Logomenu/blob/main/screenshots/screenshot_42_2.png" width=370>
-<img src="https://github.com/Aryan20/Logomenu/blob/main/screenshots/screenshot_42_3.png" width=370>
+<img src="https://github.com/Aryan20/Logomenu/blob/main/screenshots/45_1.png" width=370>
+<img src="https://github.com/Aryan20/Logomenu/blob/main/screenshots/45_2.png" width=370>
+<img src="https://github.com/Aryan20/Logomenu/blob/main/screenshots/45_3.png" width=370>
 
-## Legacy preference GNOME 3.xx
+## Legacy preference GNOME 3.xx (Till version 18)
 
 <img src="https://github.com/Aryan20/Logomenu/blob/main/screenshots/screenshot1.png" width=370>
 
