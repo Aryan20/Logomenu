@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Logo Menu 18\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-08-31 12:36-0400\n"
+"POT-Creation-Date: 2023-09-07 17:11+0530\n"
 "PO-Revision-Date: 2022-11-17 23:23+0530\n"
 "Last-Translator: Taylan TATLI\n"
 "Language-Team: \n"
@@ -18,167 +18,175 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Generator: Poedit 3.0.1\n"
 
-#: PrefsLib/adw.js:41
-msgid "Icon Settings"
-msgstr "Simge Ayarları"
+#: extension.js:66
+msgid "About My System"
+msgstr "Sistem Hakkında"
 
-#: PrefsLib/adw.js:77
-msgid "Icon Size"
-msgstr "Simge Boyutu"
+#: extension.js:69
+msgid "Activities"
+msgstr "Etkinlikler"
 
-#: PrefsLib/adw.js:127
-msgid "Change Defaults"
-msgstr "Varsayılanları Değiştir"
+#: extension.js:70
+msgid "App Grid"
+msgstr "Uygulamalar"
 
-#: PrefsLib/adw.js:131
-msgid "Show/Hide Options"
-msgstr "Seçenekleri Göster/Gizle"
+#: extension.js:74
+msgid "Software Center..."
+msgstr "Yazılım Merkezi"
 
-#: PrefsLib/adw.js:135
-msgid "Top Panel Options"
-msgstr ""
-
-#: PrefsLib/adw.js:143
-msgid "Icon Click Type to open Activities"
-msgstr "Etkinlikleri açacak için Tıklama Türü"
-
-#: PrefsLib/adw.js:149
-msgid "Left Click "
-msgstr ""
-
-#: PrefsLib/adw.js:150
-msgid "Middle Click "
-msgstr "Orta Tık"
-
-#: PrefsLib/adw.js:151
-msgid "Right Click "
-msgstr "Sağ Tık"
-
-#: PrefsLib/adw.js:164
-msgid "Preferred Extensions Application"
-msgstr ""
-
-#: PrefsLib/adw.js:170
-msgid "GNOME Extensions"
-msgstr ""
-
-#: PrefsLib/adw.js:171
-msgid "Extensions Manager"
-msgstr ""
-
-#: PrefsLib/adw.js:183 extension.js:75
+#: extension.js:76 PrefsLib/adw.js:230
 msgid "Terminal"
 msgstr "Terminal"
 
-#: PrefsLib/adw.js:203
+#: extension.js:77
+msgid "Extensions"
+msgstr "Eklentiler"
+
+#: extension.js:81
+msgid "Force Quit App"
+msgstr "Uygulamayı Zorla Kapa"
+
+#: extension.js:86
+msgid "Sleep"
+msgstr "Uyut"
+
+#: extension.js:87
+msgid "Restart..."
+msgstr "Yeniden Başlat"
+
+#: extension.js:88
+msgid "Shut Down..."
+msgstr "Kapat"
+
+#: extension.js:92 extension.js:97
+msgid "Lock Screen"
+msgstr "Ekranı Kilitle"
+
+#: extension.js:94
+msgid "Log Out..."
+msgstr "Çıkış"
+
+#: PrefsLib/adw.js:41
+msgid "Symbolic Icons"
+msgstr ""
+
+#: PrefsLib/adw.js:45
+msgid "Coloured Icons"
+msgstr ""
+
+#: PrefsLib/adw.js:49
+msgid "Icon Settings"
+msgstr "Simge Ayarları"
+
+#: PrefsLib/adw.js:121
+msgid "Icon Size"
+msgstr "Simge Boyutu"
+
+#: PrefsLib/adw.js:174
+msgid "Change Defaults"
+msgstr "Varsayılanları Değiştir"
+
+#: PrefsLib/adw.js:178
+msgid "Show/Hide Options"
+msgstr "Seçenekleri Göster/Gizle"
+
+#: PrefsLib/adw.js:182
+msgid "Top Panel Options"
+msgstr ""
+
+#: PrefsLib/adw.js:190
+msgid "Icon Click Type to open Activities"
+msgstr "Etkinlikleri açacak için Tıklama Türü"
+
+#: PrefsLib/adw.js:196
+msgid "Left Click "
+msgstr ""
+
+#: PrefsLib/adw.js:197
+msgid "Middle Click "
+msgstr "Orta Tık"
+
+#: PrefsLib/adw.js:198
+msgid "Right Click "
+msgstr "Sağ Tık"
+
+#: PrefsLib/adw.js:211
+msgid "Preferred Extensions Application"
+msgstr ""
+
+#: PrefsLib/adw.js:217
+msgid "GNOME Extensions"
+msgstr ""
+
+#: PrefsLib/adw.js:218
+msgid "Extensions Manager"
+msgstr ""
+
+#: PrefsLib/adw.js:250
 msgid "Software Center"
 msgstr "Yazılım Merkezi"
 
-#: PrefsLib/adw.js:221
+#: PrefsLib/adw.js:268
 msgid "Enable Power Options"
 msgstr "Güç Seçeneklerini Etkinleştir"
 
-#: PrefsLib/adw.js:236
+#: PrefsLib/adw.js:283
 msgid "Hide Force Quit option"
 msgstr "Zorla Kapat seçeneğini gizle"
 
-#: PrefsLib/adw.js:253
+#: PrefsLib/adw.js:300
 msgid "Show Lock Screen option"
 msgstr "Ekran Kilidi seçeneğini göster"
 
-#: PrefsLib/adw.js:269
+#: PrefsLib/adw.js:316
 msgid "Hide Software Centre option"
 msgstr "Yazılım Merkezi seçeneğini gizle"
 
-#: PrefsLib/adw.js:285
+#: PrefsLib/adw.js:332
 #, fuzzy
 msgid "Show Activities Button"
 msgstr "Etkinlikler"
 
-#: PrefsLib/adw.js:323
+#: PrefsLib/adw.js:370
 msgid "About"
 msgstr "Hakkında"
 
-#: PrefsLib/adw.js:337
+#: PrefsLib/adw.js:384
 msgid "Logo Menu"
 msgstr "Logo Menüsü"
 
-#: PrefsLib/adw.js:344
+#: PrefsLib/adw.js:391
 msgid "Quick access menu for GNOME"
 msgstr "Gnome için hızlı erişim menüsü"
 
-#: PrefsLib/adw.js:359
+#: PrefsLib/adw.js:406
 msgid "Logo Menu Version"
 msgstr "Logo Menüsü Sürümü"
 
-#: PrefsLib/adw.js:371
+#: PrefsLib/adw.js:418
 msgid "GNOME Version"
 msgstr "Gnome sürümü"
 
-#: PrefsLib/adw.js:378
+#: PrefsLib/adw.js:425
 msgid "Github"
 msgstr "Github"
 
-#: PrefsLib/adw.js:385
+#: PrefsLib/adw.js:432
 msgid "Created with love by"
 msgstr ""
 
-#: PrefsLib/adw.js:392
+#: PrefsLib/adw.js:439
 msgid "Matrix/Element room"
 msgstr ""
 
-#: PrefsLib/adw.js:407
+#: PrefsLib/adw.js:454
 msgid "This program comes with absolutely no warranty."
 msgstr ""
 
-#: PrefsLib/adw.js:408
+#: PrefsLib/adw.js:455
 #, javascript-format
 msgid "See the %sGNU General Public License, version 2 or later%s for details."
 msgstr ""
-
-#: extension.js:65
-msgid "About My System"
-msgstr "Sistem Hakkında"
-
-#: extension.js:68
-msgid "Activities"
-msgstr "Etkinlikler"
-
-#: extension.js:69
-msgid "App Grid"
-msgstr "Uygulamalar"
-
-#: extension.js:73
-msgid "Software Center..."
-msgstr "Yazılım Merkezi"
-
-#: extension.js:76
-msgid "Extensions"
-msgstr "Eklentiler"
-
-#: extension.js:80
-msgid "Force Quit App"
-msgstr "Uygulamayı Zorla Kapa"
-
-#: extension.js:85
-msgid "Sleep"
-msgstr "Uyut"
-
-#: extension.js:86
-msgid "Restart..."
-msgstr "Yeniden Başlat"
-
-#: extension.js:87
-msgid "Shut Down..."
-msgstr "Kapat"
-
-#: extension.js:91 extension.js:96
-msgid "Lock Screen"
-msgstr "Ekranı Kilitle"
-
-#: extension.js:93
-msgid "Log Out..."
-msgstr "Çıkış"
 
 #~ msgid "Icon"
 #~ msgstr "Simge"

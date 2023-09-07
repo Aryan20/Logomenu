@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Logo Menu 18\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-08-31 12:36-0400\n"
+"POT-Creation-Date: 2023-09-07 17:11+0530\n"
 "PO-Revision-Date: 2022-11-17 23:24+0530\n"
 "Last-Translator: 天上飞机最快 地上表姐最坏 <trampover@gmail.com>\n"
 "Language-Team: \n"
@@ -18,167 +18,175 @@ msgstr ""
 "Plural-Forms: nplurals=1; plural=0;\n"
 "X-Generator: Poedit 3.0.1\n"
 
-#: PrefsLib/adw.js:41
-msgid "Icon Settings"
-msgstr "图标设定"
+#: extension.js:66
+msgid "About My System"
+msgstr "关于本机系统"
 
-#: PrefsLib/adw.js:77
-msgid "Icon Size"
-msgstr "图标尺寸"
+#: extension.js:69
+msgid "Activities"
+msgstr "活动"
 
-#: PrefsLib/adw.js:127
-msgid "Change Defaults"
-msgstr "设定参数"
+#: extension.js:70
+msgid "App Grid"
+msgstr "所有软件"
 
-#: PrefsLib/adw.js:131
-msgid "Show/Hide Options"
-msgstr "显示/隐藏 选项"
+#: extension.js:74
+msgid "Software Center..."
+msgstr "软件中心"
 
-#: PrefsLib/adw.js:135
-msgid "Top Panel Options"
-msgstr ""
-
-#: PrefsLib/adw.js:143
-msgid "Icon Click Type to open Activities"
-msgstr "点击活动指示器图标显示活动"
-
-#: PrefsLib/adw.js:149
-msgid "Left Click "
-msgstr ""
-
-#: PrefsLib/adw.js:150
-msgid "Middle Click "
-msgstr "中键"
-
-#: PrefsLib/adw.js:151
-msgid "Right Click "
-msgstr "右键"
-
-#: PrefsLib/adw.js:164
-msgid "Preferred Extensions Application"
-msgstr ""
-
-#: PrefsLib/adw.js:170
-msgid "GNOME Extensions"
-msgstr ""
-
-#: PrefsLib/adw.js:171
-msgid "Extensions Manager"
-msgstr ""
-
-#: PrefsLib/adw.js:183 extension.js:75
+#: extension.js:76 PrefsLib/adw.js:230
 msgid "Terminal"
 msgstr "终端"
 
-#: PrefsLib/adw.js:203
+#: extension.js:77
+msgid "Extensions"
+msgstr "插件"
+
+#: extension.js:81
+msgid "Force Quit App"
+msgstr "强制退出"
+
+#: extension.js:86
+msgid "Sleep"
+msgstr "休眠"
+
+#: extension.js:87
+msgid "Restart..."
+msgstr "重启"
+
+#: extension.js:88
+msgid "Shut Down..."
+msgstr "关机"
+
+#: extension.js:92 extension.js:97
+msgid "Lock Screen"
+msgstr "锁屏"
+
+#: extension.js:94
+msgid "Log Out..."
+msgstr "注销"
+
+#: PrefsLib/adw.js:41
+msgid "Symbolic Icons"
+msgstr ""
+
+#: PrefsLib/adw.js:45
+msgid "Coloured Icons"
+msgstr ""
+
+#: PrefsLib/adw.js:49
+msgid "Icon Settings"
+msgstr "图标设定"
+
+#: PrefsLib/adw.js:121
+msgid "Icon Size"
+msgstr "图标尺寸"
+
+#: PrefsLib/adw.js:174
+msgid "Change Defaults"
+msgstr "设定参数"
+
+#: PrefsLib/adw.js:178
+msgid "Show/Hide Options"
+msgstr "显示/隐藏 选项"
+
+#: PrefsLib/adw.js:182
+msgid "Top Panel Options"
+msgstr ""
+
+#: PrefsLib/adw.js:190
+msgid "Icon Click Type to open Activities"
+msgstr "点击活动指示器图标显示活动"
+
+#: PrefsLib/adw.js:196
+msgid "Left Click "
+msgstr ""
+
+#: PrefsLib/adw.js:197
+msgid "Middle Click "
+msgstr "中键"
+
+#: PrefsLib/adw.js:198
+msgid "Right Click "
+msgstr "右键"
+
+#: PrefsLib/adw.js:211
+msgid "Preferred Extensions Application"
+msgstr ""
+
+#: PrefsLib/adw.js:217
+msgid "GNOME Extensions"
+msgstr ""
+
+#: PrefsLib/adw.js:218
+msgid "Extensions Manager"
+msgstr ""
+
+#: PrefsLib/adw.js:250
 msgid "Software Center"
 msgstr "软件中心"
 
-#: PrefsLib/adw.js:221
+#: PrefsLib/adw.js:268
 msgid "Enable Power Options"
 msgstr "显示电源选项"
 
-#: PrefsLib/adw.js:236
+#: PrefsLib/adw.js:283
 msgid "Hide Force Quit option"
 msgstr "隐藏强制退出"
 
-#: PrefsLib/adw.js:253
+#: PrefsLib/adw.js:300
 msgid "Show Lock Screen option"
 msgstr "显示锁屏"
 
-#: PrefsLib/adw.js:269
+#: PrefsLib/adw.js:316
 msgid "Hide Software Centre option"
 msgstr "隐藏软件中心"
 
-#: PrefsLib/adw.js:285
+#: PrefsLib/adw.js:332
 #, fuzzy
 msgid "Show Activities Button"
 msgstr "活动"
 
-#: PrefsLib/adw.js:323
+#: PrefsLib/adw.js:370
 msgid "About"
 msgstr "关于"
 
-#: PrefsLib/adw.js:337
+#: PrefsLib/adw.js:384
 msgid "Logo Menu"
 msgstr "系统图标菜单"
 
-#: PrefsLib/adw.js:344
+#: PrefsLib/adw.js:391
 msgid "Quick access menu for GNOME"
 msgstr "本地数据目录"
 
-#: PrefsLib/adw.js:359
+#: PrefsLib/adw.js:406
 msgid "Logo Menu Version"
 msgstr "系统图标菜单版本"
 
-#: PrefsLib/adw.js:371
+#: PrefsLib/adw.js:418
 msgid "GNOME Version"
 msgstr "GNOME(桌面)版本"
 
-#: PrefsLib/adw.js:378
+#: PrefsLib/adw.js:425
 msgid "Github"
 msgstr ""
 
-#: PrefsLib/adw.js:385
+#: PrefsLib/adw.js:432
 msgid "Created with love by"
 msgstr ""
 
-#: PrefsLib/adw.js:392
+#: PrefsLib/adw.js:439
 msgid "Matrix/Element room"
 msgstr ""
 
-#: PrefsLib/adw.js:407
+#: PrefsLib/adw.js:454
 msgid "This program comes with absolutely no warranty."
 msgstr ""
 
-#: PrefsLib/adw.js:408
+#: PrefsLib/adw.js:455
 #, javascript-format
 msgid "See the %sGNU General Public License, version 2 or later%s for details."
 msgstr ""
-
-#: extension.js:65
-msgid "About My System"
-msgstr "关于本机系统"
-
-#: extension.js:68
-msgid "Activities"
-msgstr "活动"
-
-#: extension.js:69
-msgid "App Grid"
-msgstr "所有软件"
-
-#: extension.js:73
-msgid "Software Center..."
-msgstr "软件中心"
-
-#: extension.js:76
-msgid "Extensions"
-msgstr "插件"
-
-#: extension.js:80
-msgid "Force Quit App"
-msgstr "强制退出"
-
-#: extension.js:85
-msgid "Sleep"
-msgstr "休眠"
-
-#: extension.js:86
-msgid "Restart..."
-msgstr "重启"
-
-#: extension.js:87
-msgid "Shut Down..."
-msgstr "关机"
-
-#: extension.js:91 extension.js:96
-msgid "Lock Screen"
-msgstr "锁屏"
-
-#: extension.js:93
-msgid "Log Out..."
-msgstr "注销"
 
 #~ msgid "Icon"
 #~ msgstr "图标"
