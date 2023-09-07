@@ -5,9 +5,9 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: Logo Menu 15\n"
+"Project-Id-Version: Logo Menu 18\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-09-18 12:03+0530\n"
+"POT-Creation-Date: 2023-08-31 12:36-0400\n"
 "PO-Revision-Date: 2022-11-17 23:22+0530\n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -18,160 +18,170 @@ msgstr ""
 "Plural-Forms: nplurals=1; plural=0;\n"
 "X-Generator: Poedit 3.0.1\n"
 
-#: extension.js:107
-msgid "About My System"
-msgstr "내 시스템에 대하여"
-
-#: extension.js:110
-msgid "Activities"
-msgstr "현재 활동"
-
-#: extension.js:111
-msgid "App Grid"
-msgstr "앱 표시"
-
-#: extension.js:113 PrefsLib/adw.js:172 PrefsLib/gtk.js:227
-msgid "Terminal"
-msgstr "터미널"
-
-#: extension.js:114
-msgid "Extensions"
-msgstr "확장"
-
-#: extension.js:131
-msgid "Software Center..."
-msgstr "소프트웨어..."
-
-#: extension.js:142
-msgid "Force Quit App"
-msgstr "앱 강제 종료"
-
-#: extension.js:149
-msgid "Sleep"
-msgstr "절전"
-
-#: extension.js:150
-msgid "Restart..."
-msgstr "다시 시작..."
-
-#: extension.js:151
-msgid "Shut Down..."
-msgstr "컴퓨터 끄기..."
-
-#: extension.js:154 extension.js:176
-msgid "Lock Screen"
-msgstr "잠그기"
-
-#: extension.js:155
-msgid "Log Out..."
-msgstr "로그아웃..."
-
-#: PrefsLib/adw.js:26
+#: PrefsLib/adw.js:41
 msgid "Icon Settings"
 msgstr "아이콘 설정"
 
-#: PrefsLib/adw.js:32 PrefsLib/gtk.js:25
-msgid "Icon"
-msgstr "아이콘"
-
-#: PrefsLib/adw.js:64 PrefsLib/gtk.js:91
+#: PrefsLib/adw.js:77
 msgid "Icon Size"
 msgstr "아이콘 크기"
 
-#: PrefsLib/adw.js:120
+#: PrefsLib/adw.js:127
 msgid "Change Defaults"
 msgstr "기본값으로 변경"
 
-#: PrefsLib/adw.js:124
+#: PrefsLib/adw.js:131
 msgid "Show/Hide Options"
 msgstr "옵션 보이기/숨기기"
 
-#: PrefsLib/adw.js:132 PrefsLib/gtk.js:148
+#: PrefsLib/adw.js:135
+msgid "Top Panel Options"
+msgstr ""
+
+#: PrefsLib/adw.js:143
 msgid "Icon Click Type to open Activities"
 msgstr "현재 활동을 열 때 아이콘 클릭 유형"
 
-#: PrefsLib/adw.js:138 PrefsLib/gtk.js:155
+#: PrefsLib/adw.js:149
 msgid "Left Click "
 msgstr "왼쪽 클릭"
 
-#: PrefsLib/adw.js:139 PrefsLib/gtk.js:156
+#: PrefsLib/adw.js:150
 msgid "Middle Click "
 msgstr "가운데 클릭 "
 
-#: PrefsLib/adw.js:140 PrefsLib/gtk.js:157
+#: PrefsLib/adw.js:151
 msgid "Right Click "
 msgstr "오른쪽 클릭 "
 
-#: PrefsLib/adw.js:153 PrefsLib/gtk.js:187
+#: PrefsLib/adw.js:164
 msgid "Preferred Extensions Application"
 msgstr ""
 
-#: PrefsLib/adw.js:159 PrefsLib/gtk.js:194
+#: PrefsLib/adw.js:170
 msgid "GNOME Extensions"
 msgstr "그놈 확장"
 
-#: PrefsLib/adw.js:160 PrefsLib/gtk.js:195
+#: PrefsLib/adw.js:171
 msgid "Extensions Manager"
 msgstr "확장 관리자"
 
-#: PrefsLib/adw.js:192 PrefsLib/gtk.js:266
+#: PrefsLib/adw.js:183 extension.js:75
+msgid "Terminal"
+msgstr "터미널"
+
+#: PrefsLib/adw.js:203
 msgid "Software Center"
 msgstr "소프트웨어 센터"
 
-#: PrefsLib/adw.js:210 PrefsLib/gtk.js:304
+#: PrefsLib/adw.js:221
 msgid "Enable Power Options"
 msgstr "전원 옵션 사용"
 
-#: PrefsLib/adw.js:225 PrefsLib/gtk.js:342
+#: PrefsLib/adw.js:236
 msgid "Hide Force Quit option"
 msgstr "강제 종료 옵션 숨기기"
 
-#: PrefsLib/adw.js:242 PrefsLib/gtk.js:380
+#: PrefsLib/adw.js:253
 msgid "Show Lock Screen option"
 msgstr "잠그기 옵션 표시"
 
-#: PrefsLib/adw.js:258 PrefsLib/gtk.js:418
+#: PrefsLib/adw.js:269
 msgid "Hide Software Centre option"
 msgstr "소프트웨어 옵션 숨기기"
 
-#: PrefsLib/adw.js:293
+#: PrefsLib/adw.js:285
+#, fuzzy
+msgid "Show Activities Button"
+msgstr "현재 활동"
+
+#: PrefsLib/adw.js:323
 msgid "About"
 msgstr "대한"
 
-#: PrefsLib/adw.js:309
+#: PrefsLib/adw.js:337
 msgid "Logo Menu"
 msgstr ""
 
-#: PrefsLib/adw.js:316
+#: PrefsLib/adw.js:344
 msgid "Quick access menu for GNOME"
 msgstr "그놈을 위한 빠른 설정 메뉴"
 
-#: PrefsLib/adw.js:331
+#: PrefsLib/adw.js:359
 msgid "Logo Menu Version"
 msgstr "Logo Menu 버전"
 
-#: PrefsLib/adw.js:343
+#: PrefsLib/adw.js:371
 msgid "GNOME Version"
 msgstr "그놈 버전"
 
-#: PrefsLib/adw.js:350
+#: PrefsLib/adw.js:378
 msgid "Github"
 msgstr ""
 
-#: PrefsLib/adw.js:358
+#: PrefsLib/adw.js:385
 msgid "Created with love by"
 msgstr ""
 
-#: PrefsLib/adw.js:365
+#: PrefsLib/adw.js:392
 msgid "Matrix/Element room"
 msgstr ""
 
-#: PrefsLib/adw.js:382
-msgid ""
-"<span size=\"small\">This program comes with absolutely no warranty.\n"
-"See the <a href=\"https://gnu.org/licenses/old-licenses/gpl-2.0.html\">GNU "
-"General Public License, version 2 or later</a> for details.</span>"
+#: PrefsLib/adw.js:407
+msgid "This program comes with absolutely no warranty."
 msgstr ""
+
+#: PrefsLib/adw.js:408
+#, javascript-format
+msgid "See the %sGNU General Public License, version 2 or later%s for details."
+msgstr ""
+
+#: extension.js:65
+msgid "About My System"
+msgstr "내 시스템에 대하여"
+
+#: extension.js:68
+msgid "Activities"
+msgstr "현재 활동"
+
+#: extension.js:69
+msgid "App Grid"
+msgstr "앱 표시"
+
+#: extension.js:73
+msgid "Software Center..."
+msgstr "소프트웨어..."
+
+#: extension.js:76
+msgid "Extensions"
+msgstr "확장"
+
+#: extension.js:80
+msgid "Force Quit App"
+msgstr "앱 강제 종료"
+
+#: extension.js:85
+msgid "Sleep"
+msgstr "절전"
+
+#: extension.js:86
+msgid "Restart..."
+msgstr "다시 시작..."
+
+#: extension.js:87
+msgid "Shut Down..."
+msgstr "컴퓨터 끄기..."
+
+#: extension.js:91 extension.js:96
+msgid "Lock Screen"
+msgstr "잠그기"
+
+#: extension.js:93
+msgid "Log Out..."
+msgstr "로그아웃..."
+
+#~ msgid "Icon"
+#~ msgstr "아이콘"
 
 #~ msgid "Lock Orientation"
 #~ msgstr "회전 잠금"

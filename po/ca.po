@@ -5,9 +5,9 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: Logo Menu 16\n"
+"Project-Id-Version: Logo Menu 18\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-09-18 12:03+0530\n"
+"POT-Creation-Date: 2023-08-31 12:36-0400\n"
 "PO-Revision-Date: 2023-07-07 11:54+0200\n"
 "Last-Translator: @jcatfor\n"
 "Language-Team: Catalan\n"
@@ -19,161 +19,178 @@ msgstr ""
 "X-Generator: Poedit 3.3.1\n"
 "X-Poedit-SourceCharset: UTF-8\n"
 
-#: extension.js:107
-msgid "About My System"
-msgstr "Quant a aquest Ordinador"
-
-#: extension.js:110
-msgid "Activities"
-msgstr "Activitats"
-
-#: extension.js:111
-msgid "App Grid"
-msgstr "Aplicacions"
-
-#: extension.js:113 PrefsLib/adw.js:172 PrefsLib/gtk.js:227
-msgid "Terminal"
-msgstr "Terminal"
-
-#: extension.js:114
-msgid "Extensions"
-msgstr "Extensions"
-
-#: extension.js:131
-msgid "Software Center..."
-msgstr "Programari..."
-
-#: extension.js:142
-msgid "Force Quit App"
-msgstr "Força la Sortida de l'App"
-
-#: extension.js:149
-msgid "Sleep"
-msgstr "Posa en Repòs"
-
-#: extension.js:150
-msgid "Restart..."
-msgstr "Reinicia..."
-
-#: extension.js:151
-msgid "Shut Down..."
-msgstr "Apaga..."
-
-#: extension.js:154 extension.js:176
-msgid "Lock Screen"
-msgstr "Bloqueja la Pantalla"
-
-#: extension.js:155
-msgid "Log Out..."
-msgstr "Tanca la Sessió..."
-
-#: PrefsLib/adw.js:26
+#: PrefsLib/adw.js:41
 msgid "Icon Settings"
 msgstr "Configuració de la Icona"
 
-#: PrefsLib/adw.js:32 PrefsLib/gtk.js:25
-msgid "Icon"
-msgstr "Icona"
-
-#: PrefsLib/adw.js:64 PrefsLib/gtk.js:91
+#: PrefsLib/adw.js:77
 msgid "Icon Size"
 msgstr "Tamany de la Icona"
 
-#: PrefsLib/adw.js:120
+#: PrefsLib/adw.js:127
 msgid "Change Defaults"
 msgstr "Canvia les Opcions Predeterminades"
 
-#: PrefsLib/adw.js:124
+#: PrefsLib/adw.js:131
 msgid "Show/Hide Options"
 msgstr "Mostra/Amaga Opcions"
 
-#: PrefsLib/adw.js:132 PrefsLib/gtk.js:148
+#: PrefsLib/adw.js:135
+msgid "Top Panel Options"
+msgstr ""
+
+#: PrefsLib/adw.js:143
 msgid "Icon Click Type to open Activities"
 msgstr "Accions per a obrir la vista d'Activitats"
 
-#: PrefsLib/adw.js:138 PrefsLib/gtk.js:155
+#: PrefsLib/adw.js:149
 msgid "Left Click "
 msgstr "Clic amb el botó Esquerre "
 
-#: PrefsLib/adw.js:139 PrefsLib/gtk.js:156
+#: PrefsLib/adw.js:150
 msgid "Middle Click "
 msgstr "Clic amb el botó del Mig "
 
-#: PrefsLib/adw.js:140 PrefsLib/gtk.js:157
+#: PrefsLib/adw.js:151
 msgid "Right Click "
 msgstr "Clic amb el botó Dret "
 
-#: PrefsLib/adw.js:153 PrefsLib/gtk.js:187
+#: PrefsLib/adw.js:164
 msgid "Preferred Extensions Application"
 msgstr "Aplicació preferida per a les Extensions"
 
-#: PrefsLib/adw.js:159 PrefsLib/gtk.js:194
+#: PrefsLib/adw.js:170
 msgid "GNOME Extensions"
 msgstr "Extensions del GNOME"
 
-#: PrefsLib/adw.js:160 PrefsLib/gtk.js:195
+#: PrefsLib/adw.js:171
 msgid "Extensions Manager"
 msgstr "Gestor d'Extensions"
 
-#: PrefsLib/adw.js:192 PrefsLib/gtk.js:266
+#: PrefsLib/adw.js:183 extension.js:75
+msgid "Terminal"
+msgstr "Terminal"
+
+#: PrefsLib/adw.js:203
 msgid "Software Center"
 msgstr "Programari"
 
-#: PrefsLib/adw.js:210 PrefsLib/gtk.js:304
+#: PrefsLib/adw.js:221
 msgid "Enable Power Options"
 msgstr "Activa les Opcions per al Reinici i Apagat"
 
-#: PrefsLib/adw.js:225 PrefsLib/gtk.js:342
+#: PrefsLib/adw.js:236
 msgid "Hide Force Quit option"
 msgstr "Oculta l'opció per a Forçar la Sortida"
 
-#: PrefsLib/adw.js:242 PrefsLib/gtk.js:380
+#: PrefsLib/adw.js:253
 msgid "Show Lock Screen option"
 msgstr "Mostra l'opció per a Bloquejar la Pantalla"
 
-#: PrefsLib/adw.js:258 PrefsLib/gtk.js:418
+#: PrefsLib/adw.js:269
 msgid "Hide Software Centre option"
 msgstr "Oculta l'opció per a mostrar el Programari"
 
-#: PrefsLib/adw.js:293
+#: PrefsLib/adw.js:285
+#, fuzzy
+msgid "Show Activities Button"
+msgstr "Activitats"
+
+#: PrefsLib/adw.js:323
 msgid "About"
 msgstr "Quant a"
 
-#: PrefsLib/adw.js:309
+#: PrefsLib/adw.js:337
 msgid "Logo Menu"
 msgstr "Logo Menu"
 
-#: PrefsLib/adw.js:316
+#: PrefsLib/adw.js:344
 msgid "Quick access menu for GNOME"
 msgstr "Menú d'accessos ràpids per al GNOME"
 
-#: PrefsLib/adw.js:331
+#: PrefsLib/adw.js:359
 msgid "Logo Menu Version"
 msgstr "Versió del Logo Menu"
 
-#: PrefsLib/adw.js:343
+#: PrefsLib/adw.js:371
 msgid "GNOME Version"
 msgstr "Versió del GNOME"
 
-#: PrefsLib/adw.js:350
+#: PrefsLib/adw.js:378
 msgid "Github"
 msgstr "Github"
 
-#: PrefsLib/adw.js:358
+#: PrefsLib/adw.js:385
 msgid "Created with love by"
 msgstr "Creat amb amor per"
 
-#: PrefsLib/adw.js:365
+#: PrefsLib/adw.js:392
 msgid "Matrix/Element room"
 msgstr "Matrix/Element room"
 
-#: PrefsLib/adw.js:382
-msgid ""
-"<span size=\"small\">This program comes with absolutely no warranty.\n"
-"See the <a href=\"https://gnu.org/licenses/old-licenses/gpl-2.0.html\">GNU "
-"General Public License, version 2 or later</a> for details.</span>"
+#: PrefsLib/adw.js:407
+msgid "This program comes with absolutely no warranty."
 msgstr ""
-"<span size=\"small\">Aquest programa ve absolutament sense cap garantia.\n"
-"Consulteu la <a href=\"https://gnu.org/licenses/old-licenses/gpl-2.0."
-"html\">Llicència Pública General GNU, versió 2 o posterior</a> per a més "
-"detalls.</span>"
+
+#: PrefsLib/adw.js:408
+#, javascript-format
+msgid "See the %sGNU General Public License, version 2 or later%s for details."
+msgstr ""
+
+#: extension.js:65
+msgid "About My System"
+msgstr "Quant a aquest Ordinador"
+
+#: extension.js:68
+msgid "Activities"
+msgstr "Activitats"
+
+#: extension.js:69
+msgid "App Grid"
+msgstr "Aplicacions"
+
+#: extension.js:73
+msgid "Software Center..."
+msgstr "Programari..."
+
+#: extension.js:76
+msgid "Extensions"
+msgstr "Extensions"
+
+#: extension.js:80
+msgid "Force Quit App"
+msgstr "Força la Sortida de l'App"
+
+#: extension.js:85
+msgid "Sleep"
+msgstr "Posa en Repòs"
+
+#: extension.js:86
+msgid "Restart..."
+msgstr "Reinicia..."
+
+#: extension.js:87
+msgid "Shut Down..."
+msgstr "Apaga..."
+
+#: extension.js:91 extension.js:96
+msgid "Lock Screen"
+msgstr "Bloqueja la Pantalla"
+
+#: extension.js:93
+msgid "Log Out..."
+msgstr "Tanca la Sessió..."
+
+#~ msgid "Icon"
+#~ msgstr "Icona"
+
+#~ msgid ""
+#~ "<span size=\"small\">This program comes with absolutely no warranty.\n"
+#~ "See the <a href=\"https://gnu.org/licenses/old-licenses/gpl-2.0."
+#~ "html\">GNU General Public License, version 2 or later</a> for details.</"
+#~ "span>"
+#~ msgstr ""
+#~ "<span size=\"small\">Aquest programa ve absolutament sense cap garantia.\n"
+#~ "Consulteu la <a href=\"https://gnu.org/licenses/old-licenses/gpl-2.0."
+#~ "html\">Llicència Pública General GNU, versió 2 o posterior</a> per a més "
+#~ "detalls.</span>"

@@ -5,9 +5,9 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: Logo Menu 15\n"
+"Project-Id-Version: Logo Menu 18\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-09-18 12:03+0530\n"
+"POT-Creation-Date: 2023-08-31 12:36-0400\n"
 "PO-Revision-Date: 2022-11-17 23:23+0530\n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -19,161 +19,178 @@ msgstr ""
 "n%10<=4 && (n%100<12 || n%100>14) ? 1 : 2);\n"
 "X-Generator: Poedit 3.0.1\n"
 
-#: extension.js:107
-msgid "About My System"
-msgstr "Аб сістэме"
-
-#: extension.js:110
-msgid "Activities"
-msgstr "Агляд"
-
-#: extension.js:111
-msgid "App Grid"
-msgstr "Праграмы"
-
-#: extension.js:113 PrefsLib/adw.js:172 PrefsLib/gtk.js:227
-msgid "Terminal"
-msgstr "Тэрмінал"
-
-#: extension.js:114
-msgid "Extensions"
-msgstr "Пашырэнні"
-
-#: extension.js:131
-msgid "Software Center..."
-msgstr "Менеджар праграм..."
-
-#: extension.js:142
-msgid "Force Quit App"
-msgstr "Прымусовы выхад"
-
-#: extension.js:149
-msgid "Sleep"
-msgstr "Сон"
-
-#: extension.js:150
-msgid "Restart..."
-msgstr "Перазапуск..."
-
-#: extension.js:151
-msgid "Shut Down..."
-msgstr "Выключыць..."
-
-#: extension.js:154 extension.js:176
-msgid "Lock Screen"
-msgstr "Заблакіраваць"
-
-#: extension.js:155
-msgid "Log Out..."
-msgstr "Завяршыць сеанс..."
-
-#: PrefsLib/adw.js:26
+#: PrefsLib/adw.js:41
 msgid "Icon Settings"
 msgstr "Налады іконкі"
 
-#: PrefsLib/adw.js:32 PrefsLib/gtk.js:25
-msgid "Icon"
-msgstr "Іконка"
-
-#: PrefsLib/adw.js:64 PrefsLib/gtk.js:91
+#: PrefsLib/adw.js:77
 msgid "Icon Size"
 msgstr "Памер іконкі"
 
-#: PrefsLib/adw.js:120
+#: PrefsLib/adw.js:127
 msgid "Change Defaults"
 msgstr "Змяніць прадвызначаныя"
 
-#: PrefsLib/adw.js:124
+#: PrefsLib/adw.js:131
 msgid "Show/Hide Options"
 msgstr "Паказаць/схаваць опцыі"
 
-#: PrefsLib/adw.js:132 PrefsLib/gtk.js:148
+#: PrefsLib/adw.js:135
+msgid "Top Panel Options"
+msgstr ""
+
+#: PrefsLib/adw.js:143
 msgid "Icon Click Type to open Activities"
 msgstr "Націск на іконку для адкрыцця Агляду"
 
-#: PrefsLib/adw.js:138 PrefsLib/gtk.js:155
+#: PrefsLib/adw.js:149
 msgid "Left Click "
 msgstr ""
 
-#: PrefsLib/adw.js:139 PrefsLib/gtk.js:156
+#: PrefsLib/adw.js:150
 msgid "Middle Click "
 msgstr "Сярэдняя кнопка мышы"
 
-#: PrefsLib/adw.js:140 PrefsLib/gtk.js:157
+#: PrefsLib/adw.js:151
 msgid "Right Click "
 msgstr "Правая кнопка мышы"
 
-#: PrefsLib/adw.js:153 PrefsLib/gtk.js:187
+#: PrefsLib/adw.js:164
 msgid "Preferred Extensions Application"
 msgstr ""
 
-#: PrefsLib/adw.js:159 PrefsLib/gtk.js:194
+#: PrefsLib/adw.js:170
 msgid "GNOME Extensions"
 msgstr ""
 
-#: PrefsLib/adw.js:160 PrefsLib/gtk.js:195
+#: PrefsLib/adw.js:171
 msgid "Extensions Manager"
 msgstr ""
 
-#: PrefsLib/adw.js:192 PrefsLib/gtk.js:266
+#: PrefsLib/adw.js:183 extension.js:75
+msgid "Terminal"
+msgstr "Тэрмінал"
+
+#: PrefsLib/adw.js:203
 msgid "Software Center"
 msgstr "Менеджар праграм"
 
-#: PrefsLib/adw.js:210 PrefsLib/gtk.js:304
+#: PrefsLib/adw.js:221
 msgid "Enable Power Options"
 msgstr "Уключыць опцыі сілкавання"
 
-#: PrefsLib/adw.js:225 PrefsLib/gtk.js:342
+#: PrefsLib/adw.js:236
 msgid "Hide Force Quit option"
 msgstr "Схаваць опцыю \"Прымусовы выхад\""
 
-#: PrefsLib/adw.js:242 PrefsLib/gtk.js:380
+#: PrefsLib/adw.js:253
 msgid "Show Lock Screen option"
 msgstr "Паказваць опцыю \"Заблакіраваць\""
 
-#: PrefsLib/adw.js:258 PrefsLib/gtk.js:418
+#: PrefsLib/adw.js:269
 msgid "Hide Software Centre option"
 msgstr "Схаваць опцыю \"Менеджар праграм\""
 
-#: PrefsLib/adw.js:293
+#: PrefsLib/adw.js:285
+#, fuzzy
+msgid "Show Activities Button"
+msgstr "Агляд"
+
+#: PrefsLib/adw.js:323
 msgid "About"
 msgstr "Аб праграме"
 
-#: PrefsLib/adw.js:309
+#: PrefsLib/adw.js:337
 msgid "Logo Menu"
 msgstr "Logo Menu"
 
-#: PrefsLib/adw.js:316
+#: PrefsLib/adw.js:344
 msgid "Quick access menu for GNOME"
 msgstr "Меню хуткага доступу для GNOME"
 
-#: PrefsLib/adw.js:331
+#: PrefsLib/adw.js:359
 msgid "Logo Menu Version"
 msgstr "Версія Logo Menu"
 
-#: PrefsLib/adw.js:343
+#: PrefsLib/adw.js:371
 msgid "GNOME Version"
 msgstr "Версія GNOME"
 
-#: PrefsLib/adw.js:350
+#: PrefsLib/adw.js:378
 msgid "Github"
 msgstr "Github"
 
-#: PrefsLib/adw.js:358
+#: PrefsLib/adw.js:385
 msgid "Created with love by"
 msgstr ""
 
-#: PrefsLib/adw.js:365
+#: PrefsLib/adw.js:392
 msgid "Matrix/Element room"
 msgstr ""
 
-#: PrefsLib/adw.js:382
-msgid ""
-"<span size=\"small\">This program comes with absolutely no warranty.\n"
-"See the <a href=\"https://gnu.org/licenses/old-licenses/gpl-2.0.html\">GNU "
-"General Public License, version 2 or later</a> for details.</span>"
+#: PrefsLib/adw.js:407
+msgid "This program comes with absolutely no warranty."
 msgstr ""
-"<span size=\"small\">Гэтая праграма распаўсюджваецца без аніякай "
-"гарантыі.\n"
-"Падрабязней: <a href=\"https://gnu.org/licenses/old-licenses/gpl-2.0."
-"html\">GNU General Public License, version 2 or later</a></span>"
+
+#: PrefsLib/adw.js:408
+#, javascript-format
+msgid "See the %sGNU General Public License, version 2 or later%s for details."
+msgstr ""
+
+#: extension.js:65
+msgid "About My System"
+msgstr "Аб сістэме"
+
+#: extension.js:68
+msgid "Activities"
+msgstr "Агляд"
+
+#: extension.js:69
+msgid "App Grid"
+msgstr "Праграмы"
+
+#: extension.js:73
+msgid "Software Center..."
+msgstr "Менеджар праграм..."
+
+#: extension.js:76
+msgid "Extensions"
+msgstr "Пашырэнні"
+
+#: extension.js:80
+msgid "Force Quit App"
+msgstr "Прымусовы выхад"
+
+#: extension.js:85
+msgid "Sleep"
+msgstr "Сон"
+
+#: extension.js:86
+msgid "Restart..."
+msgstr "Перазапуск..."
+
+#: extension.js:87
+msgid "Shut Down..."
+msgstr "Выключыць..."
+
+#: extension.js:91 extension.js:96
+msgid "Lock Screen"
+msgstr "Заблакіраваць"
+
+#: extension.js:93
+msgid "Log Out..."
+msgstr "Завяршыць сеанс..."
+
+#~ msgid "Icon"
+#~ msgstr "Іконка"
+
+#~ msgid ""
+#~ "<span size=\"small\">This program comes with absolutely no warranty.\n"
+#~ "See the <a href=\"https://gnu.org/licenses/old-licenses/gpl-2.0."
+#~ "html\">GNU General Public License, version 2 or later</a> for details.</"
+#~ "span>"
+#~ msgstr ""
+#~ "<span size=\"small\">Гэтая праграма распаўсюджваецца без аніякай "
+#~ "гарантыі.\n"
+#~ "Падрабязней: <a href=\"https://gnu.org/licenses/old-licenses/gpl-2.0."
+#~ "html\">GNU General Public License, version 2 or later</a></span>"
