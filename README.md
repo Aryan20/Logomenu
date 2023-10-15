@@ -5,7 +5,7 @@
 
 <br>
 
-## Preference window (Version 19)
+## Preference window (Version 20)
 
 <img src="https://github.com/Aryan20/Logomenu/blob/main/screenshots/45_1.png" width=370>
 <img src="https://github.com/Aryan20/Logomenu/blob/main/screenshots/45_2.png" width=370>
@@ -13,7 +13,7 @@
 
 ## Legacy preference GNOME 3.xx (Till version 18)
 
-<img src="https://github.com/Aryan20/Logomenu/blob/main/screenshots/screenshot1.png" width=300>
+<img src="https://github.com/Aryan20/Logomenu/blob/main/screenshots/screenshot1.png" width=250>
 
 Quick access menu for the GNOME panel with options that help ease the workflow for newcomers and power users alike and gives a great logo that you can switch to your liking to match your distro or add something your own.
 

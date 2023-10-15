@@ -41,20 +41,20 @@
 
     <key type="b" name="show-power-options">
       <default>false</default>
-      <summary>Toggle power options vsibility</summary>
-      <description>Toggle power options vsibility.</description>
+      <summary>Toggle power options visibility</summary>
+      <description>Toggle power options visibility.</description>
     </key>
 
     <key type="b" name="hide-forcequit">
       <default>false</default>
-      <summary>Toggle Force Quit option vsibility</summary>
-      <description>Toggle Force Quit option vsibility.</description>
+      <summary>Toggle Force Quit option visibility</summary>
+      <description>Toggle Force Quit option visibility.</description>
     </key>
 
     <key type="b" name="show-lockscreen">
       <default>false</default>
-      <summary>Toggle Lock screen option vsibility</summary>
-      <description>Toggle Force Quit option vsibility.</description>
+      <summary>Toggle Lock screen option visibility</summary>
+      <description>Toggle Force Quit option visibility.</description>
     </key>
 
     <key type="b" name="hide-softwarecentre">
