@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Logo Menu 18\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-07 17:11+0530\n"
+"POT-Creation-Date: 2023-10-15 23:07+0530\n"
 "PO-Revision-Date: 2022-11-17 23:23+0530\n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -35,35 +35,39 @@ msgstr "Праграмы"
 msgid "Software Center..."
 msgstr "Менеджар праграм..."
 
-#: extension.js:76 PrefsLib/adw.js:230
+#: extension.js:76 PrefsLib/adw.js:268
+msgid "System Monitor"
+msgstr ""
+
+#: extension.js:77 PrefsLib/adw.js:230
 msgid "Terminal"
 msgstr "Тэрмінал"
 
-#: extension.js:77
+#: extension.js:78
 msgid "Extensions"
 msgstr "Пашырэнні"
 
-#: extension.js:81
+#: extension.js:82
 msgid "Force Quit App"
 msgstr "Прымусовы выхад"
 
-#: extension.js:86
+#: extension.js:87
 msgid "Sleep"
 msgstr "Сон"
 
-#: extension.js:87
+#: extension.js:88
 msgid "Restart..."
 msgstr "Перазапуск..."
 
-#: extension.js:88
+#: extension.js:89
 msgid "Shut Down..."
 msgstr "Выключыць..."
 
-#: extension.js:92 extension.js:97
+#: extension.js:93 extension.js:98
 msgid "Lock Screen"
 msgstr "Заблакіраваць"
 
-#: extension.js:94
+#: extension.js:95
 msgid "Log Out..."
 msgstr "Завяршыць сеанс..."
 
@@ -127,64 +131,64 @@ msgstr ""
 msgid "Software Center"
 msgstr "Менеджар праграм"
 
-#: PrefsLib/adw.js:268
+#: PrefsLib/adw.js:286
 msgid "Enable Power Options"
 msgstr "Уключыць опцыі сілкавання"
 
-#: PrefsLib/adw.js:283
+#: PrefsLib/adw.js:301
 msgid "Hide Force Quit option"
 msgstr "Схаваць опцыю \"Прымусовы выхад\""
 
-#: PrefsLib/adw.js:300
+#: PrefsLib/adw.js:318
 msgid "Show Lock Screen option"
 msgstr "Паказваць опцыю \"Заблакіраваць\""
 
-#: PrefsLib/adw.js:316
+#: PrefsLib/adw.js:334
 msgid "Hide Software Centre option"
 msgstr "Схаваць опцыю \"Менеджар праграм\""
 
-#: PrefsLib/adw.js:332
+#: PrefsLib/adw.js:350
 #, fuzzy
 msgid "Show Activities Button"
 msgstr "Агляд"
 
-#: PrefsLib/adw.js:370
+#: PrefsLib/adw.js:389
 msgid "About"
 msgstr "Аб праграме"
 
-#: PrefsLib/adw.js:384
+#: PrefsLib/adw.js:403
 msgid "Logo Menu"
 msgstr "Logo Menu"
 
-#: PrefsLib/adw.js:391
+#: PrefsLib/adw.js:410
 msgid "Quick access menu for GNOME"
 msgstr "Меню хуткага доступу для GNOME"
 
-#: PrefsLib/adw.js:406
+#: PrefsLib/adw.js:425
 msgid "Logo Menu Version"
 msgstr "Версія Logo Menu"
 
-#: PrefsLib/adw.js:418
+#: PrefsLib/adw.js:437
 msgid "GNOME Version"
 msgstr "Версія GNOME"
 
-#: PrefsLib/adw.js:425
+#: PrefsLib/adw.js:444
 msgid "Github"
 msgstr "Github"
 
-#: PrefsLib/adw.js:432
+#: PrefsLib/adw.js:451
 msgid "Created with love by"
 msgstr ""
 
-#: PrefsLib/adw.js:439
+#: PrefsLib/adw.js:458
 msgid "Matrix/Element room"
 msgstr ""
 
-#: PrefsLib/adw.js:454
+#: PrefsLib/adw.js:473
 msgid "This program comes with absolutely no warranty."
 msgstr ""
 
-#: PrefsLib/adw.js:455
+#: PrefsLib/adw.js:474
 #, javascript-format
 msgid "See the %sGNU General Public License, version 2 or later%s for details."
 msgstr ""
