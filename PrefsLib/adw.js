@@ -262,6 +262,24 @@ export const LogoMenuOptionsPage = GObject.registerClass(class LogoMenuOptionsWi
 
         softwareCentreRow.add_suffix(changeSoftwareCenterInput);
 
+        // Change System Monitor and build it's option in prefs
+
+        const systemMonitorRow = new Adw.ActionRow({
+            title: _('System Monitor'),
+        });
+        const currentSystemMonitor = this._settings.get_string('menu-button-system-monitor');
+
+        const changeSystemMonitorInput = new Gtk.Entry({
+            valign: Gtk.Align.CENTER,
+        });
+
+        changeSystemMonitorInput.set_text(currentSystemMonitor);
+        changeSystemMonitorInput.connect('changed', () => {
+            this._settings.set_string('menu-button-system-monitor', changeSystemMonitorInput.get_text());
+        });
+
+        systemMonitorRow.add_suffix(changeSystemMonitorInput);
+
 
         // Power Options
         const showPowerOptionsRow = new Adw.ActionRow({
@@ -348,6 +366,7 @@ export const LogoMenuOptionsPage = GObject.registerClass(class LogoMenuOptionsWi
         prefGroup1.add(extensionsAppRow);
         prefGroup1.add(menuButtonTerminalRow);
         prefGroup1.add(softwareCentreRow);
+        prefGroup1.add(systemMonitorRow);
 
         prefGroup2.add(showPowerOptionsRow);
         prefGroup2.add(forceQuitOptionrow);
@@ -362,7 +381,7 @@ export const LogoMenuOptionsPage = GObject.registerClass(class LogoMenuOptionsWi
     }
 });
 
-// Parts taken from Arc Menu - https://gitlab.com/logoMenu/logoMenu/-/blob/wip-GNOME42-AwdPrefs/prefs.js
+// Parts taken from Arc Menu
 // Create the About page
 export const AboutPage = GObject.registerClass(class LogoMenuAboutPage extends Adw.PreferencesPage {
     _init(metadata) {

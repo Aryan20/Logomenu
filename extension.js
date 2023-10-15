@@ -73,6 +73,7 @@ class LogoMenuMenuButton extends PanelMenu.Button {
         if (showSoftwareCenter)
             this._addItem(new MenuItem(_('Software Center...'), () => this._openSoftwareCenter()));
 
+        this._addItem(new MenuItem(_('System Monitor'), () => this._openSystemMonitor()));
         this._addItem(new MenuItem(_('Terminal'), () => this._openTerminal()));
         this._addItem(new MenuItem(_('Extensions'), () => this._openExtensionsApp()));
 
@@ -159,6 +160,10 @@ class LogoMenuMenuButton extends PanelMenu.Button {
 
     _openSoftwareCenter() {
         Util.trySpawnCommandLine(this._settings.get_string('menu-button-software-center'));
+    }
+
+    _openSystemMonitor() {
+        Util.trySpawnCommandLine(this._settings.get_string('menu-button-system-monitor'));
     }
 
     _openExtensionsApp() {
