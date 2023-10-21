@@ -5,7 +5,7 @@
 
 <br>
 
-## Preference window (Version 20)
+## Preference window (Version 21)
 
 <img src="https://github.com/Aryan20/Logomenu/blob/main/screenshots/45_1.png" width=370>
 <img src="https://github.com/Aryan20/Logomenu/blob/main/screenshots/45_2.png" width=370>
