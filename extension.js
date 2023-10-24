@@ -30,7 +30,7 @@ class LogoMenuMenuButton extends PanelMenu.Button {
 
         // Icon
         this.icon = new St.Icon({
-            style_class: 'menu-button',
+            style_class: 'system-status-icon menu-button',
         });
         this._settings.connectObject('changed::menu-button-icon-image', () => this.setIconImage(), this);
         this._settings.connectObject('changed::symbolic-icon', () => this.setIconImage(), this);
