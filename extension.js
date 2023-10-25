@@ -30,12 +30,17 @@ class LogoMenuMenuButton extends PanelMenu.Button {
 
         // Icon
         this.icon = new St.Icon({
-            style_class: 'system-status-icon menu-button',
+        //style_class: 'system-status-icon',
+           style_class: 'menu-button',
+           //style_class: 'menu-button',
         });
+        
+        this._settings.connectObject('changed::hide-icon-shadow', () => this.hideIconShadow(), this);
         this._settings.connectObject('changed::menu-button-icon-image', () => this.setIconImage(), this);
         this._settings.connectObject('changed::symbolic-icon', () => this.setIconImage(), this);
         this._settings.connectObject('changed::menu-button-icon-size', () => this.setIconSize(), this);
-
+	
+	this.hideIconShadow()
         this.setIconImage();
         this.setIconSize();
         this.add_child(this.icon);
@@ -71,7 +76,7 @@ class LogoMenuMenuButton extends PanelMenu.Button {
         this._addItem(new PopupMenu.PopupSeparatorMenuItem());
 
         if (showSoftwareCenter)
-            this._addItem(new MenuItem(_('Software Center...'), () => this._openSoftwareCenter()));
+            this._addItem(new MenuItem(_('Software Center'), () => this._openSoftwareCenter()));
 
         this._addItem(new MenuItem(_('System Monitor'), () => this._openSystemMonitor()));
         this._addItem(new MenuItem(_('Terminal'), () => this._openTerminal()));
@@ -207,6 +212,16 @@ class LogoMenuMenuButton extends PanelMenu.Button {
         const iconSize = this._settings.get_int('menu-button-icon-size');
         this.icon.icon_size = iconSize;
     }
+    
+    hideIconShadow() {
+    	const IconShadow = this._settings.get_boolean('hide-icon-shadow');
+    	
+        if(!IconShadow){
+            this.icon.add_style_class_name('system-status-icon'); 
+        } else {
+            this.icon.remove_style_class_name('system-status-icon');
+        }
+    }
 });
 
 export default class LogoMenu extends Extension {
@@ -219,7 +234,7 @@ export default class LogoMenu extends Extension {
         this._setActivitiesVisibility();
 
         const indicator = new MenuButton(this);
-        Main.panel.addToStatusArea('LogoMenu', indicator, 0, 'left');
+        Main.panel.addToStatusArea('LogoMenu', indicator, 1, 'left');
     }
 
     disable() {
