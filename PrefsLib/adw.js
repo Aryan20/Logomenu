@@ -360,6 +360,22 @@ export const LogoMenuOptionsPage = GObject.registerClass(class LogoMenuOptionsWi
         });
 
         activitiesButtonVisiblityRow.add_suffix(activitiesButtonVisiblitySwitch);
+        
+         // Icon Shadow Visibility
+        const iconShadowVisibilityRow = new Adw.ActionRow({
+            title: _('Hide Icon Shadow'),
+        });
+
+        const iconShadowRowVisiblitySwitch = new Gtk.Switch({
+            valign: Gtk.Align.CENTER,
+            active: this._settings.get_boolean('hide-icon-shadow'),
+        });
+
+        iconShadowRowVisiblitySwitch.connect('notify::active', widget => {
+            this._settings.set_boolean('hide-icon-shadow', widget.get_active());
+        });
+
+        iconShadowVisibilityRow.add_suffix(iconShadowRowVisiblitySwitch);
 
         // Pref Group
         prefGroup1.add(menuButtonIconClickTypeRow);
@@ -374,6 +390,7 @@ export const LogoMenuOptionsPage = GObject.registerClass(class LogoMenuOptionsWi
         prefGroup2.add(softwareCentreOptionRow);
 
         prefGroup3.add(activitiesButtonVisiblityRow);
+        prefGroup3.add(iconShadowVisibilityRow);
 
         this.add(prefGroup1);
         this.add(prefGroup2);
