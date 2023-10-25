@@ -30,9 +30,7 @@ class LogoMenuMenuButton extends PanelMenu.Button {
 
         // Icon
         this.icon = new St.Icon({
-        //style_class: 'system-status-icon',
            style_class: 'menu-button',
-           //style_class: 'menu-button',
         });
         
         this._settings.connectObject('changed::hide-icon-shadow', () => this.hideIconShadow(), this);
