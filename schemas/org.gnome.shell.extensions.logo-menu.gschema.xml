@@ -68,6 +68,13 @@
       <summary>Toggle visibility of the top panel activities button</summary>
       <description>Toggle visibility of the top panel activities button.</description>
     </key>
+    
+    <key type="b" name="hide-icon-shadow">
+      <default>true</default>
+      <summary>Toggle visibility of the top panel icon's shadow </summary>
+      <description>Toggle visibility of the top panel icon's shadow.</description>
+    </key>
+
 
     <key type="b" name="symbolic-icon">
       <default>true</default>
