@@ -30,12 +30,15 @@ class LogoMenuMenuButton extends PanelMenu.Button {
 
         // Icon
         this.icon = new St.Icon({
-            style_class: 'menu-button',
+           style_class: 'menu-button',
         });
+        
+        this._settings.connectObject('changed::hide-icon-shadow', () => this.hideIconShadow(), this);
         this._settings.connectObject('changed::menu-button-icon-image', () => this.setIconImage(), this);
         this._settings.connectObject('changed::symbolic-icon', () => this.setIconImage(), this);
         this._settings.connectObject('changed::menu-button-icon-size', () => this.setIconSize(), this);
-
+	
+	this.hideIconShadow()
         this.setIconImage();
         this.setIconSize();
         this.add_child(this.icon);
@@ -206,6 +209,16 @@ class LogoMenuMenuButton extends PanelMenu.Button {
     setIconSize() {
         const iconSize = this._settings.get_int('menu-button-icon-size');
         this.icon.icon_size = iconSize;
+    }
+    
+    hideIconShadow() {
+    	const IconShadow = this._settings.get_boolean('hide-icon-shadow');
+    	
+        if(!IconShadow){
+            this.icon.add_style_class_name('system-status-icon'); 
+        } else {
+            this.icon.remove_style_class_name('system-status-icon');
+        }
     }
 });
 
