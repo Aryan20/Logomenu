@@ -70,7 +70,7 @@
     </key>
     
     <key type="b" name="hide-icon-shadow">
-      <default>true</default>
+      <default>false</default>
       <summary>Toggle visibility of the top panel icon's shadow </summary>
       <description>Toggle visibility of the top panel icon's shadow.</description>
     </key>
