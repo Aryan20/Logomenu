@@ -183,11 +183,11 @@ var MenuButton = GObject.registerClass(class LogoMenu_MenuButton extends PanelMe
 	}
 
 	terminal() {
-		Util.spawn([this._settings.get_string('menu-button-terminal')])
+		Util.trySpawnCommandLine(this._settings.get_string('menu-button-terminal'))
 	}
 
 	softwareStore() {
-		Util.spawn([this._settings.get_string('menu-button-software-center')])
+		Util.trySpawnCommandLine(this._settings.get_string('menu-button-software-center'))
 	}
 
 	extensions() {
