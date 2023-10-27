@@ -442,8 +442,8 @@ export const AboutPage = GObject.registerClass(class LogoMenuAboutPage extends A
             title: _('Logo Menu Version'),
         });
         let releaseVersion;
-        if (metadata.version)
-            releaseVersion = metadata.version;
+        if (metadata['version-name'])
+            releaseVersion = metadata['version-name'];
         else
             releaseVersion = 'unknown';
         logoMenuVersionRow.add_suffix(new Gtk.Label({
