@@ -26,6 +26,7 @@ var DistroIcons = [
     { PATH: '/Resources/shastraos-logo-symbolic.svg'},
     { PATH: '/Resources/asahilinux-logo-symbolic.svg'},
     { PATH: '/Resources/zorin-logo-symbolic.svg'},
+    { PATH: '/Resources/void-logo-symbolic.svg'},
     { PATH: '/Resources/fedora-logo.svg'},
     { PATH: '/Resources/debian-logo.svg'},
     { PATH: '/Resources/manjaro-logo.svg'},
@@ -48,4 +49,8 @@ var DistroIcons = [
     { PATH: '/Resources/shastraos-logo.svg'},
     { PATH: '/Resources/asahilinux-logo.svg'},
     { PATH: '/Resources/zorin-logo.svg'},
+    { PATH: '/Resources/vanilla-logo.svg'},
+    { PATH: '/Resources/gnome-logo.svg'},
+    { PATH: '/Resources/clear-linux-logo.svg'},
+    { PATH: '/Resources/void-logo.svg'},
 ]
