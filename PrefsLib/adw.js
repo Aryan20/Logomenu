@@ -204,6 +204,25 @@ var LogoMenuOptionsWidget = GObject.registerClass(class Logo_Menu_OptionsWidget 
 
         menuButtonSCRow.add_suffix(changeSoftwareCenterInput);
 
+        // Change System Monitor and build it's option in prefs
+
+        const systemMonitorRow = new Adw.ActionRow({
+            title: _('System Monitor'),
+        });
+        const currentSystemMonitor = this._settings.get_string('menu-button-system-monitor');
+
+        const changeSystemMonitorInput = new Gtk.Entry({
+            valign: Gtk.Align.CENTER,
+        });
+
+        changeSystemMonitorInput.set_text(currentSystemMonitor);
+        changeSystemMonitorInput.connect('changed', () => {
+            this._settings.set_string('menu-button-system-monitor', changeSystemMonitorInput.get_text());
+        });
+
+        systemMonitorRow.add_suffix(changeSystemMonitorInput);
+        
+
 
         // Power Options
         let showPowerOptionsRow = new Adw.ActionRow({
@@ -274,6 +293,7 @@ var LogoMenuOptionsWidget = GObject.registerClass(class Logo_Menu_OptionsWidget 
         prefGroup1.add(menuButtonExtensionsAppRow);
         prefGroup1.add(menuButtonTerminalRow);
         prefGroup1.add(menuButtonSCRow);
+        prefGroup1.add(systemMonitorRow);
 
         prefGroup2.add(showPowerOptionsRow);
         prefGroup2.add(forceQuitOptionrow);

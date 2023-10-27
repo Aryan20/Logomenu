@@ -63,6 +63,12 @@
       <description>Toggle Software Centre option visibility.</description>
     </key>
 
+    <key type="s" name="menu-button-system-monitor">
+      <default>"gnome-system-monitor"</default>
+      <summary>Menu System Monitor</summary>
+      <description>Change the Menu System Monitor.</description>
+    </key>
+
   </schema>
 
 </schemalist>

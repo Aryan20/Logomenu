@@ -110,15 +110,17 @@ var MenuButton = GObject.registerClass(class LogoMenu_MenuButton extends PanelMe
 		this.item4 = new PopupMenu.PopupMenuItem(_('Activities'))
 		this.item5 = new PopupMenu.PopupMenuItem(_('App Grid'))
 		this.item6 = new PopupMenu.PopupSeparatorMenuItem()
-		this.item8 = new PopupMenu.PopupMenuItem(_('Terminal'))
-		this.item9 = new PopupMenu.PopupMenuItem(_('Extensions'))
+		this.item8 = new PopupMenu.PopupMenuItem(_('System Monitor'))
+		this.item9 = new PopupMenu.PopupMenuItem(_('Terminal'))
+		this.item10 = new PopupMenu.PopupMenuItem(_('Extensions'))
 
 		this.item1.connect('activate', () => _aboutThisDistro())
 		// this.item2.connect('activate', () => _systemPreferences())
 		this.item4.connect('activate', () => _overviewToggle())
 		this.item5.connect('activate', () => _appGrid())
-		this.item8.connect('activate', () => this.terminal())
-		this.item9.connect('activate', () => this.extensions())
+		this.item8.connect('activate', () => this._openSystemMonitor())
+		this.item9.connect('activate', () => this.terminal())
+		this.item10.connect('activate', () => this.extensions())
 
 		this.menu.addMenuItem(this.item1)
 		// this.menu.addMenuItem(this.item2)
@@ -135,50 +137,51 @@ var MenuButton = GObject.registerClass(class LogoMenu_MenuButton extends PanelMe
 
 		this.menu.addMenuItem(this.item8)
 		this.menu.addMenuItem(this.item9)
+		this.menu.addMenuItem(this.item10)
 
 		if(!forcequit_state) {
-			this.item10 = new PopupMenu.PopupSeparatorMenuItem()
-			this.menu.addMenuItem(this.item10)
-			this.item11 = new PopupMenu.PopupMenuItem(_('Force Quit App'))
-			this.item11.connect('activate', () => _forceQuit())
+			this.item11 = new PopupMenu.PopupSeparatorMenuItem()
 			this.menu.addMenuItem(this.item11)
+			this.item12 = new PopupMenu.PopupMenuItem(_('Force Quit App'))
+			this.item12.connect('activate', () => _forceQuit())
+			this.menu.addMenuItem(this.item12)
 		}
 
 		if (poweroption_state) {
-			this.item12 = new PopupMenu.PopupSeparatorMenuItem()
-			this.item13 = new PopupMenu.PopupMenuItem(_('Sleep'))
-			this.item14 = new PopupMenu.PopupMenuItem(_('Restart...'))
-			this.item15 = new PopupMenu.PopupMenuItem(_('Shut Down...'))
-			this.item16 = new PopupMenu.PopupSeparatorMenuItem()
+			this.item13 = new PopupMenu.PopupSeparatorMenuItem()
+			this.item14 = new PopupMenu.PopupMenuItem(_('Sleep'))
+			this.item15 = new PopupMenu.PopupMenuItem(_('Restart...'))
+			this.item16 = new PopupMenu.PopupMenuItem(_('Shut Down...'))
+			this.item17 = new PopupMenu.PopupSeparatorMenuItem()
 			if (lockscreen_state)
-				this.item17 = new PopupMenu.PopupMenuItem(_('Lock Screen'))
+				this.item18 = new PopupMenu.PopupMenuItem(_('Lock Screen'))
 			this.item18 = new PopupMenu.PopupMenuItem(_('Log Out...'))
 
-			this.menu.addMenuItem(this.item12)
 			this.menu.addMenuItem(this.item13)
 			this.menu.addMenuItem(this.item14)
 			this.menu.addMenuItem(this.item15)
 			this.menu.addMenuItem(this.item16)
+			this.menu.addMenuItem(this.item17)
 			if (lockscreen_state) {
-				this.menu.addMenuItem(this.item17)
-				this.item17.connect('activate', () => _lockScreen())
+				this.menu.addMenuItem(this.item18)
+				this.item18.connect('activate', () => _lockScreen())
 			}
 			this.menu.addMenuItem(this.item18)
 
-			this.item13.connect('activate', () => _sleep())
-			this.item14.connect('activate', () => _restart())
-			this.item15.connect('activate', () => _shutdown())
+			this.item14.connect('activate', () => _sleep())
+			this.item15.connect('activate', () => _restart())
+			this.item16.connect('activate', () => _shutdown())
 			this.item18.connect('activate', () => _logOut())
 		}
 
 		else if (!poweroption_state && lockscreen_state) {
-			this.item16 = new PopupMenu.PopupSeparatorMenuItem()
-			this.item17 = new PopupMenu.PopupMenuItem(_('Lock Screen'))
+			this.item17 = new PopupMenu.PopupSeparatorMenuItem()
+			this.item18 = new PopupMenu.PopupMenuItem(_('Lock Screen'))
 
-			this.menu.addMenuItem(this.item16)
 			this.menu.addMenuItem(this.item17)
+			this.menu.addMenuItem(this.item18)
 
-			this.item17.connect('activate', () => _lockScreen())
+			this.item18.connect('activate', () => _lockScreen())
 		}
 	}
 
@@ -189,6 +192,10 @@ var MenuButton = GObject.registerClass(class LogoMenu_MenuButton extends PanelMe
 	softwareStore() {
 		Util.trySpawnCommandLine(this._settings.get_string('menu-button-software-center'))
 	}
+
+	_openSystemMonitor() {
+        Util.trySpawnCommandLine(this._settings.get_string('menu-button-system-monitor'));
+    }
 
 	extensions() {
     const appSys = imports.gi.Shell.AppSystem.get_default();
