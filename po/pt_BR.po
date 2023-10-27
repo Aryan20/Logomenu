@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Logo Menu 15\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-09-18 12:03+0530\n"
+"POT-Creation-Date: 2023-10-28 02:32+0530\n"
 "PO-Revision-Date: 2022-11-17 23:22+0530\n"
 "Last-Translator: Jorge Braz <jlbmesquita@gmail.com>\n"
 "Language-Team: Brazilian Portuguese <jlbmesquita@gmail.com>\n"
@@ -31,39 +31,43 @@ msgstr "Atividades"
 msgid "App Grid"
 msgstr "Grade de Aplicativos"
 
-#: extension.js:113 PrefsLib/adw.js:172 PrefsLib/gtk.js:227
+#: extension.js:113 PrefsLib/adw.js:210
+msgid "System Monitor"
+msgstr ""
+
+#: extension.js:114 PrefsLib/adw.js:172 PrefsLib/gtk.js:227
 msgid "Terminal"
 msgstr "Terminal"
 
-#: extension.js:114
+#: extension.js:115
 msgid "Extensions"
 msgstr "Extensões"
 
-#: extension.js:131
+#: extension.js:133
 msgid "Software Center..."
 msgstr "Centro de Software..."
 
-#: extension.js:142
+#: extension.js:145
 msgid "Force Quit App"
 msgstr "Forçar Encerramento do aplicativo"
 
-#: extension.js:149
+#: extension.js:152
 msgid "Sleep"
 msgstr "Suspender"
 
-#: extension.js:150
+#: extension.js:153
 msgid "Restart..."
 msgstr "Reiniciar..."
 
-#: extension.js:151
+#: extension.js:154
 msgid "Shut Down..."
 msgstr "Desligar..."
 
-#: extension.js:154 extension.js:176
+#: extension.js:157 extension.js:179
 msgid "Lock Screen"
 msgstr "Tela de Bloqueio"
 
-#: extension.js:155
+#: extension.js:158
 msgid "Log Out..."
 msgstr "Sair..."
 
@@ -119,55 +123,55 @@ msgstr ""
 msgid "Software Center"
 msgstr "Centro de Software"
 
-#: PrefsLib/adw.js:210 PrefsLib/gtk.js:304
+#: PrefsLib/adw.js:229 PrefsLib/gtk.js:304
 msgid "Enable Power Options"
 msgstr "Ativar Opções de Energia"
 
-#: PrefsLib/adw.js:225 PrefsLib/gtk.js:342
+#: PrefsLib/adw.js:244 PrefsLib/gtk.js:342
 msgid "Hide Force Quit option"
 msgstr "Ocultar Opção de Forçar Saída"
 
-#: PrefsLib/adw.js:242 PrefsLib/gtk.js:380
+#: PrefsLib/adw.js:261 PrefsLib/gtk.js:380
 msgid "Show Lock Screen option"
 msgstr "Mostrar Opção da Tela de Bloqueio"
 
-#: PrefsLib/adw.js:258 PrefsLib/gtk.js:418
+#: PrefsLib/adw.js:277 PrefsLib/gtk.js:418
 msgid "Hide Software Centre option"
 msgstr "Esconder Opção do Centro de Software"
 
-#: PrefsLib/adw.js:293
+#: PrefsLib/adw.js:313
 msgid "About"
 msgstr "Sobre"
 
-#: PrefsLib/adw.js:309
+#: PrefsLib/adw.js:329
 msgid "Logo Menu"
 msgstr "Menu do Logotipo"
 
-#: PrefsLib/adw.js:316
+#: PrefsLib/adw.js:336
 msgid "Quick access menu for GNOME"
 msgstr "Menu de Acesso Rápido para GNOME"
 
-#: PrefsLib/adw.js:331
+#: PrefsLib/adw.js:351
 msgid "Logo Menu Version"
 msgstr "Versão do Menu do Logotipo"
 
-#: PrefsLib/adw.js:343
+#: PrefsLib/adw.js:363
 msgid "GNOME Version"
 msgstr "Versão do GNOME"
 
-#: PrefsLib/adw.js:350
+#: PrefsLib/adw.js:370
 msgid "Github"
 msgstr "Github"
 
-#: PrefsLib/adw.js:358
+#: PrefsLib/adw.js:378
 msgid "Created with love by"
 msgstr ""
 
-#: PrefsLib/adw.js:365
+#: PrefsLib/adw.js:385
 msgid "Matrix/Element room"
 msgstr ""
 
-#: PrefsLib/adw.js:382
+#: PrefsLib/adw.js:402
 msgid ""
 "<span size=\"small\">This program comes with absolutely no warranty.\n"
 "See the <a href=\"https://gnu.org/licenses/old-licenses/gpl-2.0.html\">GNU "
