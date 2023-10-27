@@ -331,8 +331,8 @@ var AboutPage = GObject.registerClass(class Logo_Menu_AboutPage extends Adw.Pref
             title: _("Logo Menu Version"),
         });
         let releaseVersion;
-        if(Me.metadata.version)
-            releaseVersion = Me.metadata.version;
+        if(Me.metadata['version-name'])
+            releaseVersion = Me.metadata['version-name'];
         else
             releaseVersion = 'unknown';
         logoMenuVersionRow.add_suffix(new Gtk.Label({
