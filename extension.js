@@ -227,9 +227,9 @@ class LogoMenuMenuButton extends PanelMenu.Button {
     }
     
     hideIconShadow() {
-    	const IconShadow = this._settings.get_boolean('hide-icon-shadow');
+    	const iconShadow = this._settings.get_boolean('hide-icon-shadow');
     	
-        if(!IconShadow){
+        if(!iconShadow){
             this.icon.add_style_class_name('system-status-icon'); 
         } else {
             this.icon.remove_style_class_name('system-status-icon');
