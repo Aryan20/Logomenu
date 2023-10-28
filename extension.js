@@ -191,12 +191,27 @@ class LogoMenuMenuButton extends PanelMenu.Button {
         const isSymbolic = this._settings.get_boolean('symbolic-icon');
         let isStartHereSymbolic = false;
         let iconPath;
+        let notFound = false;
         
-        if(isSymbolic) {
-            isStartHereSymbolic = Constants.SymbolicDistroIcons[iconIndex].PATH === 'start-here-symbolic';
-            iconPath = this._extension.path + Constants.SymbolicDistroIcons[iconIndex].PATH;
+        if (isSymbolic) {
+            if (Constants.SymbolicDistroIcons[iconIndex] !== undefined) {
+                isStartHereSymbolic = Constants.SymbolicDistroIcons[iconIndex].PATH === 'start-here-symbolic';
+                iconPath = this._extension.path + Constants.SymbolicDistroIcons[iconIndex].PATH;
+            } else {
+                notFound = true;
+            }
         } else {
-            iconPath = this._extension.path + Constants.ColouredDistroIcons[iconIndex].PATH;
+            if (Constants.ColouredDistroIcons[iconIndex] !== undefined) {
+                iconPath = this._extension.path + Constants.ColouredDistroIcons[iconIndex].PATH;
+            } else {
+                notFound = true;
+            }
+        }
+        
+        if(notFound) {
+            iconPath = 'start-here-symbolic';
+            this._settings.set_boolean('symbolic-icon', true);
+            this._settings.set_int('menu-button-icon-image', 0);
         }
 
         const fileExists = GLib.file_test(iconPath, GLib.FileTest.IS_REGULAR);
