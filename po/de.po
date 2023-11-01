@@ -19,55 +19,55 @@ msgstr ""
 "X-Generator: Poedit 3.0.1\n"
 "X-Poedit-SourceCharset: UTF-8\n"
 
-#: extension.js:66
+#: extension.js:70
 msgid "About My System"
 msgstr "Über diesen Computer"
 
-#: extension.js:69
+#: extension.js:73
 msgid "Activities"
 msgstr "Aktivitäten"
 
-#: extension.js:70
+#: extension.js:74
 msgid "App Grid"
 msgstr "Programme Übersicht"
 
-#: extension.js:74
+#: extension.js:78
 msgid "Software Center..."
 msgstr "GNOME Software ..."
 
-#: extension.js:76 PrefsLib/adw.js:268
+#: extension.js:80 PrefsLib/adw.js:268
 msgid "System Monitor"
 msgstr ""
 
-#: extension.js:77 PrefsLib/adw.js:230
+#: extension.js:81 PrefsLib/adw.js:230
 msgid "Terminal"
 msgstr "Terminal"
 
-#: extension.js:78
+#: extension.js:82
 msgid "Extensions"
 msgstr "Erweiterungen"
 
-#: extension.js:82
+#: extension.js:86
 msgid "Force Quit App"
 msgstr "Beenden erzwingen"
 
-#: extension.js:87
+#: extension.js:91
 msgid "Sleep"
 msgstr "Bereitschaft"
 
-#: extension.js:88
+#: extension.js:92
 msgid "Restart..."
 msgstr "Neustart..."
 
-#: extension.js:89
+#: extension.js:93
 msgid "Shut Down..."
 msgstr "Ausschalten..."
 
-#: extension.js:93 extension.js:98
+#: extension.js:97 extension.js:102
 msgid "Lock Screen"
 msgstr "Sperren"
 
-#: extension.js:95
+#: extension.js:99
 msgid "Log Out..."
 msgstr "Abmelden ..."
 
@@ -153,43 +153,47 @@ msgstr "GNOME-Software-Option verbergen"
 msgid "Show Activities Button"
 msgstr "Aktivitäten"
 
-#: PrefsLib/adw.js:389
+#: PrefsLib/adw.js:366
+msgid "Hide Icon Shadow"
+msgstr ""
+
+#: PrefsLib/adw.js:406
 msgid "About"
 msgstr "Über dieses Programm"
 
-#: PrefsLib/adw.js:403
+#: PrefsLib/adw.js:420
 msgid "Logo Menu"
 msgstr "Logo Menu"
 
-#: PrefsLib/adw.js:410
+#: PrefsLib/adw.js:427
 msgid "Quick access menu for GNOME"
 msgstr "Schnellzugriffsmenü für GNOME"
 
-#: PrefsLib/adw.js:425
+#: PrefsLib/adw.js:442
 msgid "Logo Menu Version"
 msgstr "Logo Menu Version"
 
-#: PrefsLib/adw.js:437
+#: PrefsLib/adw.js:454
 msgid "GNOME Version"
 msgstr "GNOME Version"
 
-#: PrefsLib/adw.js:444
+#: PrefsLib/adw.js:461
 msgid "Github"
 msgstr "Github"
 
-#: PrefsLib/adw.js:451
+#: PrefsLib/adw.js:468
 msgid "Created with love by"
 msgstr ""
 
-#: PrefsLib/adw.js:458
+#: PrefsLib/adw.js:475
 msgid "Matrix/Element room"
 msgstr ""
 
-#: PrefsLib/adw.js:473
+#: PrefsLib/adw.js:490
 msgid "This program comes with absolutely no warranty."
 msgstr ""
 
-#: PrefsLib/adw.js:474
+#: PrefsLib/adw.js:491
 #, javascript-format
 msgid "See the %sGNU General Public License, version 2 or later%s for details."
 msgstr ""

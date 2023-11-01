@@ -10,6 +10,7 @@ import * as PanelMenu from 'resource:///org/gnome/shell/ui/panelMenu.js';
 import * as Util from 'resource:///org/gnome/shell/misc/util.js';
 
 import * as Constants from './constants.js';
+import * as Selection from './selection.js';
 
 import {Extension, gettext as _} from 'resource:///org/gnome/shell/extensions/extension.js';
 
@@ -154,7 +155,7 @@ class LogoMenuMenuButton extends PanelMenu.Button {
     }
 
     _forceQuit() {
-        Util.spawn(['xkill']);
+        new Selection.SelectionWindow();
     }
 
     _openTerminal() {

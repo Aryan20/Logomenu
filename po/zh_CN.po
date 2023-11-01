@@ -18,55 +18,55 @@ msgstr ""
 "Plural-Forms: nplurals=1; plural=0;\n"
 "X-Generator: Poedit 3.0.1\n"
 
-#: extension.js:66
+#: extension.js:70
 msgid "About My System"
 msgstr "关于本机系统"
 
-#: extension.js:69
+#: extension.js:73
 msgid "Activities"
 msgstr "活动"
 
-#: extension.js:70
+#: extension.js:74
 msgid "App Grid"
 msgstr "所有软件"
 
-#: extension.js:74
+#: extension.js:78
 msgid "Software Center..."
 msgstr "软件中心"
 
-#: extension.js:76 PrefsLib/adw.js:268
+#: extension.js:80 PrefsLib/adw.js:268
 msgid "System Monitor"
 msgstr ""
 
-#: extension.js:77 PrefsLib/adw.js:230
+#: extension.js:81 PrefsLib/adw.js:230
 msgid "Terminal"
 msgstr "终端"
 
-#: extension.js:78
+#: extension.js:82
 msgid "Extensions"
 msgstr "插件"
 
-#: extension.js:82
+#: extension.js:86
 msgid "Force Quit App"
 msgstr "强制退出"
 
-#: extension.js:87
+#: extension.js:91
 msgid "Sleep"
 msgstr "休眠"
 
-#: extension.js:88
+#: extension.js:92
 msgid "Restart..."
 msgstr "重启"
 
-#: extension.js:89
+#: extension.js:93
 msgid "Shut Down..."
 msgstr "关机"
 
-#: extension.js:93 extension.js:98
+#: extension.js:97 extension.js:102
 msgid "Lock Screen"
 msgstr "锁屏"
 
-#: extension.js:95
+#: extension.js:99
 msgid "Log Out..."
 msgstr "注销"
 
@@ -151,43 +151,47 @@ msgstr "隐藏软件中心"
 msgid "Show Activities Button"
 msgstr "活动"
 
-#: PrefsLib/adw.js:389
+#: PrefsLib/adw.js:366
+msgid "Hide Icon Shadow"
+msgstr ""
+
+#: PrefsLib/adw.js:406
 msgid "About"
 msgstr "关于"
 
-#: PrefsLib/adw.js:403
+#: PrefsLib/adw.js:420
 msgid "Logo Menu"
 msgstr "系统图标菜单"
 
-#: PrefsLib/adw.js:410
+#: PrefsLib/adw.js:427
 msgid "Quick access menu for GNOME"
 msgstr "本地数据目录"
 
-#: PrefsLib/adw.js:425
+#: PrefsLib/adw.js:442
 msgid "Logo Menu Version"
 msgstr "系统图标菜单版本"
 
-#: PrefsLib/adw.js:437
+#: PrefsLib/adw.js:454
 msgid "GNOME Version"
 msgstr "GNOME(桌面)版本"
 
-#: PrefsLib/adw.js:444
+#: PrefsLib/adw.js:461
 msgid "Github"
 msgstr ""
 
-#: PrefsLib/adw.js:451
+#: PrefsLib/adw.js:468
 msgid "Created with love by"
 msgstr ""
 
-#: PrefsLib/adw.js:458
+#: PrefsLib/adw.js:475
 msgid "Matrix/Element room"
 msgstr ""
 
-#: PrefsLib/adw.js:473
+#: PrefsLib/adw.js:490
 msgid "This program comes with absolutely no warranty."
 msgstr ""
 
-#: PrefsLib/adw.js:474
+#: PrefsLib/adw.js:491
 #, javascript-format
 msgid "See the %sGNU General Public License, version 2 or later%s for details."
 msgstr ""
