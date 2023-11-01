@@ -46,7 +46,7 @@
     </key>
 
     <key type="b" name="hide-forcequit">
-      <default>true</default>
+      <default>false</default>
       <summary>Toggle Force Quit option visibility</summary>
       <description>Toggle Force Quit option visibility.</description>
     </key>
