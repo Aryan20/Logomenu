@@ -18,55 +18,55 @@ msgstr ""
 "Plural-Forms: nplurals=1; plural=0;\n"
 "X-Generator: Poedit 3.0.1\n"
 
-#: extension.js:107
+#: extension.js:108
 msgid "About My System"
 msgstr "关于本机系统"
 
-#: extension.js:110
+#: extension.js:111
 msgid "Activities"
 msgstr "活动"
 
-#: extension.js:111
+#: extension.js:112
 msgid "App Grid"
 msgstr "所有软件"
 
-#: extension.js:113 PrefsLib/adw.js:210
+#: extension.js:114 PrefsLib/adw.js:210
 msgid "System Monitor"
 msgstr ""
 
-#: extension.js:114 PrefsLib/adw.js:172 PrefsLib/gtk.js:227
+#: extension.js:115 PrefsLib/adw.js:172 PrefsLib/gtk.js:227
 msgid "Terminal"
 msgstr "终端"
 
-#: extension.js:115
+#: extension.js:116
 msgid "Extensions"
 msgstr "插件"
 
-#: extension.js:133
+#: extension.js:134
 msgid "Software Center..."
 msgstr "软件中心"
 
-#: extension.js:145
+#: extension.js:146
 msgid "Force Quit App"
 msgstr "强制退出"
 
-#: extension.js:152
+#: extension.js:153
 msgid "Sleep"
 msgstr "休眠"
 
-#: extension.js:153
+#: extension.js:154
 msgid "Restart..."
 msgstr "重启"
 
-#: extension.js:154
+#: extension.js:155
 msgid "Shut Down..."
 msgstr "关机"
 
-#: extension.js:157 extension.js:179
+#: extension.js:158 extension.js:180
 msgid "Lock Screen"
 msgstr "锁屏"
 
-#: extension.js:158
+#: extension.js:159
 msgid "Log Out..."
 msgstr "注销"
 

@@ -18,55 +18,55 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Generator: Poedit 3.0.1\n"
 
-#: extension.js:107
+#: extension.js:108
 msgid "About My System"
 msgstr "О cистеме"
 
-#: extension.js:110
+#: extension.js:111
 msgid "Activities"
 msgstr "Обзор"
 
-#: extension.js:111
+#: extension.js:112
 msgid "App Grid"
 msgstr "Приложения"
 
-#: extension.js:113 PrefsLib/adw.js:210
+#: extension.js:114 PrefsLib/adw.js:210
 msgid "System Monitor"
 msgstr ""
 
-#: extension.js:114 PrefsLib/adw.js:172 PrefsLib/gtk.js:227
+#: extension.js:115 PrefsLib/adw.js:172 PrefsLib/gtk.js:227
 msgid "Terminal"
 msgstr "Терминал"
 
-#: extension.js:115
+#: extension.js:116
 msgid "Extensions"
 msgstr "Расширения"
 
-#: extension.js:133
+#: extension.js:134
 msgid "Software Center..."
 msgstr "Центр приложений..."
 
-#: extension.js:145
+#: extension.js:146
 msgid "Force Quit App"
 msgstr "Принудительно закрыть приложение"
 
-#: extension.js:152
+#: extension.js:153
 msgid "Sleep"
 msgstr "Сон"
 
-#: extension.js:153
+#: extension.js:154
 msgid "Restart..."
 msgstr "Перезагрузка..."
 
-#: extension.js:154
+#: extension.js:155
 msgid "Shut Down..."
 msgstr "Завершение работы..."
 
-#: extension.js:157 extension.js:179
+#: extension.js:158 extension.js:180
 msgid "Lock Screen"
 msgstr "Заблокировать экран"
 
-#: extension.js:158
+#: extension.js:159
 msgid "Log Out..."
 msgstr "Завершить сеанс..."
 

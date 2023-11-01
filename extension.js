@@ -11,6 +11,7 @@ const Util = imports.misc.util
 
 const Gettext = imports.gettext.domain(Me.metadata['gettext-domain']);
 const _ = Gettext.gettext;
+const Selection = Me.imports.selection;
 
 function _aboutThisDistro() {
 	Util.spawn(['gnome-control-center', 'info-overview'])
@@ -55,7 +56,7 @@ function _appGrid() {
 }
 
 function _forceQuit() {
-	Util.spawn(['xkill'])
+	new Selection.SelectionWindow();
 }
 
 function _extensions() {
