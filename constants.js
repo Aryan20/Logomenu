@@ -27,6 +27,7 @@ export const SymbolicDistroIcons = [
     {PATH: '/Resources/asahilinux-logo-symbolic.svg'},
     {PATH: '/Resources/zorin-logo-symbolic.svg'},
     {PATH: '/Resources/void-logo-symbolic.svg'},
+    {PATH: '/Resources/nobara-logo-symbolic.svg'},
 ];
 
 export const ColouredDistroIcons = [
