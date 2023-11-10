@@ -2,14 +2,15 @@
 # Copyright (C) 2022 Aryan Kaushik (Aryan20)
 # This file is distributed under the same license as the Logo Menu package.
 # FIRST AUTHOR Artem Kozlov <satisataka@gmail.com>, 2022.
+# SECOND AUTHOR a1exak <a1.kamaev@yandex.ru>, 2023
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: Logo Menu 18\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-10-15 23:07+0530\n"
+"POT-Creation-Date: 2023-11-09 23:07+0530\n"
 "PO-Revision-Date: 2022-11-17 23:23+0530\n"
-"Last-Translator: Kozlov Artem <satisataka@gmail.com>\n"
+"Last-Translator: a1exak <a1.kamaev@yandex.ru>\n"
 "Language-Team: <>\n"
 "Language: ru\n"
 "MIME-Version: 1.0\n"
@@ -36,7 +37,7 @@ msgstr "Центр приложений..."
 
 #: extension.js:80 PrefsLib/adw.js:268
 msgid "System Monitor"
-msgstr ""
+msgstr "Системный монитор"
 
 #: extension.js:81 PrefsLib/adw.js:230
 msgid "Terminal"
@@ -72,11 +73,11 @@ msgstr "Завершить сеанс..."
 
 #: PrefsLib/adw.js:41
 msgid "Symbolic Icons"
-msgstr ""
+msgstr "Символические значки"
 
 #: PrefsLib/adw.js:45
 msgid "Coloured Icons"
-msgstr ""
+msgstr "Цветные значки"
 
 #: PrefsLib/adw.js:49
 msgid "Icon Settings"
@@ -96,7 +97,7 @@ msgstr "Показать/скрыть параметры"
 
 #: PrefsLib/adw.js:182
 msgid "Top Panel Options"
-msgstr ""
+msgstr "Опции верхней панели"
 
 #: PrefsLib/adw.js:190
 msgid "Icon Click Type to open Activities"
@@ -104,7 +105,7 @@ msgstr "Выберете кнопку мыши для запуска Обзор�
 
 #: PrefsLib/adw.js:196
 msgid "Left Click "
-msgstr ""
+msgstr "Левая кнопка "
 
 #: PrefsLib/adw.js:197
 msgid "Middle Click "
@@ -116,15 +117,15 @@ msgstr "Правая кнопка "
 
 #: PrefsLib/adw.js:211
 msgid "Preferred Extensions Application"
-msgstr ""
+msgstr "Приложение Расширений"
 
 #: PrefsLib/adw.js:217
 msgid "GNOME Extensions"
-msgstr ""
+msgstr "Расширения"
 
 #: PrefsLib/adw.js:218
 msgid "Extensions Manager"
-msgstr ""
+msgstr "Менеджер расширений"
 
 #: PrefsLib/adw.js:250
 msgid "Software Center"
@@ -153,11 +154,11 @@ msgstr "Обзор"
 
 #: PrefsLib/adw.js:366
 msgid "Hide Icon Shadow"
-msgstr ""
+msgstr "Скрыть тень значка"
 
 #: PrefsLib/adw.js:406
 msgid "About"
-msgstr "О"
+msgstr "О расширении"
 
 #: PrefsLib/adw.js:420
 msgid "Logo Menu"
@@ -181,15 +182,15 @@ msgstr "Github"
 
 #: PrefsLib/adw.js:468
 msgid "Created with love by"
-msgstr ""
+msgstr "Создано с любовью"
 
 #: PrefsLib/adw.js:475
 msgid "Matrix/Element room"
-msgstr ""
+msgstr "Комната Matrix/Element"
 
 #: PrefsLib/adw.js:490
 msgid "This program comes with absolutely no warranty."
-msgstr ""
+msgstr "Эта программа поставляется без каких-либо гарантий."
 
 #: PrefsLib/adw.js:491
 #, javascript-format
