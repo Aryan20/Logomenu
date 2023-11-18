@@ -41,7 +41,7 @@ class LogoMenuMenuButton extends PanelMenu.Button {
         this._settings.connectObject('changed::custom-icon-path', () => this.setIconImage(), this);
         this._settings.connectObject('changed::menu-button-icon-size', () => this.setIconSize(), this);
 	
-	      this.hideIconShadow()
+	      this.hideIconShadow();
         this.setIconImage();
         this.setIconSize();
         this.add_child(this.icon);
@@ -221,13 +221,8 @@ class LogoMenuMenuButton extends PanelMenu.Button {
           this._settings.set_int('menu-button-icon-image', 0);
       }
 
-      // Check if the file exists (for custom icons and predefined icons)
       const fileExists = GLib.file_test(iconPath, GLib.FileTest.IS_REGULAR);
-
-      // Decide which icon to use
       const icon = isStartHereSymbolic || !fileExists ? 'start-here-symbolic' : iconPath;
-
-      // Set the icon
       this.icon.gicon = Gio.icon_new_for_string(icon);
     }
 
