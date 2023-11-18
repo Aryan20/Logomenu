@@ -1,11 +1,13 @@
 import Adw from 'gi://Adw';
 import GObject from 'gi://GObject';
 import Gtk from 'gi://Gtk';
-
+import Gio from 'gi://Gio';
 import * as Config from 'resource:///org/gnome/Shell/Extensions/js/misc/config.js';
 import {gettext as _} from 'resource:///org/gnome/Shell/Extensions/js/extensions/prefs.js';
 
 import * as Constants from '../constants.js';
+
+Gio._promisify(Gtk.FileDialog.prototype, "open", "open_finish");
 
 const IconGrid = GObject.registerClass(class LogoMenuIconGrid extends Gtk.FlowBox {
     _init() {
@@ -150,10 +152,64 @@ export const LogoMenuIconsPage = GObject.registerClass(class LogoMenuIconsWidget
 
         menuButtonIconSizeRow.add_suffix(menuButtonIconSizeScale);
 
+        const customIconRow = new Adw.ActionRow({
+            title: _('Use Custom Icon'),
+        });
+
+        const useCustomIconCheckButton = new Gtk.CheckButton({
+          valign: Gtk.Align.CENTER,
+          active: this._settings.get_boolean('use-custom-icon'),
+        });
+
+        useCustomIconCheckButton.connect('toggled', () => {
+          const isActive = useCustomIconCheckButton.get_active();
+          this._settings.set_boolean('use-custom-icon', isActive);
+          customIconButton.set_sensitive(isActive);
+        });
+
+        customIconRow.add_prefix(useCustomIconCheckButton);
+
+         const customIconButton = new Gtk.Button({
+            icon_name: 'document-open-symbolic',
+            valign: Gtk.Align.CENTER,
+            sensitive: useCustomIconCheckButton.get_active(),
+        })
+
+        customIconButton.connect('clicked', async () => {
+
+        try {
+          const fileDialog = new Gtk.FileDialog({
+            title: _('Select a Custom Icon'),
+            modal: true,
+          });
+
+          const filter = new Gtk.FileFilter();
+          filter.set_name(_('Image Files'));
+          filter.add_mime_type('image/png');
+          filter.add_mime_type('image/jpeg');
+          filter.add_mime_type('image/svg+xml');
+          fileDialog.set_default_filter(filter);
+
+         // Open the dialog and wait for the result
+          const file = await fileDialog.open(customIconButton.get_root(), null);
+          if (file) {
+            const filename = file.get_path();
+            this._settings.set_string("custom-icon-path", filename);
+            // Handle the selected file (e.g., set it as the custom icon)
+            console.log(`Selected custom icon: ${filename}`);
+          }
+        } catch (error) {
+          console.error('Error selecting custom icon:', error.message);
+        }
+      });
+
+        customIconRow.add_suffix(customIconButton);
+
         // iconGroup
         symbolicIconGroup.add(symbolicIconsRow);
         colouredIconGroup.add(colouredIconsRow);
         iconSettingsGroup.add(menuButtonIconSizeRow);
+        iconSettingsGroup.add(customIconRow);
 
         this.add(symbolicIconGroup);
         this.add(colouredIconGroup);
@@ -429,9 +485,12 @@ export const AboutPage = GObject.registerClass(class LogoMenuAboutPage extends A
             vexpand: false,
             margin_bottom: 5,
         });
+
         logoMenuBox.append(logoMenuLabel);
         logoMenuBox.append(projectDescriptionLabel);
         logoMenuLogoGroup.add(logoMenuBox);
+
+
 
         this.add(logoMenuLogoGroup);
         // -----------------------------------------------------------------------

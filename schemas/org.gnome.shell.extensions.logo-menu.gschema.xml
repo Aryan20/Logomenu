@@ -45,6 +45,18 @@
       <description>Toggle power options visibility.</description>
     </key>
 
+     <key type="b" name="use-custom-icon">
+      <default>false</default>
+      <summary>Use Custom Icon</summary>
+      <description>Whether to use a custom icon or not.</description>
+    </key>
+
+    <key type="s" name="custom-icon-path">
+      <default>"''"</default>
+      <summary>Custom Icon Path</summary>
+      <description>Path to the custom icon image file.</description>
+    </key>
+
     <key type="b" name="hide-forcequit">
       <default>false</default>
       <summary>Toggle Force Quit option visibility</summary>
