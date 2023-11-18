@@ -41,7 +41,7 @@ class LogoMenuMenuButton extends PanelMenu.Button {
         this._settings.connectObject('changed::custom-icon-path', () => this.setIconImage(), this);
         this._settings.connectObject('changed::menu-button-icon-size', () => this.setIconSize(), this);
 	
-	      this.hideIconShadow();
+	this.hideIconShadow();
         this.setIconImage();
         this.setIconSize();
         this.add_child(this.icon);
