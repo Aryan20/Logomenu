@@ -1,18 +1,18 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) 2023 Aryan Kaushik (Aryan20)
-# This file is distributed under the same license as the Logo Menu package.
+# This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Logo Menu 22\n"
+"Project-Id-Version: Logo Menu 26\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-10-15 23:07+0530\n"
+"POT-Creation-Date: 2023-11-19 15:54+0530\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
-"Language: En\n"
+"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=CHARSET\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -157,39 +157,39 @@ msgstr ""
 msgid "About"
 msgstr ""
 
-#: PrefsLib/adw.js:420
+#: PrefsLib/adw.js:429
 msgid "Logo Menu"
 msgstr ""
 
-#: PrefsLib/adw.js:427
+#: PrefsLib/adw.js:436
 msgid "Quick access menu for GNOME"
 msgstr ""
 
-#: PrefsLib/adw.js:442
+#: PrefsLib/adw.js:452
 msgid "Logo Menu Version"
 msgstr ""
 
-#: PrefsLib/adw.js:454
+#: PrefsLib/adw.js:464
 msgid "GNOME Version"
 msgstr ""
 
-#: PrefsLib/adw.js:461
-msgid "Github"
-msgstr ""
-
-#: PrefsLib/adw.js:468
+#: PrefsLib/adw.js:471
 msgid "Created with love by"
 msgstr ""
 
-#: PrefsLib/adw.js:475
+#: PrefsLib/adw.js:478
 msgid "Matrix/Element room"
 msgstr ""
 
-#: PrefsLib/adw.js:490
+#: PrefsLib/adw.js:494
+msgid "Contributors"
+msgstr ""
+
+#: PrefsLib/adw.js:511
 msgid "This program comes with absolutely no warranty."
 msgstr ""
 
-#: PrefsLib/adw.js:491
+#: PrefsLib/adw.js:512
 #, javascript-format
 msgid "See the %sGNU General Public License, version 2 or later%s for details."
 msgstr ""
