@@ -29,15 +29,15 @@ msgstr "Aktivitäten"
 
 #: extension.js:74
 msgid "App Grid"
-msgstr "Programme Übersicht"
+msgstr "Programmübersicht"
 
 #: extension.js:78
 msgid "Software Center..."
-msgstr "GNOME Software ..."
+msgstr "Software-Center"
 
 #: extension.js:80 PrefsLib/adw.js:268
 msgid "System Monitor"
-msgstr ""
+msgstr "Systemmonitor"
 
 #: extension.js:81 PrefsLib/adw.js:230
 msgid "Terminal"
@@ -73,15 +73,15 @@ msgstr "Abmelden ..."
 
 #: PrefsLib/adw.js:41
 msgid "Symbolic Icons"
-msgstr ""
+msgstr "Symbole"
 
 #: PrefsLib/adw.js:45
 msgid "Coloured Icons"
-msgstr ""
+msgstr "Farbige Icons"
 
 #: PrefsLib/adw.js:49
 msgid "Icon Settings"
-msgstr "Icon Einstellungen"
+msgstr "Iconeinstellungen"
 
 #: PrefsLib/adw.js:121
 msgid "Icon Size"
@@ -102,11 +102,11 @@ msgstr "Andere Optionen"
 
 #: PrefsLib/adw.js:190
 msgid "Icon Click Type to open Activities"
-msgstr "Aktion zum Anzeigen der Aktivitäten"
+msgstr "Maustaste zum Anzeigen der Aktivitäten"
 
 #: PrefsLib/adw.js:196
 msgid "Left Click "
-msgstr ""
+msgstr "Linksklick"
 
 #: PrefsLib/adw.js:197
 msgid "Middle Click "
@@ -118,19 +118,19 @@ msgstr "Rechtsklick "
 
 #: PrefsLib/adw.js:211
 msgid "Preferred Extensions Application"
-msgstr ""
+msgstr "Bevorzugte Erweiterungs-Anwendung"
 
 #: PrefsLib/adw.js:217
 msgid "GNOME Extensions"
-msgstr ""
+msgstr "GNOME Extensions"
 
 #: PrefsLib/adw.js:218
 msgid "Extensions Manager"
-msgstr ""
+msgstr "Extensions Manager"
 
 #: PrefsLib/adw.js:250
 msgid "Software Center"
-msgstr "GNOME Software"
+msgstr "Software-Center"
 
 #: PrefsLib/adw.js:286
 msgid "Enable Power Options"
@@ -146,7 +146,7 @@ msgstr "Option zum Sperren zeigen"
 
 #: PrefsLib/adw.js:334
 msgid "Hide Software Centre option"
-msgstr "GNOME-Software-Option verbergen"
+msgstr "Software-Center-Option verbergen"
 
 #: PrefsLib/adw.js:350
 #, fuzzy
@@ -155,7 +155,7 @@ msgstr "Aktivitäten"
 
 #: PrefsLib/adw.js:366
 msgid "Hide Icon Shadow"
-msgstr ""
+msgstr "Icon-Schatten verbergen"
 
 #: PrefsLib/adw.js:406
 msgid "About"
