@@ -160,6 +160,13 @@ export const LogoMenuIconsPage = GObject.registerClass(class LogoMenuIconsWidget
 
         customIconRow.connect('notify::enable-expansion', () => {
           this._settings.set_boolean('use-custom-icon', customIconRow.enable_expansion);
+          if(this._settings.get_boolean('use-custom-icon')){
+            colouredIconsFlowBox.sensitive = false;
+            symbolicIconsFlowBox.sensitive = false;
+          } else {
+            colouredIconsFlowBox.sensitive = true;
+            symbolicIconsFlowBox.sensitive = true;
+          }
         });
 
         const customIconSelectionRow = new Adw.ActionRow({
