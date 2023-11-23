@@ -220,7 +220,6 @@ class LogoMenuMenuButton extends PanelMenu.Button {
           this._settings.set_boolean('symbolic-icon', true);
           this._settings.set_int('menu-button-icon-image', 0);
       }
-
       const fileExists = GLib.file_test(iconPath, GLib.FileTest.IS_REGULAR);
       const icon = isStartHereSymbolic || !fileExists ? 'start-here-symbolic' : iconPath;
       this.icon.gicon = Gio.icon_new_for_string(icon);
@@ -253,7 +252,7 @@ export default class LogoMenu extends Extension {
         this._setActivitiesVisibility();
 
         const indicator = new MenuButton(this);
-        Main.panel.addToStatusArea('LogoMenu', indicator, 0, 'left');
+        Main.panel.addToStatusArea('LogoMenu', indicator, 1, 'left');
     }
 
     disable() {
@@ -276,3 +275,4 @@ export default class LogoMenu extends Extension {
             activitiesButton.container.hide();
     }
 }
+
