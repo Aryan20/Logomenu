@@ -252,7 +252,7 @@ export default class LogoMenu extends Extension {
         this._setActivitiesVisibility();
 
         const indicator = new MenuButton(this);
-        Main.panel.addToStatusArea('LogoMenu', indicator, 1, 'left');
+        Main.panel.addToStatusArea('LogoMenu', indicator, 0, 'left');
     }
 
     disable() {
