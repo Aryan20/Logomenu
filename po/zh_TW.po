@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Logo Menu 18\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-10-15 23:07+0530\n"
+"POT-Creation-Date: 2023-11-19 15:54+0530\n"
 "PO-Revision-Date: 2022-11-17 23:24+0530\n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -159,42 +159,45 @@ msgstr ""
 msgid "About"
 msgstr "關於"
 
-#: PrefsLib/adw.js:420
+#: PrefsLib/adw.js:429
 msgid "Logo Menu"
 msgstr "Logo Menu"
 
-#: PrefsLib/adw.js:427
+#: PrefsLib/adw.js:436
 msgid "Quick access menu for GNOME"
 msgstr "快速存取的目錄"
 
-#: PrefsLib/adw.js:442
+#: PrefsLib/adw.js:452
 msgid "Logo Menu Version"
 msgstr "Logo Menu 版本"
 
-#: PrefsLib/adw.js:454
+#: PrefsLib/adw.js:464
 msgid "GNOME Version"
 msgstr "Gnome 版本"
 
-#: PrefsLib/adw.js:461
-msgid "Github"
-msgstr "Github"
-
-#: PrefsLib/adw.js:468
+#: PrefsLib/adw.js:471
 msgid "Created with love by"
 msgstr ""
 
-#: PrefsLib/adw.js:475
+#: PrefsLib/adw.js:478
 msgid "Matrix/Element room"
 msgstr ""
 
-#: PrefsLib/adw.js:490
+#: PrefsLib/adw.js:494
+msgid "Contributors"
+msgstr ""
+
+#: PrefsLib/adw.js:511
 msgid "This program comes with absolutely no warranty."
 msgstr ""
 
-#: PrefsLib/adw.js:491
+#: PrefsLib/adw.js:512
 #, javascript-format
 msgid "See the %sGNU General Public License, version 2 or later%s for details."
 msgstr ""
+
+#~ msgid "Github"
+#~ msgstr "Github"
 
 #~ msgid "Icon"
 #~ msgstr "圖示"
