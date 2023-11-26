@@ -57,8 +57,8 @@ export const LogoMenuIconsPage = GObject.registerClass(class LogoMenuIconsWidget
         symbolicIconsFlowBox.connect('child-activated', () => {
             const selectedChild = symbolicIconsFlowBox.get_selected_children();
             const selectedChildIndex = selectedChild[0].get_index();
-            this._settings.set_int('menu-button-icon-image', selectedChildIndex);
             this._settings.set_boolean('symbolic-icon', true);
+            this._settings.set_int('menu-button-icon-image', selectedChildIndex);
         });
         Constants.SymbolicDistroIcons.forEach(icon => {
             let iconName = icon.PATH.replace('/Resources/', '');
