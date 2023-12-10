@@ -1,22 +1,23 @@
-# Deutsche Übersetzung von Logo Menu.
+# Traducción al español de Logo Menu.
 # Copyright (C) 2022 Aryan Kaushik (Aryan20)
 # This file is distributed under the same license as the Logo Menu package.
 # Felipe Martínez <felipecmm11@gmail.com>, 2022.
+# Adolfo Jayme Barrientos <fitojb@ubuntu.com>, 2023.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: Logo Menu 18\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-11-19 15:54+0530\n"
-"PO-Revision-Date: 2022-11-17 23:23+0530\n"
-"Last-Translator: \n"
+"PO-Revision-Date: 2023-12-10 17:32-0600\n"
+"Last-Translator: Adolfo Jayme Barrientos <fitojb@ubuntu.com>\n"
 "Language-Team: Spanish\n"
 "Language: es\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Poedit 3.0.1\n"
+"X-Generator: Poedit 3.4.1\n"
 "X-Poedit-SourceCharset: UTF-8\n"
 
 #: extension.js:70
@@ -33,11 +34,11 @@ msgstr "Aplicaciones"
 
 #: extension.js:78
 msgid "Software Center..."
-msgstr "Centro de Software"
+msgstr "Centro de aplicaciones…"
 
 #: extension.js:80 PrefsLib/adw.js:268
 msgid "System Monitor"
-msgstr ""
+msgstr "Monitor del sistema"
 
 #: extension.js:81 PrefsLib/adw.js:230
 msgid "Terminal"
@@ -57,11 +58,11 @@ msgstr "Suspender"
 
 #: extension.js:92
 msgid "Restart..."
-msgstr "Reiniciar..."
+msgstr "Reiniciar…"
 
 #: extension.js:93
 msgid "Shut Down..."
-msgstr "Apagar..."
+msgstr "Apagar…"
 
 #: extension.js:97 extension.js:102
 msgid "Lock Screen"
@@ -69,15 +70,15 @@ msgstr "Bloquear"
 
 #: extension.js:99
 msgid "Log Out..."
-msgstr "Cerrar la sesión"
+msgstr "Finalizar la sesión…"
 
 #: PrefsLib/adw.js:41
 msgid "Symbolic Icons"
-msgstr ""
+msgstr "Iconos monocromáticos"
 
 #: PrefsLib/adw.js:45
 msgid "Coloured Icons"
-msgstr ""
+msgstr "Iconos coloridos"
 
 #: PrefsLib/adw.js:49
 msgid "Icon Settings"
@@ -89,48 +90,47 @@ msgstr "Tamaño del icono"
 
 #: PrefsLib/adw.js:174
 msgid "Change Defaults"
-msgstr "Cambiar la configuración predeterminada"
+msgstr "Cambiar configuración predeterminada"
 
 #: PrefsLib/adw.js:178
 msgid "Show/Hide Options"
-msgstr "Mostrar/Ocultar opciones"
+msgstr "Mostrar u ocultar opciones"
 
 #: PrefsLib/adw.js:182
-#, fuzzy
 msgid "Top Panel Options"
-msgstr "Otras opciones"
+msgstr "Opciones del panel superior"
 
 #: PrefsLib/adw.js:190
 msgid "Icon Click Type to open Activities"
-msgstr "Tipo de clic para abrir Actividades"
+msgstr "Tipo de pulsación para abrir Actividades"
 
 #: PrefsLib/adw.js:196
 msgid "Left Click "
-msgstr ""
+msgstr "Pulsación izquierda"
 
 #: PrefsLib/adw.js:197
 msgid "Middle Click "
-msgstr "Clic central "
+msgstr "Pulsación central "
 
 #: PrefsLib/adw.js:198
 msgid "Right Click "
-msgstr "Clic derecho "
+msgstr "Pulsación derecha "
 
 #: PrefsLib/adw.js:211
 msgid "Preferred Extensions Application"
-msgstr ""
+msgstr "Aplicación Extensiones preferidas"
 
 #: PrefsLib/adw.js:217
 msgid "GNOME Extensions"
-msgstr ""
+msgstr "Extensiones de GNOME"
 
 #: PrefsLib/adw.js:218
 msgid "Extensions Manager"
-msgstr ""
+msgstr "Gestor de extensiones"
 
 #: PrefsLib/adw.js:250
 msgid "Software Center"
-msgstr "Centro de Software"
+msgstr "Centro de aplicaciones"
 
 #: PrefsLib/adw.js:286
 msgid "Enable Power Options"
@@ -138,24 +138,23 @@ msgstr "Activar opciones de energía"
 
 #: PrefsLib/adw.js:301
 msgid "Hide Force Quit option"
-msgstr "Ocultar opción de forzar cierre"
+msgstr "Ocultar opción Forzar cierre"
 
 #: PrefsLib/adw.js:318
 msgid "Show Lock Screen option"
-msgstr "Mostrar opción de bloquear la pantalla"
+msgstr "Mostrar opción Bloquear pantalla"
 
 #: PrefsLib/adw.js:334
 msgid "Hide Software Centre option"
-msgstr "Ocultar opción de Centro de Software"
+msgstr "Ocultar opción Centro de aplicaciones"
 
 #: PrefsLib/adw.js:350
-#, fuzzy
 msgid "Show Activities Button"
-msgstr "Actividades"
+msgstr "Mostrar botón Actividades"
 
 #: PrefsLib/adw.js:366
 msgid "Hide Icon Shadow"
-msgstr ""
+msgstr "Ocultar sombra del icono"
 
 #: PrefsLib/adw.js:406
 msgid "About"
@@ -179,46 +178,21 @@ msgstr "Versión de GNOME"
 
 #: PrefsLib/adw.js:471
 msgid "Created with love by"
-msgstr ""
+msgstr "Creado con amor por"
 
 #: PrefsLib/adw.js:478
 msgid "Matrix/Element room"
-msgstr ""
+msgstr "Espacio de Matrix/Element"
 
 #: PrefsLib/adw.js:494
 msgid "Contributors"
-msgstr ""
+msgstr "Contribuyeron"
 
 #: PrefsLib/adw.js:511
 msgid "This program comes with absolutely no warranty."
-msgstr ""
+msgstr "Este programa viene sin ninguna garantía."
 
 #: PrefsLib/adw.js:512
 #, javascript-format
 msgid "See the %sGNU General Public License, version 2 or later%s for details."
-msgstr ""
-
-#~ msgid "Github"
-#~ msgstr "Github"
-
-#~ msgid "Icon"
-#~ msgstr "Icono"
-
-#~ msgid ""
-#~ "<span size=\"small\">This program comes with absolutely no warranty.\n"
-#~ "See the <a href=\"https://gnu.org/licenses/old-licenses/gpl-2.0."
-#~ "html\">GNU General Public License, version 2 or later</a> for details.</"
-#~ "span>"
-#~ msgstr ""
-#~ "<span size=\"small\">Este programa viene sin alguna garantía.\n"
-#~ "Ver <a href=\"https://gnu.org/licenses/old-licenses/gpl-2.0.html\">GNU "
-#~ "General Public License, version 2 o superior</a> para detalles.</span>"
-
-#~ msgid "Lock Orientation"
-#~ msgstr "Bloquear orientación"
-
-#~ msgid "Show Lock Orientation option"
-#~ msgstr "Mostrar opción de bloquear orientación"
-
-#~ msgid "System Settings ..."
-#~ msgstr "Configuración del sistema..."
+msgstr "Consulte la %sLicencia Pública General de GNU, versión 2 o posterior%s para conocer más."
