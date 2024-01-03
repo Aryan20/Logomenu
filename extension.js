@@ -49,6 +49,7 @@ class LogoMenuMenuButton extends PanelMenu.Button {
         this._settings.connectObject('changed::show-power-options', () => this._displayMenuItems(), this);
         this._settings.connectObject('changed::hide-forcequit', () => this._displayMenuItems(), this);
         this._settings.connectObject('changed::show-lockscreen', () => this._displayMenuItems(), this);
+        this._settings.connectObject('changed::show-activities-button', () => this._displayMenuItems(), this);
         this._displayMenuItems();
 
         // bind middle click option to toggle overview
@@ -64,13 +65,17 @@ class LogoMenuMenuButton extends PanelMenu.Button {
         const showForceQuit = !this._settings.get_boolean('hide-forcequit');
         const showLockScreen = this._settings.get_boolean('show-lockscreen');
         const showSoftwareCenter = !this._settings.get_boolean('hide-softwarecentre');
+        const showActivitiesButton = this._settings.get_boolean('show-activities-button');
 
         this.menu.removeAll();
 
         this._addItem(new MenuItem(_('About My System'), () => this._aboutThisDistro()));
         // this._addItem(new MenuItem(_('System Settings...'), () => this._systemPreferences()));
         this._addItem(new PopupMenu.PopupSeparatorMenuItem());
-        this._addItem(new MenuItem(_('Activities'), () => this._overviewToggle()));
+
+        if (!showActivitiesButton)
+            this._addItem(new MenuItem(_('Activities'), () => this._overviewToggle()));
+
         this._addItem(new MenuItem(_('App Grid'), () => this._showAppGrid()));
         this._addItem(new PopupMenu.PopupSeparatorMenuItem());
 
