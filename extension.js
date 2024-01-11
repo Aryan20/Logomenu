@@ -254,7 +254,7 @@ export default class LogoMenu extends Extension {
 
         this.settings.connectObject('changed::show-activities-button',
             () => this._setActivitiesVisibility(), this);
-q
+
         this._setActivitiesVisibility();
 
         const indicator = new MenuButton(this);
