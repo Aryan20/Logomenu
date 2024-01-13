@@ -4,11 +4,9 @@ import Gtk from 'gi://Gtk';
 import Gio from 'gi://Gio';
 import * as Config from 'resource:///org/gnome/Shell/Extensions/js/misc/config.js';
 import {gettext as _} from 'resource:///org/gnome/Shell/Extensions/js/extensions/prefs.js';
-
 import * as Constants from '../constants.js';
 
 Gio._promisify(Gtk.FileDialog.prototype, "open", "open_finish");
-
 const IconGrid = GObject.registerClass(class LogoMenuIconGrid extends Gtk.FlowBox {
     _init() {
         super._init({
@@ -505,7 +503,6 @@ export const AboutPage = GObject.registerClass(class LogoMenuAboutPage extends A
             margin_bottom: 5,
         });
 
-
         logoMenuBox.append(projectImage);
         logoMenuBox.append(logoMenuLabel);
         logoMenuBox.append(projectDescriptionLabel);
@@ -598,5 +595,3 @@ export const AboutPage = GObject.registerClass(class LogoMenuAboutPage extends A
         this.add(gnuSoftwareGroup);
     }
 });
-
-
