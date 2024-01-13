@@ -61,6 +61,7 @@ export const LogoMenuIconsPage = GObject.registerClass(class LogoMenuIconsWidget
             const selectedChildIndex = selectedChild[0].get_index();
             this._settings.set_boolean('symbolic-icon', true);
             this._settings.set_int('menu-button-icon-image', selectedChildIndex);
+            this._settings.set_boolean('use-custom-icon', false);
         });
         Constants.SymbolicDistroIcons.forEach(icon => {
             let iconName = icon.PATH.replace('/Resources/', '');
@@ -94,6 +95,7 @@ export const LogoMenuIconsPage = GObject.registerClass(class LogoMenuIconsWidget
             const selectedChildIndex = selectedChild[0].get_index();
             this._settings.set_int('menu-button-icon-image', selectedChildIndex);
             this._settings.set_boolean('symbolic-icon', false);
+            this._settings.set_boolean('use-custom-icon', false);
         });
         Constants.ColouredDistroIcons.forEach(icon => {
             let iconName = icon.PATH.replace('/Resources/', '');
@@ -160,13 +162,11 @@ export const LogoMenuIconsPage = GObject.registerClass(class LogoMenuIconsWidget
 
         customIconRow.connect('notify::enable-expansion', () => {
           this._settings.set_boolean('use-custom-icon', customIconRow.enable_expansion);
-          if(this._settings.get_boolean('use-custom-icon')){
-            colouredIconsFlowBox.sensitive = false;
-            symbolicIconsFlowBox.sensitive = false;
-          } else {
-            colouredIconsFlowBox.sensitive = true;
-            symbolicIconsFlowBox.sensitive = true;
-          }
+        });
+
+        // Connect to the 'changed' signal for 'use-custom-icon'
+        this._settings.connect('changed::use-custom-icon', () => {
+            customIconRow.set_enable_expansion(this._settings.get_boolean('use-custom-icon'))
         });
 
         const customIconSelectionRow = new Adw.ActionRow({
@@ -197,7 +197,6 @@ export const LogoMenuIconsPage = GObject.registerClass(class LogoMenuIconsWidget
             if (file) {
               const filename = file.get_path();
               this._settings.set_string("custom-icon-path", filename);
-              // Handle the selected file (e.g., set it as the custom icon)
               console.log(`Selected custom icon: ${filename}`);
             }
           } catch (error) {
@@ -211,8 +210,8 @@ export const LogoMenuIconsPage = GObject.registerClass(class LogoMenuIconsWidget
         // iconGroup
         symbolicIconGroup.add(symbolicIconsRow);
         colouredIconGroup.add(colouredIconsRow);
-        iconSettingsGroup.add(menuButtonIconSizeRow);
         iconSettingsGroup.add(customIconRow);
+        iconSettingsGroup.add(menuButtonIconSizeRow);
 
         this.add(symbolicIconGroup);
         this.add(colouredIconGroup);
