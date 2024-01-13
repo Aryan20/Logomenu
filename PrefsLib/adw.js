@@ -161,49 +161,57 @@ export const LogoMenuIconsPage = GObject.registerClass(class LogoMenuIconsWidget
         });
 
         customIconRow.connect('notify::enable-expansion', () => {
-          this._settings.set_boolean('use-custom-icon', customIconRow.enable_expansion);
+            this._settings.set_boolean('use-custom-icon', customIconRow.enable_expansion);
         });
 
-        // Connect to the 'changed' signal for 'use-custom-icon'
         this._settings.connect('changed::use-custom-icon', () => {
             customIconRow.set_enable_expansion(this._settings.get_boolean('use-custom-icon'))
         });
 
         const customIconSelectionRow = new Adw.ActionRow({
-          title: _('Selected Icon'),
+            title: _('Selected Icon'),
         });
 
-         const customIconButton = new Gtk.Button({
+        const customIconButton = new Gtk.Button({
             icon_name: 'document-open-symbolic',
             valign: Gtk.Align.CENTER,
         })
 
-        customIconButton.connect('clicked', async () => {
-          try {
-            const filter = new Gtk.FileFilter({
-              name: "Images",
-            });
-
-            filter.add_pixbuf_formats();
-
-            const fileDialog = new Gtk.FileDialog({
-              title: _('Select a Custom Icon'),
-              modal: true,
-              default_filter: filter
-           });
-
-          // Open the dialog and wait for the result
-            const file = await fileDialog.open(customIconButton.get_root(), null);
-            if (file) {
-              const filename = file.get_path();
-              this._settings.set_string("custom-icon-path", filename);
-              console.log(`Selected custom icon: ${filename}`);
-            }
-          } catch (error) {
-            console.error('Error selecting custom icon:', error.message);
-          }
+        const customIconPreview = new Gtk.Image({
+            icon_name: "start-here-symbolic",
+            icon_size: 2
         });
 
+        if(this._settings.get_string('custom-icon-path'))
+            customIconPreview.set_from_file(this._settings.get_string('custom-icon-path'));
+
+        customIconButton.connect('clicked', async () => {
+            try {
+                const filter = new Gtk.FileFilter({
+                    name: "Images",
+                });
+
+                filter.add_pixbuf_formats();
+
+                const fileDialog = new Gtk.FileDialog({
+                    title: _('Select a Custom Icon'),
+                    modal: true,
+                    default_filter: filter
+                });
+
+                const file = await fileDialog.open(customIconButton.get_root(), null);
+                if (file) {
+                    const filename = file.get_path();
+                    this._settings.set_string("custom-icon-path", filename);
+                    customIconPreview.set_from_file(filename);
+                    console.log(`Selected custom icon: ${filename}`);
+                }
+            } catch (error) {
+                console.error('Error selecting custom icon:', error.message);
+            }
+        });
+
+        customIconSelectionRow.add_suffix(customIconPreview);
         customIconSelectionRow.add_suffix(customIconButton);
         customIconRow.add_row(customIconSelectionRow);
 
