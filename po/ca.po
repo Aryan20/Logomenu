@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Logo Menu 18\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-11-19 15:54+0530\n"
+"POT-Creation-Date: 2024-01-14 15:03+0530\n"
 "PO-Revision-Date: 2023-07-07 11:54+0200\n"
 "Last-Translator: @jcatfor\n"
 "Language-Team: Catalan\n"
@@ -19,55 +19,55 @@ msgstr ""
 "X-Generator: Poedit 3.3.1\n"
 "X-Poedit-SourceCharset: UTF-8\n"
 
-#: extension.js:70
+#: extension.js:74
 msgid "About My System"
 msgstr "Quant a aquest Ordinador"
 
-#: extension.js:73
+#: extension.js:79
 msgid "Activities"
 msgstr "Activitats"
 
-#: extension.js:74
+#: extension.js:81
 msgid "App Grid"
 msgstr "Aplicacions"
 
-#: extension.js:78
+#: extension.js:85
 msgid "Software Center..."
 msgstr "Programari..."
 
-#: extension.js:80 PrefsLib/adw.js:268
+#: extension.js:87 PrefsLib/adw.js:332
 msgid "System Monitor"
 msgstr ""
 
-#: extension.js:81 PrefsLib/adw.js:230
+#: extension.js:88 PrefsLib/adw.js:294
 msgid "Terminal"
 msgstr "Terminal"
 
-#: extension.js:82
+#: extension.js:89
 msgid "Extensions"
 msgstr "Extensions"
 
-#: extension.js:86
+#: extension.js:93
 msgid "Force Quit App"
 msgstr "Força la Sortida de l'App"
 
-#: extension.js:91
+#: extension.js:98
 msgid "Sleep"
 msgstr "Posa en Repòs"
 
-#: extension.js:92
+#: extension.js:99
 msgid "Restart..."
 msgstr "Reinicia..."
 
-#: extension.js:93
+#: extension.js:100
 msgid "Shut Down..."
 msgstr "Apaga..."
 
-#: extension.js:97 extension.js:102
+#: extension.js:104 extension.js:109
 msgid "Lock Screen"
 msgstr "Bloqueja la Pantalla"
 
-#: extension.js:99
+#: extension.js:106
 msgid "Log Out..."
 msgstr "Tanca la Sessió..."
 
@@ -83,116 +83,128 @@ msgstr ""
 msgid "Icon Settings"
 msgstr "Configuració de la Icona"
 
-#: PrefsLib/adw.js:121
+#: PrefsLib/adw.js:123
 msgid "Icon Size"
 msgstr "Tamany de la Icona"
 
-#: PrefsLib/adw.js:174
+#: PrefsLib/adw.js:156
+msgid "Use Custom Icon"
+msgstr ""
+
+#: PrefsLib/adw.js:170
+msgid "Selected Icon"
+msgstr ""
+
+#: PrefsLib/adw.js:195
+msgid "Select a Custom Icon"
+msgstr ""
+
+#: PrefsLib/adw.js:238
 msgid "Change Defaults"
 msgstr "Canvia les Opcions Predeterminades"
 
-#: PrefsLib/adw.js:178
+#: PrefsLib/adw.js:242
 msgid "Show/Hide Options"
 msgstr "Mostra/Amaga Opcions"
 
-#: PrefsLib/adw.js:182
+#: PrefsLib/adw.js:246
 msgid "Top Panel Options"
 msgstr ""
 
-#: PrefsLib/adw.js:190
+#: PrefsLib/adw.js:254
 msgid "Icon Click Type to open Activities"
 msgstr "Accions per a obrir la vista d'Activitats"
 
-#: PrefsLib/adw.js:196
+#: PrefsLib/adw.js:260
 msgid "Left Click "
 msgstr "Clic amb el botó Esquerre "
 
-#: PrefsLib/adw.js:197
+#: PrefsLib/adw.js:261
 msgid "Middle Click "
 msgstr "Clic amb el botó del Mig "
 
-#: PrefsLib/adw.js:198
+#: PrefsLib/adw.js:262
 msgid "Right Click "
 msgstr "Clic amb el botó Dret "
 
-#: PrefsLib/adw.js:211
+#: PrefsLib/adw.js:275
 msgid "Preferred Extensions Application"
 msgstr "Aplicació preferida per a les Extensions"
 
-#: PrefsLib/adw.js:217
+#: PrefsLib/adw.js:281
 msgid "GNOME Extensions"
 msgstr "Extensions del GNOME"
 
-#: PrefsLib/adw.js:218
+#: PrefsLib/adw.js:282
 msgid "Extensions Manager"
 msgstr "Gestor d'Extensions"
 
-#: PrefsLib/adw.js:250
+#: PrefsLib/adw.js:314
 msgid "Software Center"
 msgstr "Programari"
 
-#: PrefsLib/adw.js:286
+#: PrefsLib/adw.js:350
 msgid "Enable Power Options"
 msgstr "Activa les Opcions per al Reinici i Apagat"
 
-#: PrefsLib/adw.js:301
+#: PrefsLib/adw.js:365
 msgid "Hide Force Quit option"
 msgstr "Oculta l'opció per a Forçar la Sortida"
 
-#: PrefsLib/adw.js:318
+#: PrefsLib/adw.js:382
 msgid "Show Lock Screen option"
 msgstr "Mostra l'opció per a Bloquejar la Pantalla"
 
-#: PrefsLib/adw.js:334
+#: PrefsLib/adw.js:398
 msgid "Hide Software Centre option"
 msgstr "Oculta l'opció per a mostrar el Programari"
 
-#: PrefsLib/adw.js:350
+#: PrefsLib/adw.js:414
 #, fuzzy
 msgid "Show Activities Button"
 msgstr "Activitats"
 
-#: PrefsLib/adw.js:366
+#: PrefsLib/adw.js:430
 msgid "Hide Icon Shadow"
 msgstr ""
 
-#: PrefsLib/adw.js:406
+#: PrefsLib/adw.js:470
 msgid "About"
 msgstr "Quant a"
 
-#: PrefsLib/adw.js:429
+#: PrefsLib/adw.js:493
 msgid "Logo Menu"
 msgstr "Logo Menu"
 
-#: PrefsLib/adw.js:436
+#: PrefsLib/adw.js:500
 msgid "Quick access menu for GNOME"
 msgstr "Menú d'accessos ràpids per al GNOME"
 
-#: PrefsLib/adw.js:452
+#: PrefsLib/adw.js:517
 msgid "Logo Menu Version"
 msgstr "Versió del Logo Menu"
 
-#: PrefsLib/adw.js:464
+#: PrefsLib/adw.js:529
 msgid "GNOME Version"
 msgstr "Versió del GNOME"
 
-#: PrefsLib/adw.js:471
+#: PrefsLib/adw.js:536
 msgid "Created with love by"
 msgstr "Creat amb amor per"
 
-#: PrefsLib/adw.js:478
+#: PrefsLib/adw.js:543
 msgid "Matrix/Element room"
 msgstr "Matrix/Element room"
 
-#: PrefsLib/adw.js:494
+#: PrefsLib/adw.js:559
 msgid "Contributors"
 msgstr ""
 
-#: PrefsLib/adw.js:511
+#: PrefsLib/adw.js:576
 msgid "This program comes with absolutely no warranty."
 msgstr ""
 
-#: PrefsLib/adw.js:512
+#: PrefsLib/adw.js:577
 #, javascript-format
 msgid "See the %sGNU General Public License, version 2 or later%s for details."
 msgstr ""

@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Logo Menu 26\n"
+"Project-Id-Version: Logo Menu 22.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-11-19 15:54+0530\n"
+"POT-Creation-Date: 2024-01-14 15:03+0530\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,55 +17,55 @@ msgstr ""
 "Content-Type: text/plain; charset=CHARSET\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: extension.js:70
+#: extension.js:74
 msgid "About My System"
 msgstr ""
 
-#: extension.js:73
+#: extension.js:79
 msgid "Activities"
 msgstr ""
 
-#: extension.js:74
+#: extension.js:81
 msgid "App Grid"
 msgstr ""
 
-#: extension.js:78
+#: extension.js:85
 msgid "Software Center..."
 msgstr ""
 
-#: extension.js:80 PrefsLib/adw.js:268
+#: extension.js:87 PrefsLib/adw.js:332
 msgid "System Monitor"
 msgstr ""
 
-#: extension.js:81 PrefsLib/adw.js:230
+#: extension.js:88 PrefsLib/adw.js:294
 msgid "Terminal"
 msgstr ""
 
-#: extension.js:82
+#: extension.js:89
 msgid "Extensions"
 msgstr ""
 
-#: extension.js:86
+#: extension.js:93
 msgid "Force Quit App"
 msgstr ""
 
-#: extension.js:91
+#: extension.js:98
 msgid "Sleep"
 msgstr ""
 
-#: extension.js:92
+#: extension.js:99
 msgid "Restart..."
 msgstr ""
 
-#: extension.js:93
+#: extension.js:100
 msgid "Shut Down..."
 msgstr ""
 
-#: extension.js:97 extension.js:102
+#: extension.js:104 extension.js:109
 msgid "Lock Screen"
 msgstr ""
 
-#: extension.js:99
+#: extension.js:106
 msgid "Log Out..."
 msgstr ""
 
@@ -81,115 +81,127 @@ msgstr ""
 msgid "Icon Settings"
 msgstr ""
 
-#: PrefsLib/adw.js:121
+#: PrefsLib/adw.js:123
 msgid "Icon Size"
 msgstr ""
 
-#: PrefsLib/adw.js:174
+#: PrefsLib/adw.js:156
+msgid "Use Custom Icon"
+msgstr ""
+
+#: PrefsLib/adw.js:170
+msgid "Selected Icon"
+msgstr ""
+
+#: PrefsLib/adw.js:195
+msgid "Select a Custom Icon"
+msgstr ""
+
+#: PrefsLib/adw.js:238
 msgid "Change Defaults"
 msgstr ""
 
-#: PrefsLib/adw.js:178
+#: PrefsLib/adw.js:242
 msgid "Show/Hide Options"
 msgstr ""
 
-#: PrefsLib/adw.js:182
+#: PrefsLib/adw.js:246
 msgid "Top Panel Options"
 msgstr ""
 
-#: PrefsLib/adw.js:190
+#: PrefsLib/adw.js:254
 msgid "Icon Click Type to open Activities"
 msgstr ""
 
-#: PrefsLib/adw.js:196
+#: PrefsLib/adw.js:260
 msgid "Left Click "
 msgstr ""
 
-#: PrefsLib/adw.js:197
+#: PrefsLib/adw.js:261
 msgid "Middle Click "
 msgstr ""
 
-#: PrefsLib/adw.js:198
+#: PrefsLib/adw.js:262
 msgid "Right Click "
 msgstr ""
 
-#: PrefsLib/adw.js:211
+#: PrefsLib/adw.js:275
 msgid "Preferred Extensions Application"
 msgstr ""
 
-#: PrefsLib/adw.js:217
+#: PrefsLib/adw.js:281
 msgid "GNOME Extensions"
 msgstr ""
 
-#: PrefsLib/adw.js:218
+#: PrefsLib/adw.js:282
 msgid "Extensions Manager"
 msgstr ""
 
-#: PrefsLib/adw.js:250
+#: PrefsLib/adw.js:314
 msgid "Software Center"
 msgstr ""
 
-#: PrefsLib/adw.js:286
+#: PrefsLib/adw.js:350
 msgid "Enable Power Options"
 msgstr ""
 
-#: PrefsLib/adw.js:301
+#: PrefsLib/adw.js:365
 msgid "Hide Force Quit option"
 msgstr ""
 
-#: PrefsLib/adw.js:318
+#: PrefsLib/adw.js:382
 msgid "Show Lock Screen option"
 msgstr ""
 
-#: PrefsLib/adw.js:334
+#: PrefsLib/adw.js:398
 msgid "Hide Software Centre option"
 msgstr ""
 
-#: PrefsLib/adw.js:350
+#: PrefsLib/adw.js:414
 msgid "Show Activities Button"
 msgstr ""
 
-#: PrefsLib/adw.js:366
+#: PrefsLib/adw.js:430
 msgid "Hide Icon Shadow"
 msgstr ""
 
-#: PrefsLib/adw.js:406
+#: PrefsLib/adw.js:470
 msgid "About"
 msgstr ""
 
-#: PrefsLib/adw.js:429
+#: PrefsLib/adw.js:493
 msgid "Logo Menu"
 msgstr ""
 
-#: PrefsLib/adw.js:436
+#: PrefsLib/adw.js:500
 msgid "Quick access menu for GNOME"
 msgstr ""
 
-#: PrefsLib/adw.js:452
+#: PrefsLib/adw.js:517
 msgid "Logo Menu Version"
 msgstr ""
 
-#: PrefsLib/adw.js:464
+#: PrefsLib/adw.js:529
 msgid "GNOME Version"
 msgstr ""
 
-#: PrefsLib/adw.js:471
+#: PrefsLib/adw.js:536
 msgid "Created with love by"
 msgstr ""
 
-#: PrefsLib/adw.js:478
+#: PrefsLib/adw.js:543
 msgid "Matrix/Element room"
 msgstr ""
 
-#: PrefsLib/adw.js:494
+#: PrefsLib/adw.js:559
 msgid "Contributors"
 msgstr ""
 
-#: PrefsLib/adw.js:511
+#: PrefsLib/adw.js:576
 msgid "This program comes with absolutely no warranty."
 msgstr ""
 
-#: PrefsLib/adw.js:512
+#: PrefsLib/adw.js:577
 #, javascript-format
 msgid "See the %sGNU General Public License, version 2 or later%s for details."
 msgstr ""
