@@ -37,9 +37,11 @@ class LogoMenuMenuButton extends PanelMenu.Button {
         this._settings.connectObject('changed::hide-icon-shadow', () => this.hideIconShadow(), this);
         this._settings.connectObject('changed::menu-button-icon-image', () => this.setIconImage(), this);
         this._settings.connectObject('changed::symbolic-icon', () => this.setIconImage(), this);
+        this._settings.connectObject('changed::use-custom-icon', () => this.setIconImage(), this);
+        this._settings.connectObject('changed::custom-icon-path', () => this.setIconImage(), this);
         this._settings.connectObject('changed::menu-button-icon-size', () => this.setIconSize(), this);
 	
-	this.hideIconShadow()
+	this.hideIconShadow();
         this.setIconImage();
         this.setIconSize();
         this.add_child(this.icon);
@@ -195,11 +197,15 @@ class LogoMenuMenuButton extends PanelMenu.Button {
     setIconImage() {
         const iconIndex = this._settings.get_int('menu-button-icon-image');
         const isSymbolic = this._settings.get_boolean('symbolic-icon');
+        const useCustomIcon = this._settings.get_boolean('use-custom-icon');
+        const customIconPath = this._settings.get_string('custom-icon-path');
         let isStartHereSymbolic = false;
         let iconPath;
         let notFound = false;
-        
-        if (isSymbolic) {
+
+        if (useCustomIcon && customIconPath !== '') {
+            iconPath = customIconPath;
+        } else if (isSymbolic) {
             if (Constants.SymbolicDistroIcons[iconIndex] !== undefined) {
                 isStartHereSymbolic = Constants.SymbolicDistroIcons[iconIndex].PATH === 'start-here-symbolic';
                 iconPath = this._extension.path + Constants.SymbolicDistroIcons[iconIndex].PATH;
@@ -213,8 +219,8 @@ class LogoMenuMenuButton extends PanelMenu.Button {
                 notFound = true;
             }
         }
-        
-        if(notFound) {
+
+        if (notFound) {
             iconPath = 'start-here-symbolic';
             this._settings.set_boolean('symbolic-icon', true);
             this._settings.set_int('menu-button-icon-image', 0);
@@ -226,7 +232,6 @@ class LogoMenuMenuButton extends PanelMenu.Button {
 
         this.icon.gicon = Gio.icon_new_for_string(icon);
     }
-
     setIconSize() {
         const iconSize = this._settings.get_int('menu-button-icon-size');
         this.icon.icon_size = iconSize;

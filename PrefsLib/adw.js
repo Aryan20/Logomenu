@@ -1,12 +1,12 @@
 import Adw from 'gi://Adw';
 import GObject from 'gi://GObject';
 import Gtk from 'gi://Gtk';
-
+import Gio from 'gi://Gio';
 import * as Config from 'resource:///org/gnome/Shell/Extensions/js/misc/config.js';
 import {gettext as _} from 'resource:///org/gnome/Shell/Extensions/js/extensions/prefs.js';
-
 import * as Constants from '../constants.js';
 
+Gio._promisify(Gtk.FileDialog.prototype, "open", "open_finish");
 const IconGrid = GObject.registerClass(class LogoMenuIconGrid extends Gtk.FlowBox {
     _init() {
         super._init({
@@ -59,6 +59,7 @@ export const LogoMenuIconsPage = GObject.registerClass(class LogoMenuIconsWidget
             const selectedChildIndex = selectedChild[0].get_index();
             this._settings.set_boolean('symbolic-icon', true);
             this._settings.set_int('menu-button-icon-image', selectedChildIndex);
+            this._settings.set_boolean('use-custom-icon', false);
         });
         Constants.SymbolicDistroIcons.forEach(icon => {
             let iconName = icon.PATH.replace('/Resources/', '');
@@ -92,6 +93,7 @@ export const LogoMenuIconsPage = GObject.registerClass(class LogoMenuIconsWidget
             const selectedChildIndex = selectedChild[0].get_index();
             this._settings.set_int('menu-button-icon-image', selectedChildIndex);
             this._settings.set_boolean('symbolic-icon', false);
+            this._settings.set_boolean('use-custom-icon', false);
         });
         Constants.ColouredDistroIcons.forEach(icon => {
             let iconName = icon.PATH.replace('/Resources/', '');
@@ -150,9 +152,71 @@ export const LogoMenuIconsPage = GObject.registerClass(class LogoMenuIconsWidget
 
         menuButtonIconSizeRow.add_suffix(menuButtonIconSizeScale);
 
+        const customIconRow = new Adw.ExpanderRow({
+            title: _('Use Custom Icon'),
+            show_enable_switch: true,
+            enable_expansion: this._settings.get_boolean('use-custom-icon'),
+        });
+
+        customIconRow.connect('notify::enable-expansion', () => {
+            this._settings.set_boolean('use-custom-icon', customIconRow.enable_expansion);
+        });
+
+        this._settings.connect('changed::use-custom-icon', () => {
+            customIconRow.set_enable_expansion(this._settings.get_boolean('use-custom-icon'))
+        });
+
+        const customIconSelectionRow = new Adw.ActionRow({
+            title: _('Selected Icon'),
+        });
+
+        const customIconButton = new Gtk.Button({
+            icon_name: 'document-open-symbolic',
+            valign: Gtk.Align.CENTER,
+        })
+
+        const customIconPreview = new Gtk.Image({
+            icon_name: "start-here-symbolic",
+            icon_size: 2
+        });
+
+        if(this._settings.get_string('custom-icon-path'))
+            customIconPreview.set_from_file(this._settings.get_string('custom-icon-path'));
+
+        customIconButton.connect('clicked', async () => {
+            try {
+                const filter = new Gtk.FileFilter({
+                    name: "Images",
+                });
+
+                filter.add_pixbuf_formats();
+
+                const fileDialog = new Gtk.FileDialog({
+                    title: _('Select a Custom Icon'),
+                    modal: true,
+                    default_filter: filter
+                });
+
+                const file = await fileDialog.open(customIconButton.get_root(), null);
+                if (file) {
+                    const filename = file.get_path();
+                    this._settings.set_string("custom-icon-path", filename);
+                    customIconPreview.set_from_file(filename);
+                    console.log(`Selected custom icon: ${filename}`);
+                }
+            } catch (error) {
+                console.error('Error selecting custom icon:', error.message);
+            }
+        });
+
+        customIconSelectionRow.add_suffix(customIconPreview);
+        customIconSelectionRow.add_suffix(customIconButton);
+        customIconRow.add_row(customIconSelectionRow);
+
         // iconGroup
         symbolicIconGroup.add(symbolicIconsRow);
         colouredIconGroup.add(colouredIconsRow);
+        iconSettingsGroup.add(customIconRow);
         iconSettingsGroup.add(menuButtonIconSizeRow);
 
         this.add(symbolicIconGroup);
@@ -438,6 +502,7 @@ export const AboutPage = GObject.registerClass(class LogoMenuAboutPage extends A
             vexpand: false,
             margin_bottom: 5,
         });
+
         logoMenuBox.append(projectImage);
         logoMenuBox.append(logoMenuLabel);
         logoMenuBox.append(projectDescriptionLabel);
