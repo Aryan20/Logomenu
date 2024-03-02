@@ -6,9 +6,9 @@
   "gettext-domain": "logo-menu",
   "name": "Logo Menu",
   "settings-schema": "org.gnome.shell.extensions.logo-menu",
-  "shell-version": ["45"],
+  "shell-version": ["45", "46"],
   "url": "https://github.com/Aryan20/Logomenu",
   "uuid": "logomenu@aryan_k",
-  "version": 27,
-  "version-name": "22.2"
+  "version": 28,
+  "version-name": "22.4"
 }
