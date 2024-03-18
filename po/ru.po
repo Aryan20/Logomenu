@@ -198,7 +198,7 @@ msgstr "Комната Matrix/Element"
 
 #: PrefsLib/adw.js:559
 msgid "Contributors"
-msgstr ""
+msgstr "Авторы"
 
 #: PrefsLib/adw.js:576
 msgid "This program comes with absolutely no warranty."
