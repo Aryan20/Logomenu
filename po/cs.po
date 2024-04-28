@@ -1,0 +1,207 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2023 Aryan Kaushik (Aryan20)
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Logo Menu 22.2\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-01-14 15:03+0530\n"
+"PO-Revision-Date: 2024-04-26 18:45+2\n"
+"Last-Translator: Karel Mašek <masekkarel@vivaldi.net>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: cs\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=CHARSET\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: extension.js:74
+msgid "About My System"
+msgstr "Nastavení"
+
+#: extension.js:79
+msgid "Activities"
+msgstr "Aktivity"
+
+#: extension.js:81
+msgid "App Grid"
+msgstr "Aplikace"
+
+#: extension.js:85
+msgid "Software Center..."
+msgstr "Software..."
+
+#: extension.js:87 PrefsLib/adw.js:332
+msgid "System Monitor"
+msgstr "Sledování systému"
+
+#: extension.js:88 PrefsLib/adw.js:294
+msgid "Terminal"
+msgstr "Terminál"
+
+#: extension.js:89
+msgid "Extensions"
+msgstr "Rozšíření"
+
+#: extension.js:93
+msgid "Force Quit App"
+msgstr "Vynutit ukončení aplikace"
+
+#: extension.js:98
+msgid "Sleep"
+msgstr "Uspat do paměti"
+
+#: extension.js:99
+msgid "Restart..."
+msgstr "Restartovat..."
+
+#: extension.js:100
+msgid "Shut Down..."
+msgstr "Vypnout..."
+
+#: extension.js:104 extension.js:109
+msgid "Lock Screen"
+msgstr "Uzamknout"
+
+#: extension.js:106
+msgid "Log Out..."
+msgstr "Odhlásit se..."
+
+#: PrefsLib/adw.js:41
+msgid "Symbolic Icons"
+msgstr "Jednobarevné ikony"
+
+#: PrefsLib/adw.js:45
+msgid "Coloured Icons"
+msgstr "Barevné ikony"
+
+#: PrefsLib/adw.js:49
+msgid "Icon Settings"
+msgstr "Nastavení ikon"
+
+#: PrefsLib/adw.js:123
+msgid "Icon Size"
+msgstr "Velikost ikon"
+
+#: PrefsLib/adw.js:156
+msgid "Use Custom Icon"
+msgstr "Použít výchozí ikony"
+
+#: PrefsLib/adw.js:170
+msgid "Selected Icon"
+msgstr "Vybraná ikona"
+
+#: PrefsLib/adw.js:195
+msgid "Select a Custom Icon"
+msgstr "Zvolit vlastní tlačítko"
+
+#: PrefsLib/adw.js:238
+msgid "Change Defaults"
+msgstr "Změnit výchozí"
+
+#: PrefsLib/adw.js:242
+msgid "Show/Hide Options"
+msgstr "Zobrazit/Skrýt možnosti"
+
+#: PrefsLib/adw.js:246
+msgid "Top Panel Options"
+msgstr "Možnosti panelu"
+
+#: PrefsLib/adw.js:254
+msgid "Icon Click Type to open Activities"
+msgstr "Tlačítko myši zobrazí aktivity:"
+
+#: PrefsLib/adw.js:260
+msgid "Left Click "
+msgstr "Levé tlačítko"
+
+#: PrefsLib/adw.js:261
+msgid "Middle Click "
+msgstr "Prostřední tlačítko"
+
+#: PrefsLib/adw.js:262
+msgid "Right Click "
+msgstr "Pravé tlačítko"
+
+#: PrefsLib/adw.js:275
+msgid "Preferred Extensions Application"
+msgstr "Výchozí správce rozšíření"
+
+#: PrefsLib/adw.js:281
+msgid "GNOME Extensions"
+msgstr "GNOME Rozšíření"
+
+#: PrefsLib/adw.js:282
+msgid "Extensions Manager"
+msgstr "Správce rozšíření"
+
+#: PrefsLib/adw.js:314
+msgid "Software Center"
+msgstr "Software"
+
+#: PrefsLib/adw.js:350
+msgid "Enable Power Options"
+msgstr "Zobrazit možnosti napájení"
+
+#: PrefsLib/adw.js:365
+msgid "Hide Force Quit option"
+msgstr "Skrýt Vynutit ukončení"
+
+#: PrefsLib/adw.js:382
+msgid "Show Lock Screen option"
+msgstr "Zobrazovat tlačítko Uzamknout"
+
+#: PrefsLib/adw.js:398
+msgid "Hide Software Centre option"
+msgstr "Nezobrazovat Software"
+
+#: PrefsLib/adw.js:414
+msgid "Show Activities Button"
+msgstr "Tlačítko Zobrazit aktivity"
+
+#: PrefsLib/adw.js:430
+msgid "Hide Icon Shadow"
+msgstr "Skrýt stín ikony"
+
+#: PrefsLib/adw.js:470
+msgid "About"
+msgstr "Info:"
+
+#: PrefsLib/adw.js:493
+msgid "Logo Menu"
+msgstr "Logo Menu"
+
+#: PrefsLib/adw.js:500
+msgid "Quick access menu for GNOME"
+msgstr "Rychlý přístup pro GNOME"
+
+#: PrefsLib/adw.js:517
+msgid "Logo Menu Version"
+msgstr "Verze Logo Menu"
+
+#: PrefsLib/adw.js:529
+msgid "GNOME Version"
+msgstr "Verze GNOME"
+
+#: PrefsLib/adw.js:536
+msgid "Created with love by"
+msgstr "Vytvořil s láskou:"
+
+#: PrefsLib/adw.js:543
+msgid "Matrix/Element room"
+msgstr "Místnost Matrix/Element"
+
+#: PrefsLib/adw.js:559
+msgid "Contributors"
+msgstr "Přispěvatelé"
+
+#: PrefsLib/adw.js:576
+msgid "This program comes with absolutely no warranty."
+msgstr "Na tento program se nevztahuje žádná záruka."
+
+#: PrefsLib/adw.js:577
+#, javascript-format
+msgid "See the %sGNU General Public License, version 2 or later%s for details."
+msgstr "Tento software spadá pod %sGNU General Public License, version 2 or later%s."
