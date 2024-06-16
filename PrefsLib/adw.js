@@ -466,10 +466,17 @@ export const LogoMenuOptionsPage = GObject.registerClass(class LogoMenuOptionsWi
 // Create the About page
 export const AboutPage = GObject.registerClass(class LogoMenuAboutPage extends Adw.PreferencesPage {
     _init(metadata) {
-        super._init({
-            title: _('About'),
-            icon_name: 'info-symbolic',
-        });
+        if (parseInt(Config.PACKAGE_VERSION) >= 46) {
+            super._init({
+                title: _('About'),
+                icon_name: 'help-about-symbolic',
+            });
+        } else {
+            super._init({
+                title: _('About'),
+                icon_name: 'info-symbolic',
+            });
+        }
 
         const PROJECT_IMAGE = 'settings-logo-menu-logo';
         const EXTERNAL_LINK_ICON = 'adw-external-link-symbolic'

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Logo Menu 22.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-01-14 15:03+0530\n"
+"POT-Creation-Date: 2024-06-17 05:04+0530\n"
 "PO-Revision-Date: 2024-04-26 18:45+2\n"
 "Last-Translator: Karel Mašek <masekkarel@vivaldi.net>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,55 +17,55 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: extension.js:74
+#: extension.js:75
 msgid "About My System"
 msgstr "Nastavení"
 
-#: extension.js:79
+#: extension.js:80
 msgid "Activities"
 msgstr "Aktivity"
 
-#: extension.js:81
+#: extension.js:82
 msgid "App Grid"
 msgstr "Aplikace"
 
-#: extension.js:85
+#: extension.js:86
 msgid "Software Center..."
 msgstr "Software..."
 
-#: extension.js:87 PrefsLib/adw.js:332
+#: extension.js:88 PrefsLib/adw.js:332
 msgid "System Monitor"
 msgstr "Sledování systému"
 
-#: extension.js:88 PrefsLib/adw.js:294
+#: extension.js:89 PrefsLib/adw.js:294
 msgid "Terminal"
 msgstr "Terminál"
 
-#: extension.js:89
+#: extension.js:90
 msgid "Extensions"
 msgstr "Rozšíření"
 
-#: extension.js:93
+#: extension.js:94
 msgid "Force Quit App"
 msgstr "Vynutit ukončení aplikace"
 
-#: extension.js:98
+#: extension.js:99
 msgid "Sleep"
 msgstr "Uspat do paměti"
 
-#: extension.js:99
+#: extension.js:100
 msgid "Restart..."
 msgstr "Restartovat..."
 
-#: extension.js:100
+#: extension.js:101
 msgid "Shut Down..."
 msgstr "Vypnout..."
 
-#: extension.js:104 extension.js:109
+#: extension.js:105 extension.js:110
 msgid "Lock Screen"
 msgstr "Uzamknout"
 
-#: extension.js:106
+#: extension.js:107
 msgid "Log Out..."
 msgstr "Odhlásit se..."
 
@@ -165,43 +165,44 @@ msgstr "Tlačítko Zobrazit aktivity"
 msgid "Hide Icon Shadow"
 msgstr "Skrýt stín ikony"
 
-#: PrefsLib/adw.js:470
+#: PrefsLib/adw.js:471 PrefsLib/adw.js:476
 msgid "About"
 msgstr "Info:"
 
-#: PrefsLib/adw.js:493
+#: PrefsLib/adw.js:500
 msgid "Logo Menu"
 msgstr "Logo Menu"
 
-#: PrefsLib/adw.js:500
+#: PrefsLib/adw.js:507
 msgid "Quick access menu for GNOME"
 msgstr "Rychlý přístup pro GNOME"
 
-#: PrefsLib/adw.js:517
+#: PrefsLib/adw.js:524
 msgid "Logo Menu Version"
 msgstr "Verze Logo Menu"
 
-#: PrefsLib/adw.js:529
+#: PrefsLib/adw.js:536
 msgid "GNOME Version"
 msgstr "Verze GNOME"
 
-#: PrefsLib/adw.js:536
+#: PrefsLib/adw.js:543
 msgid "Created with love by"
 msgstr "Vytvořil s láskou:"
 
-#: PrefsLib/adw.js:543
+#: PrefsLib/adw.js:550
 msgid "Matrix/Element room"
 msgstr "Místnost Matrix/Element"
 
-#: PrefsLib/adw.js:559
+#: PrefsLib/adw.js:566
 msgid "Contributors"
 msgstr "Přispěvatelé"
 
-#: PrefsLib/adw.js:576
+#: PrefsLib/adw.js:583
 msgid "This program comes with absolutely no warranty."
 msgstr "Na tento program se nevztahuje žádná záruka."
 
-#: PrefsLib/adw.js:577
+#: PrefsLib/adw.js:584
 #, javascript-format
 msgid "See the %sGNU General Public License, version 2 or later%s for details."
-msgstr "Tento software spadá pod %sGNU General Public License, version 2 or later%s."
+msgstr ""
+"Tento software spadá pod %sGNU General Public License, version 2 or later%s."

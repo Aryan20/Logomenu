@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Logo Menu 18\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-01-14 15:03+0530\n"
+"POT-Creation-Date: 2024-06-17 05:04+0530\n"
 "PO-Revision-Date: 2022-11-17 23:24+0530\n"
 "Last-Translator: 天上飞机最快 地上表姐最坏 <trampover@gmail.com>\n"
 "Language-Team: \n"
@@ -18,55 +18,55 @@ msgstr ""
 "Plural-Forms: nplurals=1; plural=0;\n"
 "X-Generator: Poedit 3.0.1\n"
 
-#: extension.js:74
+#: extension.js:75
 msgid "About My System"
 msgstr "关于本机系统"
 
-#: extension.js:79
+#: extension.js:80
 msgid "Activities"
 msgstr "活动"
 
-#: extension.js:81
+#: extension.js:82
 msgid "App Grid"
 msgstr "所有软件"
 
-#: extension.js:85
+#: extension.js:86
 msgid "Software Center..."
 msgstr "软件中心"
 
-#: extension.js:87 PrefsLib/adw.js:332
+#: extension.js:88 PrefsLib/adw.js:332
 msgid "System Monitor"
 msgstr ""
 
-#: extension.js:88 PrefsLib/adw.js:294
+#: extension.js:89 PrefsLib/adw.js:294
 msgid "Terminal"
 msgstr "终端"
 
-#: extension.js:89
+#: extension.js:90
 msgid "Extensions"
 msgstr "插件"
 
-#: extension.js:93
+#: extension.js:94
 msgid "Force Quit App"
 msgstr "强制退出"
 
-#: extension.js:98
+#: extension.js:99
 msgid "Sleep"
 msgstr "休眠"
 
-#: extension.js:99
+#: extension.js:100
 msgid "Restart..."
 msgstr "重启"
 
-#: extension.js:100
+#: extension.js:101
 msgid "Shut Down..."
 msgstr "关机"
 
-#: extension.js:104 extension.js:109
+#: extension.js:105 extension.js:110
 msgid "Lock Screen"
 msgstr "锁屏"
 
-#: extension.js:106
+#: extension.js:107
 msgid "Log Out..."
 msgstr "注销"
 
@@ -167,43 +167,43 @@ msgstr "活动"
 msgid "Hide Icon Shadow"
 msgstr ""
 
-#: PrefsLib/adw.js:470
+#: PrefsLib/adw.js:471 PrefsLib/adw.js:476
 msgid "About"
 msgstr "关于"
 
-#: PrefsLib/adw.js:493
+#: PrefsLib/adw.js:500
 msgid "Logo Menu"
 msgstr "系统图标菜单"
 
-#: PrefsLib/adw.js:500
+#: PrefsLib/adw.js:507
 msgid "Quick access menu for GNOME"
 msgstr "本地数据目录"
 
-#: PrefsLib/adw.js:517
+#: PrefsLib/adw.js:524
 msgid "Logo Menu Version"
 msgstr "系统图标菜单版本"
 
-#: PrefsLib/adw.js:529
+#: PrefsLib/adw.js:536
 msgid "GNOME Version"
 msgstr "GNOME(桌面)版本"
 
-#: PrefsLib/adw.js:536
+#: PrefsLib/adw.js:543
 msgid "Created with love by"
 msgstr ""
 
-#: PrefsLib/adw.js:543
+#: PrefsLib/adw.js:550
 msgid "Matrix/Element room"
 msgstr ""
 
-#: PrefsLib/adw.js:559
+#: PrefsLib/adw.js:566
 msgid "Contributors"
 msgstr ""
 
-#: PrefsLib/adw.js:576
+#: PrefsLib/adw.js:583
 msgid "This program comes with absolutely no warranty."
 msgstr ""
 
-#: PrefsLib/adw.js:577
+#: PrefsLib/adw.js:584
 #, javascript-format
 msgid "See the %sGNU General Public License, version 2 or later%s for details."
 msgstr ""

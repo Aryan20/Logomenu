@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Logo Menu 18\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-01-14 15:03+0530\n"
+"POT-Creation-Date: 2024-06-17 05:04+0530\n"
 "PO-Revision-Date: 2022-11-17 23:23+0530\n"
 "Last-Translator: Irénée Thirion <irenee.thirion@e.email>\n"
 "Language-Team: French <traduc@traduc.org>\n"
@@ -17,55 +17,55 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: Poedit 3.0.1\n"
 
-#: extension.js:74
+#: extension.js:75
 msgid "About My System"
 msgstr "À propos de mon système"
 
-#: extension.js:79
+#: extension.js:80
 msgid "Activities"
 msgstr "Activités"
 
-#: extension.js:81
+#: extension.js:82
 msgid "App Grid"
 msgstr "Grille d’applications"
 
-#: extension.js:85
+#: extension.js:86
 msgid "Software Center..."
 msgstr "Centre de logiciels..."
 
-#: extension.js:87 PrefsLib/adw.js:332
+#: extension.js:88 PrefsLib/adw.js:332
 msgid "System Monitor"
 msgstr ""
 
-#: extension.js:88 PrefsLib/adw.js:294
+#: extension.js:89 PrefsLib/adw.js:294
 msgid "Terminal"
 msgstr "Terminal"
 
-#: extension.js:89
+#: extension.js:90
 msgid "Extensions"
 msgstr "Extensions"
 
-#: extension.js:93
+#: extension.js:94
 msgid "Force Quit App"
 msgstr "Forcer à quitter l’App"
 
-#: extension.js:98
+#: extension.js:99
 msgid "Sleep"
 msgstr "Veille"
 
-#: extension.js:99
+#: extension.js:100
 msgid "Restart..."
 msgstr "Redémarrer..."
 
-#: extension.js:100
+#: extension.js:101
 msgid "Shut Down..."
 msgstr "Éteindre..."
 
-#: extension.js:104 extension.js:109
+#: extension.js:105 extension.js:110
 msgid "Lock Screen"
 msgstr "Verrouiller l’écran"
 
-#: extension.js:106
+#: extension.js:107
 msgid "Log Out..."
 msgstr "Se déconnecter..."
 
@@ -166,43 +166,43 @@ msgstr "Activités"
 msgid "Hide Icon Shadow"
 msgstr ""
 
-#: PrefsLib/adw.js:470
+#: PrefsLib/adw.js:471 PrefsLib/adw.js:476
 msgid "About"
 msgstr "À propos"
 
-#: PrefsLib/adw.js:493
+#: PrefsLib/adw.js:500
 msgid "Logo Menu"
 msgstr "Logo Menu"
 
-#: PrefsLib/adw.js:500
+#: PrefsLib/adw.js:507
 msgid "Quick access menu for GNOME"
 msgstr "Menu d’accès rapide pour GNOME"
 
-#: PrefsLib/adw.js:517
+#: PrefsLib/adw.js:524
 msgid "Logo Menu Version"
 msgstr "Version de Logo Menu"
 
-#: PrefsLib/adw.js:529
+#: PrefsLib/adw.js:536
 msgid "GNOME Version"
 msgstr "Version de GNOME"
 
-#: PrefsLib/adw.js:536
+#: PrefsLib/adw.js:543
 msgid "Created with love by"
 msgstr "Créé avec amour par"
 
-#: PrefsLib/adw.js:543
+#: PrefsLib/adw.js:550
 msgid "Matrix/Element room"
 msgstr "Salon de discussion Matrix / Element"
 
-#: PrefsLib/adw.js:559
+#: PrefsLib/adw.js:566
 msgid "Contributors"
 msgstr ""
 
-#: PrefsLib/adw.js:576
+#: PrefsLib/adw.js:583
 msgid "This program comes with absolutely no warranty."
 msgstr ""
 
-#: PrefsLib/adw.js:577
+#: PrefsLib/adw.js:584
 #, javascript-format
 msgid "See the %sGNU General Public License, version 2 or later%s for details."
 msgstr ""
