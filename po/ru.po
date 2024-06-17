@@ -207,7 +207,7 @@ msgstr "Эта программа поставляется без каких-л�
 #: PrefsLib/adw.js:584
 #, javascript-format
 msgid "See the %sGNU General Public License, version 2 or later%s for details."
-msgstr "Подробнее смотрите %sGNU General Public License, версии 2 или новее%."
+msgstr "Подробнее смотрите %sGNU General Public License, версии 2 или новее%s."
 
 #~ msgid "Github"
 #~ msgstr "Github"
