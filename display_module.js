@@ -2,7 +2,7 @@
 This file has been copied from EasyScreenCast/display_module.js [1], with no
 edits. We primarily need the set_cursor method as it is used in selection.js
 
-[1]: https://github.com/EasyScreenCast/EasyScreenCast/blob/e3a359f/display_module.js
+[1]: https://github.com/EasyScreenCast/EasyScreenCast/blob/e2ec24d/display_module.js
 */
 
 'use strict';
@@ -10,7 +10,7 @@ edits. We primarily need the set_cursor method as it is used in selection.js
 /**
  * @type {{_display(): Meta_Display, number_of_displays(): int}}
  */
-export const DisplayApi = {
+const DisplayApi = {
     /**
      * Returns the Wayland display or screen
      *
@@ -43,3 +43,5 @@ export const DisplayApi = {
         this._display().set_cursor(cursor);
     },
 };
+
+export {DisplayApi};

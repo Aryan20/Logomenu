@@ -26,7 +26,7 @@ CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 This file has been copied from force-quit/selection.js [1], with edits. 
 Edits primarily involves removing graphical feedback and logging.
 
-[1]: https://github.com/meghprkh/force-quit/blob/master/selection.js
+[1]: https://github.com/meghprkh/force-quit/blob/e2ec24d/selection.js
 */
 
 'use strict';
@@ -43,10 +43,11 @@ import * as Signals from 'resource:///org/gnome/shell/misc/signals.js';
 
 import {DisplayApi} from './display_module.js';
 
+/**
+ * @type {Capture}
+ */
 class Capture extends Signals.EventEmitter {
-    /**
-     * @private
-     */
+
     constructor() {
         super();
 
@@ -63,7 +64,7 @@ class Capture extends Signals.EventEmitter {
             y: -10,
         });
 
-        Main.uiGroup.add_actor(this._areaSelection);
+        Main.uiGroup.add_child(this._areaSelection);
 
         this._grab = Main.pushModal(this._areaSelection);
 
@@ -110,9 +111,9 @@ class Capture extends Signals.EventEmitter {
      * @private
      */
     _stop() {
-        global.stage.disconnect(this._signalCapturedEvent);
+        this._areaSelection.disconnect(this._signalCapturedEvent);
         this._setDefaultCursor();
-        Main.uiGroup.remove_actor(this._areaSelection);
+        Main.uiGroup.remove_child(this._areaSelection);
         Main.popModal(this._grab);
         this._areaSelection.destroy();
         this.emit('stop');
@@ -124,17 +125,16 @@ class Capture extends Signals.EventEmitter {
     }
 }
 
-export class SelectionWindow extends Signals.EventEmitter {
-    /**
-     * @private
-     */
+class SelectionWindow extends Signals.EventEmitter {
     constructor() {
-        super()
+        super();
 
         this._windows = global.get_window_actors();
         this._capture = new Capture();
         this._capture.connect('captured-event', this._onEvent.bind(this));
-        this._capture.connect('stop', this.emit.bind(this, 'stop'));
+        this._capture.connect('stop', () => {
+            this.emit('stop');
+        });
     }
 
     /**
@@ -152,9 +152,8 @@ export class SelectionWindow extends Signals.EventEmitter {
             if (event.get_button() === Clutter.BUTTON_SECONDARY) {
                 this._capture._stop();
             } else if (this._selectedWindow) {
+                this._selectedWindow.get_meta_window().kill();
                 this._capture._stop();
-
-                this._selectedWindow.get_meta_window().kill()
             }
         }
     }
@@ -195,3 +194,5 @@ function _selectWindow(windows, x, y) {
 
     return filtered[0];
 }
+
+export {SelectionWindow};
