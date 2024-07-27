@@ -1,0 +1,208 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2023 Aryan Kaushik (Aryan20)
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Logo Menu 23.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-06-17 05:04+0530\n"
+"PO-Revision-Date: 2024-07-22 22:08+0200\n"
+"Last-Translator: Tamás\n"
+"Language-Team: \n"
+"Language: hu\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 3.4.2\n"
+
+#: extension.js:75
+msgid "About My System"
+msgstr "Gépem névjegye"
+
+#: extension.js:80
+msgid "Activities"
+msgstr "Tevékenységek"
+
+#: extension.js:82
+msgid "App Grid"
+msgstr "Alkalmazás rács"
+
+#: extension.js:86
+msgid "Software Center..."
+msgstr "Alkalmazás Áruház"
+
+#: extension.js:88 PrefsLib/adw.js:332
+msgid "System Monitor"
+msgstr "Rendszerfigyelő"
+
+#: extension.js:89 PrefsLib/adw.js:294
+msgid "Terminal"
+msgstr "Terminál"
+
+#: extension.js:90
+msgid "Extensions"
+msgstr "Kiegészítők"
+
+#: extension.js:94
+msgid "Force Quit App"
+msgstr "Kilépésre kényszerítés"
+
+#: extension.js:99
+msgid "Sleep"
+msgstr "Felfüggesztés"
+
+#: extension.js:100
+msgid "Restart..."
+msgstr "Újraindítás..."
+
+#: extension.js:101
+msgid "Shut Down..."
+msgstr "Kikapcsolás..."
+
+#: extension.js:105 extension.js:110
+msgid "Lock Screen"
+msgstr "Zárolás"
+
+#: extension.js:107
+msgid "Log Out..."
+msgstr "Kijelentkezés..."
+
+#: PrefsLib/adw.js:41
+msgid "Symbolic Icons"
+msgstr "Szimbolikus ikonok"
+
+#: PrefsLib/adw.js:45
+msgid "Coloured Icons"
+msgstr "Színes ikonok"
+
+#: PrefsLib/adw.js:49
+msgid "Icon Settings"
+msgstr "Ikonok beállítása"
+
+#: PrefsLib/adw.js:123
+msgid "Icon Size"
+msgstr "Ikon méret"
+
+#: PrefsLib/adw.js:156
+msgid "Use Custom Icon"
+msgstr "Egyedi ikon használata"
+
+#: PrefsLib/adw.js:170
+msgid "Selected Icon"
+msgstr "Kiválasztott ikon"
+
+#: PrefsLib/adw.js:195
+msgid "Select a Custom Icon"
+msgstr "Válassz egyedi ikont"
+
+#: PrefsLib/adw.js:238
+msgid "Change Defaults"
+msgstr "Alapértelmezettre állítás"
+
+#: PrefsLib/adw.js:242
+msgid "Show/Hide Options"
+msgstr "Opció Elrejtése/Megjelenítése"
+
+#: PrefsLib/adw.js:246
+msgid "Top Panel Options"
+msgstr "Felső panel opciók"
+
+#: PrefsLib/adw.js:254
+msgid "Icon Click Type to open Activities"
+msgstr "Ikonra kattintás típusai a Tevékenység megnyitásához"
+
+#: PrefsLib/adw.js:260
+msgid "Left Click "
+msgstr "Bal kattintás"
+
+#: PrefsLib/adw.js:261
+msgid "Middle Click "
+msgstr "Középső kattintás"
+
+#: PrefsLib/adw.js:262
+msgid "Right Click "
+msgstr "Jobb kattintás"
+
+#: PrefsLib/adw.js:275
+msgid "Preferred Extensions Application"
+msgstr "Kedvenc kiegészítők alkalmazás"
+
+#: PrefsLib/adw.js:281
+msgid "GNOME Extensions"
+msgstr "GNOME kiegészítők"
+
+#: PrefsLib/adw.js:282
+msgid "Extensions Manager"
+msgstr "Kiegészítők Kezelő"
+
+#: PrefsLib/adw.js:314
+msgid "Software Center"
+msgstr "Alkalmazás Áruház"
+
+#: PrefsLib/adw.js:350
+msgid "Enable Power Options"
+msgstr "Energia opciók engedélyezése"
+
+#: PrefsLib/adw.js:365
+msgid "Hide Force Quit option"
+msgstr "Kilépésre kényszerítés opció elrejtése"
+
+#: PrefsLib/adw.js:382
+msgid "Show Lock Screen option"
+msgstr "Zárolás opció megjelenítése"
+
+#: PrefsLib/adw.js:398
+msgid "Hide Software Centre option"
+msgstr "Alkalmazás Áruház opció elrejtése"
+
+#: PrefsLib/adw.js:414
+msgid "Show Activities Button"
+msgstr "Tevékenysége gomb megjelenítése"
+
+#: PrefsLib/adw.js:430
+msgid "Hide Icon Shadow"
+msgstr "Ikon árnyék elrejtése"
+
+#: PrefsLib/adw.js:471 PrefsLib/adw.js:476
+msgid "About"
+msgstr "A programról"
+
+#: PrefsLib/adw.js:500
+msgid "Logo Menu"
+msgstr "Logo Menü"
+
+#: PrefsLib/adw.js:507
+msgid "Quick access menu for GNOME"
+msgstr "Gyors elérési menü a GNOME-hoz"
+
+#: PrefsLib/adw.js:524
+msgid "Logo Menu Version"
+msgstr "Logo Menü verzió"
+
+#: PrefsLib/adw.js:536
+msgid "GNOME Version"
+msgstr "GNOME verzió"
+
+#: PrefsLib/adw.js:543
+msgid "Created with love by"
+msgstr "Szeretettel készítette"
+
+#: PrefsLib/adw.js:550
+msgid "Matrix/Element room"
+msgstr "Matrix/Element szoba"
+
+#: PrefsLib/adw.js:566
+msgid "Contributors"
+msgstr "Közreműködők"
+
+#: PrefsLib/adw.js:583
+msgid "This program comes with absolutely no warranty."
+msgstr "Ez a program semmilyen szavatossággal nem rendelkezik."
+
+#: PrefsLib/adw.js:584
+#, javascript-format
+msgid "See the %sGNU General Public License, version 2 or later%s for details."
+msgstr "Lásd a %sGNU General Public License 2-es verziót vagy későbbit%s a részletekért."
