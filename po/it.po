@@ -36,7 +36,7 @@ msgstr "Centro software..."
 
 #: extension.js:88 PrefsLib/adw.js:332
 msgid "System Monitor"
-msgstr ""
+msgstr "Monitor di sistema"
 
 #: extension.js:89 PrefsLib/adw.js:294
 msgid "Terminal"
@@ -72,11 +72,11 @@ msgstr "Termina sessione..."
 
 #: PrefsLib/adw.js:41
 msgid "Symbolic Icons"
-msgstr ""
+msgstr "Icone simboliche"
 
 #: PrefsLib/adw.js:45
 msgid "Coloured Icons"
-msgstr ""
+msgstr "Icone colorate"
 
 #: PrefsLib/adw.js:49
 msgid "Icon Settings"
@@ -88,15 +88,15 @@ msgstr "Dimensioni icona"
 
 #: PrefsLib/adw.js:156
 msgid "Use Custom Icon"
-msgstr ""
+msgstr "Usa icona personalizzata"
 
 #: PrefsLib/adw.js:170
 msgid "Selected Icon"
-msgstr ""
+msgstr "Icona selezionata"
 
 #: PrefsLib/adw.js:195
 msgid "Select a Custom Icon"
-msgstr ""
+msgstr "Seleziona un'icona personalizzata"
 
 #: PrefsLib/adw.js:238
 msgid "Change Defaults"
@@ -108,35 +108,35 @@ msgstr "Mostra/Nascondi le opzioni"
 
 #: PrefsLib/adw.js:246
 msgid "Top Panel Options"
-msgstr ""
+msgstr "Opzioni panello superiore"
 
 #: PrefsLib/adw.js:254
 msgid "Icon Click Type to open Activities"
-msgstr "Tipologia click per lanciare le Attività"
+msgstr "Tipologia clic per lanciare le Attività"
 
 #: PrefsLib/adw.js:260
 msgid "Left Click "
-msgstr ""
+msgstr "Clic sinistro "
 
 #: PrefsLib/adw.js:261
 msgid "Middle Click "
-msgstr "Pulsante centrale "
+msgstr "Clic centrale "
 
 #: PrefsLib/adw.js:262
 msgid "Right Click "
-msgstr "Pulsante destro "
+msgstr "Clic destro "
 
 #: PrefsLib/adw.js:275
 msgid "Preferred Extensions Application"
-msgstr ""
+msgstr "Applicazione estensioni preferita"
 
 #: PrefsLib/adw.js:281
 msgid "GNOME Extensions"
-msgstr ""
+msgstr "Estensioni"
 
 #: PrefsLib/adw.js:282
 msgid "Extensions Manager"
-msgstr ""
+msgstr "Gestore di estensioni"
 
 #: PrefsLib/adw.js:314
 msgid "Software Center"
@@ -161,11 +161,11 @@ msgstr "Nascondi l'opzione Centro Software"
 #: PrefsLib/adw.js:414
 #, fuzzy
 msgid "Show Activities Button"
-msgstr "Attività"
+msgstr "Mostra pulsante Attività"
 
 #: PrefsLib/adw.js:430
 msgid "Hide Icon Shadow"
-msgstr ""
+msgstr "Nascondi l'ombra dell'icona"
 
 #: PrefsLib/adw.js:471 PrefsLib/adw.js:476
 msgid "About"
@@ -181,7 +181,7 @@ msgstr "Menu rapido per GNOME"
 
 #: PrefsLib/adw.js:524
 msgid "Logo Menu Version"
-msgstr "Versiobe di Logo Menu"
+msgstr "Versione di Logo Menu"
 
 #: PrefsLib/adw.js:536
 msgid "GNOME Version"
@@ -189,24 +189,24 @@ msgstr "Versione GNOME"
 
 #: PrefsLib/adw.js:543
 msgid "Created with love by"
-msgstr ""
+msgstr "Creato con amore da"
 
 #: PrefsLib/adw.js:550
 msgid "Matrix/Element room"
-msgstr ""
+msgstr "Stanza Matrix/Element"
 
 #: PrefsLib/adw.js:566
 msgid "Contributors"
-msgstr ""
+msgstr "Contributori"
 
 #: PrefsLib/adw.js:583
 msgid "This program comes with absolutely no warranty."
-msgstr ""
+msgstr "Questo programma è fornito senza alcuna garanzia."
 
 #: PrefsLib/adw.js:584
 #, javascript-format
 msgid "See the %sGNU General Public License, version 2 or later%s for details."
-msgstr ""
+msgstr "Consultare la %sGNU General Public License, versione 2 o successive%s per i dettagli."
 
 #~ msgid "Github"
 #~ msgstr "Github"
@@ -222,8 +222,8 @@ msgstr ""
 #~ msgstr ""
 #~ "<span size=\"small\">Questo programma viene fornito senza alcuna "
 #~ "garanzia.\n"
-#~ "See the <a href=\"https://gnu.org/licenses/old-licenses/gpl-2.0."
-#~ "html\">GNU General Public License, versione 2 o successiva</a> per "
+#~ "Consultare la <a href=\"https://gnu.org/licenses/old-licenses/gpl-2.0."
+#~ "html\">GNU General Public License, versione 2 o successive</a> per "
 #~ "dettagli.</span>"
 
 #~ msgid "Lock Orientation"
