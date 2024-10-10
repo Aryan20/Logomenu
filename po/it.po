@@ -36,7 +36,7 @@ msgstr "Centro software..."
 
 #: extension.js:88 PrefsLib/adw.js:332
 msgid "System Monitor"
-msgstr "Momitor di sistema"
+msgstr "Monitor di sistema"
 
 #: extension.js:89 PrefsLib/adw.js:294
 msgid "Terminal"
@@ -206,7 +206,7 @@ msgstr "Questo programma è fornito senza alcuna garanzia."
 #: PrefsLib/adw.js:584
 #, javascript-format
 msgid "See the %sGNU General Public License, version 2 or later%s for details."
-msgstr "Consultare la %GNU General Public License, versione 2 o successive%s per i dettagli."
+msgstr "Consultare la %sGNU General Public License, versione 2 o successive%s per i dettagli."
 
 #~ msgid "Github"
 #~ msgstr "Github"
@@ -222,8 +222,8 @@ msgstr "Consultare la %GNU General Public License, versione 2 o successive%s per
 #~ msgstr ""
 #~ "<span size=\"small\">Questo programma viene fornito senza alcuna "
 #~ "garanzia.\n"
-#~ "See the <a href=\"https://gnu.org/licenses/old-licenses/gpl-2.0."
-#~ "html\">GNU General Public License, versione 2 o successiva</a> per "
+#~ "Consultare la <a href=\"https://gnu.org/licenses/old-licenses/gpl-2.0."
+#~ "html\">GNU General Public License, versione 2 o successive</a> per "
 #~ "dettagli.</span>"
 
 #~ msgid "Lock Orientation"
