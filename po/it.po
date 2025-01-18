@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Logo Menu 18\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-06-17 05:04+0530\n"
+"POT-Creation-Date: 2025-01-19 01:47+0530\n"
 "PO-Revision-Date: 2022-11-17 23:21+0530\n"
 "Last-Translator: Igor Calì <igor.cali0@gmail.com>\n"
 "Language-Team: <>\n"
@@ -30,9 +30,9 @@ msgstr "Attività"
 msgid "App Grid"
 msgstr "Griglia applicazioni"
 
-#: extension.js:86
-msgid "Software Center..."
-msgstr "Centro software..."
+#: extension.js:86 PrefsLib/adw.js:314
+msgid "Software Center"
+msgstr "Centro software"
 
 #: extension.js:88 PrefsLib/adw.js:332
 msgid "System Monitor"
@@ -138,10 +138,6 @@ msgstr "Estensioni"
 msgid "Extensions Manager"
 msgstr "Gestore di estensioni"
 
-#: PrefsLib/adw.js:314
-msgid "Software Center"
-msgstr "Centro software"
-
 #: PrefsLib/adw.js:350
 msgid "Enable Power Options"
 msgstr "Abilità opzioni alimentazione"
@@ -206,7 +202,12 @@ msgstr "Questo programma è fornito senza alcuna garanzia."
 #: PrefsLib/adw.js:584
 #, javascript-format
 msgid "See the %sGNU General Public License, version 2 or later%s for details."
-msgstr "Consultare la %sGNU General Public License, versione 2 o successive%s per i dettagli."
+msgstr ""
+"Consultare la %sGNU General Public License, versione 2 o successive%s per i "
+"dettagli."
+
+#~ msgid "Software Center..."
+#~ msgstr "Centro software..."
 
 #~ msgid "Github"
 #~ msgstr "Github"

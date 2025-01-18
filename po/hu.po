@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Logo Menu 23.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-06-17 05:04+0530\n"
+"POT-Creation-Date: 2025-01-19 01:47+0530\n"
 "PO-Revision-Date: 2024-07-22 22:08+0200\n"
 "Last-Translator: Tamás\n"
 "Language-Team: \n"
@@ -30,8 +30,8 @@ msgstr "Tevékenységek"
 msgid "App Grid"
 msgstr "Alkalmazás rács"
 
-#: extension.js:86
-msgid "Software Center..."
+#: extension.js:86 PrefsLib/adw.js:314
+msgid "Software Center"
 msgstr "Alkalmazás Áruház"
 
 #: extension.js:88 PrefsLib/adw.js:332
@@ -138,10 +138,6 @@ msgstr "GNOME kiegészítők"
 msgid "Extensions Manager"
 msgstr "Kiegészítők Kezelő"
 
-#: PrefsLib/adw.js:314
-msgid "Software Center"
-msgstr "Alkalmazás Áruház"
-
 #: PrefsLib/adw.js:350
 msgid "Enable Power Options"
 msgstr "Energia opciók engedélyezése"
@@ -205,4 +201,9 @@ msgstr "Ez a program semmilyen szavatossággal nem rendelkezik."
 #: PrefsLib/adw.js:584
 #, javascript-format
 msgid "See the %sGNU General Public License, version 2 or later%s for details."
-msgstr "Lásd a %sGNU General Public License 2-es verziót vagy későbbit%s a részletekért."
+msgstr ""
+"Lásd a %sGNU General Public License 2-es verziót vagy későbbit%s a "
+"részletekért."
+
+#~ msgid "Software Center..."
+#~ msgstr "Alkalmazás Áruház"

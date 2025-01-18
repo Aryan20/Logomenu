@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Logo Menu 22.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-06-17 05:04+0530\n"
+"POT-Creation-Date: 2025-01-19 01:47+0530\n"
 "PO-Revision-Date: 2024-04-26 18:45+2\n"
 "Last-Translator: Karel Mašek <masekkarel@vivaldi.net>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -29,9 +29,9 @@ msgstr "Aktivity"
 msgid "App Grid"
 msgstr "Aplikace"
 
-#: extension.js:86
-msgid "Software Center..."
-msgstr "Software..."
+#: extension.js:86 PrefsLib/adw.js:314
+msgid "Software Center"
+msgstr "Software"
 
 #: extension.js:88 PrefsLib/adw.js:332
 msgid "System Monitor"
@@ -137,10 +137,6 @@ msgstr "GNOME Rozšíření"
 msgid "Extensions Manager"
 msgstr "Správce rozšíření"
 
-#: PrefsLib/adw.js:314
-msgid "Software Center"
-msgstr "Software"
-
 #: PrefsLib/adw.js:350
 msgid "Enable Power Options"
 msgstr "Zobrazit možnosti napájení"
@@ -206,3 +202,6 @@ msgstr "Na tento program se nevztahuje žádná záruka."
 msgid "See the %sGNU General Public License, version 2 or later%s for details."
 msgstr ""
 "Tento software spadá pod %sGNU General Public License, version 2 or later%s."
+
+#~ msgid "Software Center..."
+#~ msgstr "Software..."

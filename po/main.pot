@@ -1,18 +1,18 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2023 Aryan Kaushik (Aryan20)
+# Copyright (C) 2025 Aryan Kaushik (Aryan20)
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Logo Menu 23.0\n"
+"Project-Id-Version: Logo Menu 34\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-06-17 05:04+0530\n"
+"POT-Creation-Date: 2025-01-19 01:47+0530\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
-"Language: \n"
+"Language: En\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=CHARSET\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -29,8 +29,8 @@ msgstr ""
 msgid "App Grid"
 msgstr ""
 
-#: extension.js:86
-msgid "Software Center..."
+#: extension.js:86 PrefsLib/adw.js:314
+msgid "Software Center"
 msgstr ""
 
 #: extension.js:88 PrefsLib/adw.js:332
@@ -135,10 +135,6 @@ msgstr ""
 
 #: PrefsLib/adw.js:282
 msgid "Extensions Manager"
-msgstr ""
-
-#: PrefsLib/adw.js:314
-msgid "Software Center"
 msgstr ""
 
 #: PrefsLib/adw.js:350

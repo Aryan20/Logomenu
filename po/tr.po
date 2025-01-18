@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Logo Menu 18\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-06-17 05:04+0530\n"
+"POT-Creation-Date: 2025-01-19 01:47+0530\n"
 "PO-Revision-Date: 2022-11-17 23:23+0530\n"
 "Last-Translator: Taylan TATLI\n"
 "Language-Team: \n"
@@ -30,8 +30,8 @@ msgstr "Etkinlikler"
 msgid "App Grid"
 msgstr "Uygulamalar"
 
-#: extension.js:86
-msgid "Software Center..."
+#: extension.js:86 PrefsLib/adw.js:314
+msgid "Software Center"
 msgstr "Yazılım Merkezi"
 
 #: extension.js:88 PrefsLib/adw.js:332
@@ -138,10 +138,6 @@ msgstr ""
 msgid "Extensions Manager"
 msgstr ""
 
-#: PrefsLib/adw.js:314
-msgid "Software Center"
-msgstr "Yazılım Merkezi"
-
 #: PrefsLib/adw.js:350
 msgid "Enable Power Options"
 msgstr "Güç Seçeneklerini Etkinleştir"
@@ -207,6 +203,9 @@ msgstr ""
 #, javascript-format
 msgid "See the %sGNU General Public License, version 2 or later%s for details."
 msgstr ""
+
+#~ msgid "Software Center..."
+#~ msgstr "Yazılım Merkezi"
 
 #~ msgid "Github"
 #~ msgstr "Github"
