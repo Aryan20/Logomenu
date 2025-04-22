@@ -8,14 +8,14 @@ msgstr ""
 "Project-Id-Version: Logo Menu 18\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-01-19 01:47+0530\n"
-"PO-Revision-Date: 2022-11-17 23:23+0530\n"
-"Last-Translator: Irénée Thirion <irenee.thirion@e.email>\n"
+"PO-Revision-Date: 2025-04-22 21:27+0200\n"
+"Last-Translator: Léane GRASSER <leane.grasser@proton.me>\n"
 "Language-Team: French <traduc@traduc.org>\n"
 "Language: fr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 3.0.1\n"
+"X-Generator: Poedit 3.4.4\n"
 
 #: extension.js:75
 msgid "About My System"
@@ -35,7 +35,7 @@ msgstr "Centre de logiciels"
 
 #: extension.js:88 PrefsLib/adw.js:332
 msgid "System Monitor"
-msgstr ""
+msgstr "Moniteur système"
 
 #: extension.js:89 PrefsLib/adw.js:294
 msgid "Terminal"
@@ -47,11 +47,11 @@ msgstr "Extensions"
 
 #: extension.js:94
 msgid "Force Quit App"
-msgstr "Forcer à quitter l’App"
+msgstr "Quitter l’application de force"
 
 #: extension.js:99
 msgid "Sleep"
-msgstr "Veille"
+msgstr "Mettre en veille"
 
 #: extension.js:100
 msgid "Restart..."
@@ -71,15 +71,15 @@ msgstr "Se déconnecter..."
 
 #: PrefsLib/adw.js:41
 msgid "Symbolic Icons"
-msgstr ""
+msgstr "Icônes de symboles"
 
 #: PrefsLib/adw.js:45
 msgid "Coloured Icons"
-msgstr ""
+msgstr "Icônes colorées"
 
 #: PrefsLib/adw.js:49
 msgid "Icon Settings"
-msgstr "Paramètres Icône"
+msgstr "Paramètres d’icône"
 
 #: PrefsLib/adw.js:123
 msgid "Icon Size"
@@ -87,35 +87,35 @@ msgstr "Taille de l’icône"
 
 #: PrefsLib/adw.js:156
 msgid "Use Custom Icon"
-msgstr ""
+msgstr "Utiliser une icône personnalisée"
 
 #: PrefsLib/adw.js:170
 msgid "Selected Icon"
-msgstr ""
+msgstr "Icône sélectionnée"
 
 #: PrefsLib/adw.js:195
 msgid "Select a Custom Icon"
-msgstr ""
+msgstr "Sélectionnez une icône personnalisée"
 
 #: PrefsLib/adw.js:238
 msgid "Change Defaults"
-msgstr "Changer les paramètres par défaut"
+msgstr "Modifier les valeurs par défaut"
 
 #: PrefsLib/adw.js:242
 msgid "Show/Hide Options"
-msgstr "Afficher / Cacher des Options"
+msgstr "Options d'affichage"
 
 #: PrefsLib/adw.js:246
 msgid "Top Panel Options"
-msgstr ""
+msgstr "Options du panneau supérieur"
 
 #: PrefsLib/adw.js:254
 msgid "Icon Click Type to open Activities"
-msgstr "Type de clic pour ouvrir les Activités"
+msgstr "Type de clic sur l’icône pour ouvrir Activités"
 
 #: PrefsLib/adw.js:260
 msgid "Left Click "
-msgstr ""
+msgstr "Clic gauche "
 
 #: PrefsLib/adw.js:261
 msgid "Middle Click "
@@ -127,15 +127,15 @@ msgstr "Clic droit "
 
 #: PrefsLib/adw.js:275
 msgid "Preferred Extensions Application"
-msgstr "Application d'extension préférée"
+msgstr "Application Extensions préférée"
 
 #: PrefsLib/adw.js:281
 msgid "GNOME Extensions"
-msgstr "Extensions de GNOME"
+msgstr "GNOME Extensions"
 
 #: PrefsLib/adw.js:282
 msgid "Extensions Manager"
-msgstr "Gestionnaire d'extensions"
+msgstr "Gestionnaire d’extensions"
 
 #: PrefsLib/adw.js:350
 msgid "Enable Power Options"
@@ -143,24 +143,23 @@ msgstr "Activer les options d’alimentation"
 
 #: PrefsLib/adw.js:365
 msgid "Hide Force Quit option"
-msgstr "Cacher l’option « Forcer à quitter »"
+msgstr "Masquer l’option Quitter de force"
 
 #: PrefsLib/adw.js:382
 msgid "Show Lock Screen option"
-msgstr "Afficher l’option « Verrouiller l’écran »"
+msgstr "Afficher l’option Verrouiller l’écran"
 
 #: PrefsLib/adw.js:398
 msgid "Hide Software Centre option"
-msgstr "Cacher l’option « Centre de logiciels »"
+msgstr "Masquer l’option Centre de logiciels"
 
 #: PrefsLib/adw.js:414
-#, fuzzy
 msgid "Show Activities Button"
-msgstr "Activités"
+msgstr "Afficher le bouton Activités"
 
 #: PrefsLib/adw.js:430
 msgid "Hide Icon Shadow"
-msgstr ""
+msgstr "Masquer l’ombre de l’icône"
 
 #: PrefsLib/adw.js:471 PrefsLib/adw.js:476
 msgid "About"
@@ -188,20 +187,20 @@ msgstr "Créé avec amour par"
 
 #: PrefsLib/adw.js:550
 msgid "Matrix/Element room"
-msgstr "Salon de discussion Matrix / Element"
+msgstr "Salon Matrix/Element"
 
 #: PrefsLib/adw.js:566
 msgid "Contributors"
-msgstr ""
+msgstr "Contributeur·rices"
 
 #: PrefsLib/adw.js:583
 msgid "This program comes with absolutely no warranty."
-msgstr ""
+msgstr "Ce programme est fourni sans aucune garantie."
 
 #: PrefsLib/adw.js:584
 #, javascript-format
 msgid "See the %sGNU General Public License, version 2 or later%s for details."
-msgstr ""
+msgstr "Consultez la %sGNU General Public License, version 2 ou ultérieure%s pour connaître les détails."
 
 #~ msgid "Software Center..."
 #~ msgstr "Centre de logiciels..."
@@ -214,14 +213,10 @@ msgstr ""
 
 #~ msgid ""
 #~ "<span size=\"small\">This program comes with absolutely no warranty.\n"
-#~ "See the <a href=\"https://gnu.org/licenses/old-licenses/gpl-2.0."
-#~ "html\">GNU General Public License, version 2 or later</a> for details.</"
-#~ "span>"
+#~ "See the <a href=\"https://gnu.org/licenses/old-licenses/gpl-2.0.html\">GNU General Public License, version 2 or later</a> for details.</span>"
 #~ msgstr ""
 #~ "<span size=\"small\">Ce programme est fourni sans garantie.\n"
-#~ "Voir <a href=\"https://gnu.org/licenses/old-licenses/gpl-2.0."
-#~ "html\">Licence Publique Générale GNU, version 2 ou plus récente</a> pour "
-#~ "les détails.</span>"
+#~ "Voir <a href=\"https://gnu.org/licenses/old-licenses/gpl-2.0.html\">Licence Publique Générale GNU, version 2 ou plus récente</a> pour les détails.</span>"
 
 #~ msgid "Lock Orientation"
 #~ msgstr "Verrouiller l'orientation"
