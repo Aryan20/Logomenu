@@ -30,6 +30,7 @@ export const SymbolicDistroIcons = [
     {PATH: '/Resources/nobara-logo-symbolic.svg'},
     {PATH: '/Resources/steam-deck-logo-symbolic.svg'},
     {PATH: '/Resources/ublue-logo-symbolic.svg'},
+    {PATH: '/Resources/centos-logo-symbolic.svg'},
 ];
 
 export const ColouredDistroIcons = [
@@ -63,4 +64,5 @@ export const ColouredDistroIcons = [
     {PATH: '/Resources/steam-deck-le-logo.svg'},
     {PATH: '/Resources/bazzite-logo.svg'},
     {PATH: '/Resources/ublue-logo.svg'},
+    {PATH: '/Resources/centos-logo.svg'},
 ];
