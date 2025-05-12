@@ -37,7 +37,7 @@ msgstr "Centro de Software"
 
 #: extension.js:88 PrefsLib/adw.js:332
 msgid "System Monitor"
-msgstr ""
+msgstr "Monitor do Sistema"
 
 #: extension.js:89 PrefsLib/adw.js:294
 msgid "Terminal"
@@ -73,11 +73,11 @@ msgstr "Sair..."
 
 #: PrefsLib/adw.js:41
 msgid "Symbolic Icons"
-msgstr ""
+msgstr "Ícones Simbólicos"
 
 #: PrefsLib/adw.js:45
 msgid "Coloured Icons"
-msgstr ""
+msgstr "Ícones Coloridos"
 
 #: PrefsLib/adw.js:49
 msgid "Icon Settings"
@@ -89,15 +89,15 @@ msgstr "Tamanho do Ícone"
 
 #: PrefsLib/adw.js:156
 msgid "Use Custom Icon"
-msgstr ""
+msgstr "Use um Ícone Personalizado"
 
 #: PrefsLib/adw.js:170
 msgid "Selected Icon"
-msgstr ""
+msgstr "Ícone elecionado"
 
 #: PrefsLib/adw.js:195
 msgid "Select a Custom Icon"
-msgstr ""
+msgstr "Selecione um ícone personalizado"
 
 #: PrefsLib/adw.js:238
 msgid "Change Defaults"
@@ -109,7 +109,7 @@ msgstr "Mostrar/Esconder Opções"
 
 #: PrefsLib/adw.js:246
 msgid "Top Panel Options"
-msgstr ""
+msgstr "Opções do painel superior"
 
 #: PrefsLib/adw.js:254
 msgid "Icon Click Type to open Activities"
@@ -117,7 +117,7 @@ msgstr "Tipo do Clique do Ícone para Abrir Atividades"
 
 #: PrefsLib/adw.js:260
 msgid "Left Click "
-msgstr ""
+msgstr "Clique da esquerda"
 
 #: PrefsLib/adw.js:261
 msgid "Middle Click "
@@ -129,15 +129,15 @@ msgstr "Clique da Direita "
 
 #: PrefsLib/adw.js:275
 msgid "Preferred Extensions Application"
-msgstr ""
+msgstr "Aplicativo de Extensões Preferencial"
 
 #: PrefsLib/adw.js:281
 msgid "GNOME Extensions"
-msgstr ""
+msgstr "Extensões do GNOME"
 
 #: PrefsLib/adw.js:282
 msgid "Extensions Manager"
-msgstr ""
+msgstr "Gerenciador de Extensões"
 
 #: PrefsLib/adw.js:350
 msgid "Enable Power Options"
@@ -162,7 +162,7 @@ msgstr "Atividades"
 
 #: PrefsLib/adw.js:430
 msgid "Hide Icon Shadow"
-msgstr ""
+msgstr "Ocultar Sombra do Ícone"
 
 #: PrefsLib/adw.js:471 PrefsLib/adw.js:476
 msgid "About"
@@ -186,7 +186,7 @@ msgstr "Versão do GNOME"
 
 #: PrefsLib/adw.js:543
 msgid "Created with love by"
-msgstr ""
+msgstr "Criado com amor por"
 
 #: PrefsLib/adw.js:550
 msgid "Matrix/Element room"
@@ -194,16 +194,16 @@ msgstr ""
 
 #: PrefsLib/adw.js:566
 msgid "Contributors"
-msgstr ""
+msgstr "Contribuidores"
 
 #: PrefsLib/adw.js:583
 msgid "This program comes with absolutely no warranty."
-msgstr ""
+msgstr "Esse programa vem sem nenhuma garantia"
 
 #: PrefsLib/adw.js:584
 #, javascript-format
 msgid "See the %sGNU General Public License, version 2 or later%s for details."
-msgstr ""
+msgstr "Veja a Licença Pública Geral %sGNU, versão 2 ou Depois%s para obter detalhes"
 
 #~ msgid "Software Center..."
 #~ msgstr "Centro de Software..."
@@ -220,7 +220,7 @@ msgstr ""
 #~ "html\">GNU General Public License, version 2 or later</a> for details.</"
 #~ "span>"
 #~ msgstr ""
-#~ "span size=\"small\">Este programa não vem com absolutamente nenhuma "
+#~ "span size=\"small\">Esse programa vem sem nenhuma "
 #~ "garantia\n"
 #~ "Veja <a href=\"https://gnu.org/licenses/old-licenses/gpl-2.0."
 #~ "html\">Licença Pública Geral GNU, versão 2 ou posterior</a> para detalhes."
