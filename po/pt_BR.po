@@ -3,15 +3,15 @@
 # This file is distributed under the same license as the Logo Menu package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # Jorge Braz <jlbmesquita@gmail.com>, 2022.
-#
+# Renato Sorgatto <renatosorgatto@gmail.com>, 2025.
 msgid ""
 msgstr ""
 "Project-Id-Version: Logo Menu 18\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-01-19 01:47+0530\n"
 "PO-Revision-Date: 2022-11-17 23:22+0530\n"
-"Last-Translator: Jorge Braz <jlbmesquita@gmail.com>\n"
-"Language-Team: Brazilian Portuguese <jlbmesquita@gmail.com>\n"
+"Last-Translator: Renato Sorgatto <renatosorgatto@gmail.com>\n"
+"Language-Team: Brazilian Portuguese <jlbmesquita@gmail.com> <renatosorgatto@gmail.com>\n"
 "Language: pt_BR\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -93,11 +93,11 @@ msgstr "Use um Ícone Personalizado"
 
 #: PrefsLib/adw.js:170
 msgid "Selected Icon"
-msgstr "Ícone elecionado"
+msgstr "Ícone Selecionado"
 
 #: PrefsLib/adw.js:195
 msgid "Select a Custom Icon"
-msgstr "Selecione um ícone personalizado"
+msgstr "Selecione um Ícone Personalizado"
 
 #: PrefsLib/adw.js:238
 msgid "Change Defaults"
@@ -109,7 +109,7 @@ msgstr "Mostrar/Esconder Opções"
 
 #: PrefsLib/adw.js:246
 msgid "Top Panel Options"
-msgstr "Opções do painel superior"
+msgstr "Opções do Painel Superior"
 
 #: PrefsLib/adw.js:254
 msgid "Icon Click Type to open Activities"
@@ -117,7 +117,7 @@ msgstr "Tipo do Clique do Ícone para Abrir Atividades"
 
 #: PrefsLib/adw.js:260
 msgid "Left Click "
-msgstr "Clique da esquerda"
+msgstr "Clique da Esquerda"
 
 #: PrefsLib/adw.js:261
 msgid "Middle Click "
@@ -198,12 +198,12 @@ msgstr "Contribuidores"
 
 #: PrefsLib/adw.js:583
 msgid "This program comes with absolutely no warranty."
-msgstr "Esse programa vem sem nenhuma garantia"
+msgstr "Esse programa não acompanha nenhuma garantia"
 
 #: PrefsLib/adw.js:584
 #, javascript-format
 msgid "See the %sGNU General Public License, version 2 or later%s for details."
-msgstr "Veja a Licença Pública Geral %sGNU, versão 2 ou Depois%s para obter detalhes"
+msgstr "Veja a Licença Pública Geral %sGNU, versão 2 ou posterior%s para obter detalhes"
 
 #~ msgid "Software Center..."
 #~ msgstr "Centro de Software..."
@@ -220,10 +220,10 @@ msgstr "Veja a Licença Pública Geral %sGNU, versão 2 ou Depois%s para obter d
 #~ "html\">GNU General Public License, version 2 or later</a> for details.</"
 #~ "span>"
 #~ msgstr ""
-#~ "span size=\"small\">Esse programa vem sem nenhuma "
+#~ "span size=\"small\">Esse programa não acompanha nenhuma "
 #~ "garantia\n"
 #~ "Veja <a href=\"https://gnu.org/licenses/old-licenses/gpl-2.0."
-#~ "html\">Licença Pública Geral GNU, versão 2 ou posterior</a> para detalhes."
+#~ "html\">Licença Pública Geral GNU, versão 2 ou posterior</a> para obter detalhes."
 #~ "</span>"
 
 #~ msgid "Lock Orientation"
