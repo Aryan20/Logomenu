@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   id="svg5"
+   width="496"
+   height="496"
+   version="1.1"
+   viewBox="0 0 42.333 42.333"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:cc="http://creativecommons.org/ns#">
+  <defs
+     id="defs1" />
+  <metadata
+     id="metadata948">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <cc:license
+           rdf:resource="http://creativecommons.org/licenses/by-sa/4.0/" />
+      </cc:Work>
+      <cc:License
+         rdf:about="http://creativecommons.org/licenses/by-sa/4.0/">
+        <cc:permits
+           rdf:resource="http://creativecommons.org/ns#Reproduction" />
+        <cc:permits
+           rdf:resource="http://creativecommons.org/ns#Distribution" />
+        <cc:requires
+           rdf:resource="http://creativecommons.org/ns#Notice" />
+        <cc:requires
+           rdf:resource="http://creativecommons.org/ns#Attribution" />
+        <cc:permits
+           rdf:resource="http://creativecommons.org/ns#DerivativeWorks" />
+        <cc:requires
+           rdf:resource="http://creativecommons.org/ns#ShareAlike" />
+      </cc:License>
+    </rdf:RDF>
+  </metadata>
+  <g
+     id="g28251-9"
+     transform="matrix(0.74451,0.74451,-0.74451,0.74451,-484.24,-51.355)"
+     fill="#cccccc">
+    <path
+       id="ellipse15079-1"
+       d="m 373.91,-304.93 a 20.103,20.103 0 0 0 -5.888,14.215 20.103,20.103 0 0 0 20.103,20.103 20.103,20.103 0 0 0 20.103,-20.103 20.103,20.103 0 0 0 -20.103,-20.103 20.103,20.103 0 0 0 -14.215,5.888 z m 3.4577,3.4576 h 6.3017 l 4.4561,-4.4561 4.4561,4.4561 h 6.301 l 3.5e-4,6.3014 4.4561,4.4561 -4.4561,4.4561 -3.5e-4,6.3014 h -6.301 l -4.4561,4.4561 -4.4561,-4.4561 h -6.3017 l 3.4e-4,-6.3014 -4.4561,-4.4561 4.4561,-4.4561 z m 2.2711,4.1833 3.2276,3.2276 h 1.9122 l 3.4e-4,-1.9126 -3.2276,-3.2276 z m -2.1632,5.222 3.5e-4,2.7046 h 4.5644 l 1.3524,-1.3524 -1.3524,-1.3524 z m 9.2974,-9.2974 v 4.5644 l 1.3524,1.3524 1.3524,-1.3524 v -4.5644 z m 0.0913,7.607 0.016,1.7984 -1.7981,-0.0156 1.283,1.2601 -1.283,1.2608 1.7988,-0.0163 -0.0153,1.7984 1.2601,-1.283 1.2601,1.2823 -0.0156,-1.7981 1.7984,0.0153 -1.2834,-1.2605 1.2824,-1.2601 -1.7981,0.0156 0.0153,-1.7977 -1.2601,1.283 z m -7.2256,9.6167 1.9126,1.9126 3.2276,-3.2276 v -1.9122 l -1.9126,-3.5e-4 z m 11.833,-11.833 3.5e-4,1.9126 h 1.9122 l 3.2276,-3.2276 -1.9126,-1.9126 z m -4.6987,11.345 -3.5e-4,4.564 2.7046,3.5e-4 v -4.5644 l -1.3521,-1.3521 z m 6.0852,-6.0852 1.3521,1.3521 h 4.5644 v -2.7049 l -4.564,3.5e-4 z m -1.3865,3.3466 v 1.9122 l 3.2276,3.2276 1.9126,-1.9126 -3.2276,-3.2276 z"
+       fill="#cccccc"
+       stop-color="#000000"
+       style="paint-order:fill markers stroke" />
+  </g>
+</svg>
