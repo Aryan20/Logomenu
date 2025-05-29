@@ -31,6 +31,7 @@ export const SymbolicDistroIcons = [
     {PATH: '/Resources/steam-deck-logo-symbolic.svg'},
     {PATH: '/Resources/ublue-logo-symbolic.svg'},
     {PATH: '/Resources/centos-logo-symbolic.svg'},
+    {PATH: '/Resources/windows-logo-symbolic.svg'},
 ];
 
 export const ColouredDistroIcons = [
