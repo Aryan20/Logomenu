@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Logo Menu 18\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-01-19 01:47+0530\n"
-"PO-Revision-Date: 2023-04-30 21:16+0200\n"
+"POT-Creation-Date: 2025-09-20 18:25+0530\n"
+"PO-Revision-Date: 2025-11-15 20:17+0100\n"
 "Last-Translator: Heimen Stoffels <vistausss@fastmail.com>\n"
 "Language-Team: \n"
 "Language: nl\n"
@@ -16,7 +16,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Poedit 3.2.2\n"
+"X-Generator: Poedit 3.8\n"
 
 #: extension.js:75
 msgid "About My System"
@@ -36,7 +36,7 @@ msgstr "Softwarecentrum"
 
 #: extension.js:88 PrefsLib/adw.js:332
 msgid "System Monitor"
-msgstr ""
+msgstr "Systeemmonitor"
 
 #: extension.js:89 PrefsLib/adw.js:294
 msgid "Terminal"
@@ -72,11 +72,11 @@ msgstr "Afmelden…"
 
 #: PrefsLib/adw.js:41
 msgid "Symbolic Icons"
-msgstr ""
+msgstr "Symbolische pictogrammen"
 
 #: PrefsLib/adw.js:45
 msgid "Coloured Icons"
-msgstr ""
+msgstr "Gekleurde pictogrammen"
 
 #: PrefsLib/adw.js:49
 msgid "Icon Settings"
@@ -88,15 +88,15 @@ msgstr "Pictogramgrootte"
 
 #: PrefsLib/adw.js:156
 msgid "Use Custom Icon"
-msgstr ""
+msgstr "Eigen pictogram gebruiken"
 
 #: PrefsLib/adw.js:170
 msgid "Selected Icon"
-msgstr ""
+msgstr "Gekozen pictogram"
 
 #: PrefsLib/adw.js:195
 msgid "Select a Custom Icon"
-msgstr ""
+msgstr "Kies een pictogram"
 
 #: PrefsLib/adw.js:238
 msgid "Change Defaults"
@@ -108,7 +108,7 @@ msgstr "Opties tonen/verbergen"
 
 #: PrefsLib/adw.js:246
 msgid "Top Panel Options"
-msgstr ""
+msgstr "Bovenbalkopties"
 
 #: PrefsLib/adw.js:254
 msgid "Icon Click Type to open Activities"
@@ -155,13 +155,12 @@ msgid "Hide Software Centre option"
 msgstr "Softwarecentrumoptie verbergen"
 
 #: PrefsLib/adw.js:414
-#, fuzzy
 msgid "Show Activities Button"
-msgstr "Activiteiten"
+msgstr "Activiteitenknop tonen"
 
 #: PrefsLib/adw.js:430
 msgid "Hide Icon Shadow"
-msgstr ""
+msgstr "Pictogramschaduw verbergen"
 
 #: PrefsLib/adw.js:471 PrefsLib/adw.js:476
 msgid "About"
@@ -193,16 +192,16 @@ msgstr "Matrix-/Elementkamer"
 
 #: PrefsLib/adw.js:566
 msgid "Contributors"
-msgstr ""
+msgstr "Bijdragers"
 
 #: PrefsLib/adw.js:583
 msgid "This program comes with absolutely no warranty."
-msgstr ""
+msgstr "Deze toepassing wordt zonder enige vorm van garantie geleverd."
 
 #: PrefsLib/adw.js:584
 #, javascript-format
 msgid "See the %sGNU General Public License, version 2 or later%s for details."
-msgstr ""
+msgstr "Bekijk voor meer informatie de %sGNU General Public-licentievoorwaarden, versie 2 of nieuwer%s."
 
 #~ msgid "Software Center..."
 #~ msgstr "Softwarecentrum…"
@@ -215,12 +214,7 @@ msgstr ""
 
 #~ msgid ""
 #~ "<span size=\"small\">This program comes with absolutely no warranty.\n"
-#~ "See the <a href=\"https://gnu.org/licenses/old-licenses/gpl-2.0."
-#~ "html\">GNU General Public License, version 2 or later</a> for details.</"
-#~ "span>"
+#~ "See the <a href=\"https://gnu.org/licenses/old-licenses/gpl-2.0.html\">GNU General Public License, version 2 or later</a> for details.</span>"
 #~ msgstr ""
-#~ "<span size=\"small\">Deze toepassing wordt zonder enige vorm van garantie "
-#~ "geleverd.\n"
-#~ "Bekijk voor meer informatie de <a href=\"https://gnu.org/licenses/old-"
-#~ "licenses/gpl-2.0.html\">GNU General Public License, versie 2 of nieuwer</"
-#~ "a>.</span>"
+#~ "<span size=\"small\">Deze toepassing wordt zonder enige vorm van garantie geleverd.\n"
+#~ "Bekijk voor meer informatie de <a href=\"https://gnu.org/licenses/old-licenses/gpl-2.0.html\">GNU General Public License, versie 2 of nieuwer</a>.</span>"
