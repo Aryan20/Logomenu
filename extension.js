@@ -105,6 +105,7 @@ class LogoMenuMenuButton extends PanelMenu.Button {
                 this._addItem(new MenuItem(_('Lock Screen'), () => this._lockScreen()));
 
             this._addItem(new MenuItem(_('Log Out...'), () => this._logOut()));
+	    this._addItem(new MenuItem(_('Switch User...'), () => this._switchUser()));
         } else if (!showPowerOptions && showLockScreen) {
             this._addItem(new PopupMenu.PopupSeparatorMenuItem());
             this._addItem(new MenuItem(_('Lock Screen'), () => this._lockScreen()));
@@ -155,6 +156,10 @@ class LogoMenuMenuButton extends PanelMenu.Button {
 
     _logOut() {
         Util.spawn(['gnome-session-quit', '--logout']);
+    }
+
+    _switchUser() {
+        Util.trySpawnCommandLine('/usr/bin/gdmflexiserver');
     }
 
     _showAppGrid() {
