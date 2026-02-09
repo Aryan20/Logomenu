@@ -3,13 +3,17 @@
 # This file is distributed under the same license as the Logo Menu package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
+# Translators:
+# 天上飞机最快 地上表姐最坏 <trampover@gmail.com>.
+# YourName <your@email.com>, 2026.
+#
 msgid ""
 msgstr ""
 "Project-Id-Version: Logo Menu 18\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-01-19 01:47+0530\n"
+"POT-Creation-Date: 2026-02-09 20:21+0800\n"
 "PO-Revision-Date: 2022-11-17 23:24+0530\n"
-"Last-Translator: 天上飞机最快 地上表姐最坏 <trampover@gmail.com>\n"
+"Last-Translator: 廿肆/Nix24 <nix2@gmail.com>\n"
 "Language-Team: \n"
 "Language: zh_CN\n"
 "MIME-Version: 1.0\n"
@@ -20,7 +24,7 @@ msgstr ""
 
 #: extension.js:75
 msgid "About My System"
-msgstr "关于本机系统"
+msgstr "关于本机"
 
 #: extension.js:80
 msgid "Activities"
@@ -36,7 +40,7 @@ msgstr "软件中心"
 
 #: extension.js:88 PrefsLib/adw.js:332
 msgid "System Monitor"
-msgstr ""
+msgstr "资源监视器"
 
 #: extension.js:89 PrefsLib/adw.js:294
 msgid "Terminal"
@@ -72,11 +76,11 @@ msgstr "注销"
 
 #: PrefsLib/adw.js:41
 msgid "Symbolic Icons"
-msgstr ""
+msgstr "单色图标"
 
 #: PrefsLib/adw.js:45
 msgid "Coloured Icons"
-msgstr ""
+msgstr "彩色图标"
 
 #: PrefsLib/adw.js:49
 msgid "Icon Settings"
@@ -88,15 +92,15 @@ msgstr "图标尺寸"
 
 #: PrefsLib/adw.js:156
 msgid "Use Custom Icon"
-msgstr ""
+msgstr "使用自定义图标"
 
 #: PrefsLib/adw.js:170
 msgid "Selected Icon"
-msgstr ""
+msgstr "已选图标"
 
 #: PrefsLib/adw.js:195
 msgid "Select a Custom Icon"
-msgstr ""
+msgstr "选择一个自定义图标"
 
 #: PrefsLib/adw.js:238
 msgid "Change Defaults"
@@ -108,7 +112,7 @@ msgstr "显示/隐藏 选项"
 
 #: PrefsLib/adw.js:246
 msgid "Top Panel Options"
-msgstr ""
+msgstr "顶栏选项"
 
 #: PrefsLib/adw.js:254
 msgid "Icon Click Type to open Activities"
@@ -116,7 +120,7 @@ msgstr "点击活动指示器图标显示活动"
 
 #: PrefsLib/adw.js:260
 msgid "Left Click "
-msgstr ""
+msgstr "左键"
 
 #: PrefsLib/adw.js:261
 msgid "Middle Click "
@@ -128,7 +132,7 @@ msgstr "右键"
 
 #: PrefsLib/adw.js:275
 msgid "Preferred Extensions Application"
-msgstr ""
+msgstr "首选插件管理器"
 
 #: PrefsLib/adw.js:281
 msgid "GNOME Extensions"
@@ -161,7 +165,7 @@ msgstr "活动"
 
 #: PrefsLib/adw.js:430
 msgid "Hide Icon Shadow"
-msgstr ""
+msgstr "隐藏图标阴影"
 
 #: PrefsLib/adw.js:471 PrefsLib/adw.js:476
 msgid "About"
