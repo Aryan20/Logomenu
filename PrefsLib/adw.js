@@ -35,7 +35,7 @@ export const LogoMenuIconsPage = GObject.registerClass(class LogoMenuIconsWidget
         this._settings = settings;
         this.set_title('Icon');
         this.set_name('Icon');
-        this.set_icon_name('emblem-photos-symbolic');
+        this.set_icon_name('image-x-generic-symbolic');
 
         const symbolicIconGroup = new Adw.PreferencesGroup({
             title: _('Symbolic Icons'),
