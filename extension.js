@@ -57,6 +57,7 @@ class LogoMenuMenuButton extends PanelMenu.Button {
 
         // bind middle click option to toggle overview
         this.connect('button-press-event', this._buttonPressEvent.bind(this));
+        this.connect('destroy', () => { this._settings = null; });
     }
 
     _addItem(item) {
@@ -272,6 +273,7 @@ export default class LogoMenu extends Extension {
             Main.panel.statusArea.activities?.container.show();
 
         Main.panel.statusArea['LogoMenu'].destroy();
+        this.settings = null;
     }
 
     _setActivitiesVisibility() {
