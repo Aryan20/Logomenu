@@ -1,0 +1,203 @@
+# Georgian translation for Logo Menu.
+# Copyright (C) 2026 Logo Menu's authors.
+# This file is distributed under the same license as the Logo Menu package.
+# Ekaterine Papava <papava.e@gtu.ge>, 2026.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Logo Menu 36\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-09-20 18:25+0530\n"
+"PO-Revision-Date: 2026-04-01 08:27+0200\n"
+"Last-Translator: Ekaterine Papava <papava.e@gtu.ge>\n"
+"Language-Team: Georgian <(nothing)>\n"
+"Language: ka\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 3.9\n"
+
+#: extension.js:75
+msgid "About My System"
+msgstr "ჩემი სისტემის შესახეb"
+
+#: extension.js:80
+msgid "Activities"
+msgstr "აქტივობები"
+
+#: extension.js:82
+msgid "App Grid"
+msgstr "აპლიკაციების ბადე"
+
+#: extension.js:86 PrefsLib/adw.js:314
+msgid "Software Center"
+msgstr "პროგრამების ცენტრი"
+
+#: extension.js:88 PrefsLib/adw.js:332
+msgid "System Monitor"
+msgstr "სისტემური მონიტორი"
+
+#: extension.js:89 PrefsLib/adw.js:294
+msgid "Terminal"
+msgstr "ტერმინალი"
+
+#: extension.js:90
+msgid "Extensions"
+msgstr "გაფართოებები"
+
+#: extension.js:94
+msgid "Force Quit App"
+msgstr "აპლიკაციიდან იძულებითი გასვლ"
+
+#: extension.js:99
+msgid "Sleep"
+msgstr "ძილი"
+
+#: extension.js:100
+msgid "Restart..."
+msgstr "გადატვირთვა..."
+
+#: extension.js:101
+msgid "Shut Down..."
+msgstr "გამორთვა..."
+
+#: extension.js:105 extension.js:110
+msgid "Lock Screen"
+msgstr "ეკრანის დაბლოკვა"
+
+#: extension.js:107
+msgid "Log Out..."
+msgstr "გამოსვლა..."
+
+#: PrefsLib/adw.js:41
+msgid "Symbolic Icons"
+msgstr "სიმბოლური ხატულები"
+
+#: PrefsLib/adw.js:45
+msgid "Coloured Icons"
+msgstr "ფერადი ხატულები"
+
+#: PrefsLib/adw.js:49
+msgid "Icon Settings"
+msgstr "ხატულას მორგება"
+
+#: PrefsLib/adw.js:123
+msgid "Icon Size"
+msgstr "ხატულების ზომა"
+
+#: PrefsLib/adw.js:156
+msgid "Use Custom Icon"
+msgstr "მორგებული ხატულას გამოყენება"
+
+#: PrefsLib/adw.js:170
+msgid "Selected Icon"
+msgstr "არჩეული ხატულა"
+
+#: PrefsLib/adw.js:195
+msgid "Select a Custom Icon"
+msgstr "აირჩიეთ თქვენი ხატულა"
+
+#: PrefsLib/adw.js:238
+msgid "Change Defaults"
+msgstr "ნაგულისხმევი პარამეტრების შეცვლა"
+
+#: PrefsLib/adw.js:242
+msgid "Show/Hide Options"
+msgstr "პარამეტრების ჩვენება/დამალვა"
+
+#: PrefsLib/adw.js:246
+msgid "Top Panel Options"
+msgstr "ზედა პანელის მორგება"
+
+#: PrefsLib/adw.js:254
+msgid "Icon Click Type to open Activities"
+msgstr "ხატულაზე დაწკაპუნების ტიპი აქტივობების გასახსნელად"
+
+#: PrefsLib/adw.js:260
+msgid "Left Click "
+msgstr "მარცხენა წკაპი "
+
+#: PrefsLib/adw.js:261
+msgid "Middle Click "
+msgstr "შუა წკაპი "
+
+#: PrefsLib/adw.js:262
+msgid "Right Click "
+msgstr "მარჯვენა წკაპი "
+
+#: PrefsLib/adw.js:275
+msgid "Preferred Extensions Application"
+msgstr "სასურველი გაფართოებების აპლიკაცია"
+
+#: PrefsLib/adw.js:281
+msgid "GNOME Extensions"
+msgstr "GNOME-ის გაფართოებები"
+
+#: PrefsLib/adw.js:282
+msgid "Extensions Manager"
+msgstr "გაფართოებების მმართველი"
+
+#: PrefsLib/adw.js:350
+msgid "Enable Power Options"
+msgstr "კვების პარამეტრების ჩართვა"
+
+#: PrefsLib/adw.js:365
+msgid "Hide Force Quit option"
+msgstr "ძალით გასვლის ვარიანტის დამალვა"
+
+#: PrefsLib/adw.js:382
+msgid "Show Lock Screen option"
+msgstr "ეკრანის დაბლოკვის ვარიანტის ჩვენება"
+
+#: PrefsLib/adw.js:398
+msgid "Hide Software Centre option"
+msgstr "პროგრამების ცენტრის ვარიანტის დამალვა"
+
+#: PrefsLib/adw.js:414
+msgid "Show Activities Button"
+msgstr "აქტივობების ღილაკის ჩვენება"
+
+#: PrefsLib/adw.js:430
+msgid "Hide Icon Shadow"
+msgstr "ხატულას ჩრდილის დამალვა"
+
+#: PrefsLib/adw.js:471 PrefsLib/adw.js:476
+msgid "About"
+msgstr "შესახებ"
+
+#: PrefsLib/adw.js:500
+msgid "Logo Menu"
+msgstr "ლოგოს მენიუ"
+
+#: PrefsLib/adw.js:507
+msgid "Quick access menu for GNOME"
+msgstr "სწრაფი წვდომის მენიუ GNOME-ისთვის"
+
+#: PrefsLib/adw.js:524
+msgid "Logo Menu Version"
+msgstr "ლოგოს მენიუს ვერსია"
+
+#: PrefsLib/adw.js:536
+msgid "GNOME Version"
+msgstr "GNOME-ის ვერსია"
+
+#: PrefsLib/adw.js:543
+msgid "Created with love by"
+msgstr "ავტორი"
+
+#: PrefsLib/adw.js:550
+msgid "Matrix/Element room"
+msgstr "მატრიცის/ელემენტის ოთახი"
+
+#: PrefsLib/adw.js:566
+msgid "Contributors"
+msgstr "მოხალისეები"
+
+#: PrefsLib/adw.js:583
+msgid "This program comes with absolutely no warranty."
+msgstr "ამ პროგრამას გარანტია არ მოჰყვება."
+
+#: PrefsLib/adw.js:584
+#, javascript-format
+msgid "See the %sGNU General Public License, version 2 or later%s for details."
+msgstr "დეტალებისთვის იხილეთ %sGNU-ის ზოგადი საჯარო ლიცენზია, ვერსია 2, ან უფრო ახალი%s."
