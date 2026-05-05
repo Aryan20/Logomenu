@@ -1,3 +1,4 @@
+import Clutter from 'gi://Clutter';
 import Gio from 'gi://Gio';
 import GLib from 'gi://GLib';
 import GObject from 'gi://GObject';
@@ -34,18 +35,33 @@ class LogoMenuMenuButton extends PanelMenu.Button {
         this.icon = new St.Icon({
            style_class: 'menu-button',
         });
-        
+
+        this.label = new St.Label({
+            text: '',
+            y_align: Clutter.ActorAlign.CENTER,
+            style_class: 'menu-button-label',
+        });
+
+        this._buttonBox = new St.BoxLayout({
+            style_class: 'panel-status-menu-box',
+        });
+        this._buttonBox.add_child(this.icon);
+        this._buttonBox.add_child(this.label);
+
         this._settings.connectObject('changed::hide-icon-shadow', () => this.hideIconShadow(), this);
         this._settings.connectObject('changed::menu-button-icon-image', () => this.setIconImage(), this);
         this._settings.connectObject('changed::symbolic-icon', () => this.setIconImage(), this);
         this._settings.connectObject('changed::use-custom-icon', () => this.setIconImage(), this);
         this._settings.connectObject('changed::custom-icon-path', () => this.setIconImage(), this);
         this._settings.connectObject('changed::menu-button-icon-size', () => this.setIconSize(), this);
-	
-	this.hideIconShadow();
+        this._settings.connectObject('changed::show-menu-button-label', () => this._updateLabel(), this);
+        this._settings.connectObject('changed::menu-button-label-text', () => this._updateLabel(), this);
+
+        this.hideIconShadow();
         this.setIconImage();
         this.setIconSize();
-        this.add_child(this.icon);
+        this._updateLabel();
+        this.add_child(this._buttonBox);
 
         // Menu
         this._settings.connectObject('changed::hide-softwarecentre', () => this._displayMenuItems(), this);
@@ -62,6 +78,13 @@ class LogoMenuMenuButton extends PanelMenu.Button {
 
     _addItem(item) {
         this.menu.addMenuItem(item);
+    }
+
+    _updateLabel() {
+        const enabled = this._settings.get_boolean('show-menu-button-label');
+        const text = this._settings.get_string('menu-button-label-text') || '';
+        this.label.set_text(text);
+        this.label.visible = enabled && text.length > 0;
     }
 
     _displayMenuItems() {

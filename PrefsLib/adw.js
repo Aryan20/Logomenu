@@ -213,11 +213,28 @@ export const LogoMenuIconsPage = GObject.registerClass(class LogoMenuIconsWidget
         customIconSelectionRow.add_suffix(customIconButton);
         customIconRow.add_row(customIconSelectionRow);
 
+        // Show Button Label toggle
+        const showLabelRow = new Adw.SwitchRow({
+            title: _('Show Button Label'),
+            subtitle: _('Display a text label next to the icon in the top panel.'),
+        });
+        this._settings.bind('show-menu-button-label', showLabelRow,
+            'active', Gio.SettingsBindFlags.DEFAULT);
+
+        // Button Label text entry
+        const labelTextRow = new Adw.EntryRow({
+            title: _('Button Label Text'),
+        });
+        this._settings.bind('menu-button-label-text', labelTextRow,
+            'text', Gio.SettingsBindFlags.DEFAULT);
+
         // iconGroup
         symbolicIconGroup.add(symbolicIconsRow);
         colouredIconGroup.add(colouredIconsRow);
         iconSettingsGroup.add(customIconRow);
         iconSettingsGroup.add(menuButtonIconSizeRow);
+        iconSettingsGroup.add(showLabelRow);
+        iconSettingsGroup.add(labelTextRow);
 
         this.add(symbolicIconGroup);
         this.add(colouredIconGroup);
