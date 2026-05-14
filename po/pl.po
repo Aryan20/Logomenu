@@ -1,0 +1,206 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025 Aryan Kaushik (Aryan20)
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# Michał Kulikowski <mkulikowski2003@pm.me>, 2026.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Logo Menu 36\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-09-20 18:25+0530\n"
+"PO-Revision-Date: 2026-05-14 19:31+0200\n"
+"Last-Translator: Michał Kulikowski <mkulikowski2003@pm.me>\n"
+"Language-Team: Polish\n"
+"Language: pl\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 "
+"|| n%100>=20) ? 1 : 2);\n"
+"X-Generator: Gtranslator 50.0\n"
+
+#: extension.js:75
+msgid "About My System"
+msgstr "O tym urządzeniu"
+
+#: extension.js:80
+msgid "Activities"
+msgstr "Aktywności"
+
+#: extension.js:82
+msgid "App Grid"
+msgstr "Lista aplikacji"
+
+#: extension.js:86 PrefsLib/adw.js:314
+msgid "Software Center"
+msgstr "Oprogramowanie"
+
+#: extension.js:88 PrefsLib/adw.js:332
+msgid "System Monitor"
+msgstr "Monitor systemu"
+
+#: extension.js:89 PrefsLib/adw.js:294
+msgid "Terminal"
+msgstr "Terminal"
+
+#: extension.js:90
+msgid "Extensions"
+msgstr "Rozszerzenia"
+
+#: extension.js:94
+msgid "Force Quit App"
+msgstr "Wymuś zamknięcie aplikacji"
+
+#: extension.js:99
+msgid "Sleep"
+msgstr "Uśpienie"
+
+#: extension.js:100
+msgid "Restart..."
+msgstr "Uruchom ponownie"
+
+#: extension.js:101
+msgid "Shut Down..."
+msgstr "Wyłącz"
+
+#: extension.js:105 extension.js:110
+msgid "Lock Screen"
+msgstr "Zablokuj ekran"
+
+#: extension.js:107
+msgid "Log Out..."
+msgstr "Wyloguj się"
+
+#: PrefsLib/adw.js:41
+msgid "Symbolic Icons"
+msgstr "Ikony symboliczne"
+
+#: PrefsLib/adw.js:45
+msgid "Coloured Icons"
+msgstr "Ikony Klorowane"
+
+#: PrefsLib/adw.js:49
+msgid "Icon Settings"
+msgstr "Ustawienia ikony"
+
+#: PrefsLib/adw.js:123
+msgid "Icon Size"
+msgstr "Rozmiar ikony"
+
+#: PrefsLib/adw.js:156
+msgid "Use Custom Icon"
+msgstr "Użyj niestandardowej ikony"
+
+#: PrefsLib/adw.js:170
+msgid "Selected Icon"
+msgstr "Wybrana ikona"
+
+#: PrefsLib/adw.js:195
+msgid "Select a Custom Icon"
+msgstr "Wybierz niestandardową ikonę"
+
+#: PrefsLib/adw.js:238
+msgid "Change Defaults"
+msgstr "Ustawienia podstawowe"
+
+#: PrefsLib/adw.js:242
+msgid "Show/Hide Options"
+msgstr "Pokaż/Schowaj"
+
+#: PrefsLib/adw.js:246
+msgid "Top Panel Options"
+msgstr "Ustawienia "
+
+#: PrefsLib/adw.js:254
+msgid "Icon Click Type to open Activities"
+msgstr "Kliknięcie do uruchomienia aktywnośći"
+
+#: PrefsLib/adw.js:260
+msgid "Left Click "
+msgstr "Lewy przycisk myszy"
+
+#: PrefsLib/adw.js:261
+msgid "Middle Click "
+msgstr "Prawy przycisk myszy"
+
+#: PrefsLib/adw.js:262
+msgid "Right Click "
+msgstr "Środkowy przycisk myszy"
+
+#: PrefsLib/adw.js:275
+msgid "Preferred Extensions Application"
+msgstr "Preferowana aplikacja rozszerzeń"
+
+#: PrefsLib/adw.js:281
+msgid "GNOME Extensions"
+msgstr "Rozszerzenia"
+
+#: PrefsLib/adw.js:282
+msgid "Extensions Manager"
+msgstr "Menedżer rozszerzeń"
+
+#: PrefsLib/adw.js:350
+msgid "Enable Power Options"
+msgstr "Włącz ustawienia zasilania"
+
+#: PrefsLib/adw.js:365
+msgid "Hide Force Quit option"
+msgstr "Ukryj wymuszanie zamykania aplikacji"
+
+#: PrefsLib/adw.js:382
+msgid "Show Lock Screen option"
+msgstr "Pokaż ustawienia ekranu blokady"
+
+#: PrefsLib/adw.js:398
+msgid "Hide Software Centre option"
+msgstr "Ukryj oprogramowanie"
+
+#: PrefsLib/adw.js:414
+msgid "Show Activities Button"
+msgstr "Pokaż przycisk aktywności"
+
+#: PrefsLib/adw.js:430
+msgid "Hide Icon Shadow"
+msgstr "Ukryj cień ikony"
+
+#: PrefsLib/adw.js:471 PrefsLib/adw.js:476
+msgid "About"
+msgstr "Informacje"
+
+#: PrefsLib/adw.js:500
+msgid "Logo Menu"
+msgstr "Logo Menu"
+
+#: PrefsLib/adw.js:507
+msgid "Quick access menu for GNOME"
+msgstr "Menu szybkiego dostępu dla GNOME"
+
+#: PrefsLib/adw.js:524
+msgid "Logo Menu Version"
+msgstr "Wersja Logo Menu"
+
+#: PrefsLib/adw.js:536
+msgid "GNOME Version"
+msgstr "Wersja Gnome"
+
+#: PrefsLib/adw.js:543
+msgid "Created with love by"
+msgstr "Stworzone z miłością przez"
+
+#: PrefsLib/adw.js:550
+msgid "Matrix/Element room"
+msgstr "Pokój Matrix/Element"
+
+#: PrefsLib/adw.js:566
+msgid "Contributors"
+msgstr "Współtwórcy"
+
+#: PrefsLib/adw.js:583
+msgid "This program comes with absolutely no warranty."
+msgstr "Ten program nie ma żadnej gwarancji"
+
+#: PrefsLib/adw.js:584
+#, javascript-format
+msgid "See the %sGNU General Public License, version 2 or later%s for details."
+msgstr "Zobacz %sGNU General Public License, version 2 or later%s po "
