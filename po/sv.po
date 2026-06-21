@@ -1,0 +1,206 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025 Aryan Kaushik (Aryan20)
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# Viktor Engkvist <viktor@rivig.net>, 2026.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Logo Menu 36\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-09-20 18:25+0530\n"
+"PO-Revision-Date: 2026-05-16 12:51+0300\n"
+"Last-Translator: Viktor Engkvist <viktor@rivig.net>\n"
+"Language-Team: Swedish\n"
+"Language: sv\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Gtranslator 50.0\n"
+
+#: extension.js:75
+msgid "About My System"
+msgstr "Om systemet"
+
+#: extension.js:80
+msgid "Activities"
+msgstr "Aktiviteter"
+
+#: extension.js:82
+msgid "App Grid"
+msgstr "Programrutnät"
+
+#: extension.js:86 PrefsLib/adw.js:314
+msgid "Software Center"
+msgstr "Programvarucenter"
+
+#: extension.js:88 PrefsLib/adw.js:332
+msgid "System Monitor"
+msgstr "Systemövervakare"
+
+#: extension.js:89 PrefsLib/adw.js:294
+msgid "Terminal"
+msgstr "Terminal"
+
+#: extension.js:90
+msgid "Extensions"
+msgstr "Tillägg"
+
+#: extension.js:94
+msgid "Force Quit App"
+msgstr "Tvångsavsluta program"
+
+#: extension.js:99
+msgid "Sleep"
+msgstr "Vänteläge"
+
+#: extension.js:100
+msgid "Restart..."
+msgstr "Starta om..."
+
+#: extension.js:101
+msgid "Shut Down..."
+msgstr "Stäng av..."
+
+#: extension.js:105 extension.js:110
+msgid "Lock Screen"
+msgstr "Lås skärm"
+
+#: extension.js:107
+msgid "Log Out..."
+msgstr "Logga ut..."
+
+#: PrefsLib/adw.js:41
+msgid "Symbolic Icons"
+msgstr "Symboliska ikoner"
+
+#: PrefsLib/adw.js:45
+msgid "Coloured Icons"
+msgstr "Färgade ikoner"
+
+#: PrefsLib/adw.js:49
+msgid "Icon Settings"
+msgstr "Ikoninställningar"
+
+#: PrefsLib/adw.js:123
+msgid "Icon Size"
+msgstr "Ikonstorlek"
+
+#: PrefsLib/adw.js:156
+msgid "Use Custom Icon"
+msgstr "Använd egen ikon"
+
+#: PrefsLib/adw.js:170
+msgid "Selected Icon"
+msgstr "Vald ikon"
+
+#: PrefsLib/adw.js:195
+msgid "Select a Custom Icon"
+msgstr "Välj egen ikon"
+
+#: PrefsLib/adw.js:238
+msgid "Change Defaults"
+msgstr "Ändra standardinställningar"
+
+#: PrefsLib/adw.js:242
+msgid "Show/Hide Options"
+msgstr "Visa/dölj alternativ"
+
+#: PrefsLib/adw.js:246
+msgid "Top Panel Options"
+msgstr "Alternativ för övre panelen"
+
+#: PrefsLib/adw.js:254
+msgid "Icon Click Type to open Activities"
+msgstr "Klicktyp på ikon för att öppna Aktiviteter"
+
+#: PrefsLib/adw.js:260
+msgid "Left Click "
+msgstr "Vänsterklick"
+
+#: PrefsLib/adw.js:261
+msgid "Middle Click "
+msgstr "Mittenklick"
+
+#: PrefsLib/adw.js:262
+msgid "Right Click "
+msgstr "Högerklick"
+
+#: PrefsLib/adw.js:275
+msgid "Preferred Extensions Application"
+msgstr "Föredraget program för tillägg"
+
+#: PrefsLib/adw.js:281
+msgid "GNOME Extensions"
+msgstr "Tillägg (GNOME)"
+
+#: PrefsLib/adw.js:282
+msgid "Extensions Manager"
+msgstr "Tilläggshanterare"
+
+#: PrefsLib/adw.js:350
+msgid "Enable Power Options"
+msgstr "Aktivera strömalternativ"
+
+#: PrefsLib/adw.js:365
+msgid "Hide Force Quit option"
+msgstr "Dölj alternativet för tvångsavslutning"
+
+#: PrefsLib/adw.js:382
+msgid "Show Lock Screen option"
+msgstr "Visa alternativet Lås skärm"
+
+#: PrefsLib/adw.js:398
+msgid "Hide Software Centre option"
+msgstr "Dölj alternativet Programvarucenter"
+
+#: PrefsLib/adw.js:414
+msgid "Show Activities Button"
+msgstr "Visa knappen Aktiviteter"
+
+#: PrefsLib/adw.js:430
+msgid "Hide Icon Shadow"
+msgstr "Dölj ikonskugga"
+
+#: PrefsLib/adw.js:471 PrefsLib/adw.js:476
+msgid "About"
+msgstr "Om"
+
+#: PrefsLib/adw.js:500
+msgid "Logo Menu"
+msgstr "Logo Menu"
+
+#: PrefsLib/adw.js:507
+msgid "Quick access menu for GNOME"
+msgstr "Snabbåtkomstmeny för GNOME"
+
+#: PrefsLib/adw.js:524
+msgid "Logo Menu Version"
+msgstr "Logo Menu-version"
+
+#: PrefsLib/adw.js:536
+msgid "GNOME Version"
+msgstr "GNOME-version"
+
+#: PrefsLib/adw.js:543
+msgid "Created with love by"
+msgstr "Skapad med kärlek av"
+
+#: PrefsLib/adw.js:550
+msgid "Matrix/Element room"
+msgstr "Matrix/Element-rum"
+
+#: PrefsLib/adw.js:566
+msgid "Contributors"
+msgstr "Bidragsgivare"
+
+#: PrefsLib/adw.js:583
+msgid "This program comes with absolutely no warranty."
+msgstr "Detta program kommer helt utan garanti."
+
+#: PrefsLib/adw.js:584
+#, javascript-format
+msgid "See the %sGNU General Public License, version 2 or later%s for details."
+msgstr ""
+"Se %sGNU General Public License, version 2 eller senare%s för detaljer."
