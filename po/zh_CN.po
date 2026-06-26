@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Logo Menu 18\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-02-09 20:21+0800\n"
+"POT-Creation-Date: 2026-06-27 01:09+0530\n"
 "PO-Revision-Date: 2022-11-17 23:24+0530\n"
 "Last-Translator: 廿肆/Nix24 <nix2@gmail.com>\n"
 "Language-Team: \n"
@@ -22,55 +22,55 @@ msgstr ""
 "Plural-Forms: nplurals=1; plural=0;\n"
 "X-Generator: Poedit 3.0.1\n"
 
-#: extension.js:75
+#: extension.js:78
 msgid "About My System"
 msgstr "关于本机"
 
-#: extension.js:80
+#: extension.js:83
 msgid "Activities"
 msgstr "活动"
 
-#: extension.js:82
+#: extension.js:85
 msgid "App Grid"
 msgstr "所有软件"
 
-#: extension.js:86 PrefsLib/adw.js:314
+#: extension.js:89 PrefsLib/adw.js:314
 msgid "Software Center"
 msgstr "软件中心"
 
-#: extension.js:88 PrefsLib/adw.js:332
+#: extension.js:91 PrefsLib/adw.js:332
 msgid "System Monitor"
 msgstr "资源监视器"
 
-#: extension.js:89 PrefsLib/adw.js:294
+#: extension.js:92 PrefsLib/adw.js:294
 msgid "Terminal"
 msgstr "终端"
 
-#: extension.js:90
+#: extension.js:93
 msgid "Extensions"
 msgstr "插件"
 
-#: extension.js:94
+#: extension.js:97
 msgid "Force Quit App"
 msgstr "强制退出"
 
-#: extension.js:99
+#: extension.js:102
 msgid "Sleep"
 msgstr "休眠"
 
-#: extension.js:100
+#: extension.js:103
 msgid "Restart..."
 msgstr "重启"
 
-#: extension.js:101
+#: extension.js:104
 msgid "Shut Down..."
 msgstr "关机"
 
-#: extension.js:105 extension.js:110
+#: extension.js:108 extension.js:113
 msgid "Lock Screen"
 msgstr "锁屏"
 
-#: extension.js:107
+#: extension.js:110
 msgid "Log Out..."
 msgstr "注销"
 
@@ -216,9 +216,9 @@ msgstr ""
 
 #~ msgid ""
 #~ "<span size=\"small\">This program comes with absolutely no warranty.\n"
-#~ "See the <a href=\"https://gnu.org/licenses/old-licenses/gpl-2.0."
-#~ "html\">GNU General Public License, version 2 or later</a> for details.</"
-#~ "span>"
+#~ "See the <a href=\"https://gnu.org/licenses/old-licenses/"
+#~ "gpl-2.0.html\">GNU General Public License, version 2 or later</a> for "
+#~ "details.</span>"
 #~ msgstr ""
 #~ "<span size=\"small\">本软件不做任何担保\n"
 #~ "详情见<a href=\"https://gnu.org/licenses/old-licenses/gpl-2.0.html\">GNU通"

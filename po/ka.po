@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Logo Menu 36\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-09-20 18:25+0530\n"
+"POT-Creation-Date: 2026-06-27 01:09+0530\n"
 "PO-Revision-Date: 2026-04-01 08:27+0200\n"
 "Last-Translator: Ekaterine Papava <papava.e@gtu.ge>\n"
 "Language-Team: Georgian <(nothing)>\n"
@@ -17,55 +17,55 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: Poedit 3.9\n"
 
-#: extension.js:75
+#: extension.js:78
 msgid "About My System"
 msgstr "ჩემი სისტემის შესახეb"
 
-#: extension.js:80
+#: extension.js:83
 msgid "Activities"
 msgstr "აქტივობები"
 
-#: extension.js:82
+#: extension.js:85
 msgid "App Grid"
 msgstr "აპლიკაციების ბადე"
 
-#: extension.js:86 PrefsLib/adw.js:314
+#: extension.js:89 PrefsLib/adw.js:314
 msgid "Software Center"
 msgstr "პროგრამების ცენტრი"
 
-#: extension.js:88 PrefsLib/adw.js:332
+#: extension.js:91 PrefsLib/adw.js:332
 msgid "System Monitor"
 msgstr "სისტემური მონიტორი"
 
-#: extension.js:89 PrefsLib/adw.js:294
+#: extension.js:92 PrefsLib/adw.js:294
 msgid "Terminal"
 msgstr "ტერმინალი"
 
-#: extension.js:90
+#: extension.js:93
 msgid "Extensions"
 msgstr "გაფართოებები"
 
-#: extension.js:94
+#: extension.js:97
 msgid "Force Quit App"
 msgstr "აპლიკაციიდან იძულებითი გასვლ"
 
-#: extension.js:99
+#: extension.js:102
 msgid "Sleep"
 msgstr "ძილი"
 
-#: extension.js:100
+#: extension.js:103
 msgid "Restart..."
 msgstr "გადატვირთვა..."
 
-#: extension.js:101
+#: extension.js:104
 msgid "Shut Down..."
 msgstr "გამორთვა..."
 
-#: extension.js:105 extension.js:110
+#: extension.js:108 extension.js:113
 msgid "Lock Screen"
 msgstr "ეკრანის დაბლოკვა"
 
-#: extension.js:107
+#: extension.js:110
 msgid "Log Out..."
 msgstr "გამოსვლა..."
 
@@ -200,4 +200,6 @@ msgstr "ამ პროგრამას გარანტია არ მ�
 #: PrefsLib/adw.js:584
 #, javascript-format
 msgid "See the %sGNU General Public License, version 2 or later%s for details."
-msgstr "დეტალებისთვის იხილეთ %sGNU-ის ზოგადი საჯარო ლიცენზია, ვერსია 2, ან უფრო ახალი%s."
+msgstr ""
+"დეტალებისთვის იხილეთ %sGNU-ის ზოგადი საჯარო ლიცენზია, ვერსია 2, ან უფრო "
+"ახალი%s."
