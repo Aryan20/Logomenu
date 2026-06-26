@@ -26,26 +26,24 @@ Join the matrix room for the latest news and releases and/or for suggestions: [c
 
 -About My System (opens a submenu in System Settings that shows info about your computer.)
 
-
--Activities (this menu does replace the Activities button, but this option does leave that functionality easily accessible.)
+-Activities (shown in menu when the Activities button is hidden from the panel)
 
 -App Grid (Opens GNOME app menu/grid)
 
 -Software Center (defaults to `gnome-software`)
 
+-System Monitor (defaults to `gnome-system-monitor`)
+
 -Terminal (defaults to `gnome-terminal`)
 
 -Extensions (Quick access to all of your GNOME Extensions.)
 
--Force Quit App (run this and select the app you want to kill. Requires `xkill` )
+-Force Quit App (run this and select the app you want to kill. Works on Wayland and Xorg.)
+
+-Lock Screen (optional, can be enabled in settings)
 
 -Power Options
 
-fork of [Tofu Menu by tofutech](https://github.com/tofutech/tofumenu)
-
-Version 19 and higher are compatible with and tested on GNOME 45
-
-Version 18 is compatible with and tested on GNOME 44, 43, 42, 41, 40, 3.xx
 
 Note - 
 1) Some icons can get changed due to Icon Pack used, particularly due to Icon packs primarily developed for KDE in mind.
@@ -85,7 +83,7 @@ Firstly check out the contribution guidelines by [clicking here](https://github.
 If you are new to GNOME Extensions, then check out the resources provided in - [LEARNING_RESOURCES.md](https://github.com/Aryan20/Logomenu/blob/main/LEARNING_RESOURCES.md)
 
 ## Credits
-Original extension creator and all the [contributors](https://github.com/Aryan20/Logomenu/graphs/contributors).
+All the [contributors](https://github.com/Aryan20/Logomenu/graphs/contributors).
 
 
 ## Donations
