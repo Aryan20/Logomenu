@@ -116,11 +116,17 @@ class LogoMenuMenuButton extends PanelMenu.Button {
 
     vfunc_event(event) {
         if (event.type() === Clutter.EventType.BUTTON_PRESS) {
-            // left click === 1, middle click === 2, right click === 3
-            const clickType = this._settings.get_int('menu-button-icon-click-type');
-            if (event.get_button() === clickType) {
+            const buttonPressed = event.get_button();
+            // disabled === 0, left click === 1, middle click === 2, right click === 3
+            const overviewClickType = this._settings.get_int('menu-button-icon-click-type');
+            const appGridClickType = this._settings.get_int('menu-button-icon-appgrid-click-type');
+
+            if (buttonPressed === overviewClickType) {
                 this.menu.close();
                 Main.overview.toggle();
+            } else if (buttonPressed === appGridClickType) {
+                this.menu.close();
+                this._showAppGrid();
             } else {
                 this.menu?.toggle();
             }

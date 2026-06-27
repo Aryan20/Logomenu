@@ -257,16 +257,50 @@ export const LogoMenuOptionsPage = GObject.registerClass(class LogoMenuOptionsWi
         const menuButtonIconClickTypeCombo = new Gtk.ComboBoxText({
             valign: Gtk.Align.CENTER,
         });
+        menuButtonIconClickTypeCombo.append('0', _('Disabled '));
         menuButtonIconClickTypeCombo.append('1', _('Left Click '));
         menuButtonIconClickTypeCombo.append('2', _('Middle Click '));
         menuButtonIconClickTypeCombo.append('3', _('Right Click '));
         menuButtonIconClickTypeCombo.set_active_id(clickType.toString());
 
+        // App Grid click type
+
+        const appGridClickType = this._settings.get_int('menu-button-icon-appgrid-click-type');
+        const menuButtonAppGridClickTypeRow = new Adw.ActionRow({
+            title: _('Icon Click Type to open App Grid'),
+        });
+
+        const menuButtonAppGridClickTypeCombo = new Gtk.ComboBoxText({
+            valign: Gtk.Align.CENTER,
+        });
+        menuButtonAppGridClickTypeCombo.append('0', _('Disabled'));
+        menuButtonAppGridClickTypeCombo.append('1', _('Left Click'));
+        menuButtonAppGridClickTypeCombo.append('2', _('Middle Click'));
+        menuButtonAppGridClickTypeCombo.append('3', _('Right Click'));
+        menuButtonAppGridClickTypeCombo.set_active_id(appGridClickType.toString());
+
+        // Intercepts conflicts: If an option matches, set the other to 'Disabled' (0)
+
         menuButtonIconClickTypeCombo.connect('changed', () => {
-            this._settings.set_int('menu-button-icon-click-type', parseInt(menuButtonIconClickTypeCombo.get_active_id()));
+            const newOverviewVal = menuButtonIconClickTypeCombo.get_active_id();
+            if (newOverviewVal !== '0' && newOverviewVal === menuButtonAppGridClickTypeCombo.get_active_id()) {
+                menuButtonAppGridClickTypeCombo.set_active_id('0');
+                this._settings.set_int('menu-button-icon-appgrid-click-type', 0);
+            }
+            this._settings.set_int('menu-button-icon-click-type', parseInt(newOverviewVal));
+        });
+
+        menuButtonAppGridClickTypeCombo.connect('changed', () => {
+            const newAppGridVal = menuButtonAppGridClickTypeCombo.get_active_id();
+            if (newAppGridVal !== '0' && newAppGridVal === menuButtonIconClickTypeCombo.get_active_id()) {
+                menuButtonIconClickTypeCombo.set_active_id('0');
+                this._settings.set_int('menu-button-icon-click-type', 0);
+            }
+            this._settings.set_int('menu-button-icon-appgrid-click-type', parseInt(newAppGridVal));
         });
 
         menuButtonIconClickTypeRow.add_suffix(menuButtonIconClickTypeCombo);
+        menuButtonAppGridClickTypeRow.add_suffix(menuButtonAppGridClickTypeCombo);
 
         // Extensions application choice
 
@@ -443,6 +477,7 @@ export const LogoMenuOptionsPage = GObject.registerClass(class LogoMenuOptionsWi
 
         // Pref Group
         prefGroup1.add(menuButtonIconClickTypeRow);
+        prefGroup1.add(menuButtonAppGridClickTypeRow);
         prefGroup1.add(extensionsAppRow);
         prefGroup1.add(menuButtonTerminalRow);
         prefGroup1.add(softwareCentreRow);
