@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Logo Menu 34\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-01-19 01:47+0530\n"
+"POT-Creation-Date: 2026-06-27 01:09+0530\n"
 "PO-Revision-Date: 2025-02-05 16:35+0200\n"
 "Last-Translator: 4e6anenk0 <serhiichebanenko@yahoo.com>\n"
 "Language-Team: \n"
@@ -18,55 +18,55 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: Poedit 3.4.4\n"
 
-#: extension.js:75
+#: extension.js:78
 msgid "About My System"
 msgstr "Про систему"
 
-#: extension.js:80
+#: extension.js:83
 msgid "Activities"
 msgstr "Діяльність"
 
-#: extension.js:82
+#: extension.js:85
 msgid "App Grid"
 msgstr "Програми"
 
-#: extension.js:86 PrefsLib/adw.js:314
+#: extension.js:89 PrefsLib/adw.js:314
 msgid "Software Center"
 msgstr "Центр програм"
 
-#: extension.js:88 PrefsLib/adw.js:332
+#: extension.js:91 PrefsLib/adw.js:332
 msgid "System Monitor"
 msgstr "Системний монітор"
 
-#: extension.js:89 PrefsLib/adw.js:294
+#: extension.js:92 PrefsLib/adw.js:294
 msgid "Terminal"
 msgstr "Термінал"
 
-#: extension.js:90
+#: extension.js:93
 msgid "Extensions"
 msgstr "Розширення"
 
-#: extension.js:94
+#: extension.js:97
 msgid "Force Quit App"
 msgstr "Примусово закрити програму"
 
-#: extension.js:99
+#: extension.js:102
 msgid "Sleep"
 msgstr "Сон"
 
-#: extension.js:100
+#: extension.js:103
 msgid "Restart..."
 msgstr "Перезапуск..."
 
-#: extension.js:101
+#: extension.js:104
 msgid "Shut Down..."
 msgstr "Вимкнути..."
 
-#: extension.js:105 extension.js:110
+#: extension.js:108 extension.js:113
 msgid "Lock Screen"
 msgstr "Заблокувати екран"
 
-#: extension.js:107
+#: extension.js:110
 msgid "Log Out..."
 msgstr "Вийти..."
 
@@ -201,4 +201,5 @@ msgstr "Ця програма постачається без жодних га�
 #: PrefsLib/adw.js:584
 #, javascript-format
 msgid "See the %sGNU General Public License, version 2 or later%s for details."
-msgstr "Докладніше дивіться %sGNU General Public License, версії 2 або новіше%s."
+msgstr ""
+"Докладніше дивіться %sGNU General Public License, версії 2 або новіше%s."

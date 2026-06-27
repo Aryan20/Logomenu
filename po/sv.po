@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Logo Menu 36\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-09-20 18:25+0530\n"
+"POT-Creation-Date: 2026-06-27 01:09+0530\n"
 "PO-Revision-Date: 2026-05-16 12:51+0300\n"
 "Last-Translator: Viktor Engkvist <viktor@rivig.net>\n"
 "Language-Team: Swedish\n"
@@ -19,55 +19,55 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Generator: Gtranslator 50.0\n"
 
-#: extension.js:75
+#: extension.js:78
 msgid "About My System"
 msgstr "Om systemet"
 
-#: extension.js:80
+#: extension.js:83
 msgid "Activities"
 msgstr "Aktiviteter"
 
-#: extension.js:82
+#: extension.js:85
 msgid "App Grid"
 msgstr "Programrutnät"
 
-#: extension.js:86 PrefsLib/adw.js:314
+#: extension.js:89 PrefsLib/adw.js:314
 msgid "Software Center"
 msgstr "Programvarucenter"
 
-#: extension.js:88 PrefsLib/adw.js:332
+#: extension.js:91 PrefsLib/adw.js:332
 msgid "System Monitor"
 msgstr "Systemövervakare"
 
-#: extension.js:89 PrefsLib/adw.js:294
+#: extension.js:92 PrefsLib/adw.js:294
 msgid "Terminal"
 msgstr "Terminal"
 
-#: extension.js:90
+#: extension.js:93
 msgid "Extensions"
 msgstr "Tillägg"
 
-#: extension.js:94
+#: extension.js:97
 msgid "Force Quit App"
 msgstr "Tvångsavsluta program"
 
-#: extension.js:99
+#: extension.js:102
 msgid "Sleep"
 msgstr "Vänteläge"
 
-#: extension.js:100
+#: extension.js:103
 msgid "Restart..."
 msgstr "Starta om..."
 
-#: extension.js:101
+#: extension.js:104
 msgid "Shut Down..."
 msgstr "Stäng av..."
 
-#: extension.js:105 extension.js:110
+#: extension.js:108 extension.js:113
 msgid "Lock Screen"
 msgstr "Lås skärm"
 
-#: extension.js:107
+#: extension.js:110
 msgid "Log Out..."
 msgstr "Logga ut..."
 

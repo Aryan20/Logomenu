@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Logo Menu 23.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-01-19 01:47+0530\n"
+"POT-Creation-Date: 2026-06-27 01:09+0530\n"
 "PO-Revision-Date: 2024-07-22 22:08+0200\n"
 "Last-Translator: Tamás\n"
 "Language-Team: \n"
@@ -18,55 +18,55 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: Poedit 3.4.2\n"
 
-#: extension.js:75
+#: extension.js:78
 msgid "About My System"
 msgstr "Gépem névjegye"
 
-#: extension.js:80
+#: extension.js:83
 msgid "Activities"
 msgstr "Tevékenységek"
 
-#: extension.js:82
+#: extension.js:85
 msgid "App Grid"
 msgstr "Alkalmazás rács"
 
-#: extension.js:86 PrefsLib/adw.js:314
+#: extension.js:89 PrefsLib/adw.js:314
 msgid "Software Center"
 msgstr "Alkalmazás Áruház"
 
-#: extension.js:88 PrefsLib/adw.js:332
+#: extension.js:91 PrefsLib/adw.js:332
 msgid "System Monitor"
 msgstr "Rendszerfigyelő"
 
-#: extension.js:89 PrefsLib/adw.js:294
+#: extension.js:92 PrefsLib/adw.js:294
 msgid "Terminal"
 msgstr "Terminál"
 
-#: extension.js:90
+#: extension.js:93
 msgid "Extensions"
 msgstr "Kiegészítők"
 
-#: extension.js:94
+#: extension.js:97
 msgid "Force Quit App"
 msgstr "Kilépésre kényszerítés"
 
-#: extension.js:99
+#: extension.js:102
 msgid "Sleep"
 msgstr "Felfüggesztés"
 
-#: extension.js:100
+#: extension.js:103
 msgid "Restart..."
 msgstr "Újraindítás..."
 
-#: extension.js:101
+#: extension.js:104
 msgid "Shut Down..."
 msgstr "Kikapcsolás..."
 
-#: extension.js:105 extension.js:110
+#: extension.js:108 extension.js:113
 msgid "Lock Screen"
 msgstr "Zárolás"
 
-#: extension.js:107
+#: extension.js:110
 msgid "Log Out..."
 msgstr "Kijelentkezés..."
 

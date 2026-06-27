@@ -56,8 +56,8 @@ class LogoMenuMenuButton extends PanelMenu.Button {
         this._settings.connectObject('changed::show-activities-button', () => this._displayMenuItems(), this);
         this._displayMenuItems();
 
-        // Disable the parent's ClickGesture so pointer events reach vfunc_event
-        this._clickGesture.set_enabled(false);
+        // Disable the parent's ClickGesture (GNOME 50+) so pointer events reach vfunc_event
+        this._clickGesture?.set_enabled(false);
 
         this.connect('destroy', () => { this._settings = null; });
     }

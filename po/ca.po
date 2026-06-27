@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Logo Menu 18\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-01-19 01:47+0530\n"
+"POT-Creation-Date: 2026-06-27 01:09+0530\n"
 "PO-Revision-Date: 2023-07-07 11:54+0200\n"
 "Last-Translator: @jcatfor\n"
 "Language-Team: Catalan\n"
@@ -19,55 +19,55 @@ msgstr ""
 "X-Generator: Poedit 3.3.1\n"
 "X-Poedit-SourceCharset: UTF-8\n"
 
-#: extension.js:75
+#: extension.js:78
 msgid "About My System"
 msgstr "Quant a aquest Ordinador"
 
-#: extension.js:80
+#: extension.js:83
 msgid "Activities"
 msgstr "Activitats"
 
-#: extension.js:82
+#: extension.js:85
 msgid "App Grid"
 msgstr "Aplicacions"
 
-#: extension.js:86 PrefsLib/adw.js:314
+#: extension.js:89 PrefsLib/adw.js:314
 msgid "Software Center"
 msgstr "Programari"
 
-#: extension.js:88 PrefsLib/adw.js:332
+#: extension.js:91 PrefsLib/adw.js:332
 msgid "System Monitor"
 msgstr ""
 
-#: extension.js:89 PrefsLib/adw.js:294
+#: extension.js:92 PrefsLib/adw.js:294
 msgid "Terminal"
 msgstr "Terminal"
 
-#: extension.js:90
+#: extension.js:93
 msgid "Extensions"
 msgstr "Extensions"
 
-#: extension.js:94
+#: extension.js:97
 msgid "Force Quit App"
 msgstr "Força la Sortida de l'App"
 
-#: extension.js:99
+#: extension.js:102
 msgid "Sleep"
 msgstr "Posa en Repòs"
 
-#: extension.js:100
+#: extension.js:103
 msgid "Restart..."
 msgstr "Reinicia..."
 
-#: extension.js:101
+#: extension.js:104
 msgid "Shut Down..."
 msgstr "Apaga..."
 
-#: extension.js:105 extension.js:110
+#: extension.js:108 extension.js:113
 msgid "Lock Screen"
 msgstr "Bloqueja la Pantalla"
 
-#: extension.js:107
+#: extension.js:110
 msgid "Log Out..."
 msgstr "Tanca la Sessió..."
 
@@ -216,11 +216,11 @@ msgstr ""
 
 #~ msgid ""
 #~ "<span size=\"small\">This program comes with absolutely no warranty.\n"
-#~ "See the <a href=\"https://gnu.org/licenses/old-licenses/gpl-2.0."
-#~ "html\">GNU General Public License, version 2 or later</a> for details.</"
-#~ "span>"
+#~ "See the <a href=\"https://gnu.org/licenses/old-licenses/"
+#~ "gpl-2.0.html\">GNU General Public License, version 2 or later</a> for "
+#~ "details.</span>"
 #~ msgstr ""
 #~ "<span size=\"small\">Aquest programa ve absolutament sense cap garantia.\n"
-#~ "Consulteu la <a href=\"https://gnu.org/licenses/old-licenses/gpl-2.0."
-#~ "html\">Llicència Pública General GNU, versió 2 o posterior</a> per a més "
-#~ "detalls.</span>"
+#~ "Consulteu la <a href=\"https://gnu.org/licenses/old-licenses/"
+#~ "gpl-2.0.html\">Llicència Pública General GNU, versió 2 o posterior</a> "
+#~ "per a més detalls.</span>"
