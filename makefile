@@ -1,6 +1,6 @@
 # Define the zip name to avoid repeating it
 ZIP_NAME = logomenu@aryan_k.shell-extension.zip
-SOURCES = --extra-source=Resources/ --extra-source=PrefsLib/ --extra-source=constants.js --extra-source=display_module.js --extra-source=selection.js
+SOURCES = --extra-source=Resources/ --extra-source=PrefsLib/ --extra-source=constants.js --extra-source=selection.js
 
 .PHONY: build install clean
 

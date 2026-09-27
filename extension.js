@@ -59,7 +59,12 @@ class LogoMenuMenuButton extends PanelMenu.Button {
         // Disable the parent's ClickGesture (GNOME 50+) so pointer events reach vfunc_event
         this._clickGesture?.set_enabled(false);
 
-        this.connect('destroy', () => { this._settings = null; });
+        this.connect('destroy', () => {
+            // Don't leave a force quit grab behind if we're disabled mid-selection (e.g. screen lock)
+            this._selection?.stop();
+            this._selection = null;
+            this._settings = null;
+        });
     }
 
     _addItem(item) {
@@ -175,7 +180,9 @@ class LogoMenuMenuButton extends PanelMenu.Button {
     }
 
     _forceQuit() {
-        new Selection.SelectionWindow();
+        this._selection?.stop();
+        this._selection = new Selection.SelectionWindow();
+        this._selection.connect('stop', () => { this._selection = null; });
     }
 
     _openTerminal() {
