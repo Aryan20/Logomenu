@@ -99,6 +99,18 @@
       <summary>Menu System Monitor</summary>
       <description>Change the Menu System Monitor.</description>
     </key>
+
+    <key type="b" name="show-menu-button-label">
+      <default>false</default>
+      <summary>Show text label next to the menu button icon</summary>
+      <description>Whether a custom text label is shown next to the icon in the top panel.</description>
+    </key>
+
+    <key type="s" name="menu-button-label-text">
+      <default>""</default>
+      <summary>Menu button label text</summary>
+      <description>Text displayed next to the menu button icon when the label is enabled.</description>
+    </key>
   </schema>
 
 </schemalist>
